@@ -167,7 +167,7 @@ aZb(a,b){if(typeof a=="number"&&typeof b=="number")return a*b
 return J.aVs(a).af(a,b)},
 aZc(a,b){if(typeof a=="number"&&typeof b=="number")return a-b
 return J.MM(a).V(a,b)},
-a7(a,b){if(typeof b==="number")if(Array.isArray(a)||typeof a=="string"||A.aVz(a,a[v.dispatchPropertyName]))if(b>>>0===b&&b<a.length)return a[b]
+a8(a,b){if(typeof b==="number")if(Array.isArray(a)||typeof a=="string"||A.aVz(a,a[v.dispatchPropertyName]))if(b>>>0===b&&b<a.length)return a[b]
 return J.aa(a).h(a,b)},
 cL(a,b,c){if(typeof b==="number")if((Array.isArray(a)||A.aVz(a,a[v.dispatchPropertyName]))&&!(a.$flags&2)&&b>>>0===b&&b<a.length)return a[b]=c
 return J.cw(a).n(a,b,c)},
@@ -891,7 +891,7 @@ aVf(a){var s,r
 if(self.Intl.Segmenter==null)throw A.d(A.ew("Intl.Segmenter() is not supported."))
 s=self.Intl.Segmenter
 r=t.N
-r=A.aQ(A.a8(["granularity",a],r,r))
+r=A.aQ(A.a7(["granularity",a],r,r))
 if(r==null)r=t.K.a(r)
 return new s([],r)},
 baa(){var s,r
@@ -1091,11 +1091,11 @@ if(A.aSd(s)||A.aLC(s))return A.aSc(a)}return A.aR4(a)},
 aR4(a){var s=new A.En(a)
 s.a8y(a)
 return s},
-aSc(a){var s=new A.Gy(a,A.a8(["flutter",!0],t.N,t.y))
+aSc(a){var s=new A.Gy(a,A.a7(["flutter",!0],t.N,t.y))
 s.a8H(a)
 return s},
-aSd(a){return t.f.b(a)&&J.e(J.a7(a,"origin"),!0)},
-aLC(a){return t.f.b(a)&&J.e(J.a7(a,"flutter"),!0)},
+aSd(a){return t.f.b(a)&&J.e(J.a8(a,"origin"),!0)},
+aLC(a){return t.f.b(a)&&J.e(J.a8(a,"flutter"),!0)},
 c(a,b){var s=$.aRb
 $.aRb=s+1
 return new A.no(a,b,s,A.b([],t._m))},
@@ -1138,7 +1138,7 @@ return(s==null?16:s)/16},
 aUj(a,b){var s
 b.toString
 t.pE.a(b)
-s=A.ch(self.document,A.aX(J.a7(b,"tagName")))
+s=A.ch(self.document,A.aX(J.a8(b,"tagName")))
 A.a2(s.style,"width","100%")
 A.a2(s.style,"height","100%")
 return s},
@@ -1157,7 +1157,7 @@ default:return B.h.a3q(1,a)}},
 aQJ(a,b,c,d){var s,r,q=A.bX(b)
 if(c==null)A.dJ(d,a,q,null)
 else{s=t.K
-r=A.aQ(A.a8(["passive",c],t.N,s))
+r=A.aQ(A.a7(["passive",c],t.N,s))
 s=r==null?s.a(r):r
 d.addEventListener(a,q,s)}return new A.Rq(a,d,q)},
 zj(a){var s=B.c.ak(a)
@@ -1399,7 +1399,7 @@ else c=c==="TextCapitalization.sentences"?B.Av:B.lA
 b=A.aJJ(d,new A.Ha(c))
 c=b.b
 n.push(c)
-if(c!==i){a=A.aPF(A.aX(J.a7(s.a(e.h(f,"inputType")),"name")),!1,!1).Bs()
+if(c!==i){a=A.aPF(A.aX(J.a8(s.a(e.h(f,"inputType")),"name")),!1,!1).Bs()
 b.a.fP(a)
 b.fP(a)
 A.a67(a,!1,o,h)
@@ -1492,9 +1492,9 @@ aQj(a){var s,r,q,p,o,n,m,l,k,j="inputType",i="autofill",h=A.R8(a,"viewId")
 if(h==null)h=0
 s=J.aa(a)
 r=t.a
-q=A.aX(J.a7(r.a(s.h(a,j)),"name"))
-p=A.jj(J.a7(r.a(s.h(a,j)),"decimal"))
-o=A.jj(J.a7(r.a(s.h(a,j)),"isMultiline"))
+q=A.aX(J.a8(r.a(s.h(a,j)),"name"))
+p=A.jj(J.a8(r.a(s.h(a,j)),"decimal"))
+o=A.jj(J.a8(r.a(s.h(a,j)),"isMultiline"))
 q=A.aPF(q,p===!0,o===!0)
 p=A.bd(s.h(a,"inputAction"))
 if(p==null)p="TextInputAction.done"
@@ -1623,7 +1623,7 @@ if(a==null)return b==null
 if(b==null||a.length!==b.length)return!1
 for(s=0;s<a.length;++s)if(!J.e(a[s],b[s]))return!1
 return!0},
-R8(a,b){var s=A.aMr(J.a7(a,b))
+R8(a,b){var s=A.aMr(J.a8(a,b))
 return s==null?null:B.c.ak(s)},
 b9y(a){return new A.a6(a,new A.aHM(),A.cf(a).i("a6<ac.E,k>")).aS(0," ")},
 mv(a,b,c){A.a2(a.style,b,c)},
@@ -5441,7 +5441,7 @@ return s},
 b5P(a,b,c,d,e){var s=c!=null?c:new A.avT(d)
 return new A.Is(a,b,s,d.i("@<0>").bR(e).i("Is<1,2>"))},
 fh(a,b){return new A.i7(a.i("@<0>").bR(b).i("i7<1,2>"))},
-a8(a,b,c){return A.aVn(a,new A.i7(b.i("@<0>").bR(c).i("i7<1,2>")))},
+a7(a,b,c){return A.aVn(a,new A.i7(b.i("@<0>").bR(c).i("i7<1,2>")))},
 B(a,b){return new A.i7(a.i("@<0>").bR(b).i("i7<1,2>"))},
 dB(a){return new A.mm(a.i("mm<0>"))},
 aM8(){var s=Object.create(null)
@@ -10153,7 +10153,7 @@ s=$.ad_
 if(s===0)A.baf(J.cb(a.a),100,a.b)
 else A.aN7().$1("Another exception was thrown: "+a.ga42().k(0))
 $.ad_=$.ad_+1},
-aPU(a){var s,r,q,p,o,n,m,l,k,j,i,h=A.a8(["dart:async-patch",0,"dart:async",0,"package:stack_trace",0,"class _AssertionError",0,"class _FakeAsync",0,"class _FrameCallbackEntry",0,"class _Timer",0,"class _RawReceivePortImpl",0],t.N,t.S),g=A.b4u(J.aZq(a,"\n"))
+aPU(a){var s,r,q,p,o,n,m,l,k,j,i,h=A.a7(["dart:async-patch",0,"dart:async",0,"package:stack_trace",0,"class _AssertionError",0,"class _FakeAsync",0,"class _FrameCallbackEntry",0,"class _Timer",0,"class _RawReceivePortImpl",0],t.N,t.S),g=A.b4u(J.aZq(a,"\n"))
 for(s=0,r=0;q=g.length,r<q;++r){p=g[r]
 o="class "+p.w
 n=p.c+":"+p.d
@@ -12050,7 +12050,7 @@ _.fr=a4
 _.fx=a5},
 Xb:function Xb(){},
 Of(a,b){if((a==null?b:a)==null)return null
-return new A.mk(A.a8([B.B,b,B.jl,a],t.Ag,t._),t.GC)},
+return new A.mk(A.a7([B.B,b,B.jl,a],t.Ag,t._),t.GC)},
 aOz(a,b,c,d){var s
 $label0$0:{if(d<=1){s=a
 break $label0$0}if(d<2){s=A.dy(a,b,d-1)
@@ -13913,7 +13913,7 @@ x3(a,b,c,d,e,f,g,h,i,j,k,a0,a1,a2){var s,r,q,p,o,n,m,l=null
 if(g!=null){$label0$0:{s=g.bb(0.1)
 r=g.bb(0.08)
 q=g.bb(0.1)
-q=new A.mk(A.a8([B.U,s,B.E,r,B.H,q],t.Q,t._),t.GC)
+q=new A.mk(A.a7([B.U,s,B.E,r,B.H,q],t.Q,t._),t.GC)
 s=q
 break $label0$0}p=s}else p=l
 s=A.Of(l,l)
@@ -13922,7 +13922,7 @@ q=a1==null?l:new A.cv(a1,t.mD)
 o=a0==null?l:new A.cv(a0,t.W7)
 n=k==null?l:new A.cv(k,t.W7)
 m=j==null?l:new A.cv(j,t.Lk)
-return A.a89(a,l,l,s,l,d,l,l,r,l,l,m,n,o,new A.mk(A.a8([B.B,c,B.jl,e],t.Ag,t.WV),t.ZX),p,q,l,l,l,l,l,l,l,a2)},
+return A.a89(a,l,l,s,l,d,l,l,r,l,l,m,n,o,new A.mk(A.a7([B.B,c,B.jl,e],t.Ag,t.WV),t.ZX),p,q,l,l,l,l,l,l,l,a2)},
 az1:function az1(a,b){this.a=a
 this.b=b},
 Ds:function Ds(a,b,c,d,e,f,g,h,i){var _=this
@@ -16067,7 +16067,7 @@ if(a3==null)break $label2$2
 p=g
 o=t.G.b(a3)
 if(o)p=a3
-if(o){q=new A.mk(A.a8([B.U,p.bb(0.1),B.E,p.bb(0.08),B.H,p.bb(0.1)],t.Q,t._),t.GC)
+if(o){q=new A.mk(A.a7([B.U,p.bb(0.1),B.E,p.bb(0.08),B.H,p.bb(0.1)],t.Q,t._),t.GC)
 break $label2$2}}o=b1==null?g:new A.cv(b1,t.uE)
 n=A.Of(a3,e)
 m=a7==null?g:new A.cv(a7,t.De)
@@ -16076,7 +16076,7 @@ k=a6==null?g:new A.cv(a6,t.mD)
 j=a5==null?g:new A.cv(a5,t.W7)
 i=a4==null?g:new A.cv(a4,t.W7)
 h=a8==null?g:new A.cv(a8,t.dy)
-return A.a89(a,b,g,s,l,a1,g,g,n,g,r,g,i,j,new A.mk(A.a8([B.B,f,B.jl,a2],t.Ag,t.WV),t.ZX),q,k,m,h,g,a9,g,b0,o,b2)},
+return A.a89(a,b,g,s,l,a1,g,g,n,g,r,g,i,j,new A.mk(A.a7([B.B,f,B.jl,a2],t.Ag,t.WV),t.ZX),q,k,m,h,g,a9,g,b0,o,b2)},
 b8B(a){var s=A.a4(a).p1.as,r=s==null?null:s.r
 if(r==null)r=14
 s=A.ci(a,B.aR)
@@ -18739,7 +18739,7 @@ j=null
 if(p){f=o.gCx(o)
 i=m.b
 if(i===m)A.aq(A.th(k))
-e=J.a7(i,f)
+e=J.a8(i,f)
 if(e!=null)o.gCx(o)
 else j=e}q[g]=A.aRJ(j,o);++g}s.gt(a)
 while(!0){if(!!1)break
@@ -21469,7 +21469,7 @@ a8_:function a8_(){},
 OG(a){var s=0,r=A.y(t.H)
 var $async$OG=A.u(function(b,c){if(b===1)return A.v(c,r)
 while(true)switch(s){case 0:s=2
-return A.E(B.be.cZ("Clipboard.setData",A.a8(["text",a.a],t.N,t.z),t.H),$async$OG)
+return A.E(B.be.cZ("Clipboard.setData",A.a7(["text",a.a],t.N,t.z),t.H),$async$OG)
 case 2:return A.w(null,r)}})
 return A.x($async$OG,r)},
 a8U(a){var s=0,r=A.y(t.VE),q,p
@@ -21479,7 +21479,7 @@ return A.E(B.be.cZ("Clipboard.getData",a,t.a),$async$a8U)
 case 3:p=c
 if(p==null){q=null
 s=1
-break}q=new A.w9(A.aX(J.a7(p,"text")))
+break}q=new A.w9(A.aX(J.a8(p,"text")))
 s=1
 break
 case 1:return A.w(q,r)}})
@@ -21635,7 +21635,7 @@ s=new A.am7(o,a).$0()
 r=$.aNu().d
 q=A.m(r).i("bG<1>")
 p=A.eU(new A.bG(r,q),q.i("q.E")).p(0,s.gkF())
-q=J.a7(a,"type")
+q=J.a8(a,"type")
 q.toString
 A.aX(q)
 $label0$0:{if("keydown"===q){r=new A.pM(o.a,p,s)
@@ -21706,7 +21706,7 @@ this.b=$},
 arh(a){var s=0,r=A.y(t.H)
 var $async$arh=A.u(function(b,c){if(b===1)return A.v(c,r)
 while(true)switch(s){case 0:s=2
-return A.E(B.be.cZ(u.p,A.a8(["label",a.a,"primaryColor",a.b],t.N,t.z),t.H),$async$arh)
+return A.E(B.be.cZ(u.p,A.a7(["label",a.a,"primaryColor",a.b],t.N,t.z),t.H),$async$arh)
 case 2:return A.w(null,r)}})
 return A.x($async$arh,r)},
 aSw(a){if($.yL!=null){$.yL=a
@@ -24494,7 +24494,7 @@ return A.n5(new A.a6(j,new A.aHr(),A.a1(j).i("a6<1,ae<@>>")),i).aY(new A.aHs(k,h
 E6(a){var s=a.ar(t.Gk)
 return s==null?null:s.r.f},
 dN(a,b,c){var s=a.ar(t.Gk)
-return s==null?null:c.i("0?").a(J.a7(s.r.e,b))},
+return s==null?null:c.i("0?").a(J.a8(s.r.e,b))},
 A4:function A4(a,b){this.a=a
 this.b=b},
 aHq:function aHq(a){this.a=a},
@@ -25748,7 +25748,7 @@ _.E$=0
 _.G$=e
 _.P$=_.U$=0},
 aUB(a,b){return b},
-aLF(a,b,c,d){return new A.aqF(!0,c,!0,a,A.a8([null,0],t.LO,t.S))},
+aLF(a,b,c,d){return new A.aqF(!0,c,!0,a,A.a7([null,0],t.LO,t.S))},
 aqE:function aqE(){},
 Ae:function Ae(a){this.a=a},
 GC:function GC(a,b,c,d,e,f,g){var _=this
@@ -27574,7 +27574,7 @@ o=a.D()
 n=a.D()
 m=e.D()
 s=3
-return A.E(B.Nj.jl("showToast",A.a8(["msg",d,"length",l,"time",f,"gravity",p,"bgcolor",o,"iosBgcolor",n,"textcolor",m,"iosTextcolor",e.D(),"fontSize",b,"fontAsset",null,"webShowClose",!1,"webBgColor",h,"webPosition",i],t.N,t.z),!1,t.y),$async$Ql)
+return A.E(B.Nj.jl("showToast",A.a7(["msg",d,"length",l,"time",f,"gravity",p,"bgcolor",o,"iosBgcolor",n,"textcolor",m,"iosTextcolor",e.D(),"fontSize",b,"fontAsset",null,"webShowClose",!1,"webBgColor",h,"webPosition",i],t.N,t.z),!1,t.y),$async$Ql)
 case 3:q=k
 s=1
 break
@@ -27788,10 +27788,10 @@ q.toString
 q=J.li(q,a)}else q=!1
 if(q){s=r.h(0,s.a.gfz(0)+"_"+A.n(s.a.gnr()))
 s.toString
-s=J.a7(s,a)
+s=J.a8(s,a)
 s.toString
 return s}p=A.b5g(a)
-if(p!=null&&J.li(p,a)){s=J.a7(p,a)
+if(p!=null&&J.li(p,a)){s=J.a8(p,a)
 s.toString
 return s}else{s=s.b
 if(s!=null){o=s.gfz(0)+"_"+A.n(s.gnr())
@@ -27800,14 +27800,14 @@ q.toString
 q=J.li(q,a)}else q=!1
 if(q){s=r.h(0,o)
 s.toString
-s=J.a7(s,a)
+s=J.a8(s,a)
 s.toString
 return s}if(r.ac(0,s.gfz(0))){q=r.h(0,s.gfz(0))
 q.toString
 q=J.li(q,a)}else q=!1
 if(q){s=r.h(0,s.gfz(0))
 s.toString
-s=J.a7(s,a)
+s=J.a8(s,a)
 s.toString
 return s}return a}else return a}},
 azx:function azx(a){this.b=this.a=null
@@ -27999,7 +27999,7 @@ p=A.MK(a,A.aVS(h,r))
 o=A.MK(b,h)
 n=g.gcA(g)
 if(p===n){c.T(0,q)
-return A.a8([i,A.b([new A.fL(e,p,new A.d2(o,t.kK))],t.K1)],t.xJ,t.kT)}h=g.gcA(g)
+return A.a7([i,A.b([new A.fL(e,p,new A.d2(o,t.kK))],t.K1)],t.xJ,t.kT)}h=g.gcA(g)
 m=p==="/"?0:1
 l=B.d.dO(h,p.length+m)
 for(h=e.b,m=h.length,k=null,j=0;j<h.length;h.length===m||(0,A.V)(h),++j){k=A.aLv(p,o,c,l,h[j],f,g)
@@ -29002,7 +29002,7 @@ av2:function av2(a){this.a=a},
 auZ:function auZ(a){this.a=a},
 ra:function ra(a){this.a=a},
 Xf:function Xf(){this.c=this.a=null},
-aW2(a){var s,r=null,q={},p=A.aKF("GetStorage"),o=t.N,n=A.b([A.a8(["name","English","code","en"],o,o),A.a8(["name","Espa\xf1ol","code","es"],o,o),A.a8(["name","Fran\xe7ais","code","fr"],o,o),A.a8(["name","Deutsch","code","de"],o,o),A.a8(["name","Portugu\xeas","code","pt"],o,o),A.a8(["name","\u0939\u093f\u0902\u0926\u0940","code","hi"],o,o)],t.m0)
+aW2(a){var s,r=null,q={},p=A.aKF("GetStorage"),o=t.N,n=A.b([A.a7(["name","English","code","en"],o,o),A.a7(["name","Espa\xf1ol","code","es"],o,o),A.a7(["name","Fran\xe7ais","code","fr"],o,o),A.a7(["name","Deutsch","code","de"],o,o),A.a7(["name","Portugu\xeas","code","pt"],o,o),A.a7(["name","\u0939\u093f\u0902\u0926\u0940","code","hi"],o,o),A.a7(["name","\u0627\u0644\u0639\u0631\u0628\u064a\u0629","code","ar"],o,o),A.a7(["name","Italiano","code","it"],o,o)],t.m0)
 $.cg()
 o=$.vB().a
 s=o==null?r:o.gfz(0)
@@ -30083,7 +30083,7 @@ while(true)switch(s){case 0:s=2
 return A.E(B.be.cZ("SystemNavigator.pop",null,t.H),$async$arj)
 case 2:return A.w(null,r)}})
 return A.x($async$arj,r)},
-aLJ(a,b,c){return B.fl.cZ("routeInformationUpdated",A.a8(["uri",c.k(0),"state",b,"replace",a],t.N,t.z),t.H)},
+aLJ(a,b,c){return B.fl.cZ("routeInformationUpdated",A.a7(["uri",c.k(0),"state",b,"replace",a],t.N,t.z),t.H)},
 aSF(a){switch(a){case 9:case 10:case 11:case 12:case 13:case 28:case 29:case 30:case 31:case 32:case 160:case 5760:case 8192:case 8193:case 8194:case 8195:case 8196:case 8197:case 8198:case 8199:case 8200:case 8201:case 8202:case 8239:case 8287:case 12288:break
 default:return!1}return!0},
 aLM(a){switch(a){case 10:case 11:case 12:case 13:case 133:case 8232:case 8233:return!0
@@ -32785,7 +32785,7 @@ k(a){return"CanvasKitError: "+this.a}}
 A.BQ.prototype={
 a3c(a,b){var s={}
 s.a=!1
-this.a.u8(0,A.bd(J.a7(t.xE.a(a.b),"text"))).aY(new A.a8S(s,b),t.P).iR(new A.a8T(s,b))},
+this.a.u8(0,A.bd(J.a8(t.xE.a(a.b),"text"))).aY(new A.a8S(s,b),t.P).iR(new A.a8T(s,b))},
 a2d(a){this.b.tS(0).aY(new A.a8N(a),t.P).iR(new A.a8O(this,a))},
 aun(a){this.b.tS(0).aY(new A.a8Q(a),t.P).iR(new A.a8R(a))}}
 A.a8S.prototype={
@@ -32802,7 +32802,7 @@ s.toString
 s.$1(B.ad.cE(["copy_fail","Clipboard.setData failed",null]))}},
 $S:34}
 A.a8N.prototype={
-$1(a){var s=A.a8(["text",a],t.N,t.z),r=this.a
+$1(a){var s=A.a7(["text",a],t.N,t.z),r=this.a
 r.toString
 r.$1(B.ad.cE([s]))},
 $S:175}
@@ -32819,14 +32819,14 @@ $1(a){var s=this.a
 if(s!=null)s.$1(null)},
 $S:24}
 A.a8Q.prototype={
-$1(a){var s=A.a8(["value",a.length!==0],t.N,t.z),r=this.a
+$1(a){var s=A.a7(["value",a.length!==0],t.N,t.z),r=this.a
 r.toString
 r.$1(B.ad.cE([s]))},
 $S:175}
 A.a8R.prototype={
 $1(a){var s,r
 if(a instanceof A.uN){A.n4(B.y,null,t.H).aY(new A.a8P(this.a),t.P)
-return}s=A.a8(["value",!1],t.N,t.z)
+return}s=A.a7(["value",!1],t.N,t.z)
 r=this.a
 r.toString
 r.$1(B.ad.cE([s]))},
@@ -33827,20 +33827,20 @@ a8y(a){var s,r=this,q=r.d
 if(q==null)return
 r.a=q.IH(r.gLT(r))
 if(!r.GQ(r.gN())){s=t.z
-q.pQ(0,A.a8(["serialCount",0,"state",r.gN()],s,s),"flutter",r.gm5())}r.e=r.gFY()},
+q.pQ(0,A.a7(["serialCount",0,"state",r.gN()],s,s),"flutter",r.gm5())}r.e=r.gFY()},
 gFY(){if(this.GQ(this.gN())){var s=this.gN()
 s.toString
-return B.c.ak(A.cl(J.a7(t.f.a(s),"serialCount")))}return 0},
-GQ(a){return t.f.b(a)&&J.a7(a,"serialCount")!=null},
+return B.c.ak(A.cl(J.a8(t.f.a(s),"serialCount")))}return 0},
+GQ(a){return t.f.b(a)&&J.a8(a,"serialCount")!=null},
 yu(a,b,c){var s,r,q=this.d
 if(q!=null){s=t.z
 r=this.e
 if(b){r===$&&A.a()
-s=A.a8(["serialCount",r,"state",c],s,s)
+s=A.a7(["serialCount",r,"state",c],s,s)
 a.toString
 q.pQ(0,s,"flutter",a)}else{r===$&&A.a();++r
 this.e=r
-s=A.a8(["serialCount",r,"state",c],s,s)
+s=A.a7(["serialCount",r,"state",c],s,s)
 a.toString
 q.a0v(0,s,"flutter",a)}}},
 O0(a){return this.yu(a,!1,null)},
@@ -33850,13 +33850,13 @@ s.toString
 r=o.e
 r===$&&A.a()
 q=t.z
-s.pQ(0,A.a8(["serialCount",r+1,"state",b],q,q),"flutter",o.gm5())}o.e=o.gFY()
+s.pQ(0,A.a7(["serialCount",r+1,"state",b],q,q),"flutter",o.gm5())}o.e=o.gFY()
 s=$.b_()
 r=o.gm5()
 t.Xw.a(b)
-q=b==null?null:J.a7(b,"state")
+q=b==null?null:J.a8(b,"state")
 p=t.z
-s.jN("flutter/navigation",B.bj.kq(new A.jG("pushRouteInformation",A.a8(["location",r,"state",q],p,p))),new A.akr())},
+s.jN("flutter/navigation",B.bj.kq(new A.jG("pushRouteInformation",A.a7(["location",r,"state",q],p,p))),new A.akr())},
 lt(){var s=0,r=A.y(t.H),q,p=this,o,n,m
 var $async$lt=A.u(function(a,b){if(a===1)return A.v(b,r)
 while(true)switch(s){case 0:p.m()
@@ -33872,7 +33872,7 @@ n.toString
 t.f.a(n)
 m=p.d
 m.toString
-m.pQ(0,J.a7(n,"state"),"flutter",p.gm5())
+m.pQ(0,J.a8(n,"state"),"flutter",p.gm5())
 case 1:return A.w(q,r)}})
 return A.x($async$lt,r)},
 go2(){return this.d}}
@@ -33884,7 +33884,7 @@ a8H(a){var s,r=this,q=r.d
 if(q==null)return
 r.a=q.IH(r.gLT(r))
 s=r.gm5()
-if(!A.aLC(A.aPj(self.window.history))){q.pQ(0,A.a8(["origin",!0,"state",r.gN()],t.N,t.z),"origin","")
+if(!A.aLC(A.aPj(self.window.history))){q.pQ(0,A.a7(["origin",!0,"state",r.gN()],t.N,t.z),"origin","")
 r.ams(q,s)}},
 yu(a,b,c){var s=this.d
 if(s!=null)this.HQ(s,a,!0)},
@@ -33915,7 +33915,7 @@ s=3
 return A.E(o.yg(0,-1),$async$lt)
 case 3:n=p.gN()
 n.toString
-o.pQ(0,J.a7(t.f.a(n),"state"),"flutter",p.gm5())
+o.pQ(0,J.a8(t.f.a(n),"state"),"flutter",p.gm5())
 case 1:return A.w(q,r)}})
 return A.x($async$lt,r)},
 go2(){return this.d}}
@@ -34059,7 +34059,7 @@ q.title=n
 A.aW0(A.bL(m))
 c.fC(a1,B.ad.cE([!0]))
 return
-case"SystemChrome.setSystemUIOverlayStyle":l=A.hd(J.a7(t.xE.a(s.b),"statusBarColor"))
+case"SystemChrome.setSystemUIOverlayStyle":l=A.hd(J.a8(t.xE.a(s.b),"statusBarColor"))
 A.aW0(l==null?b:A.bL(l))
 c.fC(a1,B.ad.cE([!0]))
 return
@@ -34092,7 +34092,7 @@ switch(s.a){case"activateSystemCursor":q=c.gdr().b
 q=A.aQo(new A.bm(q,A.m(q).i("bm<2>")))
 if(q!=null){if(q.w===$){q.geh()
 q.w!==$&&A.ay()
-q.w=new A.akh()}j=B.MO.h(0,A.bd(J.a7(o,"kind")))
+q.w=new A.akh()}j=B.MO.h(0,A.bd(J.a8(o,"kind")))
 if(j==null)j="default"
 if(j==="default")self.document.body.style.removeProperty("cursor")
 else A.a2(self.document.body.style,"cursor",j)}break}return
@@ -34109,8 +34109,8 @@ return
 case"flutter/accessibility":g=$.cr
 if(g==null)g=$.cr=A.eR()
 if(g.b){q=t.f
-f=q.a(J.a7(q.a(B.cJ.hH(a0)),"data"))
-e=A.bd(J.a7(f,"message"))
+f=q.a(J.a8(q.a(B.cJ.hH(a0)),"data"))
+e=A.bd(J.a8(f,"message"))
 if(e!=null&&e.length!==0){d=A.R8(f,"assertiveness")
 g.a.Xi(e,B.JF[d==null?0:d])}}c.fC(a1,B.cJ.cE(!0))
 return
@@ -34861,7 +34861,7 @@ else if(A.mO(a)==="NumLock")m.b=o|16
 else if(A.jt(a)==="ScrollLock")m.b=o|64
 else if(A.jt(a)==="Meta"&&$.bT().ge3()===B.kR)m.b|=8
 else if(A.mO(a)==="MetaLeft"&&A.jt(a)==="Process")m.b|=8
-n=A.a8(["type",a.type,"keymap","web","code",A.mO(a),"key",A.jt(a),"location",B.c.ak(a.location),"metaState",m.b,"keyCode",B.c.ak(a.keyCode)],t.N,t.z)
+n=A.a7(["type",a.type,"keymap","web","code",A.mO(a),"key",A.jt(a),"location",B.c.ak(a.location),"metaState",m.b,"keyCode",B.c.ak(a.keyCode)],t.N,t.z)
 $.b_().jN("flutter/keyevent",B.ad.cE(n),new A.amc(s))}}
 A.am9.prototype={
 $0(){this.a.m()},
@@ -34870,13 +34870,13 @@ A.amb.prototype={
 $0(){var s,r,q=this.a
 q.a.F(0,this.b)
 s=this.c.a
-r=A.a8(["type","keyup","keymap","web","code",A.mO(s),"key",A.jt(s),"location",B.c.ak(s.location),"metaState",q.b,"keyCode",B.c.ak(s.keyCode)],t.N,t.z)
+r=A.a7(["type","keyup","keymap","web","code",A.mO(s),"key",A.jt(s),"location",B.c.ak(s.location),"metaState",q.b,"keyCode",B.c.ak(s.keyCode)],t.N,t.z)
 $.b_().jN("flutter/keyevent",B.ad.cE(r),A.b7y())},
 $S:0}
 A.amc.prototype={
 $1(a){var s
 if(a==null)return
-if(A.mu(J.a7(t.a.a(B.ad.hH(a)),"handled"))){s=this.a.a
+if(A.mu(J.a8(t.a.a(B.ad.hH(a)),"handled"))){s=this.a.a
 s.preventDefault()
 s.stopPropagation()}},
 $S:27}
@@ -36401,7 +36401,7 @@ cE(a){return J.Ng(B.a5.gcX(B.d8.eT(B.bL.BQ(a))))},
 hH(a){if(a==null)return a
 return B.bL.ig(0,B.er.eT(J.AP(B.aG.gcX(a))))}}
 A.ag2.prototype={
-kq(a){return B.ad.cE(A.a8(["method",a.a,"args",a.b],t.N,t.z))},
+kq(a){return B.ad.cE(A.a7(["method",a.a,"args",a.b],t.N,t.z))},
 jy(a){var s,r,q,p=null,o=B.ad.hH(a)
 if(!t.f.b(o))throw A.d(A.d6("Expected method call Map, got "+A.n(o),p,p))
 s=J.aa(o)
@@ -36738,7 +36738,7 @@ if(r.h(0,q)==null)throw A.d(A.a0("AutofillInfo must have a valid uniqueIdentifie
 else{r=r.h(0,q)
 r.toString
 s=A.aPy(this.c)
-$.b_().jN("flutter/textinput",B.bj.kq(new A.jG(u.m,[0,A.a8([r.b,s.a1e()],t.B,t.z)])),A.a61())}},
+$.b_().jN("flutter/textinput",B.bj.kq(new A.jG(u.m,[0,A.a7([r.b,s.a1e()],t.B,t.z)])),A.a61())}},
 $S:2}
 A.NJ.prototype={
 Xm(a,b){var s,r,q,p="password",o=this.d,n=this.e,m=globalThis.HTMLInputElement
@@ -36761,7 +36761,7 @@ A.wC.prototype={
 gCL(){return Math.min(this.b,this.c)},
 gCJ(){return Math.max(this.b,this.c)},
 a1e(){var s=this
-return A.a8(["text",s.a,"selectionBase",s.b,"selectionExtent",s.c,"composingBase",s.d,"composingExtent",s.e],t.N,t.z)},
+return A.a7(["text",s.a,"selectionBase",s.b,"selectionExtent",s.c,"composingBase",s.d,"composingExtent",s.e],t.N,t.z)},
 gB(a){var s=this
 return A.X(s.a,s.b,s.c,s.d,s.e,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 j(a,b){var s=this
@@ -37326,7 +37326,7 @@ if(p.d.r){p.gvL(0)
 p=p.b
 s=t.N
 r=t.z
-$.b_().jN(q,B.bj.kq(new A.jG(u.s,[p,A.a8(["deltas",A.b([A.a8(["oldText",b.a,"deltaText",b.b,"deltaStart",b.c,"deltaEnd",b.d,"selectionBase",b.e,"selectionExtent",b.f,"composingBase",b.r,"composingExtent",b.w],s,r)],t.H7)],s,r)])),A.a61())}else{p.gvL(0)
+$.b_().jN(q,B.bj.kq(new A.jG(u.s,[p,A.a7(["deltas",A.b([A.a7(["oldText",b.a,"deltaText",b.b,"deltaStart",b.c,"deltaEnd",b.d,"selectionBase",b.e,"selectionExtent",b.f,"composingBase",b.r,"composingExtent",b.w],s,r)],t.H7)],s,r)])),A.a61())}else{p.gvL(0)
 p=p.b
 $.b_().jN(q,B.bj.kq(new A.jG("TextInputClient.updateEditingState",[p,a.a1e()])),A.a61())}},
 $S:677}
@@ -37515,7 +37515,7 @@ VD(){var s,r,q,p=A.aKi(self.window,"(resolution: "+A.n(this.b)+"dppx)")
 this.d=p
 s=A.bX(this.gajb())
 r=t.K
-q=A.aQ(A.a8(["once",!0,"passive",!0],t.N,r))
+q=A.aQ(A.a7(["once",!0,"passive",!0],t.N,r))
 r=q==null?r.a(q):q
 p.addEventListener("change",s,r)},
 ajc(a){var s=this,r=s.a.d
@@ -37666,7 +37666,7 @@ if(j===$){s=$.e0().d
 if(s==null){s=self.window.devicePixelRatio
 if(s===0)s=1}r=A.ch(self.document,k)
 q=A.ch(self.document,"flt-glass-pane")
-p=A.aQ(A.a8(["mode","open","delegatesFocus",!1],t.N,t.z))
+p=A.aQ(A.a7(["mode","open","delegatesFocus",!1],t.N,t.z))
 if(p==null)p=t.K.a(p)
 p=q.attachShadow(p)
 o=A.ch(self.document,"flt-scene-host")
@@ -37813,7 +37813,7 @@ s=11
 return A.E(o.vl(),$async$$0)
 case 11:o=o.gB6()
 h.toString
-o.O0(A.bd(J.a7(h,"routeName")))
+o.O0(A.bd(J.a8(h,"routeName")))
 q=!0
 s=1
 break
@@ -38315,7 +38315,7 @@ f9(a,b){return A.hW(this.a,A.m(this).c,b)},
 gia(){return this.a}}
 A.IR.prototype={$iab:1}
 A.I8.prototype={
-h(a,b){return this.$ti.y[1].a(J.a7(this.a,b))},
+h(a,b){return this.$ti.y[1].a(J.a8(this.a,b))},
 n(a,b,c){J.cL(this.a,b,this.$ti.c.a(c))},
 st(a,b){J.aO5(this.a,b)},
 H(a,b){J.ea(this.a,this.$ti.c.a(b))},
@@ -38366,7 +38366,7 @@ gia(){return this.a}}
 A.rc.prototype={
 vK(a,b,c){return new A.rc(this.a,this.$ti.i("@<1,2>").bR(b).bR(c).i("rc<1,2,3,4>"))},
 ac(a,b){return J.li(this.a,b)},
-h(a,b){return this.$ti.i("4?").a(J.a7(this.a,b))},
+h(a,b){return this.$ti.i("4?").a(J.a8(this.a,b))},
 n(a,b,c){var s=this.$ti
 J.cL(this.a,s.c.a(b),s.y[1].a(c))},
 bN(a,b,c){var s=this.$ti
@@ -38741,7 +38741,7 @@ gt(a){return J.bu(this.a)},
 b8(a,b){A.aKT(b,J.bu(this.a),this,null)
 return b}}
 A.fI.prototype={
-h(a,b){return this.ac(0,b)?J.a7(this.a,A.c0(b)):null},
+h(a,b){return this.ac(0,b)?J.a8(this.a,A.c0(b)):null},
 gt(a){return J.bu(this.a)},
 gep(a){return A.l1(this.a,0,null,this.$ti.c)},
 gbf(a){return new A.a_n(this.a)},
@@ -41239,7 +41239,7 @@ gep(a){return new A.Jz(a,A.cf(a).i("Jz<b2.K,b2.V>"))},
 k(a){return A.ah5(a)},
 $iak:1}
 A.ah4.prototype={
-$1(a){var s=this.a,r=J.a7(s,a)
+$1(a){var s=this.a,r=J.a8(s,a)
 if(r==null)r=A.cf(s).i("b2.V").a(r)
 return new A.b5(a,r,A.cf(s).i("b5<b2.K,b2.V>"))},
 $S(){return A.cf(this.a).i("b5<b2.K,b2.V>(b2.K)")}}
@@ -41272,7 +41272,7 @@ gae(a){var s=this.a
 return new A.a_x(J.aJ(J.my(s)),s,this.$ti.i("a_x<1,2>"))}}
 A.a_x.prototype={
 u(){var s=this,r=s.a
-if(r.u()){s.c=J.a7(s.b,r.gM(r))
+if(r.u()){s.c=J.a8(s.b,r.gM(r))
 return!0}s.c=null
 return!1},
 gM(a){var s=this.c
@@ -41284,7 +41284,7 @@ bN(a,b,c){throw A.d(A.aA("Cannot modify unmodifiable map"))},
 kK(a,b){throw A.d(A.aA("Cannot modify unmodifiable map"))}}
 A.E9.prototype={
 vK(a,b,c){return J.iI(this.a,b,c)},
-h(a,b){return J.a7(this.a,b)},
+h(a,b){return J.a8(this.a,b)},
 n(a,b,c){J.cL(this.a,b,c)},
 bN(a,b,c){return J.AR(this.a,b,c)},
 ac(a,b){return J.li(this.a,b)},
@@ -43904,7 +43904,7 @@ co(a,b,c,d,e){throw A.d(A.aA("Cannot setRange on immutable List."))},
 ha(a,b,c,d){return this.co(a,b,c,d,0)}}
 A.Q4.prototype={
 u(){var s=this,r=s.c+1,q=s.b
-if(r<q){s.d=J.a7(s.a,r)
+if(r<q){s.d=J.a8(s.a,r)
 s.c=r
 return!0}s.d=null
 s.c=q
@@ -45068,7 +45068,7 @@ return A.X(s.a,s.b,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B
 k(a){return B.X3.k(0)+"(app: "+this.d.a.a+")"}}
 A.Ju.prototype={
 a9t(a){var s,r,q,p,o,n,m,l,k,j=A.dM(this.gf6().b.h(0,"orderBy"),!0,t.j),i=[]
-for(q=j.length,p=a.b,o=a.a,n=0;m=j.length,n<m;j.length===q||(0,A.V)(j),++n){s=J.a7(j[n],0)
+for(q=j.length,p=a.b,o=a.a,n=0;m=j.length,n<m;j.length===q||(0,A.V)(j),++n){s=J.a8(j[n],0)
 if(!J.e(s,B.bb))try{r=A.Ic(A.qk(p.bj(0,s),o))
 J.ea(i,r)}catch(l){if(A.ai(l) instanceof A.ja)throw A.d("You are trying to start or end a query using a document for which the field '"+A.n(s)+"' (used as the orderBy) does not exist.")
 else throw l}}if(m!==0){k=B.b.gX(j)
@@ -45077,7 +45077,7 @@ if(!J.e(q.h(k,0),B.bb))j.push([B.bb,q.h(k,1)])}else j.push([B.bb,!1])
 this.gf6().ga_m()
 q=B.b.gX(p.b.a)
 J.ea(i,q)
-return A.a8(["orders",j,"values",i],t.N,t.z)},
+return A.a7(["orders",j,"values",i],t.N,t.z)},
 cQ(a){var s=0,r=A.y(t._C),q,p=this,o,n,m
 var $async$cQ=A.u(function(b,c){if(b===1)return A.v(c,r)
 while(true)switch(s){case 0:o=p.gf6()
@@ -45365,14 +45365,14 @@ break
 case 6:case 1:return A.w(q,r)
 case 2:return A.v(o.at(-1),r)}})
 return A.x($async$bj,r)},
-jQ(a){return this.z9(A.a8(["limit",a,"limitToLast",null],t.N,t.z))},
+jQ(a){return this.z9(A.a7(["limit",a,"limitToLast",null],t.N,t.z))},
 qa(a,b){var s={},r=A.bn("controller")
 s.a=null
 r.b=new A.iw(new A.ajW(s,this,B.cx,!1,b,r),new A.ajX(s),t.mC)
 return J.a6C(r.aw())},
-xn(a){return this.z9(A.a8(["orderBy",a],t.N,t.z))},
-Ob(a,b){return this.z9(A.a8(["orderBy",a,"startAt",null,"startAfter",b],t.N,t.z))},
-hZ(a,b){return this.z9(A.a8(["where",b],t.N,t.z))},
+xn(a){return this.z9(A.a7(["orderBy",a],t.N,t.z))},
+Ob(a,b){return this.z9(A.a7(["orderBy",a,"startAt",null,"startAfter",b],t.N,t.z))},
+hZ(a,b){return this.z9(A.a7(["where",b],t.N,t.z))},
 vY(a){var s=this.gHr(),r=B.b.aS(this.d.a,"/"),q=A.b([new A.qX(B.j9,null)],t.O1),p=$.aJ5()
 q=new A.ajK(this.e,r,s,!1,q)
 $.cI().n(0,q,p)
@@ -45469,7 +45469,7 @@ A.b7(p,$.bN(),!0)}o.bq(0,b,s.a.a)
 s=c.b
 o.bq(0,b,s==null?"(default)":s)
 o.bq(0,b,B.Dk)}else if(c instanceof A.xF){b.bu(0,197)
-o.bq(0,b,A.a8(["firestore",c.a,"path",c.gcA(c),"isCollectionGroup",!1,"parameters",c.b],t.N,t.z))}else if(c instanceof A.Go){b.bu(0,198)
+o.bq(0,b,A.a7(["firestore",c.a,"path",c.gcA(c),"isCollectionGroup",!1,"parameters",c.b],t.N,t.z))}else if(c instanceof A.Go){b.bu(0,198)
 o.bq(0,b,c.goN(0))}else if(t.JY.b(c)&&!t.j.b(c))o.yL(0,b,J.oB(c))
 else if(typeof c=="number"&&isNaN(c))b.bu(0,193)
 else{s=J.iG(c)
@@ -46275,13 +46275,13 @@ i=A.ju(p.h(r,2))
 r=self
 d=new A.id(r.firebase_firestore.query(d.a,r.firebase_firestore.where(k,j,A.oy(i))),q)}return d},
 bj(a,b){return A.ML(new A.alX(this,b),t.DQ)},
-jQ(a){return this.A7(A.a8(["limit",a,"limitToLast",null],t.N,t.z))},
+jQ(a){return this.A7(A.a7(["limit",a,"limitToLast",null],t.N,t.z))},
 qa(a,b){var s=this.Fv(),r=this.gB(0)
 r=s.abk(t.e.a({includeMetadataChanges:!1,source:A.aVa(b)}),r)
 return A.ML(new A.alZ(this,new A.dQ(r,A.m(r).i("dQ<1>"))),t.jx)},
-xn(a){return this.A7(A.a8(["orderBy",a],t.N,t.z))},
-Ob(a,b){return this.A7(A.a8(["orderBy",a,"startAt",null,"startAfter",b],t.N,t.z))},
-hZ(a,b){return this.A7(A.a8(["where",b],t.N,t.z))},
+xn(a){return this.A7(A.a7(["orderBy",a],t.N,t.z))},
+Ob(a,b){return this.A7(A.a7(["orderBy",a,"startAt",null,"startAfter",b],t.N,t.z))},
+hZ(a,b){return this.A7(A.a7(["where",b],t.N,t.z))},
 vY(a){var s=this.Fv(),r=A.b([new A.qX(B.j9,null)],t.O1),q=$.aJ5()
 r=new A.a6Z(new A.a6X(s.a),r)
 $.cI().n(0,r,q)
@@ -46556,7 +46556,7 @@ $S:143}
 A.aGU.prototype={
 $1(a){var s=this.a,r=s.a,q=s.b
 q.toString
-s.a=(r^A.aMt(r,[a,J.a7(t.f.a(q),a)]))>>>0},
+s.a=(r^A.aMt(r,[a,J.a8(t.f.a(q),a)]))>>>0},
 $S:11}
 A.aGV.prototype={
 $2(a,b){return J.M(a)-J.M(b)},
@@ -46586,7 +46586,7 @@ k(a){return"["+this.a+"/"+this.c+"] "+A.n(this.b)},
 $idL:1}
 A.wN.prototype={
 goN(a){var s=this
-return A.a8(["apiKey",s.a,"appId",s.b,"messagingSenderId",s.c,"projectId",s.d,"authDomain",s.e,"databaseURL",s.f,"storageBucket",s.r,"measurementId",s.w,"trackingId",s.x,"deepLinkURLScheme",s.y,"androidClientId",s.z,"iosClientId",s.Q,"iosBundleId",s.as,"appGroupId",s.at],t.N,t.B)},
+return A.a7(["apiKey",s.a,"appId",s.b,"messagingSenderId",s.c,"projectId",s.d,"authDomain",s.e,"databaseURL",s.f,"storageBucket",s.r,"measurementId",s.w,"trackingId",s.x,"deepLinkURLScheme",s.y,"androidClientId",s.z,"iosClientId",s.Q,"iosBundleId",s.as,"appGroupId",s.at],t.N,t.B)},
 j(a,b){if(b==null)return!1
 if(this===b)return!0
 if(!(b instanceof A.wN))return!1
@@ -46650,7 +46650,7 @@ gB(a){return A.X(this.a,this.b,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B
 k(a){return B.X1.k(0)+"("+this.a+")"}}
 A.acE.prototype={}
 A.aH3.prototype={
-$1(a){return A.aH2(a.b,J.a7(this.a,a.a))},
+$1(a){return A.aH2(a.b,J.a8(this.a,a.a))},
 $S:491}
 A.aH4.prototype={
 $1(a){var s=this.a,r=a.a,q=J.di(s)
@@ -47004,7 +47004,7 @@ p=$.ag.lo(new A.ak_(),p,o)
 r=new A.zg(r,n,p,$.ag,q.i("zg<c4.T>"))
 r.e=new A.zh(r.gajs(),r.gaj_(),q.i("zh<c4.T>"))
 s.e=r
-s.x=A.b2s(s.w,B.iy,A.a8(["path",c,"bytesTransferred",0,"totalBytes",1],t.N,t.z))},
+s.x=A.b2s(s.w,B.iy,A.a7(["path",c,"bytesTransferred",0,"totalBytes",1],t.N,t.z))},
 gyA(){var s=this.x
 s===$&&A.a()
 return s},
@@ -47046,12 +47046,12 @@ case 11:s=13
 return A.MC(c.u(),$async$$0,r)
 case 13:if(!b1){s=12
 break}l=c.gM(0)
-k=B.KY[J.a7(l,"taskState")]
+k=B.KY[J.a8(l,"taskState")]
 if(k===B.lz){a5.c=!0
-j=A.hw(J.a7(l,"error"),a,a0)
-i=J.a7(j,"code")
+j=A.hw(J.a8(l,"error"),a,a0)
+i=J.a8(j,"code")
 a1=i
-a2=J.a7(j,"message")
+a2=J.a8(j,"message")
 h=new A.wL("firebase_storage",a2,a1==null?"unknown":a1)
 if(!J.e(i,"canceled")){a1=a5.x
 a1===$&&A.a()
@@ -47059,7 +47059,7 @@ a1=a1.b.h(0,"bytesTransferred")
 a2=a5.x.b.h(0,"totalBytes")
 a3=a5.x.b
 a3=a3.h(0,"metadata")==null?null:new A.adF(A.hw(a3.h(0,"metadata"),a,a0))
-a3=A.a8(["path",m.b,"bytesTransferred",a1,"totalBytes",a2,"metadata",a3],a,a0)
+a3=A.a7(["path",m.b,"bytesTransferred",a1,"totalBytes",a2,"metadata",a3],a,a0)
 a2=$.AL()
 a3=new A.tC(b,a3,k,a3)
 a1=$.cI()
@@ -47069,7 +47069,7 @@ b=a5.d
 if(b!=null)b.l7(h)
 s=12
 break}if(k===B.iA){a5.c=!0
-a1=A.hw(J.a7(l,"snapshot"),a,a0)
+a1=A.hw(J.a8(l,"snapshot"),a,a0)
 a2=$.AL()
 f=new A.tC(b,a1,k,a1)
 a1=$.cI()
@@ -47082,7 +47082,7 @@ a1===$&&A.a()
 a1=a1.a!==B.iA}else a1=!1
 s=a1?14:15
 break
-case 14:a1=A.hw(J.a7(l,"snapshot"),a,a0)
+case 14:a1=A.hw(J.a8(l,"snapshot"),a,a0)
 a2=$.AL()
 a4=new A.tC(b,a1,k,a1)
 a1=$.cI()
@@ -47159,7 +47159,7 @@ s.bq(0,b,[c.a,c.b,c.c])}else s.yL(0,b,c)},
 hU(a,b){var s,r,q,p,o,n,m,l=this
 switch(a){case 128:s=l.cB(0,b)
 s.toString
-s=t.J1.a(J.a7(t.W.a(s),0))
+s=t.J1.a(J.a8(t.W.a(s),0))
 return new A.Sr(s==null?null:J.iI(s,t.B,t.X))
 case 129:s=l.cB(0,b)
 s.toString
@@ -50001,7 +50001,7 @@ r=o.r
 n=a5.Yl(q,r!=null?r*1.2:20)
 a5=a2?B.cz:B.br
 m=a.x
-if(m===$){l=A.a8([B.iI,new A.cD(a.gah5(),new A.br(A.b([],t.g),t.l),t.wY)],t.u,t.od)
+if(m===$){l=A.a7([B.iI,new A.cD(a.gah5(),new A.br(A.b([],t.g),t.l),t.wY)],t.u,t.od)
 a.x!==$&&A.ay()
 a.x=l
 m=l}r=a.a
@@ -54879,7 +54879,7 @@ q.f=A.b2S(A.aK_(s.e,r))
 q.x=B.MP
 r=t.g
 s=t.l
-q.y=A.a8([B.AQ,new A.cD(q.gaf7(),new A.br(A.b([],r),s),t._M),B.AR,new A.cD(q.gaf9(),new A.br(A.b([],r),s),t.Dd),B.lK,new A.cD(q.gaes(),new A.br(A.b([],r),s),t.Nv)],t.u,t.od)
+q.y=A.a7([B.AQ,new A.cD(q.gaf7(),new A.br(A.b([],r),s),t._M),B.AR,new A.cD(q.gaf9(),new A.br(A.b([],r),s),t.Dd),B.lK,new A.cD(q.gaes(),new A.br(A.b([],r),s),t.Nv)],t.u,t.od)
 q.z=A.lB(!0,"Day Grid",!0,!0,null,null,!1)},
 b7(){var s,r=this
 r.cJ()
@@ -56507,7 +56507,7 @@ s.toString
 if(q.r==null)q.r=A.lB(!0,A.D(s).k(0),!0,!0,null,null,!1)
 s=t.g
 r=t.l
-q.w=A.a8([B.iI,new A.cD(new A.axm(q),new A.br(A.b([],s),r),t.wY),B.AO,new A.cD(new A.axn(q),new A.br(A.b([],s),r),t.nz)],t.u,t.od)
+q.w=A.a7([B.iI,new A.cD(new A.axm(q),new A.br(A.b([],s),r),t.wY),B.AO,new A.cD(new A.axn(q),new A.br(A.b([],s),r),t.nz)],t.u,t.od)
 r=q.gcn(0)
 if(r!=null)r.R(0,q.gR0())},
 m(){var s,r=this
@@ -57992,7 +57992,7 @@ k=a.w
 if(k===$){q=a.gaoJ()
 p=t.g
 o=t.l
-j=A.a8([B.iI,new A.cD(q,new A.br(A.b([],p),o),t.wY),B.AO,new A.cD(q,new A.br(A.b([],p),o),t.nz)],t.u,t.od)
+j=A.a7([B.iI,new A.cD(q,new A.br(A.b([],p),o),t.wY),B.AO,new A.cD(q,new A.br(A.b([],p),o),t.nz)],t.u,t.od)
 a.w!==$&&A.ay()
 a.w=j
 k=j}q=a.a.k4
@@ -61230,7 +61230,7 @@ A.aow.prototype={
 $0(){this.a.Q=this.b},
 $S:0}
 A.aoy.prototype={
-$2(a,b){var s,r,q,p,o,n,m,l=this,k=A.a8([B.lL,new A.Yq(a,new A.br(A.b([],t.g),t.l))],t.u,t.od),j=l.b
+$2(a,b){var s,r,q,p,o,n,m,l=this,k=A.a7([B.lL,new A.Yq(a,new A.br(A.b([],t.g),t.l))],t.u,t.od),j=l.b
 j.a.toString
 s=j.cy
 s.toString
@@ -68469,7 +68469,7 @@ j=A.a1(m)
 i=new A.jb(m,l,k,j.i("jb<1>"))
 i.yS(m,l,k,j.c)
 B.b.T(n,i)
-break}}q=J.a7(s,r)
+break}}q=J.a8(s,r)
 if(q.z&&q.y===h)q.aif();++r}h.f=!1}for(o=h.CW,o=A.cX(o,o.r,A.m(o).c),n=o.$ti.c;o.u();){m=o.d
 p=m==null?n.a(m):m
 p.Zq()}}finally{h.f=!1}},
@@ -74453,7 +74453,7 @@ A.a2B.prototype={}
 A.NC.prototype={
 K(){return"Assertiveness."+this.b}}
 A.apU.prototype={
-DW(a){var s=A.a8(["type",this.a,"data",this.q_()],t.N,t.z)
+DW(a){var s=A.a7(["type",this.a,"data",this.q_()],t.N,t.z)
 if(a!=null)s.n(0,"nodeId",a)
 return s},
 a1f(){return this.DW(null)},
@@ -74469,7 +74469,7 @@ s=this.d
 if(s!==B.d2)r.n(0,"assertiveness",s.a)
 return r}}
 A.ask.prototype={
-q_(){return A.a8(["message",this.b],t.N,t.z)}}
+q_(){return A.a7(["message",this.b],t.N,t.z)}}
 A.agY.prototype={
 q_(){return B.kH}}
 A.arq.prototype={
@@ -74602,7 +74602,7 @@ s.c.a1(0)},
 nL(a){return this.au5(a)},
 au5(a){var s=0,r=A.y(t.H),q,p=this
 var $async$nL=A.u(function(b,c){if(b===1)return A.v(c,r)
-while(true)switch(s){case 0:switch(A.aX(J.a7(t.a.a(a),"type"))){case"memoryPressure":p.wE()
+while(true)switch(s){case 0:switch(A.aX(J.a8(t.a.a(a),"type"))){case"memoryPressure":p.wE()
 break}s=1
 break
 case 1:return A.w(q,r)}})
@@ -74666,7 +74666,7 @@ break
 case 7:k=A
 s=9
 return A.E(p.Cd(),$async$zz)
-case 9:q=k.a8(["response",c.b],t.N,t.z)
+case 9:q=k.a7(["response",c.b],t.N,t.z)
 s=1
 break
 case 8:throw A.d(A.kf('Method "'+l+'" not handled.'))
@@ -74817,7 +74817,7 @@ n=!k}if(n){p.c.atV(o)
 for(m=p.e,l=m.length,k=p.b,j=!1,i=0;i<m.length;m.length===l||(0,A.V)(m),++i)j=k.ZJ(m[i])||j
 j=p.QS(m,o)||j
 B.b.a1(m)}else j=!0
-q=A.a8(["handled",j],t.N,t.z)
+q=A.a7(["handled",j],t.N,t.z)
 s=1
 break
 case 1:return A.w(q,r)}})
@@ -74899,7 +74899,7 @@ s=B.jj.hH(a)
 s.toString
 return B.bL.ig(0,s)}}
 A.ag3.prototype={
-kq(a){var s=B.d7.cE(A.a8(["method",a.a,"args",a.b],t.N,t.X))
+kq(a){var s=B.d7.cE(A.a7(["method",a.a,"args",a.b],t.N,t.X))
 s.toString
 return s},
 jy(a){var s,r,q,p=null,o=B.d7.hH(a)
@@ -75133,7 +75133,7 @@ w0(a){return new A.a03(this,a)},
 gw8(){return"uncontrolled"}}
 A.a3l.prototype={
 goX(a){return t.ZC.a(this.a)},
-bP(){return B.Ol.cZ("activateSystemCursor",A.a8(["device",this.b,"kind",t.ZC.a(this.a).a],t.N,t.z),t.H)},
+bP(){return B.Ol.cZ("activateSystemCursor",A.a7(["device",this.b,"kind",t.ZC.a(this.a).a],t.N,t.z),t.H)},
 m(){}}
 A.m9.prototype={
 gw8(){return"SystemMouseCursor("+this.a+")"},
@@ -75383,7 +75383,7 @@ case 6:l=A.b([],t.RW)
 for(j=J.aJ(J.my(g));j.u();){i=j.gM(j)
 i.toString
 A.aX(i)
-h=J.a7(g,i)
+h=J.a8(g,i)
 h.toString
 l.push(new A.xZ(i,A.aX(h)))}q=l
 s=1
@@ -75516,10 +75516,10 @@ break}p.TR(o)
 case 1:return A.w(q,r)}})
 return A.x($async$zv,r)},
 TR(a){var s,r=a==null
-if(!r){s=J.a7(a,"enabled")
+if(!r){s=J.a8(a,"enabled")
 s.toString
 A.mu(s)}else s=!1
-this.atX(r?null:t.nc.a(J.a7(a,"data")),s)},
+this.atX(r?null:t.nc.a(J.a8(a,"data")),s)},
 atX(a,b){var s,r,q=this,p=q.c&&b
 q.d=p
 if(p)$.bU.k3$.push(new A.anM(q))
@@ -75585,7 +75585,7 @@ s=new A.ec(A.B(n,t.X),null,null,a,A.B(n,t.z4),A.B(n,t.I1))
 o.iN(s)
 return s}r=t.N
 q=o.c
-p=J.a7(o.gv6(),a)
+p=J.a8(o.gv6(),a)
 p.toString
 s=new A.ec(t.pE.a(p),q,o,a,A.B(r,t.z4),A.B(r,t.I1))
 n.n(0,a,s)
@@ -75733,7 +75733,7 @@ r=o.f.K()
 q=o.r.K()
 p=o.c
 p=p==null?null:p.K()
-return A.a8(["systemNavigationBarColor",n,"systemNavigationBarDividerColor",null,"systemStatusBarContrastEnforced",o.w,"statusBarColor",s,"statusBarBrightness",r,"statusBarIconBrightness",q,"systemNavigationBarIconBrightness",p,"systemNavigationBarContrastEnforced",o.d],t.N,t.z)},
+return A.a7(["systemNavigationBarColor",n,"systemNavigationBarDividerColor",null,"systemStatusBarContrastEnforced",o.w,"statusBarColor",s,"statusBarBrightness",r,"statusBarIconBrightness",q,"systemNavigationBarIconBrightness",p,"systemNavigationBarContrastEnforced",o.d],t.N,t.z)},
 k(a){return"SystemUiOverlayStyle("+this.W1().k(0)+")"},
 gB(a){var s=this
 return A.X(s.a,s.b,s.d,s.e,s.f,s.r,s.w,s.c,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
@@ -75902,7 +75902,7 @@ K(){return"SmartDashesType."+this.b}}
 A.UG.prototype={
 K(){return"SmartQuotesType."+this.b}}
 A.fn.prototype={
-iq(){return A.a8(["name","TextInputType."+B.oQ[this.a],"signed",this.b,"decimal",this.c],t.N,t.z)},
+iq(){return A.a7(["name","TextInputType."+B.oQ[this.a],"signed",this.b,"decimal",this.c],t.N,t.z)},
 k(a){return"TextInputType(name: "+("TextInputType."+B.oQ[this.a])+", signed: "+A.n(this.b)+", decimal: "+A.n(this.c)+")"},
 j(a,b){if(b==null)return!1
 return b instanceof A.fn&&b.a===this.a&&b.b==this.b&&b.c==this.c},
@@ -75956,7 +75956,7 @@ r=o.b
 p=o.c
 return new A.cK(q,A.cu(B.o,s.$1(r.c),s.$1(r.d),!1),new A.ct(s.$1(p.a),s.$1(p.b)))},
 Mz(){var s=this.b,r=this.c
-return A.a8(["text",this.a,"selectionBase",s.c,"selectionExtent",s.d,"selectionAffinity",s.e.K(),"selectionIsDirectional",s.f,"composingBase",r.a,"composingExtent",r.b],t.N,t.z)},
+return A.a7(["text",this.a,"selectionBase",s.c,"selectionExtent",s.d,"selectionAffinity",s.e.K(),"selectionIsDirectional",s.f,"composingBase",r.a,"composingExtent",r.b],t.N,t.z)},
 k(a){return"TextEditingValue(text: \u2524"+this.a+"\u251c, selection: "+this.b.k(0)+", composing: "+this.c.k(0)+")"},
 j(a,b){var s=this
 if(b==null)return!1
@@ -76062,7 +76062,7 @@ s=1
 break}n=t.j
 o=n.a(a.b)
 if(b===u.m){n=t.a
-i=n.a(J.a7(o,1))
+i=n.a(J.a8(o,1))
 for(m=J.di(i),l=J.aJ(m.gbf(i));l.u();)A.aSB(n.a(m.h(i,l.gM(l))))
 s=1
 break}m=J.aa(o)
@@ -76075,7 +76075,7 @@ break
 case u.s:l=t.a
 f=l.a(m.h(o,1))
 m=A.b([],t.sD)
-for(n=J.aJ(n.a(J.a7(f,"deltas")));n.u();)m.push(A.b4O(l.a(n.gM(n))))
+for(n=J.aJ(n.a(J.a8(f,"deltas")));n.u();)m.push(A.b4O(l.a(n.gM(n))))
 t.re.a(p.d.r).azR(m)
 break
 case"TextInputClient.performAction":if(A.aX(m.h(o,1))==="TextInputAction.commitContent"){n=t.a.a(m.h(o,2))
@@ -76164,19 +76164,19 @@ for(s=this.b,s=A.cX(s,s.r,A.m(s).c),r=a.a,q=a.b,p=b.a,o=t.N,n=t.z,m=t.H,l=s.$ti.
 if(k==null)l.a(k)
 k=$.cG().c
 k===$&&A.a()
-k.cZ("TextInput.setEditableSizeAndTransform",A.a8(["width",r,"height",q,"transform",p],o,n),m)}},
+k.cZ("TextInput.setEditableSizeAndTransform",A.a7(["width",r,"height",q,"transform",p],o,n),m)}},
 amj(a){var s,r,q,p,o,n,m,l,k,j
 for(s=this.b,s=A.cX(s,s.r,A.m(s).c),r=a.a,q=a.c-r,p=a.b,o=a.d-p,n=t.N,m=t.z,l=t.H,k=s.$ti.c;s.u();){j=s.d
 if(j==null)k.a(j)
 j=$.cG().c
 j===$&&A.a()
-j.cZ("TextInput.setMarkedTextRect",A.a8(["width",q,"height",o,"x",r,"y",p],n,m),l)}},
+j.cZ("TextInput.setMarkedTextRect",A.a7(["width",q,"height",o,"x",r,"y",p],n,m),l)}},
 amh(a){var s,r,q,p,o,n,m,l,k,j
 for(s=this.b,s=A.cX(s,s.r,A.m(s).c),r=a.a,q=a.c-r,p=a.b,o=a.d-p,n=t.N,m=t.z,l=t.H,k=s.$ti.c;s.u();){j=s.d
 if(j==null)k.a(j)
 j=$.cG().c
 j===$&&A.a()
-j.cZ("TextInput.setCaretRect",A.a8(["width",q,"height",o,"x",r,"y",p],n,m),l)}},
+j.cZ("TextInput.setCaretRect",A.a7(["width",q,"height",o,"x",r,"y",p],n,m),l)}},
 amq(a){var s,r,q
 for(s=this.b,s=A.cX(s,s.r,A.m(s).c),r=s.$ti.c;s.u();){q=s.d;(q==null?r.a(q):q).a3l(a)}},
 HP(a,b,c,d,e){var s,r,q,p,o,n,m,l,k
@@ -76184,7 +76184,7 @@ for(s=this.b,s=A.cX(s,s.r,A.m(s).c),r=d.a,q=e.a,p=t.N,o=t.z,n=t.H,m=c==null,l=s.
 if(k==null)l.a(k)
 k=$.cG().c
 k===$&&A.a()
-k.cZ("TextInput.setStyle",A.a8(["fontFamily",a,"fontSize",b,"fontWeightIndex",m?null:c.a,"textAlignIndex",r,"textDirectionIndex",q],p,o),n)}},
+k.cZ("TextInput.setStyle",A.a7(["fontFamily",a,"fontSize",b,"fontWeightIndex",m?null:c.a,"textAlignIndex",r,"textDirectionIndex",q],p,o),n)}},
 aln(){var s,r,q,p
 for(s=this.b,s=A.cX(s,s.r,A.m(s).c),r=t.H,q=s.$ti.c;s.u();){p=s.d
 if(p==null)q.a(p)
@@ -76253,7 +76253,7 @@ var $async$GL=A.u(function(b,c){if(b===1)return A.v(c,r)
 while(true)switch(s){case 0:n=t.j.a(a.b)
 if(a.a==="UndoManagerClient.handleUndo"){o=p.b
 o.toString
-o.atQ(p.anq(A.aX(J.a7(n,0))))
+o.atQ(p.anq(A.aX(J.a8(n,0))))
 s=1
 break}throw A.d(A.ak9(null))
 case 1:return A.w(q,r)}})
@@ -76286,7 +76286,7 @@ A.vd.prototype={
 yT(){var s=0,r=A.y(t.H),q=this
 var $async$yT=A.u(function(a,b){if(a===1)return A.v(b,r)
 while(true)switch(s){case 0:s=2
-return A.E(B.v9.jl("create",A.a8(["id",q.a,"viewType",q.b,"params",q.c],t.N,t.z),!1,t.H),$async$yT)
+return A.E(B.v9.jl("create",A.a7(["id",q.a,"viewType",q.b,"params",q.c],t.N,t.z),!1,t.H),$async$yT)
 case 2:q.d=!0
 return A.w(null,r)}})
 return A.x($async$yT,r)},
@@ -77757,7 +77757,7 @@ au6(a){var s=0,r=A.y(t.H),q,p=this
 var $async$nL=A.u(function(b,c){if(b===1)return A.v(c,r)
 while(true)switch(s){case 0:s=3
 return A.E(p.a6c(a),$async$nL)
-case 3:switch(A.aX(J.a7(t.a.a(a),"type"))){case"fontsChange":p.ws$.av()
+case 3:switch(A.aX(J.a8(t.a.a(a),"type"))){case"fontsChange":p.ws$.av()
 break}s=1
 break
 case 1:return A.w(q,r)}})
@@ -79387,7 +79387,7 @@ g=a8.dY(g)
 s=A.b([],s)
 a9=b1.c
 a9.toString
-b0=A.a8([B.WQ,new A.Cj(!1,new A.br(r,q)),B.Xn,b2,B.XE,o,B.lK,new A.Ch(!0,new A.br(p,q)),B.lL,new A.cD(b1.gahI(),new A.br(n,q),t.Dn),B.WV,j,B.XK,h,B.WW,e,B.Xb,f,B.X0,d,B.XL,c,B.XS,a,B.XR,a0,B.Xx,a1,B.Xy,a2,B.Xi,b,B.XM,a4,B.XQ,k,B.XO,a3,B.lP,new A.cD(b1.gacc(),new A.br(l,q),t.fn),B.WO,a5,B.WP,m,B.Xq,i,B.WT,a6,B.Xg,a7,B.Xw,g,B.X_,new A.YL(new A.br(s,q)).dY(a9)],t.u,t.od)
+b0=A.a7([B.WQ,new A.Cj(!1,new A.br(r,q)),B.Xn,b2,B.XE,o,B.lK,new A.Ch(!0,new A.br(p,q)),B.lL,new A.cD(b1.gahI(),new A.br(n,q),t.Dn),B.WV,j,B.XK,h,B.WW,e,B.Xb,f,B.X0,d,B.XL,c,B.XS,a,B.XR,a0,B.Xx,a1,B.Xy,a2,B.Xi,b,B.XM,a4,B.XQ,k,B.XO,a3,B.lP,new A.cD(b1.gacc(),new A.br(l,q),t.fn),B.WO,a5,B.WP,m,B.Xq,i,B.WT,a6,B.Xg,a7,B.Xw,g,B.X_,new A.YL(new A.br(s,q)).dY(a9)],t.u,t.od)
 b1.G!==$&&A.ay()
 b1.G=b0
 b2=b0}return b2},
@@ -83417,7 +83417,7 @@ q=q.a
 if(q!=null){r.e=q
 r.f=b}else{++$.m_.cy$
 s.aY(new A.aA0(r,b),t.H)}},
-gVN(){t.Uh.a(J.a7(this.e,B.AS))
+gVN(){t.Uh.a(J.a8(this.e,B.AS))
 return B.aa},
 J(a){var s,r,q,p=this,o=null
 if(p.f==null)return B.aI
@@ -83800,7 +83800,7 @@ Jq(){var s=t.S
 return new A.zf(B.ba,18,B.di,A.B(s,t.R),A.dB(s),null,null,A.vy(),A.B(s,t.C))},
 a_8(a){a.al=this.a}}
 A.a_M.prototype={
-J(a){return new A.lW(this.c,A.a8([B.XH,new A.Wt(this.d)],t.u,t.xR),B.am,!1,null)}}
+J(a){return new A.lW(this.c,A.a7([B.XH,new A.Wt(this.d)],t.u,t.xR),B.am,!1,null)}}
 A.S_.prototype={
 J(a){var s=this,r=a.ar(t.I).w,q=A.b([],t.p),p=s.c
 if(p!=null)q.push(A.agz(p,B.j5))
@@ -84610,7 +84610,7 @@ s=t.jl
 r=A.b([],s)
 q=c.y
 q.toString
-p=J.a7(q,null)
+p=J.a8(q,null)
 if(p==null)p=B.hT
 o=A.B(t.B,t.UX)
 q=c.y
@@ -84630,7 +84630,7 @@ i.d.sl(0,f)
 if(j){r=A.b([],s)
 i=c.y
 i.toString
-p=J.a7(i,h.geL())
+p=J.a8(i,h.geL())
 if(p==null)p=B.hT}else{r=B.hT
 p=B.hT}l=h
 continue}if(j){i=h.b
@@ -84663,7 +84663,7 @@ else s=!0
 if(s)return o
 s=this.y
 s.toString
-r=J.a7(s,a==null?null:a.geL())
+r=J.a8(s,a==null?null:a.geL())
 if(r==null)return o
 for(s=J.aJ(r),q=t.tl;s.u();){p=A.b6i(s.gM(s))
 o.push(new A.eJ(p.ro(b),p,!1,B.iV,B.bA,new A.on(new ($.Nd())(B.bA),q),B.bA))}return o},
@@ -85619,7 +85619,7 @@ s=r.a(q).ap$}}}
 A.a5n.prototype={}
 A.Di.prototype={
 a2(){var s=t.y
-return new A.Jb(A.a8([!1,!0,!0,!0],s,s),null,null)},
+return new A.Jb(A.a7([!1,!0,!0,!0],s,s),null,null)},
 nS(a){return A.MU().$1(a)}}
 A.Jb.prototype={
 aj(){var s,r,q=this
@@ -86350,7 +86350,7 @@ s.e=s.a.aj2(new A.F2(r,s.gajv()))},
 ajw(a){if(this.c!=null)this.a9(new A.aBB(this))},
 af2(a){var s
 if(!a){s=this.e
-if(s!=null)s.Jh()}B.kS.cZ("TextInput.setPlatformViewClient",A.a8(["platformViewId",this.d],t.N,t.z),t.H)},
+if(s!=null)s.Jh()}B.kS.cZ("TextInput.setPlatformViewClient",A.a7(["platformViewId",this.d],t.N,t.z),t.H)},
 m(){var s=this,r=s.e
 if(r!=null)r.m()
 s.e=null
@@ -86501,7 +86501,7 @@ K2(a){},
 ja(a,b){var s,r,q=this,p=q.bH$
 p=p==null?null:J.li(p.gna(),b)
 s=p===!0
-r=s?a.mf(J.a7(q.bH$.gna(),b)):a.oW()
+r=s?a.mf(J.a8(q.bH$.gna(),b)):a.oW()
 if(a.b==null){a.b=b
 a.c=q
 p=new A.anO(q,a)
@@ -86548,7 +86548,7 @@ Il(a){var s,r=a.gnB(a),q=this.bH$
 if(r){if(q!=null){r=a.b
 r.toString
 s=a.mB()
-if(!J.e(J.a7(q.gna(),r),s)||!J.li(q.gna(),r)){J.cL(q.gna(),r,s)
+if(!J.e(J.a8(q.gna(),r),s)||!J.li(q.gna(),r)){J.cL(q.gna(),r,s)
 q.qF()}}}else if(q!=null){r=a.b
 r.toString
 q.ay9(0,r,t.K)}},
@@ -87096,7 +87096,7 @@ b.toString
 return new A.pS(b,s,null)},
 $S:552}
 A.aAz.prototype={
-$1(a){var s,r=A.a8([B.lL,new A.Yr(a,new A.br(A.b([],t.g),t.l))],t.u,t.od),q=this.a,p=q.e
+$1(a){var s,r=A.a7([B.lL,new A.Yr(a,new A.br(A.b([],t.g),t.l))],t.u,t.od),q=this.a,p=q.e
 p===$&&A.a()
 s=q.d
 if(s==null)s=q.d=new A.j6(new A.en(new A.aAw(q),null),q.a.c.rx)
@@ -88602,9 +88602,9 @@ if(a===q.ay)s=!a||A.bo(q.a.c)===q.ch
 else s=!1
 if(s)return
 if(!a){q.at=B.v4
-q.UV()}else{switch(A.bo(q.a.c).a){case 1:q.at=A.a8([B.AT,new A.cV(new A.ap5(q),new A.ap6(q),t.ok)],t.u,t.xR)
+q.UV()}else{switch(A.bo(q.a.c).a){case 1:q.at=A.a7([B.AT,new A.cV(new A.ap5(q),new A.ap6(q),t.ok)],t.u,t.xR)
 break
-case 0:q.at=A.a8([B.lR,new A.cV(new A.ap7(q),new A.ap8(q),t.Uv)],t.u,t.xR)
+case 0:q.at=A.a7([B.lR,new A.cV(new A.ap7(q),new A.ap8(q),t.Uv)],t.u,t.xR)
 break}a=!0}q.ay=a
 q.ch=A.bo(q.a.c)
 s=q.Q
@@ -92271,7 +92271,7 @@ o=o.c
 l=new A.i(-n.a,-n.b).V(0,new A.i(e,f))
 k=h.d
 k===$&&A.a()
-j=A.a8([B.iJ,new A.cV(new A.aDD(h),new A.aDE(h,m),t.YC)],t.u,t.xR)
+j=A.a7([B.iJ,new A.cV(new A.aDD(h),new A.aDE(h,m),t.YC)],t.u,t.xR)
 i=h.a
 return A.aOO(new A.fE(k,!1,A.r(new A.ds(B.ch,g,g,new A.lW(new A.aD(new A.af(e,f,e,f),i.w.B8(a,i.z,i.y,i.d),g),j,B.cr,!1,g),g),p,q),g),o,l,!1)}}
 A.aDD.prototype={
@@ -93131,7 +93131,7 @@ s=r.gl(r)
 if(s)q.H(0,B.V)
 return q},
 apy(a,b,c,d,e,f){var s,r,q,p,o,n,m,l,k,j=this,i=null,h=j.KE$
-if(h===$){s=A.a8([B.iI,new A.cD(j.gW4(),new A.br(A.b([],t.g),t.l),t.wY)],t.u,t.od)
+if(h===$){s=A.a7([B.iI,new A.cD(j.gW4(),new A.br(A.b([],t.g),t.l),t.wY)],t.u,t.od)
 j.KE$!==$&&A.ay()
 j.KE$=s
 h=s}r=j.gj7()
@@ -93305,7 +93305,7 @@ if(s.b===this){q=q.length!==0&&r.b>0
 r=r.gXO()
 s=s.a
 s===$&&A.a()
-s.cZ("UndoManager.setUndoState",A.a8(["canUndo",q,"canRedo",r],t.N,t.y),t.H)}},
+s.cZ("UndoManager.setUndoState",A.a7(["canUndo",q,"canRedo",r],t.N,t.y),t.H)}},
 anF(a){this.xQ()},
 ala(a){this.xB()},
 Ib(a,b){var s=this
@@ -93370,7 +93370,7 @@ r=s.f
 if(r!=null)r.aM(0)
 s.aC()},
 J(a){var s=t.g,r=t.l
-return A.qW(A.a8([B.XD,new A.cD(this.ganE(),new A.br(A.b([],s),r),t._n).dY(a),B.Xj,new A.cD(this.gal9(),new A.br(A.b([],s),r),t.fN).dY(a)],t.u,t.od),this.a.x)},
+return A.qW(A.a7([B.XD,new A.cD(this.ganE(),new A.br(A.b([],s),r),t._n).dY(a),B.Xj,new A.cD(this.gal9(),new A.br(A.b([],s),r),t.fN).dY(a)],t.u,t.od),this.a.x)},
 ani(a){return this.ganh().$1(a)}}
 A.asz.prototype={
 $1(a){var s=this.a
@@ -94340,7 +94340,7 @@ r=s.cd$
 r.cW(s.gl(0))
 r.cW(s.gl(0))
 return s},
-h(a,b){return J.a7(this.gl(0),b)},
+h(a,b){return J.a8(this.gl(0),b)},
 H(a,b){var s=this.c8$
 s===$&&A.a()
 J.ea(s,b)
@@ -94366,7 +94366,7 @@ this.cd$.cW(this.gl(0))},
 hZ(a,b){return J.a6E(this.gl(0),b)},
 Eb(a,b){return J.aO8(this.gl(0),b)}}
 A.FW.prototype={
-h(a,b){return J.a7(this.gl(0),this.$ti.c.a(b))},
+h(a,b){return J.a8(this.gl(0),this.$ti.c.a(b))},
 n(a,b,c){var s=this.c8$
 s===$&&A.a()
 J.cL(s,b,c)
@@ -94696,7 +94696,7 @@ n=$.fP
 if(n==null)n=$.fP=new A.l3()
 n.fZ(o.bg$)
 J.cL(o.dg$,b,c)
-m.b=A.a8([b,c],t.N,t.z)
+m.b=A.a7([b,c],t.N,t.z)
 o.TA()
 q=p.I9()
 s=1
@@ -94925,7 +94925,7 @@ UG(a,b){var s,r={}
 r.a=null
 r.b=!1
 s=t.X
-A.bbB(new A.ao0(r,a),new A.ao1(r),A.a8([B.Ak,this.d],s,s),t.H)
+A.bbB(new A.ao0(r,a),new A.ao1(r),A.a7([B.Ak,this.d],s,s),t.H)
 if(r.b)throw A.d(A.aen("Unexpected error in router zone"))
 r=r.a
 return r==null?b.a(r):r},
@@ -95276,7 +95276,7 @@ r=A.a3(new A.a6(q,new A.aDg(this),s),!0,s.i("am.E"))
 return this.ano(a.c.k(0),a.d,r)},
 W2(a,b,c,d){var s,r,q,p=null
 try{p=A.aMb(b,B.bL.gKk().b,null)}catch(s){if(A.ai(s) instanceof A.xl){p=A.aMb(null,B.bL.gKk().b,null)
-J.Z(b).k(0)}else throw s}r=A.a8(["codec","json","encoded",p],t.N,t.X)
+J.Z(b).k(0)}else throw s}r=A.a7(["codec","json","encoded",p],t.N,t.X)
 q=t.X
 q=A.B(q,q)
 q.n(0,"location",a)
@@ -95311,7 +95311,7 @@ n=this.a.C4(A.ex(i,0,null),o)
 m=t.E.a(j.h(a,"imperativeMatches"))
 if(m!=null)for(j=J.aO8(m,r),i=J.aJ(j.a),j=j.$ti,s=new A.qi(i,j.i("qi<1>")),j=j.c,r=t.kK,q=t.xF,p=t.oe;s.u();){l=j.a(i.gM(i))
 k=this.eT(l)
-l=J.a7(l,"pageKey")
+l=J.a8(l,"pageKey")
 l.toString
 A.aX(l)
 n=n.nY(new A.fU(k,new A.bj(new A.an($.ag,q),p),A.aQe(k),A.aQf(k),new A.d2(l,r)))}return n}}
@@ -95791,7 +95791,7 @@ this.a.ee(0,A.aM1(self.URL.createObjectURL(a),new A.cc(Date.now(),0,!1),a.size,s
 $S:96}
 A.ajP.prototype={
 adp(a,b,c,d,e,f){var s=t.N
-return B.Nk.jl("pickImage",A.a8(["source",f.a,"maxWidth",c,"maxHeight",b,"imageQuality",a,"cameraDevice",d.a,"requestFullMetadata",!0],s,t.z),!1,s)},
+return B.Nk.jl("pickImage",A.a7(["source",f.a,"maxWidth",c,"maxHeight",b,"imageQuality",a,"cameraDevice",d.a,"requestFullMetadata",!0],s,t.z),!1,s)},
 mJ(a,b){return this.a2k(a,b)},
 a2k(a,b){var s=0,r=A.y(t.ju),q,p=this,o
 var $async$mJ=A.u(function(c,d){if(c===1)return A.v(d,r)
@@ -96835,15 +96835,15 @@ l=o.fy
 l.sl(0,!0)
 k=o.db
 n=A.dM(k,!0,t.z)
-m=J.fx(J.my(J.a7(n,a)))
-J.cL(n,a,A.a8([m,b],t.N,t.y))
+m=J.fx(J.my(J.a8(n,a)))
+J.cL(n,a,A.a7([m,b],t.N,t.y))
 j=$.as
 i=(j==null?$.as=$.bJ():j).bl("[DEFAULT]")
 A.b7(i,$.bN(),!0)
 j=A.cd(new A.bt(i)).bB("configuration").cf("documentList")
 h=n
 g=h.slice(0)
-h=A.k_(A.a8(["list",A.b(g,A.a1(h))],t.K,t.X))
+h=A.k_(A.a7(["list",A.b(g,A.a1(h))],t.K,t.X))
 h.toString
 s=6
 return A.E(j.a.bh(0,h),$async$DY)
@@ -96882,7 +96882,7 @@ A.b7(j,$.bN(),!0)
 k=A.cd(new A.bt(j)).bB("configuration").cf("documentList")
 i=n
 h=i.slice(0)
-i=A.k_(A.a8(["list",A.b(h,A.a1(i))],t.K,t.X))
+i=A.k_(A.a7(["list",A.b(h,A.a1(i))],t.K,t.X))
 i.toString
 s=6
 return A.E(k.a.bh(0,i),$async$Bz)
@@ -96917,14 +96917,14 @@ l=o.db
 k=t.z
 n=A.dM(l,!0,k)
 j=t.N
-J.ea(n,A.a8([a,!0],j,t.y))
+J.ea(n,A.a7([a,!0],j,t.y))
 i=$.as
 h=(i==null?$.as=$.bJ():i).bl("[DEFAULT]")
 A.b7(h,$.bN(),!0)
 i=A.cd(new A.bt(h)).bB("configuration").cf("documentList")
 g=n
 f=g.slice(0)
-k=A.a8(["list",A.b(f,A.a1(g))],j,k)
+k=A.a7(["list",A.b(f,A.a1(g))],j,k)
 j=A.aqf(!0)
 k=A.zl(k)
 k.toString
@@ -97003,15 +97003,15 @@ break
 case 6:g.sl(0,!0)
 f=o.dx
 n=A.dM(f,!0,j)
-m=J.fx(J.my(J.a7(n,a)))
-J.cL(n,a,A.a8([m,a0],i,h))
+m=J.fx(J.my(J.a8(n,a)))
+J.cL(n,a,A.a7([m,a0],i,h))
 h=$.as
 e=(h==null?$.as=$.bJ():h).bl("[DEFAULT]")
 A.b7(e,$.bN(),!0)
 j=A.cd(new A.bt(e)).bB("configuration").cf("cancelReasonsUserList")
 i=n
 h=i.slice(0)
-i=A.k_(A.a8(["list",A.b(h,A.a1(i))],t.K,t.X))
+i=A.k_(A.a7(["list",A.b(h,A.a1(i))],t.K,t.X))
 i.toString
 s=9
 return A.E(j.a.bh(0,i),$async$tG)
@@ -97026,15 +97026,15 @@ break
 case 8:g.sl(0,!0)
 f=o.dy
 l=A.dM(f,!0,j)
-k=J.fx(J.my(J.a7(l,a)))
-J.cL(l,a,A.a8([k,a0],i,h))
+k=J.fx(J.my(J.a8(l,a)))
+J.cL(l,a,A.a7([k,a0],i,h))
 h=$.as
 e=(h==null?$.as=$.bJ():h).bl("[DEFAULT]")
 A.b7(e,$.bN(),!0)
 j=A.cd(new A.bt(e)).bB("configuration").cf("cancelReasonsDriverList")
 i=l
 h=i.slice(0)
-i=A.k_(A.a8(["list",A.b(h,A.a1(i))],t.K,t.X))
+i=A.k_(A.a7(["list",A.b(h,A.a1(i))],t.K,t.X))
 i.toString
 s=10
 return A.E(j.a.bh(0,i),$async$tG)
@@ -97076,7 +97076,7 @@ A.b7(i,$.bN(),!0)
 l=A.cd(new A.bt(i)).bB("configuration").cf("cancelReasonsUserList")
 h=n
 g=h.slice(0)
-h=A.k_(A.a8(["list",A.b(g,A.a1(h))],t.K,t.X))
+h=A.k_(A.a7(["list",A.b(g,A.a1(h))],t.K,t.X))
 h.toString
 s=9
 return A.E(l.a.bh(0,h),$async$rs)
@@ -97099,7 +97099,7 @@ A.b7(i,$.bN(),!0)
 l=A.cd(new A.bt(i)).bB("configuration").cf("cancelReasonsDriverList")
 h=m
 g=h.slice(0)
-h=A.k_(A.a8(["list",A.b(g,A.a1(h))],t.K,t.X))
+h=A.k_(A.a7(["list",A.b(g,A.a1(h))],t.K,t.X))
 h.toString
 s=10
 return A.E(l.a.bh(0,h),$async$rs)
@@ -97137,14 +97137,14 @@ break
 case 6:i.sl(0,!0)
 h=o.dx
 n=A.dM(h,!0,l)
-J.ea(n,A.a8([b,!0],k,j))
+J.ea(n,A.a7([b,!0],k,j))
 j=$.as
 g=(j==null?$.as=$.bJ():j).bl("[DEFAULT]")
 A.b7(g,$.bN(),!0)
 j=A.cd(new A.bt(g)).bB("configuration").cf("cancelReasonsUserList")
 f=n
 e=f.slice(0)
-l=A.a8(["list",A.b(e,A.a1(f))],k,l)
+l=A.a7(["list",A.b(e,A.a1(f))],k,l)
 k=A.aqf(!0)
 l=A.zl(l)
 l.toString
@@ -97162,14 +97162,14 @@ break
 case 8:i.sl(0,!0)
 h=o.dy
 m=A.dM(h,!0,l)
-J.ea(m,A.a8([b,!0],k,j))
+J.ea(m,A.a7([b,!0],k,j))
 j=$.as
 g=(j==null?$.as=$.bJ():j).bl("[DEFAULT]")
 A.b7(g,$.bN(),!0)
 j=A.cd(new A.bt(g)).bB("configuration").cf("cancelReasonsDriverList")
 f=m
 e=f.slice(0)
-l=A.a8(["list",A.b(e,A.a1(f))],k,l)
+l=A.a7(["list",A.b(e,A.a1(f))],k,l)
 k=A.aqf(!0)
 l=A.zl(l)
 l.toString
@@ -97234,16 +97234,16 @@ s=q}while(true)switch(s){case 0:q=3
 m=o.fy
 m.sl(0,!0)
 l=o.fr
-n=J.a7(J.a7(l.gl(0),a),"serviceTypeId")
+n=J.a8(J.a8(l.gl(0),a),"serviceTypeId")
 k=$.as
 j=(k==null?$.as=$.bJ():k).bl("[DEFAULT]")
 A.b7(j,$.bN(),!0)
 k=A.cd(new A.bt(j)).bB("serviceTypes").cf(n)
-i=A.k_(A.a8(["isEnabled",b],t.K,t.X))
+i=A.k_(A.a7(["isEnabled",b],t.K,t.X))
 i.toString
 s=6
 return A.E(k.a.bh(0,i),$async$DZ)
-case 6:J.cL(J.a7(l.gl(0),a),"isEnabled",b)
+case 6:J.cL(J.a8(l.gl(0),a),"isEnabled",b)
 l.cd$.cW(l.gl(0))
 m.sl(0,!1)
 q=1
@@ -97306,7 +97306,7 @@ c=(b==null?$.as=$.bJ():b).bl("[DEFAULT]")
 A.b7(c,d,!0)
 h=A.cd(new A.bt(c)).bB("serviceTypes").arV()
 g=B.b.gX(h.a.b.a)
-d=A.a8(["image",j,"marker",i,"name",a8,"capacity",A.fw(a5,null),"commissionPercentage",A.hO(a2),"baseFare",A.hO(a1),"perKmFare",A.hO(a3),"perMinuteRate",A.hO(a4),"waitingChargePerMinute",A.hO(b1),"waitStartAfterMinutes",A.fw(a9,null),"waitingChargeMaximum",A.hO(b0),"isEnabled",!0,"serviceTypeId",g],t.N,t.z)
+d=A.a7(["image",j,"marker",i,"name",a8,"capacity",A.fw(a5,null),"commissionPercentage",A.hO(a2),"baseFare",A.hO(a1),"perKmFare",A.hO(a3),"perMinuteRate",A.hO(a4),"waitingChargePerMinute",A.hO(b1),"waitStartAfterMinutes",A.fw(a9,null),"waitingChargeMaximum",A.hO(b0),"isEnabled",!0,"serviceTypeId",g],t.N,t.z)
 b=h.a
 d=A.zl(d)
 d.toString
@@ -97417,7 +97417,7 @@ l=$.as
 k=(l==null?$.as=$.bJ():l).bl("[DEFAULT]")
 A.b7(k,$.bN(),!0)
 l=A.cd(new A.bt(k)).bB("drivers").cf(a)
-j=A.k_(A.a8(["rideStatus","offDuty"],t.K,t.X))
+j=A.k_(A.a7(["rideStatus","offDuty"],t.K,t.X))
 j.toString
 s=7
 return A.E(l.a.bh(0,j),$async$B1)
@@ -97458,7 +97458,7 @@ l=$.as
 k=(l==null?$.as=$.bJ():l).bl("[DEFAULT]")
 A.b7(k,$.bN(),!0)
 l=A.cd(new A.bt(k)).bB("drivers").cf(a)
-j=A.k_(A.a8(["rideStatus","rejected","rejectedReason",b],t.K,t.X))
+j=A.k_(A.a7(["rideStatus","rejected","rejectedReason",b],t.K,t.X))
 j.toString
 s=7
 return A.E(l.a.bh(0,j),$async$DJ)
@@ -97499,7 +97499,7 @@ l=$.as
 k=(l==null?$.as=$.bJ():l).bl("[DEFAULT]")
 A.b7(k,$.bN(),!0)
 l=A.cd(new A.bt(k)).bB("drivers").cf(a)
-j=A.k_(A.a8(["rideStatus","suspended"],t.K,t.X))
+j=A.k_(A.a7(["rideStatus","suspended"],t.K,t.X))
 j.toString
 s=7
 return A.E(l.a.bh(0,j),$async$yO)
@@ -97535,7 +97535,7 @@ l=$.as
 k=(l==null?$.as=$.bJ():l).bl("[DEFAULT]")
 A.b7(k,$.bN(),!0)
 l=A.cd(new A.bt(k)).bB("drivers").cf(a)
-j=A.k_(A.a8(["rideStatus","offDuty"],t.K,t.X))
+j=A.k_(A.a7(["rideStatus","offDuty"],t.K,t.X))
 j.toString
 s=7
 return A.E(l.a.bh(0,j),$async$E3)
@@ -97754,13 +97754,13 @@ return A.x($async$$3,r)},
 $3(a,b,c){return this.a1J(a,b,c)},
 $S:242}
 A.aeU.prototype={
-$1(a){return J.e(J.a7(a,"driver"),this.a)},
+$1(a){return J.e(J.a8(a,"driver"),this.a)},
 $S:132}
 A.aeZ.prototype={
-$1(a){return J.e(J.a7(a,"driver"),this.a)},
+$1(a){return J.e(J.a8(a,"driver"),this.a)},
 $S:132}
 A.aeW.prototype={
-$1(a){return J.e(J.a7(a,"serviceTypeId"),this.a)},
+$1(a){return J.e(J.a8(a,"serviceTypeId"),this.a)},
 $S:132}
 A.aeX.prototype={
 $0(){var s=t.z
@@ -97796,7 +97796,7 @@ var $async$DI=A.u(function(b,c){if(b===1)return A.v(c,r)
 while(true)switch(s){case 0:m=q.fy
 m.sl(0,!0)
 p=q.dx
-o=A.a8(["email",B.d.bY(p.a.a),"password",B.d.bY(q.dy.a.a)],t.N,t.z)
+o=A.a7(["email",B.d.bY(p.a.a),"password",B.d.bY(q.dy.a.a)],t.N,t.z)
 p=q.fx.bB("admin").cf(B.d.bY(p.a.a))
 n=A.zl(o)
 n.toString
@@ -97827,8 +97827,8 @@ A.asJ.prototype={
 $1(a){return this.a.x8(this.b)},
 $S:660}
 A.a7c.prototype={
-gbf(v0){var s="please_add_cancel_reason_first",r="these_are_required_docs_drivers",q="add_new_document",p="please_add_doc_name_first",o="vehicle_plate_number",n="click_to_view_docs",m="please_add_reason_for_rejection",l="add_reason_for_rejection",k="sure_undo_suspend",j="unable_to_suspend_already_rejected",i="unable_to_suspend_active_ride",h="manage_more_rides_less_effort",g="withdrawal_requests",f="please_sign_in_to_continue",e="please_sign_up_to_continue",d="enter_email_address",c="confirm_password",b="enter_confirm_password",a="please_enter_email_address",a0="please_enter_valid_email_address",a1="please_enter_password",a2="please_enter_confirm_password",a3="password_and_confirm_password_not_match",a4="payment_settings",a5="stripe_payment_gateway",a6="sign_up_stripe_for_keys",a7="stripe_publishable_key",a8="Stripe Publishable Key",a9="stripe_secrete_key",b0="Stripe Secret Key",b1="paypal_payment_gateway",b2="sign_up_paypal_for_keys",b3="paypal_client_id",b4="Paypal Client Id",b5="paypal_secret_key",b6="PayPal Secret Key",b7="paystack_payment_gateway",b8="sign_up_paystack_for_keys",b9="paystack_public_key",c0="PayStack Public Key",c1="paystack_secret_key",c2="PayStack Secret Key",c3="razorpay_payment_gateway",c4="sign_up_razorpay_for_keys",c5="razorpay_key_secret",c6="Razorpay Key Secret",c7="please_enter_stripe_publishable_key",c8="please_enter_stripe_secret_key",c9="please_enter_paypal_client_id",d0="please_enter_paypal_secret_id",d1="please_enter_paystack_public_key",d2="please_enter_paystack_secret_key",d3="please_enter_razorpay_key_id",d4="please_enter_razorpay_key_secret",d5="approve_or_reject_driver",d6="no_drivers_found",d7="booking_information",d8="pick_and_drop_location",d9="admin_commission",e0="twilio_serves_twilio_number",e1="enter_twilio_number",e2="twilio_serves_account_sid",e3="enter_account_sid",e4="twilio_serves_auth_token",e5="enter_auth_token",e6="write_twilio_sms",e7="enter_twilio_sms",e8="specify_currency",e9="specify_kilometers",f0="enter_geofencing_km",f1="enter_google_map_key",f2="request_accept_seconds",f3="the_specific_time_limit",f4="enter_request_accept_time_sec",f5="enter_rider_verification",f6="should_the_system",f7="please_twilio_number",f8="please_account_sid",f9="please_auth_token",g0="please_twilio_sms",g1="please_geofencing_km",g2="please_google_map_key",g3="please_request_accept_seconds",g4="enter_first_name",g5="enter_phone_without_country_code",g6="please_keyword_to_search",g7="the_icon_should_be_square_max",g8="vehicle_icon_on_google_map",g9="please_ensure_icon_have_transparent",h0="the_name_will_be_visible_to_riders",h1="enter_vehicle_name",h2="seating_capacity",h3="seating_capacity_excluding_driver",h4="enter_seating_capacity",h5="commission_percentage",h6="commission_percentage_of_admin",h7="enter_commission_percentage",h8="this_is_basic_fare_will",h9="enter_per_km_fare",i0="per_minute_fare_eg",i1="enter_minute_fare",i2="waiting_charge_per_minute",i3="waiting_charge_per_minute_eg",i4="enter_waiting_charge_per_minute",i5="wait_start_after_minutes",i6="set_the_duration_in_minutes",i7="waiting_charge_max",i8="waiting_charge_max_eg",i9="enter_waiting_charge_maximum",j0="please_enter_vehicle_name",j1="Please enter Vehicle Name",j2="please_enter_seating_capacity",j3="Please enter Seating Capacity",j4="please_enter_commission_percentage",j5="Please enter Commission Percentage",j6="please_enter_base_fare",j7="Please enter Base Fare",j8="please_enter_per_km_fare",j9="Please enter Per Kilometer Fare",k0="please_enter_per_minute_fare",k1="Please enter Per Minute Fare",k2="please_enter_waiting_charge_per_minute",k3="Please enter Waiting Charge Per Minute",k4="please_enter_wait_start_after_minutes",k5="Please enter Wait Start After Minutes",k6="please_enter_wait_charge_max",k7="Please enter Waiting Charge Maximum",k8="please_vehicle_image",k9="please_vehicle_icon",l0="please_vehicle_name",l1="please_seating_capacity",l2="please_commission_percentage",l3="please_base_fare",l4="please_per_km_fare",l5="please_per_minute_fare",l6="please_waiting_charge_per_minute",l7="please_wait_start_after_minutes",l8="please_waiting_charge_max",l9="manage_vehicle_types",m0="marked_as_paid_successfully",m1="failed_to_mark_as_paid",m2="following_are_the_withdrawal_requests",m3="account_holder_name",m4="view_driver_details",m5="have_you_already_paid",m6="no_withdrawal_req_found",m7="invalid_credentials",m8="failed_to_get_settings",m9="settings_updated_successfully",n0="failed_to_update_settings",n1="failed_to_get_registration_docs",n2="failed_to_update_registration_doc",n3="failed_to_delete_registration_doc",n4="failed_to_add_registration_doc",n5="failed_to_get_cancel_reasons",n6="failed_to_update_cancel_reason",n7="failed_to_delete_cancel_reason",n8="failed_to_add_cancel_reason",n9="failed_to_get_vehicle_types",o0="failed_to_update_vehicle_type",o1="vehicle_name_already_exists",o2="vehicle_added_successfully",o3="vehicle_updated_successfully",o4="driver_has_been_approved",o5="failed_to_approve_driver",o6="driver_has_been_rejected",o7="failed_to_reject_driver",o8="driver_has_been_suspended",o9="failed_to_suspend_driver",p0="undo_suspend_success",p1="failed_to_undo_suspend_driver",p2="failed_to_get_driver_details",p3="failed_to_fetch_recent_rides",p4="failed_to_get_ride_details",p5="failed_to_get_user_details",p6="please_select_from_date",p7="please_select_to_date",p8="cancel_reason_deleted_successfully",p9="cancel_reason_added_successfully",q0="document_deleted_successfully",q1="document_added_successfully",q2="this_modification_is_restricted_by",q3="Por favor, ingresa el nombre del veh\xedculo",q4="Por favor, ingresa la capacidad de asientos",q5="Por favor, ingresa el porcentaje de comisi\xf3n",q6="Por favor, ingresa la tarifa base",q7="Por favor, ingresa la tarifa por kil\xf3metro",q8="Por favor, ingresa la tarifa por minuto",q9="Por favor, ingresa el cargo por espera por minuto",r0="Por favor, ingresa los minutos de inicio de espera",r1="Por favor, ingresa el cargo m\xe1ximo por espera",r2="Choisir la langue",r3="Veuillez entrer le nom du v\xe9hicule",r4="Veuillez entrer la capacit\xe9 de places",r5="Veuillez entrer le pourcentage de commission",r6="Veuillez entrer le tarif de base",r7="Veuillez entrer le tarif par km",r8="Veuillez entrer le tarif par minute",r9="Veuillez entrer les frais d attente par minute",s0="Veuillez entrer les minutes avant d\xe9but d attente",s1="Veuillez entrer le maximum des frais d attente",s2="Bitte Fahrzeugname eingeben",s3="Bitte Sitzplatzkapazit\xe4t eingeben",s4="Bitte Provisionssatz eingeben",s5="Bitte Grundgeb\xfchr eingeben",s6="Bitte Preis pro Kilometer eingeben",s7="Bitte Preis pro Minute eingeben",s8="Bitte Wartegeb\xfchr pro Minute eingeben",s9="Bitte Minuten bis Wartebeginn eingeben",t0="Bitte maximale Wartegeb\xfchr eingeben",t1="Por favor, digite o Nome do Ve\xedculo",t2="Por favor, digite a Capacidade de Assentos",t3="Por favor, digite a Porcentagem de Comiss\xe3o",t4="Por favor, digite a Tarifa Base",t5="Por favor, digite a Tarifa por Quil\xf4metro",t6="Por favor, digite a Tarifa por Minuto",t7="Por favor, digite a Taxa de Espera por Minuto",t8="Por favor, digite os Minutos para In\xedcio da Espera",t9="Por favor, digite a Taxa de Espera M\xe1xima",u0="\u0915\u0943\u092a\u092f\u093e \u0935\u093e\u0939\u0928 \u0915\u093e \u0928\u093e\u092e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",u1="\u0915\u0943\u092a\u092f\u093e \u092c\u0948\u0920\u0928\u0947 \u0915\u0940 \u0915\u094d\u0937\u092e\u0924\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",u2="\u0915\u0943\u092a\u092f\u093e \u0915\u092e\u0940\u0936\u0928 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",u3="\u0915\u0943\u092a\u092f\u093e \u0906\u0927\u093e\u0930 \u0915\u093f\u0930\u093e\u092f\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",u4="\u0915\u0943\u092a\u092f\u093e \u092a\u094d\u0930\u0924\u093f \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u0915\u093f\u0930\u093e\u092f\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",u5="\u0915\u0943\u092a\u092f\u093e \u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u0915\u093f\u0930\u093e\u092f\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",u6="\u0915\u0943\u092a\u092f\u093e \u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",u7="\u0915\u0943\u092a\u092f\u093e \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0930\u0942 \u0939\u094b\u0928\u0947 \u0915\u093e \u0938\u092e\u092f \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",u8="\u0915\u0943\u092a\u092f\u093e \u0905\u0927\u093f\u0915\u0924\u092e \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",u9=t.N
-return A.a8(["en",A.a8(["cancel_reasons","Cancel Reasons","cancel_reason","Cancel Reason","user_app","User App","sr_no","Sr no","active","Active","delete","Delete","sure_delete","Are you sure you want to delete?","add_new_reason","Add new reason",s,"Please add cancel reason first","sure_add","Are you sure you want to add?","add","Add","driver_app","Driver App","select_language","Select Language","apply","Apply","documents_list","Documents List",r,"These documents are required for account creation by drivers","document_name","Document Name",q,"Add new document",p,"Please add document name first","driver_details","Driver Details","driver_name","Driver Name","phone_number","Phone Number","address","Address","email","Email","vehicle_type","Vehicle Type","vehicle_model","Vehicle Model","vehicle_color","Vehicle Color",o,"Vehicle Plate Number","status","Status","documents","Documents",n,"(Click to view documents)","all_rides","All Rides","user_name","User Name","amount","Amount","date_and_time","Date and Time","action","Action","view","View","no_rides_found","No rides found","sure_approve","Are you sure you want to approve?","approve","Approve","or","Or",m,"Please add a reason for rejection","sure_reject","Are you sure you want to reject?","reject","Reject",l,"Add a reason for rejection",k,"Are you sure you want to undo suspend?","undo_suspend","Undo Suspend","sure_suspend","Are you sure you want to suspend?",j,"Unable to suspend at this moment. This driver's application is already rejected",i,"Unable to suspend at this moment. This driver may be in active ride right now.","suspend","Suspend","admin","Admin",h,"Manage more rides, with less effort","revenue","Revenue","this_months","(This month's)","total_users","Total Users","total_drivers","Total Drivers","pending_drivers","Pending Drivers",g,"Withdrawal Requests","recent_rides","Recent Rides","good_morning","Good Morning","good_afternoon","Good Afternoon","good_evening","Good Evening","welcome_back","Welcome Back!","welcome","Welcome!",f,"Please sign in to continue",e,"Please sign up to continue",d,"Enter Email Address","password","Password","enter_password","Enter Password",c,"Confirm Password",b,"Enter Confirm Password",a,"Please enter your email address",a0,"Please enter a valid email address",a1,"Please enter your password",a2,"Please enter your confirm password",a3,"Password and confirm password does not match","login","Login","sign_up","Sign up","choose_language","Choose Language",a4,"Payment Settings",a5,"Stripe Payment Gateway",a6,"Signup in Stripe Payment Gateway to get your Publishable Key and Secrete Key",a7,a8,a9,b0,b1,"PayPal Payment Gateway",b2,"Signup in PayPal Payment Gateway to get your Client Id and Secret Key",b3,b4,b5,b6,b7,"PayStack Payment Gateway",b8,"Signup in PayStack Payment Gateway to get your Public Key and Secret Key",b9,c0,c1,c2,c3,"Razorpay Payment Gateway",c4,"Signup in Razorpay Payment Gateway to get your Key Id and Key Secret","razorpay_key_id","Razorpay Key Id",c5,c6,c7,"Please enter Stripe Publishable Key",c8,"Please enter Stripe Secret Key",c9,"Please enter PayPal Client Id",d0,"Please enter PayPal Secret Key",d1,"Please enter PayStack Public Key",d2,"Please enter PayStack Secret Key",d3,"Please enter Razorpay Key Id",d4,"Please enter Razorpay Key Secret","save","Save",d5,"Approve driver onboarding requests or reject them with clear feedback to help drivers correct and reapply","phone","Phone",d6,"No drivers found","admin_revenue","Admin Revenue","revenue_trend","Revenue Trend","rides_trend","Rides Trend","rides","Rides","avg_per_ride","Average / Ride","ride_details","Ride Details",d7,"Booking Information","date","Date","payment_mode","Payment Mode",d8,"Pick & Drop Location","fare_details","Fare Details","base_fare","Base Fare","distance_fare","Distance Fare","time_fare","Time Fare","waiting_charge","Waiting Charge","total","Total","drivers_earning","Driver's Earning",d9,"Admin Commission","user_details","User Details","name","Name","from_date","From Date","to_date","To Date","search","Search","clear_filter","Clear Filter","settings","Settings","twilio_number","Twilio Number",e0,"Twilio serves as an SMS gateway. You can use it to send one-time password (OTP) SMS messages to verify phone numbers when riders or drivers create their accounts. To begin using the service, simply create an account on Twilio to obtain your dedicated Twilio Number",e1,"Enter Twilio Number","account_sid","Account Sid",e2,"Twilio serves as an SMS gateway. You can use it to send one-time password (OTP) SMS messages to verify phone numbers when riders or drivers create their accounts. To begin using the service, simply create an account on Twilio to obtain your dedicated Account Sid.",e3,"Enter Account Sid","auth_token","Auth Token",e4,"Twilio serves as an SMS gateway. You can use it to send one-time password (OTP) SMS messages to verify phone numbers when riders or drivers create their accounts. To begin using the service, simply create an account on Twilio to obtain your dedicated Auth Token",e5,"Enter Auth Token","twilio_sms","Twilio SMS",e6,"Write the Twilio SMS message. The verification code is automatically added at the beginning of the message, so you can continue the text like this:\n\u201cis your verification code to login in Ridely. Thank you for choosing Ridely.\u201d",e7,"Enter Twilio SMS","currency","Currency",e8,"Specify the currency symbol intended for use within the application (e.g., $, \u20ac, \xa5)","enter_currency","Enter Currency","geofencing_km","Geofencing Kilometer",e9,"Specify, in kilometers, the geographical radius within which drivers will receive ride requests. For example, entering '2' will ensure that requests are only dispatched to drivers located within a two-kilometer range",f0,"Enter Geofencing Kilometer","google_map_key","Google Map Key","this_api_key_is","This API key is utilized for both the Google Places API, which allows riders to search for their location, and the route direction API functionality within the application.",f1,"Enter Google Map Key",f2,"Request Accept Seconds",f3,"The specified time limit, measured in seconds, represents the window during which a driver must accept the ride request; failure to do so will automatically reassign the request to the next available driver",f4,"Enter Request Accept Seconds",f5,"Enable Rider Verification?",f6,"Should the system require the driver to verify the rider using a pre-ride verification code? The code is accessible within the rider application interface and is not delivered via SMS","yes","Yes","no","No",f7,"Please enter Twilio Number",f8,"Please enter Account Sid",f9,"Please enter Auth Token",g0,"Please enter Twilio SMS","please_currency","Please enter Currency",g1,"Please enter Geofencing Kilometer",g2,"Please enter Google Map Key",g3,"Please enter Request Accept Seconds","first_name","First Name","last_name","Last Name",g4,"Enter First Name","enter_last_name","Enter Last Name",g5,"Enter Phone (Without country code)",g6,"Please enter keyword to search","no_users_found","No users found","registered_on","Registered On","gender","Gender","rating","Rating","vehicle_details","Vehicle Details","vehicle_image","Vehicle Image",g7,"The icon should be square in shape, with a maximum file size of 150 KB",g8,"Vehicle Icon On Google Map",g9,"Please ensure icons have a transparent background and an optimized file size not exceeding 150 KB","vehicle_name","Vehicle Name",h0,"The name will be visible to riders while booking a rides. You can set it like 'Auto', 'Cab Economy', 'Cab Premium' etc",h1,"Enter Vehicle Name",h2,"Seating Capacity",h3,"The seating capacity of a vehicle excluding driver",h4,"Enter Seating Capacity",h5,"Commission Percentage",h6,"Commission percentage of an admin",h7,"Enter Commission Percentage",h8,"This is a basic fare that will be charged","enter_base_fare","Enter Base Fare","per_km_fare","Per Kilometer Fare","per_km_fare_eg","Per kilometer fare. e.g. if total kilometer travelled is 10 kilometer and per kilometer fare is 8 then 80 will be added into base base",h9,"Enter Per Kilometer Fare","per_minute_fare","Per Minute Fare",i0,"Per minute fare. e.g. if total time travelled is 30 minutes and per minute fare is 2 then 60 will be added into base base",i1,"Enter Minute Fare",i2,"Waiting Charge Per Minute",i3,"Waiting charge per minute. e.g. if driver waited for 5 minutes and waiting charge per minute is 2 then 10 will be added into bill",i4,"Enter Waiting Charge Per Minute",i5,"Wait Start After Minutes",i6,"Set the duration (in minutes) after which waiting fees will be automatically billed",i7,"Waiting Charge Maximum",i8,"Waiting charge maximum. e.g. if driver waited for 30 minutes and waiting charge per minute is 2 and waiting charge maximum is set to 50 then 50 will be added into base fare",i9,"Enter Waiting Charge Maximum",j0,j1,j2,j3,j4,j5,j6,j7,j8,j9,k0,k1,k2,k3,k4,k5,k6,k7,"sure_update","Are you sure you want to update?","update","Update",k8,"Please add vehicle image",k9,"Please add vehicle icon",l0,j1,l1,j3,l2,j5,l3,j7,l4,j9,l5,k1,l6,k3,l7,k5,l8,k7,"vehicle_types","Vehicle Types",l9,"Manage vehicle types (e.g., Economy, Premium). Maximum 150-200 KB square image recommended","image","Image","edit","Edit","add_new","Add New",m0,"Marked as paid successfully",m1,"Failed to mark as paid",m2,"Following are the withdrawal requests from drivers. Please process the payments to their respective bank accounts and mark them as paid","requested_on","Requested on","bank_name","Bank Name","branch_name","Branch Name","ifsc_code","IFSC Code",m3,"Account Holder Name","account_number","Account Number",m4,"View Driver Details",m5,"Have you already paid the full amount to the driver? Are you sure you want to mark this request as paid?","mark_as_paid","Mark as Paid",m6,"No withdrawal requests found","alert","Alert","home","Home",m7,"Invalid credentials",m8,"Failed to get settings",m9,"Settings updated successfully",n0,"Failed to update settings",n1,"Failed to get registration documents",n2,"Failed to update registration document",n3,"Failed to delete registration document",n4,"Failed to add registration document",n5,"Failed to get cancel reasons",n6,"Failed to update cancel reason",n7,"Failed to delete cancel reason",n8,"Failed to add cancel reason",n9,"Failed to get vehicle types",o0,"Failed to update vehicle type",o1,"Vehicle name already exists",o2,"Vehicle added successfully",o3,"Vehicle updated successfully",o4,"Driver has been approved",o5,"Failed to approve driver",o6,"Driver has been rejected",o7,"Failed to rejected driver",o8,"Driver has been suspended",o9,"Failed to suspended driver",p0,"Undo suspend success",p1,"Failed to undo suspend driver",p2,"Failed to get driver details",p3,"Failed to fetch recent rides",p4,"Failed to get ride details",p5,"Failed to get user details",p6,"Please select from date",p7,"Please select to date",p8,"Cancel reason deleted successfully",p9,"Cancel reason added successfully",q0,"Document deleted successfully",q1,"Document added successfully",q2,"This modification is restricted by Ridely."],u9,u9),"es",A.a8(["cancel_reasons","Motivos de cancelaci\xf3n","cancel_reason","Motivo de cancelaci\xf3n","user_app","App de Usuario","sr_no","N\xba de serie","active","Activo","delete","Eliminar","sure_delete","\xbfEst\xe1s seguro de que deseas eliminar?","add_new_reason","Agregar nuevo motivo",s,"Por favor, agrega primero un motivo de cancelaci\xf3n","sure_add","\xbfEst\xe1s seguro de que deseas agregar?","add","Agregar","driver_app","App de Conductor","select_language","Seleccionar idioma","apply","Aplicar","documents_list","Lista de documentos",r,"Estos documentos son requeridos para la creaci\xf3n de cuenta por los conductores","document_name","Nombre del documento",q,"Agregar nuevo documento",p,"Por favor, agrega primero el nombre del documento","driver_details","Detalles del conductor","driver_name","Nombre del conductor","phone_number","N\xfamero de tel\xe9fono","address","Direcci\xf3n","email","Correo electr\xf3nico","vehicle_type","Tipo de veh\xedculo","vehicle_model","Modelo del veh\xedculo","vehicle_color","Color del veh\xedculo",o,"N\xfamero de placa","status","Estado","documents","Documentos",n,"(Haz clic para ver documentos)","all_rides","Todos los viajes","user_name","Nombre de usuario","amount","Monto","date_and_time","Fecha y hora","action","Acci\xf3n","view","Ver","no_rides_found","No se encontraron viajes","sure_approve","\xbfEst\xe1s seguro de que deseas aprobar?","approve","Aprobar","or","O",m,"Por favor, agrega un motivo para el rechazo","sure_reject","\xbfEst\xe1s seguro de que deseas rechazar?","reject","Rechazar",l,"Agregar un motivo para el rechazo",k,"\xbfEst\xe1s seguro de que deseas anular la suspensi\xf3n?","undo_suspend","Anular suspensi\xf3n","sure_suspend","\xbfEst\xe1s seguro de que deseas suspender?",j,"No se puede suspender en este momento. La solicitud de este conductor ya ha sido rechazada",i,"No se puede suspender en este momento. Es posible que este conductor est\xe9 en un viaje activo.","suspend","Suspender","admin","Admin",h,"Gestiona m\xe1s viajes con menos esfuerzo","revenue","Ingresos","this_months","(De este mes)","total_users","Total de usuarios","total_drivers","Total de conductores","pending_drivers","Conductores pendientes",g,"Solicitudes de retiro","recent_rides","Viajes recientes","good_morning","Buenos d\xedas","good_afternoon","Buenas tardes","good_evening","Buenas noches","welcome_back","\xa1Bienvenido de nuevo!","welcome","\xa1Bienvenido!",f,"Por favor, inicia sesi\xf3n para continuar",e,"Por favor, reg\xedstrate para continuar",d,"Ingresar correo electr\xf3nico","password","Contrase\xf1a","enter_password","Ingresar contrase\xf1a",c,"Confirmar contrase\xf1a",b,"Ingresar confirmaci\xf3n de contrase\xf1a",a,"Por favor, ingresa tu correo electr\xf3nico",a0,"Por favor, ingresa un correo electr\xf3nico v\xe1lido",a1,"Por favor, ingresa tu contrase\xf1a",a2,"Por favor, ingresa tu confirmaci\xf3n de contrase\xf1a",a3,"La contrase\xf1a y la confirmaci\xf3n no coinciden","login","Iniciar sesi\xf3n","sign_up","Registrarse","choose_language","Elegir idioma",a4,"Ajustes de pago",a5,"Pasarela de pago Stripe",a6,"Reg\xedstrate en Stripe para obtener tu Clave Publicable y Clave Secreta",a7,"Clave Publicable de Stripe",a9,"Clave Secreta de Stripe",b1,"Pasarela de pago PayPal",b2,"Reg\xedstrate en PayPal para obtener tu ID de Cliente y Clave Secreta",b3,"ID de Cliente de Paypal",b5,"Clave Secreta de PayPal",b7,"Pasarela de pago PayStack",b8,"Reg\xedstrate en PayStack para obtener tu Clave P\xfablica y Clave Secreta",b9,"Clave P\xfablica de PayStack",c1,"Clave Secreta de PayStack",c3,"Pasarela de pago Razorpay",c4,"Reg\xedstrate en Razorpay para obtener tu ID de Clave y Clave Secreta","razorpay_key_id","ID de Clave de Razorpay",c5,"Clave Secreta de Razorpay",c7,"Por favor, ingresa la Clave Publicable de Stripe",c8,"Por favor, ingresa la Clave Secreta de Stripe",c9,"Por favor, ingresa el ID de Cliente de PayPal",d0,"Por favor, ingresa la Clave Secreta de PayPal",d1,"Por favor, ingresa la Clave P\xfablica de PayStack",d2,"Por favor, ingresa la Clave Secreta de PayStack",d3,"Por favor, ingresa el ID de Clave de Razorpay",d4,"Por favor, ingresa la Clave Secreta de Razorpay","save","Guardar",d5,"Aprueba las solicitudes de registro de conductores o rech\xe1zalas con comentarios claros para ayudarlos a corregir y volver a solicitar","phone","Tel\xe9fono",d6,"No se encontraron conductores","admin_revenue","Ingresos del Administrador","revenue_trend","Tendencia de ingresos","rides_trend","Tendencia de viajes","rides","Viajes","avg_per_ride","Promedio / Viaje","ride_details","Detalles del viaje",d7,"Informaci\xf3n de reserva","date","Fecha","payment_mode","Modo de pago",d8,"Punto de recogida y destino","fare_details","Detalles de la tarifa","base_fare","Tarifa base","distance_fare","Tarifa por distancia","time_fare","Tarifa por tiempo","waiting_charge","Cargo por espera","total","Total","drivers_earning","Ganancia del conductor",d9,"Comisi\xf3n del administrador","user_details","Detalles del usuario","name","Nombre","from_date","Desde la fecha","to_date","Hasta la fecha","search","Buscar","clear_filter","Limpiar filtro","settings","Ajustes","twilio_number","N\xfamero de Twilio",e0,"Twilio sirve como pasarela de SMS. Puedes usarlo para enviar mensajes SMS con c\xf3digos de verificaci\xf3n (OTP) para validar n\xfameros de tel\xe9fono cuando los usuarios o conductores crean sus cuentas. Para comenzar, crea una cuenta en Twilio para obtener tu n\xfamero dedicado",e1,"Ingresar n\xfamero de Twilio","account_sid","SID de cuenta",e2,"Twilio sirve como pasarela de SMS. Puedes usarlo para enviar mensajes SMS con c\xf3digos de verificaci\xf3n (OTP) para validar n\xfameros de tel\xe9fono. Para comenzar, crea una cuenta en Twilio para obtener tu SID de cuenta dedicado.",e3,"Ingresar SID de cuenta","auth_token","Token de autenticaci\xf3n",e4,"Twilio sirve como pasarela de SMS. Puedes usarlo para enviar mensajes SMS con c\xf3digos de verificaci\xf3n (OTP). Para comenzar, crea una cuenta en Twilio para obtener tu Token de autenticaci\xf3n dedicado",e5,"Ingresar Token de autenticaci\xf3n","twilio_sms","SMS de Twilio",e6,"Escribe el mensaje SMS de Twilio. El c\xf3digo de verificaci\xf3n se agrega autom\xe1ticamente al principio del mensaje, por lo que puedes continuar el texto as\xed: \u201ces tu c\xf3digo de verificaci\xf3n para iniciar sesi\xf3n en Ridely. Gracias por elegir Ridely.\u201d",e7,"Ingresar SMS de Twilio","currency","Moneda",e8,"Especifica el s\xedmbolo de moneda destinado al uso dentro de la aplicaci\xf3n (ej. $, \u20ac, \xa5)","enter_currency","Ingresar moneda","geofencing_km","Kil\xf3metros de Geofencing",e9,"Especifica, en kil\xf3metros, el radio geogr\xe1fico dentro del cual los conductores recibir\xe1n solicitudes de viaje. Por ejemplo, ingresar '2' asegurar\xe1 que las solicitudes solo se env\xeden a conductores ubicados en un rango de dos kil\xf3metros",f0,"Ingresar kil\xf3metros de Geofencing","google_map_key","Clave de Google Maps","this_api_key_is","Esta clave API se utiliza tanto para la API de Google Places, que permite a los usuarios buscar su ubicaci\xf3n, como para la funcionalidad de la API de direcciones de ruta dentro de la aplicaci\xf3n.",f1,"Ingresar clave de Google Maps",f2,"Segundos para aceptar solicitud",f3,"El l\xedmite de tiempo especificado, medido en segundos, representa la ventana durante la cual un conductor debe aceptar la solicitud de viaje; de lo contrario, se reasignar\xe1 autom\xe1ticamente al siguiente conductor disponible",f4,"Ingresar segundos para aceptar solicitud",f5,"\xbfHabilitar verificaci\xf3n de pasajero?",f6,"\xbfDeber\xeda el sistema requerir que el conductor verifique al pasajero usando un c\xf3digo de verificaci\xf3n previo al viaje? El c\xf3digo es accesible en la app del pasajero y no se env\xeda por SMS","yes","S\xed","no","No",f7,"Por favor, ingresa el n\xfamero de Twilio",f8,"Por favor, ingresa el SID de cuenta",f9,"Por favor, ingresa el Token de autenticaci\xf3n",g0,"Por favor, ingresa el SMS de Twilio","please_currency","Por favor, ingresa la moneda",g1,"Por favor, ingresa los kil\xf3metros de Geofencing",g2,"Por favor, ingresa la clave de Google Maps",g3,"Por favor, ingresa los segundos para aceptar solicitud","first_name","Nombre","last_name","Apellido",g4,"Ingresar nombre","enter_last_name","Ingresar apellido",g5,"Ingresar tel\xe9fono (Sin c\xf3digo de pa\xeds)",g6,"Por favor, ingresa una palabra clave para buscar","no_users_found","No se encontraron usuarios","registered_on","Registrado el","gender","G\xe9nero","rating","Calificaci\xf3n","vehicle_details","Detalles del veh\xedculo","vehicle_image","Imagen del veh\xedculo",g7,"El icono debe ser de forma cuadrada, con un tama\xf1o m\xe1ximo de archivo de 150 KB",g8,"Icono del veh\xedculo en Google Maps",g9,"Por favor, aseg\xfarate de que los iconos tengan un fondo transparente y un tama\xf1o optimizado que no exceda los 150 KB","vehicle_name","Nombre del veh\xedculo",h0,"El nombre ser\xe1 visible para los pasajeros al reservar viajes. Puedes configurarlo como 'Auto', 'Taxi Econ\xf3mico', 'Taxi Premium', etc.",h1,"Ingresar nombre del veh\xedculo",h2,"Capacidad de asientos",h3,"La capacidad de asientos de un veh\xedculo excluyendo al conductor",h4,"Ingresar capacidad de asientos",h5,"Porcentaje de comisi\xf3n",h6,"Porcentaje de comisi\xf3n del administrador",h7,"Ingresar porcentaje de comisi\xf3n",h8,"Esta es la tarifa b\xe1sica que se cobrar\xe1","enter_base_fare","Ingresar tarifa base","per_km_fare","Tarifa por kil\xf3metro","per_km_fare_eg","Tarifa por kil\xf3metro. Ej: si el total de kil\xf3metros recorridos es 10 y la tarifa por kil\xf3metro es 8, se sumar\xe1n 80 a la tarifa base",h9,"Ingresar tarifa por kil\xf3metro","per_minute_fare","Tarifa por minuto",i0,"Tarifa por minuto. Ej: si el tiempo total de viaje es de 30 minutos y la tarifa por minuto es 2, se sumar\xe1n 60 a la tarifa base",i1,"Ingresar tarifa por minuto",i2,"Cargo por espera por minuto",i3,"Cargo por espera por minuto. Ej: si el conductor esper\xf3 5 minutos y el cargo es 2, se sumar\xe1n 10 a la factura",i4,"Ingresar cargo por espera por minuto",i5,"La espera comienza tras (minutos)",i6,"Establece la duraci\xf3n (en minutos) tras la cual se cobrar\xe1n autom\xe1ticamente las tarifas de espera",i7,"M\xe1ximo cargo por espera",i8,"M\xe1ximo cargo por espera. Ej: si el conductor esper\xf3 30 minutos, el cargo es 2 y el m\xe1ximo est\xe1 fijado en 50, se sumar\xe1n 50 a la tarifa base",i9,"Ingresar cargo m\xe1ximo por espera",j0,q3,j2,q4,j4,q5,j6,q6,j8,q7,k0,q8,k2,q9,k4,r0,k6,r1,"sure_update","\xbfEst\xe1s seguro de que deseas actualizar?","update","Actualizar",k8,"Por favor, agrega la imagen del veh\xedculo",k9,"Por favor, agrega el icono del veh\xedculo",l0,q3,l1,q4,l2,q5,l3,q6,l4,q7,l5,q8,l6,q9,l7,r0,l8,r1,"vehicle_types","Tipos de veh\xedculos",l9,"Gestionar tipos de veh\xedculos (ej. Econ\xf3mico, Premium). Se recomienda imagen cuadrada de 150-200 KB","image","Imagen","edit","Editar","add_new","Agregar nuevo",m0,"Marcado como pagado exitosamente",m1,"Error al marcar como pagado",m2,"A continuaci\xf3n se muestran las solicitudes de retiro de los conductores. Por favor, procesa los pagos a sus respectivas cuentas bancarias y m\xe1rcalos como pagados","requested_on","Solicitado el","bank_name","Nombre del banco","branch_name","Nombre de la sucursal","ifsc_code","C\xf3digo IFSC",m3,"Nombre del titular de la cuenta","account_number","N\xfamero de cuenta",m4,"Ver detalles del conductor",m5,"\xbfYa has pagado el monto total al conductor? \xbfEst\xe1s seguro de que deseas marcar esta solicitud como pagada?","mark_as_paid","Marcar como pagado",m6,"No se encontraron solicitudes de retiro","alert","Alerta","home","Inicio",m7,"Credenciales inv\xe1lidas",m8,"Error al obtener los ajustes",m9,"Ajustes actualizados exitosamente",n0,"Error al actualizar los ajustes",n1,"Error al obtener documentos de registro",n2,"Error al actualizar documento de registro",n3,"Error al eliminar documento de registro",n4,"Error al agregar documento de registro",n5,"Error al obtener motivos de cancelaci\xf3n",n6,"Error al actualizar motivo de cancelaci\xf3n",n7,"Error al eliminar motivo de cancelaci\xf3n",n8,"Error al agregar motivo de cancelaci\xf3n",n9,"Error al obtener tipos de veh\xedculos",o0,"Error al actualizar tipo de veh\xedculo",o1,"El nombre del veh\xedculo ya existe",o2,"Veh\xedculo agregado exitosamente",o3,"Veh\xedculo actualizado exitosamente",o4,"El conductor ha sido aprobado",o5,"Error al aprobar al conductor",o6,"El conductor ha sido rechazado",o7,"Error al rechazar al conductor",o8,"El conductor ha sido suspendido",o9,"Error al suspender al conductor",p0,"Suspensi\xf3n anulada exitosamente",p1,"Error al anular la suspensi\xf3n del conductor",p2,"Error al obtener detalles del conductor",p3,"Error al obtener viajes recientes",p4,"Error al obtener detalles del viaje",p5,"Error al obtener detalles del usuario",p6,"Por favor, seleccione la fecha de inicio",p7,"Por favor, seleccione la fecha de fin",p8,"Motivo de cancelaci\xf3n eliminado con \xe9xito",p9,"Motivo de cancelaci\xf3n a\xf1adido con \xe9xito",q0,"Documento eliminado con \xe9xito",q1,"Documento a\xf1adido con \xe9xito",q2,"Esta modificaci\xf3n est\xe1 restringida por Ridely."],u9,u9),"fr",A.a8(["cancel_reasons","Motifs d annulation","cancel_reason","Motif d annulation","user_app","App Utilisateur","sr_no","N\xb0 de s\xe9rie","active","Actif","delete","Supprimer","sure_delete","\xcates-vous s\xfbr de vouloir supprimer ?","add_new_reason","Ajouter un nouveau motif",s,"Veuillez d abord ajouter un motif d annulation","sure_add","\xcates-vous s\xfbr de vouloir ajouter ?","add","Ajouter","driver_app","App Chauffeur","select_language",r2,"apply","Appliquer","documents_list","Liste des documents",r,"Ces documents sont requis pour la cr\xe9ation de compte par les chauffeurs","document_name","Nom du document",q,"Ajouter un nouveau document",p,"Veuillez d abord ajouter un nom de document","driver_details","D\xe9tails du chauffeur","driver_name","Nom du chauffeur","phone_number","Num\xe9ro de t\xe9l\xe9phone","address","Adresse","email","E-mail","vehicle_type","Type de v\xe9hicule","vehicle_model","Mod\xe8le du v\xe9hicule","vehicle_color","Couleur du v\xe9hicule",o,"Num\xe9ro d immatriculation","status","Statut","documents","Documents",n,"(Cliquez pour voir les documents)","all_rides","Tous les trajets","user_name","Nom de l utilisateur","amount","Montant","date_and_time","Date et heure","action","Action","view","Voir","no_rides_found","Aucun trajet trouv\xe9","sure_approve","\xcates-vous s\xfbr de vouloir approuver ?","approve","Approuver","or","Ou",m,"Veuillez ajouter un motif de rejet","sure_reject","\xcates-vous s\xfbr de vouloir rejeter ?","reject","Rejeter",l,"Ajouter un motif de rejet",k,"\xcates-vous s\xfbr de vouloir annuler la suspension ?","undo_suspend","Annuler la suspension","sure_suspend","\xcates-vous s\xfbr de vouloir suspendre ?",j,"Impossible de suspendre pour le moment. La candidature de ce chauffeur est d\xe9j\xe0 rejet\xe9e.",i,"Impossible de suspendre pour le moment. Ce chauffeur est peut-\xeatre en cours de trajet.","suspend","Suspendre","admin","Admin",h,"G\xe9rez plus de trajets avec moins d effort","revenue","Revenus","this_months","(Ce mois-ci)","total_users","Total Utilisateurs","total_drivers","Total Chauffeurs","pending_drivers","Chauffeurs en attente",g,"Demandes de retrait","recent_rides","Trajets r\xe9cents","good_morning","Bonjour","good_afternoon","Bon apr\xe8s-midi","good_evening","Bonsoir","welcome_back","Bon retour !","welcome","Bienvenue !",f,"Veuillez vous connecter pour continuer",e,"Veuillez vous inscrire pour continuer",d,"Entrez l adresse e-mail","password","Mot de passe","enter_password","Entrez le mot de passe",c,"Confirmez le mot de passe",b,"Entrez la confirmation du mot de passe",a,"Veuillez entrer votre adresse e-mail",a0,"Veuillez entrer une adresse e-mail valide",a1,"Veuillez entrer votre mot de passe",a2,"Veuillez confirmer votre mot de passe",a3,"Le mot de passe et la confirmation ne correspondent pas","login","Connexion","sign_up","Inscription","choose_language",r2,a4,"Param\xe8tres de paiement",a5,"Passerelle de paiement Stripe",a6,"Inscrivez-vous sur Stripe pour obtenir votre Cl\xe9 Publique et votre Cl\xe9 Secr\xe8te",a7,"Cl\xe9 Publique Stripe",a9,"Cl\xe9 Secr\xe8te Stripe",b1,"Passerelle de paiement PayPal",b2,"Inscrivez-vous sur PayPal pour obtenir votre ID Client et votre Cl\xe9 Secr\xe8te",b3,"ID Client PayPal",b5,"Cl\xe9 Secr\xe8te PayPal",b7,"Passerelle de paiement PayStack",b8,"Inscrivez-vous sur PayStack pour obtenir votre Cl\xe9 Publique et votre Cl\xe9 Secr\xe8te",b9,"Cl\xe9 Publique PayStack",c1,"Cl\xe9 Secr\xe8te PayStack",c3,"Passerelle de paiement Razorpay",c4,"Inscrivez-vous sur Razorpay pour obtenir votre ID de cl\xe9 et votre Cl\xe9 Secr\xe8te","razorpay_key_id","ID de cl\xe9 Razorpay",c5,"Cl\xe9 Secr\xe8te Razorpay",c7,"Veuillez entrer la Cl\xe9 Publique Stripe",c8,"Veuillez entrer la Cl\xe9 Secr\xe8te Stripe",c9,"Veuillez entrer l ID Client PayPal",d0,"Veuillez entrer la Cl\xe9 Secr\xe8te PayPal",d1,"Veuillez entrer la Cl\xe9 Publique PayStack",d2,"Veuillez entrer la Cl\xe9 Secr\xe8te PayStack",d3,"Veuillez entrer l ID de cl\xe9 Razorpay",d4,"Veuillez entrer la Cl\xe9 Secr\xe8te Razorpay","save","Enregistrer",d5,"Approuvez les demandes d inscription des chauffeurs ou rejetez-les avec des commentaires clairs pour les aider \xe0 corriger et \xe0 postuler de nouveau","phone","T\xe9l\xe9phone",d6,"Aucun chauffeur trouv\xe9","admin_revenue","Revenus Admin","revenue_trend","Tendance des revenus","rides_trend","Tendance des trajets","rides","Trajets","avg_per_ride","Moyenne / Trajet","ride_details","D\xe9tails du trajet",d7,"Informations de r\xe9servation","date","Date","payment_mode","Mode de paiement",d8,"Lieu de prise en charge et de d\xe9pose","fare_details","D\xe9tails du tarif","base_fare","Tarif de base","distance_fare","Tarif \xe0 la distance","time_fare","Tarif au temps","waiting_charge","Frais d attente","total","Total","drivers_earning","Gains du chauffeur",d9,"Commission Admin","user_details","D\xe9tails de l utilisateur","name","Nom","from_date","Date de d\xe9but","to_date","Date de fin","search","Rechercher","clear_filter","Effacer le filtre","settings","Param\xe8tres","twilio_number","Num\xe9ro Twilio",e0,"Twilio sert de passerelle SMS. Vous pouvez l utiliser pour envoyer des codes de v\xe9rification (OTP) par SMS pour v\xe9rifier les num\xe9ros de t\xe9l\xe9phone lors de la cr\xe9ation de compte. Cr\xe9ez un compte Twilio pour obtenir votre num\xe9ro d\xe9di\xe9.",e1,"Entrez le num\xe9ro Twilio","account_sid","Account SID",e2,"Twilio sert de passerelle SMS. Vous pouvez l utiliser pour envoyer des SMS OTP. Cr\xe9ez un compte Twilio pour obtenir votre Account SID d\xe9di\xe9.",e3,"Entrez l Account SID","auth_token","Auth Token",e4,"Twilio sert de passerelle SMS. Cr\xe9ez un compte Twilio pour obtenir votre Auth Token d\xe9di\xe9.",e5,"Entrez l Auth Token","twilio_sms","SMS Twilio",e6,"R\xe9digez le message SMS Twilio. Le code de v\xe9rification est ajout\xe9 automatiquement au d\xe9but. Exemple: \u201cest votre code de v\xe9rification pour Ridely. Merci d avoir choisi Ridely.\u201d",e7,"Entrez le SMS Twilio","currency","Devise",e8,"Sp\xe9cifiez le symbole de la devise (ex: $, \u20ac, \xa5)","enter_currency","Entrez la devise","geofencing_km","Kilom\xe8tres de G\xe9orep\xe9rage",e9,"Sp\xe9cifiez le rayon en kilom\xe8tres dans lequel les chauffeurs recevront les demandes. Exemple: '2' limitera l envoi aux chauffeurs situ\xe9s dans un rayon de 2 km.",f0,"Entrez les kilom\xe8tres de g\xe9orep\xe9rage","google_map_key","Cl\xe9 Google Maps","this_api_key_is","Cette cl\xe9 API est utilis\xe9e pour Google Places (recherche de lieu) et pour le calcul d itin\xe9raire dans l application.",f1,"Entrez la cl\xe9 Google Maps",f2,"Secondes pour accepter la demande",f3,"Le d\xe9lai limite en secondes pendant lequel un chauffeur doit accepter le trajet, sinon il sera r\xe9assign\xe9 au chauffeur disponible suivant.",f4,"Entrez les secondes d acceptation",f5,"Activer la v\xe9rification du passager ?",f6,"Le syst\xe8me doit-il exiger que le chauffeur v\xe9rifie le passager avec un code avant le trajet ? Le code est visible sur l app du passager et non envoy\xe9 par SMS.","yes","Oui","no","Non",f7,"Veuillez entrer le num\xe9ro Twilio",f8,"Veuillez entrer l Account SID",f9,"Veuillez entrer l Auth Token",g0,"Veuillez entrer le SMS Twilio","please_currency","Veuillez entrer la devise",g1,"Veuillez entrer le g\xe9orep\xe9rage en km",g2,"Veuillez entrer la cl\xe9 Google Maps",g3,"Veuillez entrer les secondes d acceptation","first_name","Pr\xe9nom","last_name","Nom de famille",g4,"Entrez le pr\xe9nom","enter_last_name","Entrez le nom",g5,"Entrez le t\xe9l\xe9phone (sans code pays)",g6,"Veuillez entrer un mot-cl\xe9 pour la recherche","no_users_found","Aucun utilisateur trouv\xe9","registered_on","Inscrit le","gender","Genre","rating","Note","vehicle_details","D\xe9tails du v\xe9hicule","vehicle_image","Image du v\xe9hicule",g7,"L ic\xf4ne doit \xeatre carr\xe9e, avec une taille de fichier maximale de 150 Ko",g8,"Ic\xf4ne du v\xe9hicule sur Google Maps",g9,"Veuillez vous assurer que les ic\xf4nes ont un fond transparent et ne d\xe9passent pas 150 Ko","vehicle_name","Nom du v\xe9hicule",h0,"Le nom sera visible par les passagers lors de la r\xe9servation (ex: 'Eco', 'Berline', 'Premium').",h1,"Entrez le nom du v\xe9hicule",h2,"Capacit\xe9 de places",h3,"La capacit\xe9 de places du v\xe9hicule hors chauffeur",h4,"Entrez la capacit\xe9 de places",h5,"Pourcentage de commission",h6,"Pourcentage de commission de l administrateur",h7,"Entrez le pourcentage de commission",h8,"C est le tarif de base qui sera factur\xe9","enter_base_fare","Entrez le tarif de base","per_km_fare","Tarif par km","per_km_fare_eg","Ex: si la distance est de 10 km et le tarif par km est 8, alors 80 seront ajout\xe9s au tarif de base.",h9,"Entrez le tarif par km","per_minute_fare","Tarif par minute",i0,"Ex: si le trajet dure 30 min et le tarif par minute est 2, alors 60 seront ajout\xe9s au tarif de base.",i1,"Entrez le tarif par minute",i2,"Frais d attente par minute",i3,"Ex: si le chauffeur attend 5 min et le frais est 2, alors 10 seront ajout\xe9s \xe0 la facture.",i4,"Entrez les frais d attente par minute",i5,"L attente commence apr\xe8s (minutes)",i6,"D\xe9finissez la dur\xe9e apr\xe8s laquelle les frais d attente seront factur\xe9s automatiquement.",i7,"Frais d attente maximum",i8,"Ex: si l attente dure 30 min, le frais est de 2/min mais le max est de 50, alors 50 seront ajout\xe9s.",i9,"Entrez le maximum des frais d attente",j0,r3,j2,r4,j4,r5,j6,r6,j8,r7,k0,r8,k2,r9,k4,s0,k6,s1,"sure_update","\xcates-vous s\xfbr de vouloir mettre \xe0 jour ?","update","Mettre \xe0 jour",k8,"Veuillez ajouter l image du v\xe9hicule",k9,"Veuillez ajouter l ic\xf4ne du v\xe9hicule",l0,r3,l1,r4,l2,r5,l3,r6,l4,r7,l5,r8,l6,r9,l7,s0,l8,s1,"vehicle_types","Types de v\xe9hicules",l9,"G\xe9rer les types de v\xe9hicules (ex: \xc9conomique, Premium). Image carr\xe9e de 150-200 Ko recommand\xe9e.","image","Image","edit","Modifier","add_new","Ajouter",m0,"Marqu\xe9 comme pay\xe9 avec succ\xe8s",m1,"\xc9chec du marquage comme pay\xe9",m2,"Voici les demandes de retrait des chauffeurs. Veuillez effectuer les virements puis les marquer comme pay\xe9s.","requested_on","Demand\xe9 le","bank_name","Nom de la banque","branch_name","Nom de l agence","ifsc_code","Code IFSC / SWIFT",m3,"Nom du titulaire du compte","account_number","Num\xe9ro de compte",m4,"Voir d\xe9tails du chauffeur",m5,"Avez-vous d\xe9j\xe0 pay\xe9 le montant total au chauffeur ? Voulez-vous marquer cette demande comme pay\xe9e ?","mark_as_paid","Marquer comme pay\xe9",m6,"Aucune demande de retrait trouv\xe9e","alert","Alerte","home","Accueil",m7,"Identifiants invalides",m8,"\xc9chec de la r\xe9cup\xe9ration des param\xe8tres",m9,"Param\xe8tres mis \xe0 jour avec succ\xe8s",n0,"\xc9chec de la mise \xe0 jour des param\xe8tres",n1,"\xc9chec de la r\xe9cup\xe9ration des documents d inscription",n2,"\xc9chec de la mise \xe0 jour du document d inscription",n3,"\xc9chec de la suppression du document d inscription",n4,"\xc9chec de l ajout du document d inscription",n5,"\xc9chec de la r\xe9cup\xe9ration des motifs d annulation",n6,"\xc9chec de la mise \xe0 jour du motif d annulation",n7,"\xc9chec de la suppression du motif d annulation",n8,"\xc9chec de l ajout du motif d annulation",n9,"\xc9chec de la r\xe9cup\xe9ration des types de v\xe9hicules",o0,"\xc9chec de la mise \xe0 jour du type de v\xe9hicule",o1,"Ce nom de v\xe9hicule existe d\xe9j\xe0",o2,"V\xe9hicule ajout\xe9 avec succ\xe8s",o3,"V\xe9hicule mis \xe0 jour avec succ\xe8s",o4,"Le chauffeur a \xe9t\xe9 approuv\xe9",o5,"\xc9chec de l approbation du chauffeur",o6,"Le chauffeur a \xe9t\xe9 rejet\xe9",o7,"\xc9chec du rejet du chauffeur",o8,"Le chauffeur a \xe9t\xe9 suspendu",o9,"\xc9chec de la suspension du chauffeur",p0,"Suspension annul\xe9e avec succ\xe8s",p1,"\xc9chec de l annulation de la suspension",p2,"\xc9chec de la r\xe9cup\xe9ration des d\xe9tails du chauffeur",p3,"\xc9chec de la r\xe9cup\xe9ration des trajets r\xe9cents",p4,"\xc9chec de la r\xe9cup\xe9ration des d\xe9tails du trajet",p5,"\xc9chec de la r\xe9cup\xe9ration des d\xe9tails de l utilisateur",p6,"Veuillez s\xe9lectionner la date de d\xe9but",p7,"Veuillez s\xe9lectionner la date de fin",p8,"Motif d'annulation supprim\xe9 avec succ\xe8s",p9,"Motif d'annulation ajout\xe9 avec succ\xe8s",q0,"Document supprim\xe9 avec succ\xe8s",q1,"Document ajout\xe9 avec succ\xe8s",q2,"Cette modification est limit\xe9e par Ridely."],u9,u9),"de",A.a8(["cancel_reasons","Stornierungsgr\xfcnde","cancel_reason","Stornierungsgrund","user_app","Nutzer-App","sr_no","Nr.","active","Aktiv","delete","L\xf6schen","sure_delete","Sind Sie sicher, dass Sie l\xf6schen m\xf6chten?","add_new_reason","Neuen Grund hinzuf\xfcgen",s,"Bitte f\xfcgen Sie zuerst einen Stornierungsgrund hinzu","sure_add","Sind Sie sicher, dass Sie hinzuf\xfcgen m\xf6chten?","add","Hinzuf\xfcgen","driver_app","Fahrer-App","select_language","Sprache ausw\xe4hlen","apply","Anwenden","documents_list","Dokumentenliste",r,"Diese Dokumente sind f\xfcr die Kontoerstellung durch Fahrer erforderlich","document_name","Dokumentenname",q,"Neues Dokument hinzuf\xfcgen",p,"Bitte f\xfcgen Sie zuerst einen Dokumentennamen hinzu","driver_details","Fahrerdetails","driver_name","Fahrername","phone_number","Telefonnummer","address","Adresse","email","E-Mail","vehicle_type","Fahrzeugtyp","vehicle_model","Fahrzeugmodell","vehicle_color","Fahrzeugfarbe",o,"Kennzeichen","status","Status","documents","Dokumente",n,"(Klicken, um Dokumente anzuzeigen)","all_rides","Alle Fahrten","user_name","Benutzername","amount","Betrag","date_and_time","Datum und Uhrzeit","action","Aktion","view","Ansehen","no_rides_found","Keine Fahrten gefunden","sure_approve","Sind Sie sicher, dass Sie genehmigen m\xf6chten?","approve","Genehmigen","or","Oder",m,"Bitte geben Sie einen Grund f\xfcr die Ablehnung an","sure_reject","Sind Sie sicher, dass Sie ablehnen m\xf6chten?","reject","Ablehnen",l,"Grund f\xfcr Ablehnung hinzuf\xfcgen",k,"Sind Sie sicher, dass Sie die Sperrung aufheben m\xf6chten?","undo_suspend","Sperrung aufheben","sure_suspend","Sind Sie sicher, dass Sie sperren m\xf6chten?",j,"Sperrung derzeit nicht m\xf6glich. Die Bewerbung dieses Fahrers wurde bereits abgelehnt.",i,"Sperrung derzeit nicht m\xf6glich. Dieser Fahrer befindet sich m\xf6glicherweise gerade in einer aktiven Fahrt.","suspend","Sperren","admin","Admin",h,"Mehr Fahrten mit weniger Aufwand verwalten","revenue","Umsatz","this_months","(Diesen Monat)","total_users","Gesamtbenutzer","total_drivers","Gesamtfahrer","pending_drivers","Ausstehende Fahrer",g,"Auszahlungsanfragen","recent_rides","Aktuelle Fahrten","good_morning","Guten Morgen","good_afternoon","Guten Tag","good_evening","Guten Abend","welcome_back","Willkommen zur\xfcck!","welcome","Willkommen!",f,"Bitte anmelden, um fortzufahren",e,"Bitte registrieren, um fortzufahren",d,"E-Mail-Adresse eingeben","password","Passwort","enter_password","Passwort eingeben",c,"Passwort best\xe4tigen",b,"Passwortbest\xe4tigung eingeben",a,"Bitte geben Sie Ihre E-Mail-Adresse ein",a0,"Bitte geben Sie eine g\xfcltige E-Mail-Adresse ein",a1,"Bitte geben Sie Ihr Passwort ein",a2,"Bitte best\xe4tigen Sie Ihr Passwort",a3,"Passwort und Best\xe4tigung stimmen nicht \xfcberein","login","Login","sign_up","Registrieren","choose_language","Sprache w\xe4hlen",a4,"Zahlungseinstellungen",a5,"Stripe Zahlungsgateway",a6,'Registrieren Sie sich bei Stripe, um Ihren "Publishable Key" und "Secret Key" zu erhalten',a7,a8,a9,b0,b1,"PayPal Zahlungsgateway",b2,"Registrieren Sie sich bei PayPal, um Ihre Client-ID und Ihren Secret Key zu erhalten",b3,"Paypal Client-ID",b5,b6,b7,"PayStack Zahlungsgateway",b8,'Registrieren Sie sich bei PayStack, um Ihren "Public Key" und "Secret Key" zu erhalten',b9,c0,c1,c2,c3,"Razorpay Zahlungsgateway",c4,"Registrieren Sie sich bei Razorpay, um Ihre Key-ID und Ihren Key Secret zu erhalten","razorpay_key_id","Razorpay Key-ID",c5,c6,c7,"Bitte geben Sie den Stripe Publishable Key ein",c8,"Bitte geben Sie den Stripe Secret Key ein",c9,"Bitte geben Sie die PayPal Client-ID ein",d0,"Bitte geben Sie den PayPal Secret Key ein",d1,"Bitte geben Sie den PayStack Public Key ein",d2,"Bitte geben Sie den PayStack Secret Key ein",d3,"Bitte geben Sie die Razorpay Key-ID ein",d4,"Bitte geben Sie den Razorpay Key Secret ein","save","Speichern",d5,"Fahrer-Onboarding-Anfragen genehmigen oder mit klarem Feedback ablehnen, um Fahrern bei der Korrektur und Neubewerbung zu helfen","phone","Telefon",d6,"Keine Fahrer gefunden","admin_revenue","Admin-Umsatz","revenue_trend","Umsatztrend","rides_trend","Fahrtentrend","rides","Fahrten","avg_per_ride","Durchschnitt / Fahrt","ride_details","Fahrtdetails",d7,"Buchungsinformationen","date","Datum","payment_mode","Zahlungsart",d8,"Abhol- & Zielort","fare_details","Tarifdetails","base_fare","Grundgeb\xfchr","distance_fare","Entfernungsgeb\xfchr","time_fare","Zeitgeb\xfchr","waiting_charge","Wartegeb\xfchr","total","Gesamt","drivers_earning","Verdienst des Fahrers",d9,"Admin-Provision","user_details","Benutzerdetails","name","Name","from_date","Von Datum","to_date","Bis Datum","search","Suchen","clear_filter","Filter l\xf6schen","settings","Einstellungen","twilio_number","Twilio-Nummer",e0,"Twilio dient als SMS-Gateway. Sie k\xf6nnen es verwenden, um OTP-SMS-Nachrichten zur Verifizierung von Telefonnummern zu senden. Erstellen Sie ein Konto bei Twilio, um Ihre dedizierte Twilio-Nummer zu erhalten.",e1,"Twilio-Nummer eingeben","account_sid","Account SID",e2,"Twilio dient als SMS-Gateway. Erstellen Sie ein Konto bei Twilio, um Ihre dedizierte Account SID zu erhalten.",e3,"Account SID eingeben","auth_token","Auth Token",e4,"Twilio dient als SMS-Gateway. Erstellen Sie ein Konto bei Twilio, um Ihren dedizierten Auth Token zu erhalten.",e5,"Auth Token eingeben","twilio_sms","Twilio SMS",e6,"Schreiben Sie die Twilio SMS-Nachricht. Der Verifizierungscode wird automatisch am Anfang der Nachricht hinzugef\xfcgt. Beispiel: \u201cist Ihr Verifizierungscode f\xfcr den Login bei Ridely. Vielen Dank, dass Sie sich f\xfcr Ridely entschieden haben.\u201d",e7,"Twilio SMS eingeben","currency","W\xe4hrung",e8,"Geben Sie das W\xe4hrungssymbol f\xfcr die App an (z. B. $, \u20ac, \xa5)","enter_currency","W\xe4hrung eingeben","geofencing_km","Geofencing-Kilometer",e9,"Geben Sie in Kilometern den Radius an, in dem Fahrer Fahrtanfragen erhalten. Beispiel: Eine '2' stellt sicher, dass Anfragen nur an Fahrer im Umkreis von zwei Kilometern gesendet werden.",f0,"Geofencing-Kilometer eingeben","google_map_key","Google Map Key","this_api_key_is","Dieser API-Key wird sowohl f\xfcr die Google Places API als auch f\xfcr die Routenf\xfchrung innerhalb der App verwendet.",f1,"Google Map Key eingeben",f2,"Sekunden zur Annahme der Anfrage",f3,"Das Zeitlimit in Sekunden, in dem ein Fahrer die Anfrage annehmen muss, bevor sie automatisch dem n\xe4chsten verf\xfcgbaren Fahrer zugewiesen wird.",f4,"Sekunden zur Annahme eingeben",f5,"Fahrgast-Verifizierung aktivieren?",f6,"Soll das System vom Fahrer verlangen, den Fahrgast mit einem Code vor der Fahrt zu verifizieren? Der Code ist in der Fahrgast-App sichtbar und wird nicht per SMS gesendet.","yes","Ja","no","Nein",f7,"Bitte Twilio-Nummer eingeben",f8,"Bitte Account SID eingeben",f9,"Bitte Auth Token eingeben",g0,"Bitte Twilio SMS eingeben","please_currency","Bitte W\xe4hrung eingeben",g1,"Bitte Geofencing-Kilometer eingeben",g2,"Bitte Google Map Key eingeben",g3,"Bitte Sekunden zur Annahme eingeben","first_name","Vorname","last_name","Nachname",g4,"Vorname eingeben","enter_last_name","Nachname eingeben",g5,"Telefonnummer eingeben (ohne L\xe4ndervorwahl)",g6,"Bitte Suchbegriff eingeben","no_users_found","Keine Benutzer gefunden","registered_on","Registriert am","gender","Geschlecht","rating","Bewertung","vehicle_details","Fahrzeugdetails","vehicle_image","Fahrzeugbild",g7,"Das Icon sollte quadratisch sein, maximale Dateigr\xf6\xdfe 150 KB",g8,"Fahrzeug-Icon auf Google Maps",g9,"Bitte stellen Sie sicher, dass Icons einen transparenten Hintergrund haben und 150 KB nicht \xfcberschreiten","vehicle_name","Fahrzeugname",h0,"Der Name wird Fahrg\xe4sten bei der Buchung angezeigt, z. B. 'Economy', 'Premium' usw.",h1,"Fahrzeugname eingeben",h2,"Sitzplatzkapazit\xe4t",h3,"Die Anzahl der Sitzpl\xe4tze ohne Fahrer",h4,"Sitzplatzkapazit\xe4t eingeben",h5,"Provisionssatz",h6,"Prozentsatz der Admin-Provision",h7,"Provisionssatz eingeben",h8,"Dies ist die Grundgeb\xfchr, die berechnet wird","enter_base_fare","Grundgeb\xfchr eingeben","per_km_fare","Preis pro Kilometer","per_km_fare_eg","Preis pro Kilometer. Beispiel: Bei 10 km Fahrt und einem Preis von 8 pro km werden 80 zur Grundgeb\xfchr addiert.",h9,"Preis pro Kilometer eingeben","per_minute_fare","Preis pro Minute",i0,"Preis pro Minute. Beispiel: Bei 30 Minuten Fahrtzeit und einem Preis von 2 pro Minute werden 60 zur Grundgeb\xfchr addiert.",i1,"Preis pro Minute eingeben",i2,"Wartegeb\xfchr pro Minute",i3,"Wartegeb\xfchr pro Minute. Beispiel: Wenn der Fahrer 5 Minuten gewartet hat und der Preis 2 betr\xe4gt, werden 10 berechnet.",i4,"Wartegeb\xfchr pro Minute eingeben",i5,"Wartezeit beginnt nach (Minuten)",i6,"Legen Sie die Dauer in Minuten fest, nach der Wartegeb\xfchren automatisch berechnet werden.",i7,"Maximale Wartegeb\xfchr",i8,"Maximale Wartegeb\xfchr. Beispiel: Bei 30 Min. Wartezeit (2 pro Min.) und einem Max-Wert von 50 werden nur 50 addiert.",i9,"Maximale Wartegeb\xfchr eingeben",j0,s2,j2,s3,j4,s4,j6,s5,j8,s6,k0,s7,k2,s8,k4,s9,k6,t0,"sure_update","Sind Sie sicher, dass Sie aktualisieren m\xf6chten?","update","Aktualisieren",k8,"Bitte Fahrzeugbild hinzuf\xfcgen",k9,"Bitte Fahrzeug-Icon hinzuf\xfcgen",l0,s2,l1,s3,l2,s4,l3,s5,l4,s6,l5,s7,l6,s8,l7,s9,l8,t0,"vehicle_types","Fahrzeugtypen",l9,"Fahrzeugtypen verwalten (z. B. Economy, Premium). Empfohlen: quadratisches Bild 150-200 KB.","image","Bild","edit","Bearbeiten","add_new","Neu hinzuf\xfcgen",m0,"Erfolgreich als bezahlt markiert",m1,"Fehler beim Markieren als bezahlt",m2,"Dies sind die Auszahlungsanfragen der Fahrer. Bitte f\xfchren Sie die Zahlungen aus und markieren Sie diese als bezahlt.","requested_on","Angefordert am","bank_name","Bankname","branch_name","Zweigstellenname","ifsc_code","IFSC-Code",m3,"Kontoinhaber","account_number","Kontonummer",m4,"Fahrerdetails ansehen",m5,"Haben Sie den vollen Betrag bereits an den Fahrer gezahlt? Sicher als bezahlt markieren?","mark_as_paid","Als bezahlt markieren",m6,"Keine Auszahlungsanfragen gefunden","alert","Warnung","home","Home",m7,"Ung\xfcltige Zugangsdaten",m8,"Einstellungen konnten nicht geladen werden",m9,"Einstellungen erfolgreich aktualisiert",n0,"Fehler beim Aktualisieren der Einstellungen",n1,"Registrierungsunterlagen konnten nicht geladen werden",n2,"Dokument konnte nicht aktualisiert werden",n3,"Dokument konnte nicht gel\xf6scht werden",n4,"Dokument konnte nicht hinzugef\xfcgt werden",n5,"Stornierungsgr\xfcnde konnten nicht geladen werden",n6,"Stornierungsgrund konnte nicht aktualisiert werden",n7,"Stornierungsgrund konnte nicht gel\xf6scht werden",n8,"Stornierungsgrund konnte nicht hinzugef\xfcgt werden",n9,"Fahrzeugtypen konnten nicht geladen werden",o0,"Fahrzeugtyp konnte nicht aktualisiert werden",o1,"Fahrzeugname existiert bereits",o2,"Fahrzeug erfolgreich hinzugef\xfcgt",o3,"Fahrzeug erfolgreich aktualisiert",o4,"Fahrer wurde genehmigt",o5,"Genehmigung des Fahrers fehlgeschlagen",o6,"Fahrer wurde abgelehnt",o7,"Ablehnung des Fahrers fehlgeschlagen",o8,"Fahrer wurde gesperrt",o9,"Sperrung des Fahrers fehlgeschlagen",p0,"Sperrung erfolgreich aufgehoben",p1,"Aufhebung der Sperrung fehlgeschlagen",p2,"Fahrerdetails konnten nicht geladen werden",p3,"Aktuelle Fahrten konnten nicht geladen werden",p4,"Fahrtdetails konnten nicht geladen werden",p5,"Benutzerdetails konnten nicht geladen werden",p6,"Bitte w\xe4hlen Sie das Startdatum aus",p7,"Bitte w\xe4hlen Sie das Enddatum aus",p8,"Stornierungsgrund erfolgreich gel\xf6scht",p9,"Stornierungsgrund erfolgreich hinzugef\xfcgt",q0,"Dokument erfolgreich gel\xf6scht",q1,"Dokument erfolgreich hinzugef\xfcgt",q2,"Diese \xc4nderung ist durch Ridely eingeschr\xe4nkt."],u9,u9),"pt",A.a8(["cancel_reasons","Motivos de Cancelamento","cancel_reason","Motivo de Cancelamento","user_app","App do Usu\xe1rio","sr_no","N\xba de s\xe9rie","active","Ativo","delete","Excluir","sure_delete","Tem certeza de que deseja excluir?","add_new_reason","Adicionar novo motivo",s,"Por favor, adicione um motivo de cancelamento primeiro","sure_add","Tem certeza de que deseja adicionar?","add","Adicionar","driver_app","App do Motorista","select_language","Selecionar Idioma","apply","Aplicar","documents_list","Lista de Documentos",r,"Estes documentos s\xe3o necess\xe1rios para a cria\xe7\xe3o de conta pelos motoristas","document_name","Nome do Documento",q,"Adicionar novo documento",p,"Por favor, adicione o nome do documento primeiro","driver_details","Detalhes do Motorista","driver_name","Nome do Motorista","phone_number","N\xfamero de Telefone","address","Endere\xe7o","email","E-mail","vehicle_type","Tipo de Ve\xedculo","vehicle_model","Modelo do Ve\xedculo","vehicle_color","Cor do Ve\xedculo",o,"N\xfamero da Placa","status","Status","documents","Documentos",n,"(Clique para ver os documentos)","all_rides","Todas as Corridas","user_name","Nome do Usu\xe1rio","amount","Valor","date_and_time","Data e Hora","action","A\xe7\xe3o","view","Visualizar","no_rides_found","Nenhuma corrida encontrada","sure_approve","Tem certeza de que deseja aprovar?","approve","Aprovar","or","Ou",m,"Por favor, adicione um motivo para a rejei\xe7\xe3o","sure_reject","Tem certeza de que deseja rejeitar?","reject","Rejeitar",l,"Adicionar um motivo para a rejei\xe7\xe3o",k,"Tem certeza de que deseja desfazer a suspens\xe3o?","undo_suspend","Desfazer Suspens\xe3o","sure_suspend","Tem certeza de que deseja suspender?",j,"N\xe3o \xe9 poss\xedvel suspender neste momento. A solicita\xe7\xe3o deste motorista j\xe1 foi rejeitada",i,"N\xe3o \xe9 poss\xedvel suspender neste momento. Este motorista pode estar em uma corrida ativa agora.","suspend","Suspender","admin","Admin",h,"Gerencie mais corridas com menos esfor\xe7o","revenue","Receita","this_months","(Deste m\xeas)","total_users","Total de Usu\xe1rios","total_drivers","Total de Motoristas","pending_drivers","Motoristas Pendentes",g,"Solicita\xe7\xf5es de Saque","recent_rides","Corridas Recentes","good_morning","Bom dia","good_afternoon","Boa tarde","good_evening","Boa noite","welcome_back","Bem-vindo de volta!","welcome","Bem-vindo!",f,"Por favor, fa\xe7a login para continuar",e,"Por favor, cadastre-se para continuar",d,"Digite o endere\xe7o de e-mail","password","Senha","enter_password","Digite a senha",c,"Confirmar Senha",b,"Digite a confirma\xe7\xe3o da senha",a,"Por favor, digite seu endere\xe7o de e-mail",a0,"Por favor, digite um endere\xe7o de e-mail v\xe1lido",a1,"Por favor, digite sua senha",a2,"Por favor, digite a confirma\xe7\xe3o da sua senha",a3,"A senha e a confirma\xe7\xe3o da senha n\xe3o coincidem","login","Login","sign_up","Cadastrar","choose_language","Escolher Idioma",a4,"Configura\xe7\xf5es de Pagamento",a5,"Gateway de Pagamento Stripe",a6,"Cadastre-se no Stripe Payment Gateway para obter sua Chave Public\xe1vel e Chave Secreta",a7,"Chave Public\xe1vel Stripe",a9,"Chave Secreta Stripe",b1,"Gateway de Pagamento PayPal",b2,"Cadastre-se no PayPal Payment Gateway para obter seu Client Id e Chave Secreta",b3,"Client Id do Paypal",b5,"Chave Secreta do PayPal",b7,"Gateway de Pagamento PayStack",b8,"Cadastre-se no PayStack Payment Gateway para obter sua Chave P\xfablica e Chave Secreta",b9,"Chave P\xfablica do PayStack",c1,"Chave Secreta do PayStack",c3,"Gateway de Pagamento Razorpay",c4,"Cadastre-se no Razorpay Payment Gateway para obter sua Key Id e Key Secret","razorpay_key_id","Key Id do Razorpay",c5,"Key Secret do Razorpay",c7,"Por favor, digite a Chave Public\xe1vel do Stripe",c8,"Por favor, digite a Chave Secreta do Stripe",c9,"Por favor, digite o Client Id do PayPal",d0,"Por favor, digite a Chave Secreta do PayPal",d1,"Por favor, digite a Chave P\xfablica do PayStack",d2,"Por favor, digite a Chave Secreta do PayStack",d3,"Por favor, digite a Key Id do Razorpay",d4,"Por favor, digite a Key Secret do Razorpay","save","Salvar",d5,"Aprove solicita\xe7\xf5es de integra\xe7\xe3o de motoristas ou rejeite-as com feedback claro para ajudar os motoristas a corrigir e solicitar novamente","phone","Telefone",d6,"Nenhum motorista encontrado","admin_revenue","Receita do Admin","revenue_trend","Tend\xeancia de Receita","rides_trend","Tend\xeancia de Corridas","rides","Corridas","avg_per_ride","M\xe9dia / Corrida","ride_details","Detalhes da Corrida",d7,"Informa\xe7\xf5es de Reserva","date","Data","payment_mode","Modo de Pagamento",d8,"Local de Embarque e Desembarque","fare_details","Detalhes da Tarifa","base_fare","Tarifa Base","distance_fare","Tarifa por Dist\xe2ncia","time_fare","Tarifa por Tempo","waiting_charge","Taxa de Espera","total","Total","drivers_earning","Ganhos do Motorista",d9,"Comiss\xe3o do Admin","user_details","Detalhes do Usu\xe1rio","name","Nome","from_date","De Data","to_date","At\xe9 Data","search","Buscar","clear_filter","Limpar Filtro","settings","Configura\xe7\xf5es","twilio_number","N\xfamero Twilio",e0,"O Twilio serve como um gateway de SMS. Voc\xea pode us\xe1-lo para enviar mensagens SMS de senha \xfanica (OTP) para verificar n\xfameros de telefone quando passageiros ou motoristas criam suas contas. Para come\xe7ar a usar o servi\xe7o, basta criar uma conta no Twilio para obter seu n\xfamero Twilio dedicado",e1,"Digite o N\xfamero Twilio","account_sid","Account Sid",e2,"O Twilio serve como um gateway de SMS. Voc\xea pode us\xe1-lo para enviar mensagens SMS de senha \xfanica (OTP) para verificar n\xfameros de telefone quando passageiros ou motoristas criam suas contas. Para come\xe7ar a usar o servi\xe7o, basta criar uma conta no Twilio para obter seu Account Sid dedicado.",e3,"Digite o Account Sid","auth_token","Auth Token",e4,"O Twilio serve como um gateway de SMS. Voc\xea pode us\xe1-lo para enviar mensagens SMS de senha \xfanica (OTP) para verificar n\xfameros de telefone quando passageiros ou motoristas criam suas contas. Para come\xe7ar a usar o servi\xe7o, basta criar uma conta no Twilio para obter seu Auth Token dedicado",e5,"Digite o Auth Token","twilio_sms","SMS do Twilio",e6,"Escreva a mensagem SMS do Twilio. O c\xf3digo de verifica\xe7\xe3o \xe9 adicionado automaticamente no in\xedcio da mensagem, ent\xe3o voc\xea pode continuar o texto assim:\n\u201c\xe9 o seu c\xf3digo de verifica\xe7\xe3o para fazer login no Ridely. Obrigado por escolher o Ridely.\u201d",e7,"Digite o SMS do Twilio","currency","Moeda",e8,"Especifique o s\xedmbolo da moeda pretendido para uso no aplicativo (ex: $, \u20ac, \xa5)","enter_currency","Digite a Moeda","geofencing_km","Quilometragem de Geofencing",e9,"Especifique, em quil\xf4metros, o raio geogr\xe1fico dentro do qual os motoristas receber\xe3o solicita\xe7\xf5es de corrida. Por exemplo, inserir '2' garantir\xe1 que as solicita\xe7\xf5es sejam enviadas apenas para motoristas localizados em um raio de dois quil\xf4metros",f0,"Digite a Quilometragem de Geofencing","google_map_key","Chave do Google Maps","this_api_key_is","Esta chave de API \xe9 utilizada tanto para a API do Google Places, que permite que os passageiros pesquisem sua localiza\xe7\xe3o, quanto para a funcionalidade da API de dire\xe7\xe3o de rota dentro do aplicativo.",f1,"Digite a Chave do Google Maps",f2,"Segundos para Aceitar Solicita\xe7\xe3o",f3,"O limite de tempo especificado, medido em segundos, representa a janela durante a qual um motorista deve aceitar a solicita\xe7\xe3o de corrida; a falha em faz\xea-lo reatribuir\xe1 automaticamente a solicita\xe7\xe3o ao pr\xf3ximo motorista dispon\xedvel",f4,"Digite os Segundos para Aceitar Solicita\xe7\xe3o",f5,"Ativar Verifica\xe7\xe3o do Passageiro?",f6,"O sistema deve exigir que o motorista verifique o passageiro usando um c\xf3digo de verifica\xe7\xe3o pr\xe9-corrida? O c\xf3digo est\xe1 acess\xedvel na interface do aplicativo do passageiro e n\xe3o \xe9 entregue via SMS","yes","Sim","no","N\xe3o",f7,"Por favor, digite o N\xfamero Twilio",f8,"Por favor, digite o Account Sid",f9,"Por favor, digite o Auth Token",g0,"Por favor, digite o SMS do Twilio","please_currency","Por favor, digite a Moeda",g1,"Por favor, digite a Quilometragem de Geofencing",g2,"Por favor, digite a Chave do Google Maps",g3,"Por favor, digite os Segundos para Aceitar Solicita\xe7\xe3o","first_name","Primeiro Nome","last_name","Sobrenome",g4,"Digite o Primeiro Nome","enter_last_name","Digite o Sobrenome",g5,"Digite o Telefone (Sem c\xf3digo do pa\xeds)",g6,"Por favor, digite uma palavra-chave para pesquisar","no_users_found","Nenhum usu\xe1rio encontrado","registered_on","Registrado em","gender","G\xeanero","rating","Avalia\xe7\xe3o","vehicle_details","Detalhes do Ve\xedculo","vehicle_image","Imagem do Ve\xedculo",g7,"O \xedcone deve ser de formato quadrado, com um tamanho m\xe1ximo de arquivo de 150 KB",g8,"\xcdcone do Ve\xedculo no Google Maps",g9,"Certifique-se de que os \xedcones tenham um fundo transparente e um tamanho de arquivo otimizado n\xe3o superior a 150 KB","vehicle_name","Nome do Ve\xedculo",h0,"O nome ficar\xe1 vis\xedvel para os passageiros ao reservar uma corrida. Voc\xea pode defini-lo como 'Auto', 'Cab Economy', 'Cab Premium', etc",h1,"Digite o Nome do Ve\xedculo",h2,"Capacidade de Assentos",h3,"A capacidade de assentos de um ve\xedculo, excluindo o motorista",h4,"Digite a Capacidade de Assentos",h5,"Porcentagem de Comiss\xe3o",h6,"Porcentagem de comiss\xe3o de um administrador",h7,"Digite a Porcentagem de Comiss\xe3o",h8,"Esta \xe9 a tarifa b\xe1sica que ser\xe1 cobrada","enter_base_fare","Digite a Tarifa Base","per_km_fare","Tarifa por Quil\xf4metro","per_km_fare_eg","Tarifa por quil\xf4metro. Ex: se o total de quil\xf4metros percorridos for 10 e a tarifa por quil\xf4metro for 8, ent\xe3o 80 ser\xe3o adicionados \xe0 tarifa base",h9,"Digite a Tarifa por Quil\xf4metro","per_minute_fare","Tarifa por Minuto",i0,"Tarifa por minuto. Ex: se o tempo total percorrido for de 30 minutos e a tarifa por minuto for 2, ent\xe3o 60 ser\xe3o adicionados \xe0 tarifa base",i1,"Digite a Tarifa por Minuto",i2,"Taxa de Espera por Minuto",i3,"Taxa de espera por minuto. Ex: se o motorista esperou por 5 minutos e a taxa de espera por minuto for 2, ent\xe3o 10 ser\xe3o adicionados \xe0 conta",i4,"Digite a Taxa de Espera por Minuto",i5,"Espera Come\xe7a Ap\xf3s Minutos",i6,"Defina a dura\xe7\xe3o (em minutos) ap\xf3s a qual as taxas de espera ser\xe3o cobradas automaticamente",i7,"Taxa de Espera M\xe1xima",i8,"Taxa de espera m\xe1xima. Ex: se o motorista esperou por 30 minutos e a taxa de espera por minuto for 2 e a taxa de espera m\xe1xima for definida como 50, ent\xe3o 50 ser\xe3o adicionados \xe0 tarifa base",i9,"Digite a Taxa de Espera M\xe1xima",j0,t1,j2,t2,j4,t3,j6,t4,j8,t5,k0,t6,k2,t7,k4,t8,k6,t9,"sure_update","Tem certeza de que deseja atualizar?","update","Atualizar",k8,"Por favor, adicione a imagem do ve\xedculo",k9,"Por favor, adicione o \xedcone do ve\xedculo",l0,t1,l1,t2,l2,t3,l3,t4,l4,t5,l5,t6,l6,t7,l7,t8,l8,t9,"vehicle_types","Tipos de Ve\xedculo",l9,"Gerenciar tipos de ve\xedculos (ex: Econ\xf4mico, Premium). Recomenda-se imagem quadrada de no m\xe1ximo 150-200 KB","image","Imagem","edit","Editar","add_new","Adicionar Novo",m0,"Marcado como pago com sucesso",m1,"Falha ao marcar como pago",m2,"Abaixo est\xe3o as solicita\xe7\xf5es de saque dos motoristas. Processe os pagamentos para suas respectivas contas banc\xe1rias e marque-os como pagos","requested_on","Solicitado em","bank_name","Nome do Banco","branch_name","Nome da Ag\xeancia","ifsc_code","C\xf3digo IFSC",m3,"Nome do Titular da Conta","account_number","N\xfamero da Conta",m4,"Ver Detalhes do Motorista",m5,"Voc\xea j\xe1 pagou o valor total ao motorista? Tem certeza de que deseja marcar esta solicita\xe7\xe3o como paga?","mark_as_paid","Marcar como Pago",m6,"Nenhuma solicita\xe7\xe3o de saque encontrada","alert","Alerta","home","In\xedcio",m7,"Credenciais inv\xe1lidas",m8,"Falha ao obter configura\xe7\xf5es",m9,"Configura\xe7\xf5es atualizadas com sucesso",n0,"Falha ao atualizar configura\xe7\xf5es",n1,"Falha ao obter documentos de registro",n2,"Falha ao atualizar documento de registro",n3,"Falha ao excluir documento de registro",n4,"Falha ao adicionar documento de registro",n5,"Falha ao obter motivos de cancelamento",n6,"Falha ao atualizar motivo de cancelamento",n7,"Falha ao excluir motivo de cancelamento",n8,"Falha ao adicionar motivo de cancelamento",n9,"Falha ao obter tipos de ve\xedculo",o0,"Falha ao atualizar tipo de ve\xedculo",o1,"O nome do ve\xedculo j\xe1 existe",o2,"Ve\xedculo adicionado com sucesso",o3,"Ve\xedculo atualizado com sucesso",o4,"O motorista foi aprovado",o5,"Falha ao aprovar motorista",o6,"O motorista foi rejeitado",o7,"Falha ao rejeitar motorista",o8,"O motorista foi suspenso",o9,"Falha ao suspender motorista",p0,"Suspens\xe3o desfeita com sucesso",p1,"Falha ao desfazer suspens\xe3o do motorista",p2,"Falha ao obter detalhes do motorista",p3,"Falha ao buscar corridas recentes",p4,"Falha ao obter detalhes da corrida",p5,"Falha ao obter detalhes do usu\xe1rio",p6,"Por favor, selecione a data de in\xedcio",p7,"Por favor, selecione a data de t\xe9rmino",p8,"Motivo de cancelamento exclu\xeddo com sucesso",p9,"Motivo de cancelamento adicionado com sucesso",q0,"Documento exclu\xeddo com sucesso",q1,"Documento adicionado com sucesso",q2,"Esta modifica\xe7\xe3o \xe9 restrita por Ridely."],u9,u9),"hi",A.a8(["cancel_reasons","\u0930\u0926\u094d\u0926 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0915\u093e\u0930\u0923","cancel_reason","\u0930\u0926\u094d\u0926 \u0915\u0930\u0928\u0947 \u0915\u093e \u0915\u093e\u0930\u0923","user_app","\u092f\u0942\u091c\u093c\u0930 \u0910\u092a","sr_no","\u0915\u094d\u0930. \u0938\u0902.","active","\u0938\u0915\u094d\u0930\u093f\u092f","delete","\u0939\u091f\u093e\u090f\u0902","sure_delete","\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u093e\u0915\u0908 \u0939\u091f\u093e\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?","add_new_reason","\u0928\u092f\u093e \u0915\u093e\u0930\u0923 \u091c\u094b\u0921\u093c\u0947\u0902",s,"\u0915\u0943\u092a\u092f\u093e \u092a\u0939\u0932\u0947 \u0930\u0926\u094d\u0926 \u0915\u0930\u0928\u0947 \u0915\u093e \u0915\u093e\u0930\u0923 \u091c\u094b\u0921\u093c\u0947\u0902","sure_add","\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u093e\u0915\u0908 \u091c\u094b\u0921\u093c\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?","add","\u091c\u094b\u0921\u093c\u0947\u0902","driver_app","\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0910\u092a","select_language","\u092d\u093e\u0937\u093e \u091a\u0941\u0928\u0947\u0902","apply","\u0932\u093e\u0917\u0942 \u0915\u0930\u0947\u0902","documents_list","\u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u0938\u0942\u091a\u0940",r,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930\u094b\u0902 \u0926\u094d\u0935\u093e\u0930\u093e \u0916\u093e\u0924\u093e \u092c\u0928\u093e\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092f\u0947 \u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u0906\u0935\u0936\u094d\u092f\u0915 \u0939\u0948\u0902","document_name","\u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u0915\u093e \u0928\u093e\u092e",q,"\u0928\u092f\u093e \u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u091c\u094b\u0921\u093c\u0947\u0902",p,"\u0915\u0943\u092a\u092f\u093e \u092a\u0939\u0932\u0947 \u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u0915\u093e \u0928\u093e\u092e \u091c\u094b\u0921\u093c\u0947\u0902","driver_details","\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0935\u093f\u0935\u0930\u0923","driver_name","\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u093e \u0928\u093e\u092e","phone_number","\u092b\u093c\u094b\u0928 \u0928\u0902\u092c\u0930","address","\u092a\u0924\u093e","email","\u0908\u092e\u0947\u0932","vehicle_type","\u0935\u093e\u0939\u0928 \u0915\u093e \u092a\u094d\u0930\u0915\u093e\u0930","vehicle_model","\u0935\u093e\u0939\u0928 \u0915\u093e \u092e\u0949\u0921\u0932","vehicle_color","\u0935\u093e\u0939\u0928 \u0915\u093e \u0930\u0902\u0917",o,"\u0935\u093e\u0939\u0928 \u092a\u094d\u0932\u0947\u091f \u0928\u0902\u092c\u0930","status","\u0938\u094d\u0925\u093f\u0924\u093f","documents","\u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c",n,"(\u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u0926\u0947\u0916\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0915\u094d\u0932\u093f\u0915 \u0915\u0930\u0947\u0902)","all_rides","\u0938\u092d\u0940 \u0938\u0935\u093e\u0930\u0940","user_name","\u092f\u0942\u091c\u093c\u0930 \u0915\u093e \u0928\u093e\u092e","amount","\u0930\u093e\u0936\u093f","date_and_time","\u0926\u093f\u0928\u093e\u0902\u0915 \u0914\u0930 \u0938\u092e\u092f","action","\u0915\u093e\u0930\u094d\u0930\u0935\u093e\u0908","view","\u0926\u0947\u0916\u0947\u0902","no_rides_found","\u0915\u094b\u0908 \u0938\u0935\u093e\u0930\u0940 \u0928\u0939\u0940\u0902 \u092e\u093f\u0932\u0940","sure_approve","\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u093e\u0915\u0908 \u092e\u0902\u091c\u093c\u0942\u0930 \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?","approve","\u092e\u0902\u091c\u093c\u0942\u0930 \u0915\u0930\u0947\u0902","or","\u092f\u093e",m,"\u0915\u0943\u092a\u092f\u093e \u0905\u0938\u094d\u0935\u0940\u0915\u0943\u0924\u093f \u0915\u093e \u0915\u093e\u0930\u0923 \u091c\u094b\u0921\u093c\u0947\u0902","sure_reject","\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u093e\u0915\u0908 \u0905\u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?","reject","\u0905\u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0947\u0902",l,"\u0905\u0938\u094d\u0935\u0940\u0915\u0943\u0924\u093f \u0915\u093e \u090f\u0915 \u0915\u093e\u0930\u0923 \u091c\u094b\u0921\u093c\u0947\u0902",k,"\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u093e\u0915\u0908 \u0928\u093f\u0932\u0902\u092c\u0928 \u0935\u093e\u092a\u0938 \u0932\u0947\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?","undo_suspend","\u0928\u093f\u0932\u0902\u092c\u0928 \u0935\u093e\u092a\u0938 \u0932\u0947\u0902","sure_suspend","\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u093e\u0915\u0908 \u0928\u093f\u0932\u0902\u092c\u093f\u0924 \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?",j,"\u0907\u0938 \u0938\u092e\u092f \u0928\u093f\u0932\u0902\u092c\u093f\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0905\u0938\u092e\u0930\u094d\u0925\u0964 \u0907\u0938 \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u093e \u0906\u0935\u0947\u0926\u0928 \u092a\u0939\u0932\u0947 \u0939\u0940 \u0905\u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930 \u0926\u093f\u092f\u093e \u0917\u092f\u093e \u0939\u0948",i,"\u0907\u0938 \u0938\u092e\u092f \u0928\u093f\u0932\u0902\u092c\u093f\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0905\u0938\u092e\u0930\u094d\u0925\u0964 \u092f\u0939 \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0905\u092d\u0940 \u0915\u093f\u0938\u0940 \u0938\u0915\u094d\u0930\u093f\u092f \u0938\u0935\u093e\u0930\u0940 \u092a\u0930 \u0939\u094b \u0938\u0915\u0924\u093e \u0939\u0948\u0964","suspend","\u0928\u093f\u0932\u0902\u092c\u093f\u0924 \u0915\u0930\u0947\u0902","admin","\u090f\u0921\u092e\u093f\u0928",h,"\u0915\u092e \u092a\u094d\u0930\u092f\u093e\u0938 \u0915\u0947 \u0938\u093e\u0925 \u0905\u0927\u093f\u0915 \u0938\u0935\u093e\u0930\u0940 \u092a\u094d\u0930\u092c\u0902\u0927\u093f\u0924 \u0915\u0930\u0947\u0902","revenue","\u0930\u093e\u091c\u0938\u094d\u0935","this_months","(\u0907\u0938 \u092e\u0939\u0940\u0928\u0947 \u0915\u093e)","total_users","\u0915\u0941\u0932 \u092f\u0942\u091c\u093c\u0930","total_drivers","\u0915\u0941\u0932 \u0921\u094d\u0930\u093e\u0907\u0935\u0930","pending_drivers","\u0932\u0902\u092c\u093f\u0924 \u0921\u094d\u0930\u093e\u0907\u0935\u0930",g,"\u0928\u093f\u0915\u093e\u0938\u0940 \u0905\u0928\u0941\u0930\u094b\u0927","recent_rides","\u0939\u093e\u0932 \u0915\u0940 \u0938\u0935\u093e\u0930\u0940","good_morning","\u0936\u0941\u092d \u092a\u094d\u0930\u092d\u093e\u0924","good_afternoon","\u0928\u092e\u0938\u094d\u0915\u093e\u0930 (\u0926\u094b\u092a\u0939\u0930)","good_evening","\u0936\u0941\u092d \u0938\u0902\u0927\u094d\u092f\u093e","welcome_back","\u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948!","welcome","\u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948!",f,"\u091c\u093e\u0930\u0940 \u0930\u0916\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0915\u0943\u092a\u092f\u093e \u0938\u093e\u0907\u0928 \u0907\u0928 \u0915\u0930\u0947\u0902",e,"\u091c\u093e\u0930\u0940 \u0930\u0916\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0915\u0943\u092a\u092f\u093e \u0938\u093e\u0907\u0928 \u0905\u092a \u0915\u0930\u0947\u0902",d,"\u0908\u092e\u0947\u0932 \u092a\u0924\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","password","\u092a\u093e\u0938\u0935\u0930\u094d\u0921","enter_password","\u092a\u093e\u0938\u0935\u0930\u094d\u0921 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",c,"\u092a\u093e\u0938\u0935\u0930\u094d\u0921 \u0915\u0940 \u092a\u0941\u0937\u094d\u091f\u093f \u0915\u0930\u0947\u0902",b,"\u092a\u0941\u0937\u094d\u091f\u093f \u092a\u093e\u0938\u0935\u0930\u094d\u0921 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",a,"\u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u0908\u092e\u0947\u0932 \u092a\u0924\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",a0,"\u0915\u0943\u092a\u092f\u093e \u090f\u0915 \u0935\u0948\u0927 \u0908\u092e\u0947\u0932 \u092a\u0924\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",a1,"\u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u092a\u093e\u0938\u0935\u0930\u094d\u0921 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",a2,"\u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u092a\u0941\u0937\u094d\u091f\u093f \u092a\u093e\u0938\u0935\u0930\u094d\u0921 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",a3,"\u092a\u093e\u0938\u0935\u0930\u094d\u0921 \u0914\u0930 \u092a\u0941\u0937\u094d\u091f\u093f \u092a\u093e\u0938\u0935\u0930\u094d\u0921 \u092e\u0947\u0932 \u0928\u0939\u0940\u0902 \u0916\u093e\u0924\u0947","login","\u0932\u0949\u0917\u093f\u0928","sign_up","\u0938\u093e\u0907\u0928 \u0905\u092a","choose_language","\u092d\u093e\u0937\u093e \u091a\u0941\u0928\u0947\u0902",a4,"\u092d\u0941\u0917\u0924\u093e\u0928 \u0938\u0947\u091f\u093f\u0902\u0917\u094d\u0938",a5,"Stripe \u092a\u0947\u092e\u0947\u0902\u091f \u0917\u0947\u091f\u0935\u0947",a6,"\u0905\u092a\u0928\u0940 Publishable Key \u0914\u0930 Secret Key \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f Stripe \u092a\u0947\u092e\u0947\u0902\u091f \u0917\u0947\u091f\u0935\u0947 \u092e\u0947\u0902 \u0938\u093e\u0907\u0928\u0905\u092a \u0915\u0930\u0947\u0902",a7,a8,a9,b0,b1,"PayPal \u092a\u0947\u092e\u0947\u0902\u091f \u0917\u0947\u091f\u0935\u0947",b2,"\u0905\u092a\u0928\u0940 Client Id \u0914\u0930 Secret Key \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f PayPal \u092a\u0947\u092e\u0947\u0902\u091f \u0917\u0947\u091f\u0935\u0947 \u092e\u0947\u0902 \u0938\u093e\u0907\u0928\u0905\u092a \u0915\u0930\u0947\u0902",b3,b4,b5,b6,b7,"PayStack \u092a\u0947\u092e\u0947\u0902\u091f \u0917\u0947\u091f\u0935\u0947",b8,"\u0905\u092a\u0928\u0940 Public Key \u0914\u0930 Secret Key \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f PayStack \u092a\u0947\u092e\u0947\u0902\u091f \u0917\u0947\u091f\u0935\u0947 \u092e\u0947\u0902 \u0938\u093e\u0907\u0928\u0905\u092a \u0915\u0930\u0947\u0902",b9,c0,c1,c2,c3,"Razorpay \u092a\u0947\u092e\u0947\u0902\u091f \u0917\u0947\u091f\u0935\u0947",c4,"\u0905\u092a\u0928\u0940 Key Id \u0914\u0930 Key Secret \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f Razorpay \u092a\u0947\u092e\u0947\u0902\u091f \u0917\u0947\u091f\u0935\u0947 \u092e\u0947\u0902 \u0938\u093e\u0907\u0928\u0905\u092a \u0915\u0930\u0947\u0902","razorpay_key_id","Razorpay Key Id",c5,c6,c7,"\u0915\u0943\u092a\u092f\u093e Stripe Publishable Key \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",c8,"\u0915\u0943\u092a\u092f\u093e Stripe Secret Key \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",c9,"\u0915\u0943\u092a\u092f\u093e PayPal Client Id \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",d0,"\u0915\u0943\u092a\u092f\u093e PayPal Secret Key \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",d1,"\u0915\u0943\u092a\u092f\u093e PayStack Public Key \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",d2,"\u0915\u0943\u092a\u092f\u093e PayStack Secret Key \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",d3,"\u0915\u0943\u092a\u092f\u093e Razorpay Key Id \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",d4,"\u0915\u0943\u092a\u092f\u093e Razorpay Key Secret \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","save","\u0938\u0939\u0947\u091c\u0947\u0902",d5,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0911\u0928\u092c\u094b\u0930\u094d\u0921\u093f\u0902\u0917 \u0905\u0928\u0941\u0930\u094b\u0927\u094b\u0902 \u0915\u094b \u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0947\u0902 \u092f\u093e \u0921\u094d\u0930\u093e\u0907\u0935\u0930\u094b\u0902 \u0915\u094b \u0938\u0941\u0927\u093e\u0930 \u0915\u0930\u0928\u0947 \u0914\u0930 \u092a\u0941\u0928: \u0906\u0935\u0947\u0926\u0928 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u092e\u0926\u0926 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0938\u094d\u092a\u0937\u094d\u091f \u092a\u094d\u0930\u0924\u093f\u0915\u094d\u0930\u093f\u092f\u093e \u0915\u0947 \u0938\u093e\u0925 \u0909\u0928\u094d\u0939\u0947\u0902 \u0905\u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0947\u0902","phone","\u092b\u093c\u094b\u0928",d6,"\u0915\u094b\u0908 \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0928\u0939\u0940\u0902 \u092e\u093f\u0932\u093e","admin_revenue","\u090f\u0921\u092e\u093f\u0928 \u0930\u093e\u091c\u0938\u094d\u0935","revenue_trend","\u0930\u093e\u091c\u0938\u094d\u0935 \u0930\u0941\u091d\u093e\u0928","rides_trend","\u0938\u0935\u093e\u0930\u0940 \u0930\u0941\u091d\u093e\u0928","rides","\u0938\u0935\u093e\u0930\u0940","avg_per_ride","\u0914\u0938\u0924 / \u0938\u0935\u093e\u0930\u0940","ride_details","\u0938\u0935\u093e\u0930\u0940 \u0935\u093f\u0935\u0930\u0923",d7,"\u092c\u0941\u0915\u093f\u0902\u0917 \u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940","date","\u0926\u093f\u0928\u093e\u0902\u0915","payment_mode","\u092d\u0941\u0917\u0924\u093e\u0928 \u0915\u093e \u092a\u094d\u0930\u0915\u093e\u0930",d8,"\u092a\u093f\u0915 \u0914\u0930 \u0921\u094d\u0930\u0949\u092a \u0932\u094b\u0915\u0947\u0936\u0928","fare_details","\u0915\u093f\u0930\u093e\u092f\u093e \u0935\u093f\u0935\u0930\u0923","base_fare","\u0906\u0927\u093e\u0930 \u0915\u093f\u0930\u093e\u092f\u093e","distance_fare","\u0926\u0942\u0930\u0940 \u0915\u093f\u0930\u093e\u092f\u093e","time_fare","\u0938\u092e\u092f \u0915\u093f\u0930\u093e\u092f\u093e","waiting_charge","\u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915","total","\u0915\u0941\u0932","drivers_earning","\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u0940 \u0915\u092e\u093e\u0908",d9,"\u090f\u0921\u092e\u093f\u0928 \u0915\u092e\u0940\u0936\u0928","user_details","\u092f\u0942\u091c\u093c\u0930 \u0935\u093f\u0935\u0930\u0923","name","\u0928\u093e\u092e","from_date","\u092a\u094d\u0930\u093e\u0930\u0902\u092d \u0924\u093f\u0925\u093f","to_date","\u0905\u0902\u0924\u093f\u092e \u0924\u093f\u0925\u093f","search","\u0916\u094b\u091c\u0947\u0902","clear_filter","\u092b\u093c\u093f\u0932\u094d\u091f\u0930 \u0938\u093e\u092b\u093c \u0915\u0930\u0947\u0902","settings","\u0938\u0947\u091f\u093f\u0902\u0917\u094d\u0938","twilio_number","Twilio \u0928\u0902\u092c\u0930",e0,"Twilio \u090f\u0915 SMS \u0917\u0947\u091f\u0935\u0947 \u0915\u0947 \u0930\u0942\u092a \u092e\u0947\u0902 \u0915\u093e\u0930\u094d\u092f \u0915\u0930\u0924\u093e \u0939\u0948\u0964 \u091c\u092c \u0930\u093e\u0907\u0921\u0930 \u092f\u093e \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0905\u092a\u0928\u093e \u0916\u093e\u0924\u093e \u092c\u0928\u093e\u0924\u0947 \u0939\u0948\u0902 \u0924\u094b \u0906\u092a \u0907\u0938\u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u092b\u093c\u094b\u0928 \u0928\u0902\u092c\u0930 \u0938\u0924\u094d\u092f\u093e\u092a\u093f\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0935\u0928-\u091f\u093e\u0907\u092e \u092a\u093e\u0938\u0935\u0930\u094d\u0921 (OTP) SMS \u0938\u0902\u0926\u0947\u0936 \u092d\u0947\u091c\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u0938\u0947\u0935\u093e \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0936\u0941\u0930\u0942 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f, \u0905\u092a\u0928\u093e \u0938\u092e\u0930\u094d\u092a\u093f\u0924 Twilio \u0928\u0902\u092c\u0930 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u0939\u0947\u0924\u0941 \u092c\u0938 Twilio \u092a\u0930 \u090f\u0915 \u0916\u093e\u0924\u093e \u092c\u0928\u093e\u090f\u0902\u0964",e1,"Twilio \u0928\u0902\u092c\u0930 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","account_sid","Account Sid",e2,"Twilio \u090f\u0915 SMS \u0917\u0947\u091f\u0935\u0947 \u0915\u0947 \u0930\u0942\u092a \u092e\u0947\u0902 \u0915\u093e\u0930\u094d\u092f \u0915\u0930\u0924\u093e \u0939\u0948\u0964 \u0938\u0947\u0935\u093e \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0936\u0941\u0930\u0942 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f, \u0905\u092a\u0928\u093e \u0938\u092e\u0930\u094d\u092a\u093f\u0924 Account Sid \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u0939\u0947\u0924\u0941 \u092c\u0938 Twilio \u092a\u0930 \u090f\u0915 \u0916\u093e\u0924\u093e \u092c\u0928\u093e\u090f\u0902\u0964",e3,"Account Sid \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","auth_token","Auth Token",e4,"Twilio \u090f\u0915 SMS \u0917\u0947\u091f\u0935\u0947 \u0915\u0947 \u0930\u0942\u092a \u092e\u0947\u0902 \u0915\u093e\u0930\u094d\u092f \u0915\u0930\u0924\u093e \u0939\u0948\u0964 \u0938\u0947\u0935\u093e \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0936\u0941\u0930\u0942 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f, \u0905\u092a\u0928\u093e \u0938\u092e\u0930\u094d\u092a\u093f\u0924 Auth Token \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u0939\u0947\u0924\u0941 \u092c\u0938 Twilio \u092a\u0930 \u090f\u0915 \u0916\u093e\u0924\u093e \u092c\u0928\u093e\u090f\u0902\u0964",e5,"Auth Token \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","twilio_sms","Twilio SMS",e6,"Twilio SMS \u0938\u0902\u0926\u0947\u0936 \u0932\u093f\u0916\u0947\u0902\u0964 \u0938\u0924\u094d\u092f\u093e\u092a\u0928 \u0915\u094b\u0921 \u0938\u0902\u0926\u0947\u0936 \u0915\u0940 \u0936\u0941\u0930\u0941\u0906\u0924 \u092e\u0947\u0902 \u0938\u094d\u0935\u091a\u093e\u0932\u093f\u0924 \u0930\u0942\u092a \u0938\u0947 \u091c\u094b\u0921\u093c\u093e \u091c\u093e\u0924\u093e \u0939\u0948, \u0907\u0938\u0932\u093f\u090f \u0906\u092a \u091f\u0947\u0915\u094d\u0938\u094d\u091f \u0915\u094b \u0907\u0938 \u0924\u0930\u0939 \u091c\u093e\u0930\u0940 \u0930\u0916 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902:\n\u201cRidely \u092e\u0947\u0902 \u0932\u0949\u0917\u093f\u0928 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u093e \u0938\u0924\u094d\u092f\u093e\u092a\u0928 \u0915\u094b\u0921 \u0939\u0948\u0964 Ridely \u091a\u0941\u0928\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0927\u0928\u094d\u092f\u0935\u093e\u0926\u0964\u201d",e7,"Twilio SMS \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","currency","\u092e\u0941\u0926\u094d\u0930\u093e",e8,"\u090f\u092a\u094d\u0932\u093f\u0915\u0947\u0936\u0928 \u0915\u0947 \u092d\u0940\u0924\u0930 \u0909\u092a\u092f\u094b\u0917 \u0915\u0947 \u0932\u093f\u090f \u092e\u0941\u0926\u094d\u0930\u093e \u092a\u094d\u0930\u0924\u0940\u0915 \u0928\u093f\u0930\u094d\u0926\u093f\u0937\u094d\u091f \u0915\u0930\u0947\u0902 (\u091c\u0948\u0938\u0947, $, \u20ac, \xa5)","enter_currency","\u092e\u0941\u0926\u094d\u0930\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","geofencing_km","\u091c\u093f\u092f\u094b\u092b\u0947\u0902\u0938\u093f\u0902\u0917 \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930",e9,"\u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u092e\u0947\u0902 \u0935\u0939 \u092d\u094c\u0917\u094b\u0932\u093f\u0915 \u0926\u093e\u092f\u0930\u093e \u0928\u093f\u0930\u094d\u0926\u093f\u0937\u094d\u091f \u0915\u0930\u0947\u0902 \u091c\u093f\u0938\u0915\u0947 \u092d\u0940\u0924\u0930 \u0921\u094d\u0930\u093e\u0907\u0935\u0930\u094b\u0902 \u0915\u094b \u0938\u0935\u093e\u0930\u0940 \u0915\u0947 \u0905\u0928\u0941\u0930\u094b\u0927 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0939\u094b\u0902\u0917\u0947\u0964 \u0909\u0926\u093e\u0939\u0930\u0923 \u0915\u0947 \u0932\u093f\u090f, '2' \u0926\u0930\u094d\u091c \u0915\u0930\u0928\u0947 \u0938\u0947 \u092f\u0939 \u0938\u0941\u0928\u093f\u0936\u094d\u091a\u093f\u0924 \u0939\u094b\u0917\u093e \u0915\u093f \u0905\u0928\u0941\u0930\u094b\u0927 \u0915\u0947\u0935\u0932 \u0926\u094b \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u0915\u0947 \u0926\u093e\u092f\u0930\u0947 \u092e\u0947\u0902 \u0938\u094d\u0925\u093f\u0924 \u0921\u094d\u0930\u093e\u0907\u0935\u0930\u094b\u0902 \u0915\u094b \u0939\u0940 \u092d\u0947\u091c\u0947 \u091c\u093e\u090f\u0902\u0964",f0,"\u091c\u093f\u092f\u094b\u092b\u0947\u0902\u0938\u093f\u0902\u0917 \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","google_map_key","Google Map Key","this_api_key_is","\u092f\u0939 API \u0915\u0940 (Key) Google Places API \u0914\u0930 \u090f\u092a\u094d\u0932\u093f\u0915\u0947\u0936\u0928 \u0915\u0947 \u092d\u0940\u0924\u0930 \u0930\u0942\u091f \u0926\u093f\u0936\u093e API \u0915\u093e\u0930\u094d\u092f\u0915\u094d\u0937\u092e\u0924\u093e \u0926\u094b\u0928\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f \u0909\u092a\u092f\u094b\u0917 \u0915\u0940 \u091c\u093e\u0924\u0940 \u0939\u0948\u0964",f1,"Google Map Key \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",f2,"\u0905\u0928\u0941\u0930\u094b\u0927 \u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0928\u0947 \u0915\u093e \u0938\u092e\u092f (\u0938\u0947\u0915\u0902\u0921)",f3,"\u0938\u0947\u0915\u0902\u0921 \u092e\u0947\u0902 \u0928\u093f\u0930\u094d\u0927\u093e\u0930\u093f\u0924 \u0938\u092e\u092f \u0938\u0940\u092e\u093e \u0909\u0938 \u0905\u0935\u0927\u093f \u0915\u094b \u0926\u0930\u094d\u0936\u093e\u0924\u0940 \u0939\u0948 \u091c\u093f\u0938\u0915\u0947 \u0926\u094c\u0930\u093e\u0928 \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u0938\u0935\u093e\u0930\u0940 \u0915\u0947 \u0905\u0928\u0941\u0930\u094b\u0927 \u0915\u094b \u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0928\u093e \u0939\u094b\u0917\u093e; \u0910\u0938\u093e \u0928 \u0915\u0930\u0928\u0947 \u092a\u0930 \u0905\u0928\u0941\u0930\u094b\u0927 \u0938\u094d\u0935\u0924\u0903 \u0939\u0940 \u0905\u0917\u0932\u0947 \u0909\u092a\u0932\u092c\u094d\u0927 \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u092d\u0947\u091c \u0926\u093f\u092f\u093e \u091c\u093e\u090f\u0917\u093e\u0964",f4,"\u0905\u0928\u0941\u0930\u094b\u0927 \u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0928\u0947 \u0915\u093e \u0938\u092e\u092f \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",f5,"\u0930\u093e\u0907\u0921\u0930 \u0938\u0924\u094d\u092f\u093e\u092a\u0928 \u0938\u0915\u094d\u0937\u092e \u0915\u0930\u0947\u0902?",f6,"\u0915\u094d\u092f\u093e \u0938\u093f\u0938\u094d\u091f\u092e \u0915\u0947 \u0932\u093f\u090f \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u0938\u0935\u093e\u0930\u0940 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0938\u0924\u094d\u092f\u093e\u092a\u0928 \u0915\u094b\u0921 \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0915\u0930\u0915\u0947 \u0930\u093e\u0907\u0921\u0930 \u0915\u094b \u0938\u0924\u094d\u092f\u093e\u092a\u093f\u0924 \u0915\u0930\u0928\u093e \u0906\u0935\u0936\u094d\u092f\u0915 \u0939\u094b\u0928\u093e \u091a\u093e\u0939\u093f\u090f? \u0915\u094b\u0921 \u0930\u093e\u0907\u0921\u0930 \u090f\u092a\u094d\u0932\u093f\u0915\u0947\u0936\u0928 \u0907\u0902\u091f\u0930\u092b\u093c\u0947\u0938 \u0915\u0947 \u092d\u0940\u0924\u0930 \u0938\u0941\u0932\u092d \u0939\u0948 \u0914\u0930 SMS \u0915\u0947 \u092e\u093e\u0927\u094d\u092f\u092e \u0938\u0947 \u0928\u0939\u0940\u0902 \u092d\u0947\u091c\u093e \u091c\u093e\u0924\u093e \u0939\u0948\u0964","yes","\u0939\u093e\u0901","no","\u0928\u0939\u0940\u0902",f7,"\u0915\u0943\u092a\u092f\u093e Twilio \u0928\u0902\u092c\u0930 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",f8,"\u0915\u0943\u092a\u092f\u093e Account Sid \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",f9,"\u0915\u0943\u092a\u092f\u093e Auth Token \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",g0,"\u0915\u0943\u092a\u092f\u093e Twilio SMS \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","please_currency","\u0915\u0943\u092a\u092f\u093e \u092e\u0941\u0926\u094d\u0930\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",g1,"\u0915\u0943\u092a\u092f\u093e \u091c\u093f\u092f\u094b\u092b\u0947\u0902\u0938\u093f\u0902\u0917 \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",g2,"\u0915\u0943\u092a\u092f\u093e Google Map Key \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",g3,"\u0915\u0943\u092a\u092f\u093e \u0905\u0928\u0941\u0930\u094b\u0927 \u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0928\u0947 \u0915\u093e \u0938\u092e\u092f \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","first_name","\u092a\u094d\u0930\u0925\u092e \u0928\u093e\u092e","last_name","\u0905\u0902\u0924\u093f\u092e \u0928\u093e\u092e",g4,"\u092a\u094d\u0930\u0925\u092e \u0928\u093e\u092e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","enter_last_name","\u0905\u0902\u0924\u093f\u092e \u0928\u093e\u092e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",g5,"\u092b\u093c\u094b\u0928 \u0928\u0902\u092c\u0930 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902 (\u0926\u0947\u0936 \u0915\u094b\u0921 \u0915\u0947 \u092c\u093f\u0928\u093e)",g6,"\u0915\u0943\u092a\u092f\u093e \u0916\u094b\u091c\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0936\u092c\u094d\u0926 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","no_users_found","\u0915\u094b\u0908 \u092f\u0942\u091c\u093c\u0930 \u0928\u0939\u0940\u0902 \u092e\u093f\u0932\u093e","registered_on","\u092a\u0902\u091c\u0940\u0915\u0930\u0923 \u0924\u093f\u0925\u093f","gender","\u0932\u093f\u0902\u0917","rating","\u0930\u0947\u091f\u093f\u0902\u0917","vehicle_details","\u0935\u093e\u0939\u0928 \u0935\u093f\u0935\u0930\u0923","vehicle_image","\u0935\u093e\u0939\u0928 \u0915\u0940 \u091b\u0935\u093f",g7,"\u0906\u0907\u0915\u0928 \u0935\u0930\u094d\u0917\u093e\u0915\u093e\u0930 \u0939\u094b\u0928\u093e \u091a\u093e\u0939\u093f\u090f, \u091c\u093f\u0938\u0915\u093e \u0905\u0927\u093f\u0915\u0924\u092e \u092b\u093c\u093e\u0907\u0932 \u0906\u0915\u093e\u0930 150 KB \u0939\u094b",g8,"Google Map \u092a\u0930 \u0935\u093e\u0939\u0928 \u0906\u0907\u0915\u0928",g9,"\u0915\u0943\u092a\u092f\u093e \u0938\u0941\u0928\u093f\u0936\u094d\u091a\u093f\u0924 \u0915\u0930\u0947\u0902 \u0915\u093f \u0906\u0907\u0915\u0928 \u0915\u093e \u092c\u0948\u0915\u0917\u094d\u0930\u093e\u0909\u0902\u0921 \u092a\u093e\u0930\u0926\u0930\u094d\u0936\u0940 \u0939\u094b \u0914\u0930 \u092b\u093c\u093e\u0907\u0932 \u0915\u093e \u0906\u0915\u093e\u0930 150 KB \u0938\u0947 \u0905\u0927\u093f\u0915 \u0928 \u0939\u094b","vehicle_name","\u0935\u093e\u0939\u0928 \u0915\u093e \u0928\u093e\u092e",h0,"\u0938\u0935\u093e\u0930\u0940 \u092c\u0941\u0915 \u0915\u0930\u0924\u0947 \u0938\u092e\u092f \u0930\u093e\u0907\u0921\u0930\u094d\u0938 \u0915\u094b \u092f\u0939 \u0928\u093e\u092e \u0926\u093f\u0916\u093e\u0908 \u0926\u0947\u0917\u093e\u0964 \u0906\u092a \u0907\u0938\u0947 'Auto', 'Cab Economy', 'Cab Premium' \u0906\u0926\u093f \u0915\u0940 \u0924\u0930\u0939 \u0938\u0947\u091f \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902",h1,"\u0935\u093e\u0939\u0928 \u0915\u093e \u0928\u093e\u092e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",h2,"\u092c\u0948\u0920\u0928\u0947 \u0915\u0940 \u0915\u094d\u0937\u092e\u0924\u093e",h3,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u091b\u094b\u0921\u093c\u0915\u0930 \u0935\u093e\u0939\u0928 \u092e\u0947\u0902 \u092c\u0948\u0920\u0928\u0947 \u0915\u0940 \u0915\u094d\u0937\u092e\u0924\u093e",h4,"\u092c\u0948\u0920\u0928\u0947 \u0915\u0940 \u0915\u094d\u0937\u092e\u0924\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",h5,"\u0915\u092e\u0940\u0936\u0928 \u092a\u094d\u0930\u0924\u093f\u0936\u0924",h6,"\u090f\u0921\u092e\u093f\u0928 \u0915\u093e \u0915\u092e\u0940\u0936\u0928 \u092a\u094d\u0930\u0924\u093f\u0936\u0924",h7,"\u0915\u092e\u0940\u0936\u0928 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",h8,"\u092f\u0939 \u092e\u0942\u0932 \u0915\u093f\u0930\u093e\u092f\u093e \u0939\u0948 \u091c\u094b \u0932\u093f\u092f\u093e \u091c\u093e\u090f\u0917\u093e","enter_base_fare","\u0906\u0927\u093e\u0930 \u0915\u093f\u0930\u093e\u092f\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","per_km_fare","\u092a\u094d\u0930\u0924\u093f \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u0915\u093f\u0930\u093e\u092f\u093e","per_km_fare_eg","\u092a\u094d\u0930\u0924\u093f \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u0915\u093f\u0930\u093e\u092f\u093e\u0964 \u0909\u0926\u093e\u0939\u0930\u0923 \u0915\u0947 \u0932\u093f\u090f \u092f\u0926\u093f \u0915\u0941\u0932 10 \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u0915\u0940 \u092f\u093e\u0924\u094d\u0930\u093e \u0915\u0940 \u0917\u0908 \u0939\u0948 \u0914\u0930 \u092a\u094d\u0930\u0924\u093f \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u0915\u093f\u0930\u093e\u092f\u093e 8 \u0939\u0948 \u0924\u094b \u0906\u0927\u093e\u0930 \u0915\u093f\u0930\u093e\u090f \u092e\u0947\u0902 80 \u091c\u094b\u0921\u093c\u0947 \u091c\u093e\u090f\u0902\u0917\u0947\u0964",h9,"\u092a\u094d\u0930\u0924\u093f \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u0915\u093f\u0930\u093e\u092f\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","per_minute_fare","\u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u0915\u093f\u0930\u093e\u092f\u093e",i0,"\u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u0915\u093f\u0930\u093e\u092f\u093e\u0964 \u0909\u0926\u093e\u0939\u0930\u0923 \u0915\u0947 \u0932\u093f\u090f \u092f\u0926\u093f \u0915\u0941\u0932 \u092f\u093e\u0924\u094d\u0930\u093e \u0915\u093e \u0938\u092e\u092f 30 \u092e\u093f\u0928\u091f \u0939\u0948 \u0914\u0930 \u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u0915\u093f\u0930\u093e\u092f\u093e 2 \u0939\u0948 \u0924\u094b \u0906\u0927\u093e\u0930 \u0915\u093f\u0930\u093e\u090f \u092e\u0947\u0902 60 \u091c\u094b\u0921\u093c\u0947 \u091c\u093e\u090f\u0902\u0917\u0947\u0964",i1,"\u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u0915\u093f\u0930\u093e\u092f\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",i2,"\u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915",i3,"\u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915\u0964 \u0909\u0926\u093e\u0939\u0930\u0923 \u0915\u0947 \u0932\u093f\u090f \u092f\u0926\u093f \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0928\u0947 5 \u092e\u093f\u0928\u091f \u0924\u0915 \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0915\u0940 \u0914\u0930 \u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915 2 \u0939\u0948 \u0924\u094b \u092c\u093f\u0932 \u092e\u0947\u0902 10 \u091c\u094b\u0921\u093c\u0947 \u091c\u093e\u090f\u0902\u0917\u0947\u0964",i4,"\u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",i5,"\u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0930\u0942 \u0939\u094b\u0928\u0947 \u0915\u093e \u0938\u092e\u092f (\u092e\u093f\u0928\u091f \u0915\u0947 \u092c\u093e\u0926)",i6,"\u0935\u0939 \u0905\u0935\u0927\u093f (\u092e\u093f\u0928\u091f\u094b\u0902 \u092e\u0947\u0902) \u0938\u0947\u091f \u0915\u0930\u0947\u0902 \u091c\u093f\u0938\u0915\u0947 \u092c\u093e\u0926 \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915 \u0938\u094d\u0935\u0924\u0903 \u0939\u0940 \u092c\u093f\u0932 \u092e\u0947\u0902 \u091c\u0941\u0921\u093c \u091c\u093e\u090f\u0917\u093e",i7,"\u0905\u0927\u093f\u0915\u0924\u092e \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915",i8,"\u0905\u0927\u093f\u0915\u0924\u092e \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915\u0964 \u0909\u0926\u093e\u0939\u0930\u0923 \u0915\u0947 \u0932\u093f\u090f \u092f\u0926\u093f \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0928\u0947 30 \u092e\u093f\u0928\u091f \u0924\u0915 \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0915\u0940 \u0914\u0930 \u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915 2 \u0939\u0948 \u0914\u0930 \u0905\u0927\u093f\u0915\u0924\u092e \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915 50 \u092a\u0930 \u0938\u0947\u091f \u0939\u0948 \u0924\u094b \u0906\u0927\u093e\u0930 \u0915\u093f\u0930\u093e\u090f \u092e\u0947\u0902 50 \u091c\u094b\u0921\u093c\u0947 \u091c\u093e\u090f\u0902\u0917\u0947\u0964",i9,"\u0905\u0927\u093f\u0915\u0924\u092e \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",j0,u0,j2,u1,j4,u2,j6,u3,j8,u4,k0,u5,k2,u6,k4,u7,k6,u8,"sure_update","\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u093e\u0915\u0908 \u0905\u092a\u0921\u0947\u091f \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?","update","\u0905\u092a\u0921\u0947\u091f \u0915\u0930\u0947\u0902",k8,"\u0915\u0943\u092a\u092f\u093e \u0935\u093e\u0939\u0928 \u0915\u0940 \u091b\u0935\u093f \u091c\u094b\u0921\u093c\u0947\u0902",k9,"\u0915\u0943\u092a\u092f\u093e \u0935\u093e\u0939\u0928 \u0906\u0907\u0915\u0928 \u091c\u094b\u0921\u093c\u0947\u0902",l0,u0,l1,u1,l2,u2,l3,u3,l4,u4,l5,u5,l6,u6,l7,u7,l8,u8,"vehicle_types","\u0935\u093e\u0939\u0928 \u0915\u0947 \u092a\u094d\u0930\u0915\u093e\u0930",l9,"\u0935\u093e\u0939\u0928 \u0915\u0947 \u092a\u094d\u0930\u0915\u093e\u0930 \u092a\u094d\u0930\u092c\u0902\u0927\u093f\u0924 \u0915\u0930\u0947\u0902 (\u091c\u0948\u0938\u0947, Economy, Premium)\u0964 \u0905\u0927\u093f\u0915\u0924\u092e 150-200 KB \u0915\u0940 \u0935\u0930\u094d\u0917\u093e\u0915\u093e\u0930 \u091b\u0935\u093f \u0905\u0928\u0941\u0936\u0902\u0938\u093f\u0924 \u0939\u0948\u0964","image","\u091b\u0935\u093f","edit","\u0938\u0902\u092a\u093e\u0926\u0928","add_new","\u0928\u092f\u093e \u091c\u094b\u0921\u093c\u0947\u0902",m0,"\u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u092d\u0941\u0917\u0924\u093e\u0928 \u0915\u093f\u092f\u093e \u0917\u092f\u093e \u091a\u093f\u0939\u094d\u0928\u093f\u0924 \u0915\u093f\u092f\u093e \u0917\u092f\u093e",m1,"\u092d\u0941\u0917\u0924\u093e\u0928 \u091a\u093f\u0939\u094d\u0928\u093f\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",m2,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930\u094b\u0902 \u0915\u0940 \u0913\u0930 \u0938\u0947 \u0928\u093f\u0915\u093e\u0938\u0940 \u0905\u0928\u0941\u0930\u094b\u0927 \u0928\u093f\u092e\u094d\u0928\u0932\u093f\u0916\u093f\u0924 \u0939\u0948\u0902\u0964 \u0915\u0943\u092a\u092f\u093e \u0909\u0928\u0915\u0947 \u0938\u0902\u092c\u0902\u0927\u093f\u0924 \u092c\u0948\u0902\u0915 \u0916\u093e\u0924\u094b\u0902 \u092e\u0947\u0902 \u092d\u0941\u0917\u0924\u093e\u0928 \u0938\u0902\u0938\u093e\u0927\u093f\u0924 \u0915\u0930\u0947\u0902 \u0914\u0930 \u0909\u0928\u094d\u0939\u0947\u0902 \u092d\u0941\u0917\u0924\u093e\u0928 \u0915\u093f\u092f\u093e \u0917\u092f\u093e \u091a\u093f\u0939\u094d\u0928\u093f\u0924 \u0915\u0930\u0947\u0902\u0964","requested_on","\u0905\u0928\u0941\u0930\u094b\u0927 \u0915\u0940 \u0924\u093f\u0925\u093f","bank_name","\u092c\u0948\u0902\u0915 \u0915\u093e \u0928\u093e\u092e","branch_name","\u0936\u093e\u0916\u093e \u0915\u093e \u0928\u093e\u092e","ifsc_code","IFSC \u0915\u094b\u0921",m3,"\u0916\u093e\u0924\u093e\u0927\u093e\u0930\u0915 \u0915\u093e \u0928\u093e\u092e","account_number","\u0916\u093e\u0924\u093e \u0938\u0902\u0916\u094d\u092f\u093e",m4,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0935\u093f\u0935\u0930\u0923 \u0926\u0947\u0916\u0947\u0902",m5,"\u0915\u094d\u092f\u093e \u0906\u092a\u0928\u0947 \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u092a\u0942\u0930\u0940 \u0930\u093e\u0936\u093f \u0915\u093e \u092d\u0941\u0917\u0924\u093e\u0928 \u092a\u0939\u0932\u0947 \u0939\u0940 \u0915\u0930 \u0926\u093f\u092f\u093e \u0939\u0948? \u0915\u094d\u092f\u093e \u0906\u092a \u0935\u093e\u0915\u0908 \u0907\u0938 \u0905\u0928\u0941\u0930\u094b\u0927 \u0915\u094b \u092d\u0941\u0917\u0924\u093e\u0928 \u0915\u093f\u092f\u093e \u0917\u092f\u093e \u091a\u093f\u0939\u094d\u0928\u093f\u0924 \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?","mark_as_paid","\u092d\u0941\u0917\u0924\u093e\u0928 \u0915\u093f\u092f\u093e \u0917\u092f\u093e \u091a\u093f\u0939\u094d\u0928\u093f\u0924 \u0915\u0930\u0947\u0902",m6,"\u0915\u094b\u0908 \u0928\u093f\u0915\u093e\u0938\u0940 \u0905\u0928\u0941\u0930\u094b\u0927 \u0928\u0939\u0940\u0902 \u092e\u093f\u0932\u093e","alert","\u091a\u0947\u0924\u093e\u0935\u0928\u0940","home","\u0939\u094b\u092e",m7,"\u0905\u092e\u093e\u0928\u094d\u092f \u0915\u094d\u0930\u0947\u0921\u0947\u0902\u0936\u093f\u092f\u0932",m8,"\u0938\u0947\u091f\u093f\u0902\u0917\u094d\u0938 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",m9,"\u0938\u0947\u091f\u093f\u0902\u0917\u094d\u0938 \u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u0905\u092a\u0921\u0947\u091f \u0915\u0940 \u0917\u0908\u0902",n0,"\u0938\u0947\u091f\u093f\u0902\u0917\u094d\u0938 \u0905\u092a\u0921\u0947\u091f \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",n1,"\u092a\u0902\u091c\u0940\u0915\u0930\u0923 \u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",n2,"\u092a\u0902\u091c\u0940\u0915\u0930\u0923 \u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u0905\u092a\u0921\u0947\u091f \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",n3,"\u092a\u0902\u091c\u0940\u0915\u0930\u0923 \u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u0939\u091f\u093e\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",n4,"\u092a\u0902\u091c\u0940\u0915\u0930\u0923 \u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u091c\u094b\u0921\u093c\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",n5,"\u0930\u0926\u094d\u0926 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0915\u093e\u0930\u0923 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",n6,"\u0930\u0926\u094d\u0926 \u0915\u0930\u0928\u0947 \u0915\u093e \u0915\u093e\u0930\u0923 \u0905\u092a\u0921\u0947\u091f \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",n7,"\u0930\u0926\u094d\u0926 \u0915\u0930\u0928\u0947 \u0915\u093e \u0915\u093e\u0930\u0923 \u0939\u091f\u093e\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",n8,"\u0930\u0926\u094d\u0926 \u0915\u0930\u0928\u0947 \u0915\u093e \u0915\u093e\u0930\u0923 \u091c\u094b\u0921\u093c\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",n9,"\u0935\u093e\u0939\u0928 \u0915\u0947 \u092a\u094d\u0930\u0915\u093e\u0930 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",o0,"\u0935\u093e\u0939\u0928 \u0915\u093e \u092a\u094d\u0930\u0915\u093e\u0930 \u0905\u092a\u0921\u0947\u091f \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",o1,"\u0935\u093e\u0939\u0928 \u0915\u093e \u0928\u093e\u092e \u092a\u0939\u0932\u0947 \u0938\u0947 \u092e\u094c\u091c\u0942\u0926 \u0939\u0948",o2,"\u0935\u093e\u0939\u0928 \u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u091c\u094b\u0921\u093c\u093e \u0917\u092f\u093e",o3,"\u0935\u093e\u0939\u0928 \u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u0905\u092a\u0921\u0947\u091f \u0915\u093f\u092f\u093e \u0917\u092f\u093e",o4,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u092e\u0902\u091c\u093c\u0942\u0930\u0940 \u0926\u0947 \u0926\u0940 \u0917\u0908 \u0939\u0948",o5,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u092e\u0902\u091c\u093c\u0942\u0930 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",o6,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u0905\u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930 \u0926\u093f\u092f\u093e \u0917\u092f\u093e \u0939\u0948",o7,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u0905\u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",o8,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u0928\u093f\u0932\u0902\u092c\u093f\u0924 \u0915\u0930 \u0926\u093f\u092f\u093e \u0917\u092f\u093e \u0939\u0948",o9,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u0928\u093f\u0932\u0902\u092c\u093f\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",p0,"\u0928\u093f\u0932\u0902\u092c\u0928 \u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u0935\u093e\u092a\u0938 \u0932\u093f\u092f\u093e \u0917\u092f\u093e",p1,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u093e \u0928\u093f\u0932\u0902\u092c\u0928 \u0935\u093e\u092a\u0938 \u0932\u0947\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",p2,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0935\u093f\u0935\u0930\u0923 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",p3,"\u0939\u093e\u0932 \u0915\u0940 \u0938\u0935\u093e\u0930\u0940 \u0932\u093e\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",p4,"\u0938\u0935\u093e\u0930\u0940 \u0935\u093f\u0935\u0930\u0923 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",p5,"\u092f\u0942\u091c\u093c\u0930 \u0935\u093f\u0935\u0930\u0923 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",p6,"\u0915\u0943\u092a\u092f\u093e \u092a\u094d\u0930\u093e\u0930\u0902\u092d \u0924\u093f\u0925\u093f \u091a\u0941\u0928\u0947\u0902",p7,"\u0915\u0943\u092a\u092f\u093e \u0938\u092e\u093e\u092a\u094d\u0924\u093f \u0924\u093f\u0925\u093f \u091a\u0941\u0928\u0947\u0902",p8,"\u0930\u0926\u094d\u0926\u0940\u0915\u0930\u0923 \u0915\u093e \u0915\u093e\u0930\u0923 \u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u0939\u091f\u093e \u0926\u093f\u092f\u093e \u0917\u092f\u093e",p9,"\u0930\u0926\u094d\u0926\u0940\u0915\u0930\u0923 \u0915\u093e \u0915\u093e\u0930\u0923 \u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u091c\u094b\u0921\u093c \u0926\u093f\u092f\u093e \u0917\u092f\u093e",q0,"\u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u0939\u091f\u093e \u0926\u093f\u092f\u093e \u0917\u092f\u093e",q1,"\u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u091c\u094b\u0921\u093c \u0926\u093f\u092f\u093e \u0917\u092f\u093e",q2,"\u092f\u0939 \u0938\u0902\u0936\u094b\u0927\u0928 Ridely \u0926\u094d\u0935\u093e\u0930\u093e \u092a\u094d\u0930\u0924\u093f\u092c\u0902\u0927\u093f\u0924 \u0939\u0948\u0964"],u9,u9)],u9,t.GU)}}
+gbf(w8){var s="please_add_cancel_reason_first",r="these_are_required_docs_drivers",q="add_new_document",p="please_add_doc_name_first",o="vehicle_plate_number",n="click_to_view_docs",m="please_add_reason_for_rejection",l="add_reason_for_rejection",k="sure_undo_suspend",j="unable_to_suspend_already_rejected",i="unable_to_suspend_active_ride",h="manage_more_rides_less_effort",g="withdrawal_requests",f="please_sign_in_to_continue",e="please_sign_up_to_continue",d="enter_email_address",c="confirm_password",b="enter_confirm_password",a="please_enter_email_address",a0="please_enter_valid_email_address",a1="please_enter_password",a2="please_enter_confirm_password",a3="password_and_confirm_password_not_match",a4="payment_settings",a5="stripe_payment_gateway",a6="sign_up_stripe_for_keys",a7="stripe_publishable_key",a8="Stripe Publishable Key",a9="stripe_secrete_key",b0="Stripe Secret Key",b1="paypal_payment_gateway",b2="sign_up_paypal_for_keys",b3="paypal_client_id",b4="Paypal Client Id",b5="paypal_secret_key",b6="PayPal Secret Key",b7="paystack_payment_gateway",b8="sign_up_paystack_for_keys",b9="paystack_public_key",c0="PayStack Public Key",c1="paystack_secret_key",c2="PayStack Secret Key",c3="razorpay_payment_gateway",c4="sign_up_razorpay_for_keys",c5="razorpay_key_secret",c6="Razorpay Key Secret",c7="please_enter_stripe_publishable_key",c8="please_enter_stripe_secret_key",c9="please_enter_paypal_client_id",d0="please_enter_paypal_secret_id",d1="please_enter_paystack_public_key",d2="please_enter_paystack_secret_key",d3="please_enter_razorpay_key_id",d4="please_enter_razorpay_key_secret",d5="approve_or_reject_driver",d6="no_drivers_found",d7="booking_information",d8="pick_and_drop_location",d9="admin_commission",e0="twilio_serves_twilio_number",e1="enter_twilio_number",e2="twilio_serves_account_sid",e3="enter_account_sid",e4="twilio_serves_auth_token",e5="enter_auth_token",e6="write_twilio_sms",e7="enter_twilio_sms",e8="specify_currency",e9="specify_kilometers",f0="enter_geofencing_km",f1="enter_google_map_key",f2="request_accept_seconds",f3="the_specific_time_limit",f4="enter_request_accept_time_sec",f5="enter_rider_verification",f6="should_the_system",f7="please_twilio_number",f8="please_account_sid",f9="please_auth_token",g0="please_twilio_sms",g1="please_geofencing_km",g2="please_google_map_key",g3="please_request_accept_seconds",g4="enter_first_name",g5="enter_phone_without_country_code",g6="please_keyword_to_search",g7="the_icon_should_be_square_max",g8="vehicle_icon_on_google_map",g9="please_ensure_icon_have_transparent",h0="the_name_will_be_visible_to_riders",h1="enter_vehicle_name",h2="seating_capacity",h3="seating_capacity_excluding_driver",h4="enter_seating_capacity",h5="commission_percentage",h6="commission_percentage_of_admin",h7="enter_commission_percentage",h8="this_is_basic_fare_will",h9="enter_per_km_fare",i0="per_minute_fare_eg",i1="enter_minute_fare",i2="waiting_charge_per_minute",i3="waiting_charge_per_minute_eg",i4="enter_waiting_charge_per_minute",i5="wait_start_after_minutes",i6="set_the_duration_in_minutes",i7="waiting_charge_max",i8="waiting_charge_max_eg",i9="enter_waiting_charge_maximum",j0="please_enter_vehicle_name",j1="Please enter Vehicle Name",j2="please_enter_seating_capacity",j3="Please enter Seating Capacity",j4="please_enter_commission_percentage",j5="Please enter Commission Percentage",j6="please_enter_base_fare",j7="Please enter Base Fare",j8="please_enter_per_km_fare",j9="Please enter Per Kilometer Fare",k0="please_enter_per_minute_fare",k1="Please enter Per Minute Fare",k2="please_enter_waiting_charge_per_minute",k3="Please enter Waiting Charge Per Minute",k4="please_enter_wait_start_after_minutes",k5="Please enter Wait Start After Minutes",k6="please_enter_wait_charge_max",k7="Please enter Waiting Charge Maximum",k8="please_vehicle_image",k9="please_vehicle_icon",l0="please_vehicle_name",l1="please_seating_capacity",l2="please_commission_percentage",l3="please_base_fare",l4="please_per_km_fare",l5="please_per_minute_fare",l6="please_waiting_charge_per_minute",l7="please_wait_start_after_minutes",l8="please_waiting_charge_max",l9="manage_vehicle_types",m0="marked_as_paid_successfully",m1="failed_to_mark_as_paid",m2="following_are_the_withdrawal_requests",m3="account_holder_name",m4="view_driver_details",m5="have_you_already_paid",m6="no_withdrawal_req_found",m7="invalid_credentials",m8="failed_to_get_settings",m9="settings_updated_successfully",n0="failed_to_update_settings",n1="failed_to_get_registration_docs",n2="failed_to_update_registration_doc",n3="failed_to_delete_registration_doc",n4="failed_to_add_registration_doc",n5="failed_to_get_cancel_reasons",n6="failed_to_update_cancel_reason",n7="failed_to_delete_cancel_reason",n8="failed_to_add_cancel_reason",n9="failed_to_get_vehicle_types",o0="failed_to_update_vehicle_type",o1="vehicle_name_already_exists",o2="vehicle_added_successfully",o3="vehicle_updated_successfully",o4="driver_has_been_approved",o5="failed_to_approve_driver",o6="driver_has_been_rejected",o7="failed_to_reject_driver",o8="driver_has_been_suspended",o9="failed_to_suspend_driver",p0="undo_suspend_success",p1="failed_to_undo_suspend_driver",p2="failed_to_get_driver_details",p3="failed_to_fetch_recent_rides",p4="failed_to_get_ride_details",p5="failed_to_get_user_details",p6="please_select_from_date",p7="please_select_to_date",p8="cancel_reason_deleted_successfully",p9="cancel_reason_added_successfully",q0="document_deleted_successfully",q1="document_added_successfully",q2="this_modification_is_restricted_by",q3="Por favor, ingresa el nombre del veh\xedculo",q4="Por favor, ingresa la capacidad de asientos",q5="Por favor, ingresa el porcentaje de comisi\xf3n",q6="Por favor, ingresa la tarifa base",q7="Por favor, ingresa la tarifa por kil\xf3metro",q8="Por favor, ingresa la tarifa por minuto",q9="Por favor, ingresa el cargo por espera por minuto",r0="Por favor, ingresa los minutos de inicio de espera",r1="Por favor, ingresa el cargo m\xe1ximo por espera",r2="Choisir la langue",r3="Veuillez entrer le nom du v\xe9hicule",r4="Veuillez entrer la capacit\xe9 de places",r5="Veuillez entrer le pourcentage de commission",r6="Veuillez entrer le tarif de base",r7="Veuillez entrer le tarif par km",r8="Veuillez entrer le tarif par minute",r9="Veuillez entrer les frais d attente par minute",s0="Veuillez entrer les minutes avant d\xe9but d attente",s1="Veuillez entrer le maximum des frais d attente",s2="Bitte Fahrzeugname eingeben",s3="Bitte Sitzplatzkapazit\xe4t eingeben",s4="Bitte Provisionssatz eingeben",s5="Bitte Grundgeb\xfchr eingeben",s6="Bitte Preis pro Kilometer eingeben",s7="Bitte Preis pro Minute eingeben",s8="Bitte Wartegeb\xfchr pro Minute eingeben",s9="Bitte Minuten bis Wartebeginn eingeben",t0="Bitte maximale Wartegeb\xfchr eingeben",t1="Por favor, digite o Nome do Ve\xedculo",t2="Por favor, digite a Capacidade de Assentos",t3="Por favor, digite a Porcentagem de Comiss\xe3o",t4="Por favor, digite a Tarifa Base",t5="Por favor, digite a Tarifa por Quil\xf4metro",t6="Por favor, digite a Tarifa por Minuto",t7="Por favor, digite a Taxa de Espera por Minuto",t8="Por favor, digite os Minutos para In\xedcio da Espera",t9="Por favor, digite a Taxa de Espera M\xe1xima",u0="\u0915\u0943\u092a\u092f\u093e \u0935\u093e\u0939\u0928 \u0915\u093e \u0928\u093e\u092e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",u1="\u0915\u0943\u092a\u092f\u093e \u092c\u0948\u0920\u0928\u0947 \u0915\u0940 \u0915\u094d\u0937\u092e\u0924\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",u2="\u0915\u0943\u092a\u092f\u093e \u0915\u092e\u0940\u0936\u0928 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",u3="\u0915\u0943\u092a\u092f\u093e \u0906\u0927\u093e\u0930 \u0915\u093f\u0930\u093e\u092f\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",u4="\u0915\u0943\u092a\u092f\u093e \u092a\u094d\u0930\u0924\u093f \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u0915\u093f\u0930\u093e\u092f\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",u5="\u0915\u0943\u092a\u092f\u093e \u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u0915\u093f\u0930\u093e\u092f\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",u6="\u0915\u0943\u092a\u092f\u093e \u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",u7="\u0915\u0943\u092a\u092f\u093e \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0930\u0942 \u0939\u094b\u0928\u0947 \u0915\u093e \u0938\u092e\u092f \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",u8="\u0915\u0943\u092a\u092f\u093e \u0905\u0927\u093f\u0915\u0924\u092e \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",u9="\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0627\u0633\u0645 \u0627\u0644\u0645\u0631\u0643\u0628\u0629",v0="\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0627\u0644\u0633\u0639\u0629 \u0627\u0644\u0645\u0642\u0639\u062f\u064a\u0629",v1="\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0646\u0633\u0628\u0629 \u0627\u0644\u0639\u0645\u0648\u0644\u0629",v2="\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0627\u0644\u0623\u062c\u0631\u0629 \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629",v3="\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0623\u062c\u0631\u0629 \u0627\u0644\u0643\u064a\u0644\u0648\u0645\u062a\u0631",v4="\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0623\u062c\u0631\u0629 \u0627\u0644\u062f\u0642\u064a\u0642\u0629",v5="\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0631\u0633\u0648\u0645 \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631 \u0644\u0644\u062f\u0642\u064a\u0642\u0629",v6="\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0648\u0642\u062a \u0628\u062f\u0621 \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631",v7="\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0627\u0644\u062d\u062f \u0627\u0644\u0623\u0642\u0635\u0649 \u0644\u0631\u0633\u0648\u0645 \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631",v8="Per favore, inserisci il nome del veicolo",v9="Per favore, inserisci la capacit\xe0 posti",w0="Per favore, inserisci la percentuale commissione",w1="Per favore, inserisci la tariffa base",w2="Per favore, inserisci la tariffa per KM",w3="Per favore, inserisci la tariffa al minuto",w4="Per favore, inserisci il costo attesa al minuto",w5="Per favore, inserisci i minuti di inizio attesa",w6="Per favore, inserisci il costo massimo attesa",w7=t.N
+return A.a7(["en",A.a7(["cancel_reasons","Cancel Reasons","cancel_reason","Cancel Reason","user_app","User App","sr_no","Sr no","active","Active","delete","Delete","sure_delete","Are you sure you want to delete?","add_new_reason","Add new reason",s,"Please add cancel reason first","sure_add","Are you sure you want to add?","add","Add","driver_app","Driver App","select_language","Select Language","apply","Apply","documents_list","Documents List",r,"These documents are required for account creation by drivers","document_name","Document Name",q,"Add new document",p,"Please add document name first","driver_details","Driver Details","driver_name","Driver Name","phone_number","Phone Number","address","Address","email","Email","vehicle_type","Vehicle Type","vehicle_model","Vehicle Model","vehicle_color","Vehicle Color",o,"Vehicle Plate Number","status","Status","documents","Documents",n,"(Click to view documents)","all_rides","All Rides","user_name","User Name","amount","Amount","date_and_time","Date and Time","action","Action","view","View","no_rides_found","No rides found","sure_approve","Are you sure you want to approve?","approve","Approve","or","Or",m,"Please add a reason for rejection","sure_reject","Are you sure you want to reject?","reject","Reject",l,"Add a reason for rejection",k,"Are you sure you want to undo suspend?","undo_suspend","Undo Suspend","sure_suspend","Are you sure you want to suspend?",j,"Unable to suspend at this moment. This driver's application is already rejected",i,"Unable to suspend at this moment. This driver may be in active ride right now.","suspend","Suspend","admin","Admin",h,"Manage more rides, with less effort","revenue","Revenue","this_months","(This month's)","total_users","Total Users","total_drivers","Total Drivers","pending_drivers","Pending Drivers",g,"Withdrawal Requests","recent_rides","Recent Rides","good_morning","Good Morning","good_afternoon","Good Afternoon","good_evening","Good Evening","welcome_back","Welcome Back!","welcome","Welcome!",f,"Please sign in to continue",e,"Please sign up to continue",d,"Enter Email Address","password","Password","enter_password","Enter Password",c,"Confirm Password",b,"Enter Confirm Password",a,"Please enter your email address",a0,"Please enter a valid email address",a1,"Please enter your password",a2,"Please enter your confirm password",a3,"Password and confirm password does not match","login","Login","sign_up","Sign up","choose_language","Choose Language",a4,"Payment Settings",a5,"Stripe Payment Gateway",a6,"Signup in Stripe Payment Gateway to get your Publishable Key and Secrete Key",a7,a8,a9,b0,b1,"PayPal Payment Gateway",b2,"Signup in PayPal Payment Gateway to get your Client Id and Secret Key",b3,b4,b5,b6,b7,"PayStack Payment Gateway",b8,"Signup in PayStack Payment Gateway to get your Public Key and Secret Key",b9,c0,c1,c2,c3,"Razorpay Payment Gateway",c4,"Signup in Razorpay Payment Gateway to get your Key Id and Key Secret","razorpay_key_id","Razorpay Key Id",c5,c6,c7,"Please enter Stripe Publishable Key",c8,"Please enter Stripe Secret Key",c9,"Please enter PayPal Client Id",d0,"Please enter PayPal Secret Key",d1,"Please enter PayStack Public Key",d2,"Please enter PayStack Secret Key",d3,"Please enter Razorpay Key Id",d4,"Please enter Razorpay Key Secret","save","Save",d5,"Approve driver onboarding requests or reject them with clear feedback to help drivers correct and reapply","phone","Phone",d6,"No drivers found","admin_revenue","Admin Revenue","revenue_trend","Revenue Trend","rides_trend","Rides Trend","rides","Rides","avg_per_ride","Average / Ride","ride_details","Ride Details",d7,"Booking Information","date","Date","payment_mode","Payment Mode",d8,"Pick & Drop Location","fare_details","Fare Details","base_fare","Base Fare","distance_fare","Distance Fare","time_fare","Time Fare","waiting_charge","Waiting Charge","total","Total","drivers_earning","Driver's Earning",d9,"Admin Commission","user_details","User Details","name","Name","from_date","From Date","to_date","To Date","search","Search","clear_filter","Clear Filter","settings","Settings","twilio_number","Twilio Number",e0,"Twilio serves as an SMS gateway. You can use it to send one-time password (OTP) SMS messages to verify phone numbers when riders or drivers create their accounts. To begin using the service, simply create an account on Twilio to obtain your dedicated Twilio Number",e1,"Enter Twilio Number","account_sid","Account Sid",e2,"Twilio serves as an SMS gateway. You can use it to send one-time password (OTP) SMS messages to verify phone numbers when riders or drivers create their accounts. To begin using the service, simply create an account on Twilio to obtain your dedicated Account Sid.",e3,"Enter Account Sid","auth_token","Auth Token",e4,"Twilio serves as an SMS gateway. You can use it to send one-time password (OTP) SMS messages to verify phone numbers when riders or drivers create their accounts. To begin using the service, simply create an account on Twilio to obtain your dedicated Auth Token",e5,"Enter Auth Token","twilio_sms","Twilio SMS",e6,"Write the Twilio SMS message. The verification code is automatically added at the beginning of the message, so you can continue the text like this:\n\u201cis your verification code to login in Ridely. Thank you for choosing Ridely.\u201d",e7,"Enter Twilio SMS","currency","Currency",e8,"Specify the currency symbol intended for use within the application (e.g., $, \u20ac, \xa5)","enter_currency","Enter Currency","geofencing_km","Geofencing Kilometer",e9,"Specify, in kilometers, the geographical radius within which drivers will receive ride requests. For example, entering '2' will ensure that requests are only dispatched to drivers located within a two-kilometer range",f0,"Enter Geofencing Kilometer","google_map_key","Google Map Key","this_api_key_is","This API key is utilized for both the Google Places API, which allows riders to search for their location, and the route direction API functionality within the application.",f1,"Enter Google Map Key",f2,"Request Accept Seconds",f3,"The specified time limit, measured in seconds, represents the window during which a driver must accept the ride request; failure to do so will automatically reassign the request to the next available driver",f4,"Enter Request Accept Seconds",f5,"Enable Rider Verification?",f6,"Should the system require the driver to verify the rider using a pre-ride verification code? The code is accessible within the rider application interface and is not delivered via SMS","yes","Yes","no","No",f7,"Please enter Twilio Number",f8,"Please enter Account Sid",f9,"Please enter Auth Token",g0,"Please enter Twilio SMS","please_currency","Please enter Currency",g1,"Please enter Geofencing Kilometer",g2,"Please enter Google Map Key",g3,"Please enter Request Accept Seconds","first_name","First Name","last_name","Last Name",g4,"Enter First Name","enter_last_name","Enter Last Name",g5,"Enter Phone (Without country code)",g6,"Please enter keyword to search","no_users_found","No users found","registered_on","Registered On","gender","Gender","rating","Rating","vehicle_details","Vehicle Details","vehicle_image","Vehicle Image",g7,"The icon should be square in shape, with a maximum file size of 150 KB",g8,"Vehicle Icon On Google Map",g9,"Please ensure icons have a transparent background and an optimized file size not exceeding 150 KB","vehicle_name","Vehicle Name",h0,"The name will be visible to riders while booking a rides. You can set it like 'Auto', 'Cab Economy', 'Cab Premium' etc",h1,"Enter Vehicle Name",h2,"Seating Capacity",h3,"The seating capacity of a vehicle excluding driver",h4,"Enter Seating Capacity",h5,"Commission Percentage",h6,"Commission percentage of an admin",h7,"Enter Commission Percentage",h8,"This is a basic fare that will be charged","enter_base_fare","Enter Base Fare","per_km_fare","Per Kilometer Fare","per_km_fare_eg","Per kilometer fare. e.g. if total kilometer travelled is 10 kilometer and per kilometer fare is 8 then 80 will be added into base base",h9,"Enter Per Kilometer Fare","per_minute_fare","Per Minute Fare",i0,"Per minute fare. e.g. if total time travelled is 30 minutes and per minute fare is 2 then 60 will be added into base base",i1,"Enter Minute Fare",i2,"Waiting Charge Per Minute",i3,"Waiting charge per minute. e.g. if driver waited for 5 minutes and waiting charge per minute is 2 then 10 will be added into bill",i4,"Enter Waiting Charge Per Minute",i5,"Wait Start After Minutes",i6,"Set the duration (in minutes) after which waiting fees will be automatically billed",i7,"Waiting Charge Maximum",i8,"Waiting charge maximum. e.g. if driver waited for 30 minutes and waiting charge per minute is 2 and waiting charge maximum is set to 50 then 50 will be added into base fare",i9,"Enter Waiting Charge Maximum",j0,j1,j2,j3,j4,j5,j6,j7,j8,j9,k0,k1,k2,k3,k4,k5,k6,k7,"sure_update","Are you sure you want to update?","update","Update",k8,"Please add vehicle image",k9,"Please add vehicle icon",l0,j1,l1,j3,l2,j5,l3,j7,l4,j9,l5,k1,l6,k3,l7,k5,l8,k7,"vehicle_types","Vehicle Types",l9,"Manage vehicle types (e.g., Economy, Premium). Maximum 150-200 KB square image recommended","image","Image","edit","Edit","add_new","Add New",m0,"Marked as paid successfully",m1,"Failed to mark as paid",m2,"Following are the withdrawal requests from drivers. Please process the payments to their respective bank accounts and mark them as paid","requested_on","Requested on","bank_name","Bank Name","branch_name","Branch Name","ifsc_code","IFSC Code",m3,"Account Holder Name","account_number","Account Number",m4,"View Driver Details",m5,"Have you already paid the full amount to the driver? Are you sure you want to mark this request as paid?","mark_as_paid","Mark as Paid",m6,"No withdrawal requests found","alert","Alert","home","Home",m7,"Invalid credentials",m8,"Failed to get settings",m9,"Settings updated successfully",n0,"Failed to update settings",n1,"Failed to get registration documents",n2,"Failed to update registration document",n3,"Failed to delete registration document",n4,"Failed to add registration document",n5,"Failed to get cancel reasons",n6,"Failed to update cancel reason",n7,"Failed to delete cancel reason",n8,"Failed to add cancel reason",n9,"Failed to get vehicle types",o0,"Failed to update vehicle type",o1,"Vehicle name already exists",o2,"Vehicle added successfully",o3,"Vehicle updated successfully",o4,"Driver has been approved",o5,"Failed to approve driver",o6,"Driver has been rejected",o7,"Failed to rejected driver",o8,"Driver has been suspended",o9,"Failed to suspended driver",p0,"Undo suspend success",p1,"Failed to undo suspend driver",p2,"Failed to get driver details",p3,"Failed to fetch recent rides",p4,"Failed to get ride details",p5,"Failed to get user details",p6,"Please select from date",p7,"Please select to date",p8,"Cancel reason deleted successfully",p9,"Cancel reason added successfully",q0,"Document deleted successfully",q1,"Document added successfully",q2,"This modification is restricted by Ridely."],w7,w7),"es",A.a7(["cancel_reasons","Motivos de cancelaci\xf3n","cancel_reason","Motivo de cancelaci\xf3n","user_app","App de Usuario","sr_no","N\xba de serie","active","Activo","delete","Eliminar","sure_delete","\xbfEst\xe1s seguro de que deseas eliminar?","add_new_reason","Agregar nuevo motivo",s,"Por favor, agrega primero un motivo de cancelaci\xf3n","sure_add","\xbfEst\xe1s seguro de que deseas agregar?","add","Agregar","driver_app","App de Conductor","select_language","Seleccionar idioma","apply","Aplicar","documents_list","Lista de documentos",r,"Estos documentos son requeridos para la creaci\xf3n de cuenta por los conductores","document_name","Nombre del documento",q,"Agregar nuevo documento",p,"Por favor, agrega primero el nombre del documento","driver_details","Detalles del conductor","driver_name","Nombre del conductor","phone_number","N\xfamero de tel\xe9fono","address","Direcci\xf3n","email","Correo electr\xf3nico","vehicle_type","Tipo de veh\xedculo","vehicle_model","Modelo del veh\xedculo","vehicle_color","Color del veh\xedculo",o,"N\xfamero de placa","status","Estado","documents","Documentos",n,"(Haz clic para ver documentos)","all_rides","Todos los viajes","user_name","Nombre de usuario","amount","Monto","date_and_time","Fecha y hora","action","Acci\xf3n","view","Ver","no_rides_found","No se encontraron viajes","sure_approve","\xbfEst\xe1s seguro de que deseas aprobar?","approve","Aprobar","or","O",m,"Por favor, agrega un motivo para el rechazo","sure_reject","\xbfEst\xe1s seguro de que deseas rechazar?","reject","Rechazar",l,"Agregar un motivo para el rechazo",k,"\xbfEst\xe1s seguro de que deseas anular la suspensi\xf3n?","undo_suspend","Anular suspensi\xf3n","sure_suspend","\xbfEst\xe1s seguro de que deseas suspender?",j,"No se puede suspender en este momento. La solicitud de este conductor ya ha sido rechazada",i,"No se puede suspender en este momento. Es posible que este conductor est\xe9 en un viaje activo.","suspend","Suspender","admin","Admin",h,"Gestiona m\xe1s viajes con menos esfuerzo","revenue","Ingresos","this_months","(De este mes)","total_users","Total de usuarios","total_drivers","Total de conductores","pending_drivers","Conductores pendientes",g,"Solicitudes de retiro","recent_rides","Viajes recientes","good_morning","Buenos d\xedas","good_afternoon","Buenas tardes","good_evening","Buenas noches","welcome_back","\xa1Bienvenido de nuevo!","welcome","\xa1Bienvenido!",f,"Por favor, inicia sesi\xf3n para continuar",e,"Por favor, reg\xedstrate para continuar",d,"Ingresar correo electr\xf3nico","password","Contrase\xf1a","enter_password","Ingresar contrase\xf1a",c,"Confirmar contrase\xf1a",b,"Ingresar confirmaci\xf3n de contrase\xf1a",a,"Por favor, ingresa tu correo electr\xf3nico",a0,"Por favor, ingresa un correo electr\xf3nico v\xe1lido",a1,"Por favor, ingresa tu contrase\xf1a",a2,"Por favor, ingresa tu confirmaci\xf3n de contrase\xf1a",a3,"La contrase\xf1a y la confirmaci\xf3n no coinciden","login","Iniciar sesi\xf3n","sign_up","Registrarse","choose_language","Elegir idioma",a4,"Ajustes de pago",a5,"Pasarela de pago Stripe",a6,"Reg\xedstrate en Stripe para obtener tu Clave Publicable y Clave Secreta",a7,"Clave Publicable de Stripe",a9,"Clave Secreta de Stripe",b1,"Pasarela de pago PayPal",b2,"Reg\xedstrate en PayPal para obtener tu ID de Cliente y Clave Secreta",b3,"ID de Cliente de Paypal",b5,"Clave Secreta de PayPal",b7,"Pasarela de pago PayStack",b8,"Reg\xedstrate en PayStack para obtener tu Clave P\xfablica y Clave Secreta",b9,"Clave P\xfablica de PayStack",c1,"Clave Secreta de PayStack",c3,"Pasarela de pago Razorpay",c4,"Reg\xedstrate en Razorpay para obtener tu ID de Clave y Clave Secreta","razorpay_key_id","ID de Clave de Razorpay",c5,"Clave Secreta de Razorpay",c7,"Por favor, ingresa la Clave Publicable de Stripe",c8,"Por favor, ingresa la Clave Secreta de Stripe",c9,"Por favor, ingresa el ID de Cliente de PayPal",d0,"Por favor, ingresa la Clave Secreta de PayPal",d1,"Por favor, ingresa la Clave P\xfablica de PayStack",d2,"Por favor, ingresa la Clave Secreta de PayStack",d3,"Por favor, ingresa el ID de Clave de Razorpay",d4,"Por favor, ingresa la Clave Secreta de Razorpay","save","Guardar",d5,"Aprueba las solicitudes de registro de conductores o rech\xe1zalas con comentarios claros para ayudarlos a corregir y volver a solicitar","phone","Tel\xe9fono",d6,"No se encontraron conductores","admin_revenue","Ingresos del Administrador","revenue_trend","Tendencia de ingresos","rides_trend","Tendencia de viajes","rides","Viajes","avg_per_ride","Promedio / Viaje","ride_details","Detalles del viaje",d7,"Informaci\xf3n de reserva","date","Fecha","payment_mode","Modo de pago",d8,"Punto de recogida y destino","fare_details","Detalles de la tarifa","base_fare","Tarifa base","distance_fare","Tarifa por distancia","time_fare","Tarifa por tiempo","waiting_charge","Cargo por espera","total","Total","drivers_earning","Ganancia del conductor",d9,"Comisi\xf3n del administrador","user_details","Detalles del usuario","name","Nombre","from_date","Desde la fecha","to_date","Hasta la fecha","search","Buscar","clear_filter","Limpiar filtro","settings","Ajustes","twilio_number","N\xfamero de Twilio",e0,"Twilio sirve como pasarela de SMS. Puedes usarlo para enviar mensajes SMS con c\xf3digos de verificaci\xf3n (OTP) para validar n\xfameros de tel\xe9fono cuando los usuarios o conductores crean sus cuentas. Para comenzar, crea una cuenta en Twilio para obtener tu n\xfamero dedicado",e1,"Ingresar n\xfamero de Twilio","account_sid","SID de cuenta",e2,"Twilio sirve como pasarela de SMS. Puedes usarlo para enviar mensajes SMS con c\xf3digos de verificaci\xf3n (OTP) para validar n\xfameros de tel\xe9fono. Para comenzar, crea una cuenta en Twilio para obtener tu SID de cuenta dedicado.",e3,"Ingresar SID de cuenta","auth_token","Token de autenticaci\xf3n",e4,"Twilio sirve como pasarela de SMS. Puedes usarlo para enviar mensajes SMS con c\xf3digos de verificaci\xf3n (OTP). Para comenzar, crea una cuenta en Twilio para obtener tu Token de autenticaci\xf3n dedicado",e5,"Ingresar Token de autenticaci\xf3n","twilio_sms","SMS de Twilio",e6,"Escribe el mensaje SMS de Twilio. El c\xf3digo de verificaci\xf3n se agrega autom\xe1ticamente al principio del mensaje, por lo que puedes continuar el texto as\xed: \u201ces tu c\xf3digo de verificaci\xf3n para iniciar sesi\xf3n en Ridely. Gracias por elegir Ridely.\u201d",e7,"Ingresar SMS de Twilio","currency","Moneda",e8,"Especifica el s\xedmbolo de moneda destinado al uso dentro de la aplicaci\xf3n (ej. $, \u20ac, \xa5)","enter_currency","Ingresar moneda","geofencing_km","Kil\xf3metros de Geofencing",e9,"Especifica, en kil\xf3metros, el radio geogr\xe1fico dentro del cual los conductores recibir\xe1n solicitudes de viaje. Por ejemplo, ingresar '2' asegurar\xe1 que las solicitudes solo se env\xeden a conductores ubicados en un rango de dos kil\xf3metros",f0,"Ingresar kil\xf3metros de Geofencing","google_map_key","Clave de Google Maps","this_api_key_is","Esta clave API se utiliza tanto para la API de Google Places, que permite a los usuarios buscar su ubicaci\xf3n, como para la funcionalidad de la API de direcciones de ruta dentro de la aplicaci\xf3n.",f1,"Ingresar clave de Google Maps",f2,"Segundos para aceptar solicitud",f3,"El l\xedmite de tiempo especificado, medido en segundos, representa la ventana durante la cual un conductor debe aceptar la solicitud de viaje; de lo contrario, se reasignar\xe1 autom\xe1ticamente al siguiente conductor disponible",f4,"Ingresar segundos para aceptar solicitud",f5,"\xbfHabilitar verificaci\xf3n de pasajero?",f6,"\xbfDeber\xeda el sistema requerir que el conductor verifique al pasajero usando un c\xf3digo de verificaci\xf3n previo al viaje? El c\xf3digo es accesible en la app del pasajero y no se env\xeda por SMS","yes","S\xed","no","No",f7,"Por favor, ingresa el n\xfamero de Twilio",f8,"Por favor, ingresa el SID de cuenta",f9,"Por favor, ingresa el Token de autenticaci\xf3n",g0,"Por favor, ingresa el SMS de Twilio","please_currency","Por favor, ingresa la moneda",g1,"Por favor, ingresa los kil\xf3metros de Geofencing",g2,"Por favor, ingresa la clave de Google Maps",g3,"Por favor, ingresa los segundos para aceptar solicitud","first_name","Nombre","last_name","Apellido",g4,"Ingresar nombre","enter_last_name","Ingresar apellido",g5,"Ingresar tel\xe9fono (Sin c\xf3digo de pa\xeds)",g6,"Por favor, ingresa una palabra clave para buscar","no_users_found","No se encontraron usuarios","registered_on","Registrado el","gender","G\xe9nero","rating","Calificaci\xf3n","vehicle_details","Detalles del veh\xedculo","vehicle_image","Imagen del veh\xedculo",g7,"El icono debe ser de forma cuadrada, con un tama\xf1o m\xe1ximo de archivo de 150 KB",g8,"Icono del veh\xedculo en Google Maps",g9,"Por favor, aseg\xfarate de que los iconos tengan un fondo transparente y un tama\xf1o optimizado que no exceda los 150 KB","vehicle_name","Nombre del veh\xedculo",h0,"El nombre ser\xe1 visible para los pasajeros al reservar viajes. Puedes configurarlo como 'Auto', 'Taxi Econ\xf3mico', 'Taxi Premium', etc.",h1,"Ingresar nombre del veh\xedculo",h2,"Capacidad de asientos",h3,"La capacidad de asientos de un veh\xedculo excluyendo al conductor",h4,"Ingresar capacidad de asientos",h5,"Porcentaje de comisi\xf3n",h6,"Porcentaje de comisi\xf3n del administrador",h7,"Ingresar porcentaje de comisi\xf3n",h8,"Esta es la tarifa b\xe1sica que se cobrar\xe1","enter_base_fare","Ingresar tarifa base","per_km_fare","Tarifa por kil\xf3metro","per_km_fare_eg","Tarifa por kil\xf3metro. Ej: si el total de kil\xf3metros recorridos es 10 y la tarifa por kil\xf3metro es 8, se sumar\xe1n 80 a la tarifa base",h9,"Ingresar tarifa por kil\xf3metro","per_minute_fare","Tarifa por minuto",i0,"Tarifa por minuto. Ej: si el tiempo total de viaje es de 30 minutos y la tarifa por minuto es 2, se sumar\xe1n 60 a la tarifa base",i1,"Ingresar tarifa por minuto",i2,"Cargo por espera por minuto",i3,"Cargo por espera por minuto. Ej: si el conductor esper\xf3 5 minutos y el cargo es 2, se sumar\xe1n 10 a la factura",i4,"Ingresar cargo por espera por minuto",i5,"La espera comienza tras (minutos)",i6,"Establece la duraci\xf3n (en minutos) tras la cual se cobrar\xe1n autom\xe1ticamente las tarifas de espera",i7,"M\xe1ximo cargo por espera",i8,"M\xe1ximo cargo por espera. Ej: si el conductor esper\xf3 30 minutos, el cargo es 2 y el m\xe1ximo est\xe1 fijado en 50, se sumar\xe1n 50 a la tarifa base",i9,"Ingresar cargo m\xe1ximo por espera",j0,q3,j2,q4,j4,q5,j6,q6,j8,q7,k0,q8,k2,q9,k4,r0,k6,r1,"sure_update","\xbfEst\xe1s seguro de que deseas actualizar?","update","Actualizar",k8,"Por favor, agrega la imagen del veh\xedculo",k9,"Por favor, agrega el icono del veh\xedculo",l0,q3,l1,q4,l2,q5,l3,q6,l4,q7,l5,q8,l6,q9,l7,r0,l8,r1,"vehicle_types","Tipos de veh\xedculos",l9,"Gestionar tipos de veh\xedculos (ej. Econ\xf3mico, Premium). Se recomienda imagen cuadrada de 150-200 KB","image","Imagen","edit","Editar","add_new","Agregar nuevo",m0,"Marcado como pagado exitosamente",m1,"Error al marcar como pagado",m2,"A continuaci\xf3n se muestran las solicitudes de retiro de los conductores. Por favor, procesa los pagos a sus respectivas cuentas bancarias y m\xe1rcalos como pagados","requested_on","Solicitado el","bank_name","Nombre del banco","branch_name","Nombre de la sucursal","ifsc_code","C\xf3digo IFSC",m3,"Nombre del titular de la cuenta","account_number","N\xfamero de cuenta",m4,"Ver detalles del conductor",m5,"\xbfYa has pagado el monto total al conductor? \xbfEst\xe1s seguro de que deseas marcar esta solicitud como pagada?","mark_as_paid","Marcar como pagado",m6,"No se encontraron solicitudes de retiro","alert","Alerta","home","Inicio",m7,"Credenciales inv\xe1lidas",m8,"Error al obtener los ajustes",m9,"Ajustes actualizados exitosamente",n0,"Error al actualizar los ajustes",n1,"Error al obtener documentos de registro",n2,"Error al actualizar documento de registro",n3,"Error al eliminar documento de registro",n4,"Error al agregar documento de registro",n5,"Error al obtener motivos de cancelaci\xf3n",n6,"Error al actualizar motivo de cancelaci\xf3n",n7,"Error al eliminar motivo de cancelaci\xf3n",n8,"Error al agregar motivo de cancelaci\xf3n",n9,"Error al obtener tipos de veh\xedculos",o0,"Error al actualizar tipo de veh\xedculo",o1,"El nombre del veh\xedculo ya existe",o2,"Veh\xedculo agregado exitosamente",o3,"Veh\xedculo actualizado exitosamente",o4,"El conductor ha sido aprobado",o5,"Error al aprobar al conductor",o6,"El conductor ha sido rechazado",o7,"Error al rechazar al conductor",o8,"El conductor ha sido suspendido",o9,"Error al suspender al conductor",p0,"Suspensi\xf3n anulada exitosamente",p1,"Error al anular la suspensi\xf3n del conductor",p2,"Error al obtener detalles del conductor",p3,"Error al obtener viajes recientes",p4,"Error al obtener detalles del viaje",p5,"Error al obtener detalles del usuario",p6,"Por favor, seleccione la fecha de inicio",p7,"Por favor, seleccione la fecha de fin",p8,"Motivo de cancelaci\xf3n eliminado con \xe9xito",p9,"Motivo de cancelaci\xf3n a\xf1adido con \xe9xito",q0,"Documento eliminado con \xe9xito",q1,"Documento a\xf1adido con \xe9xito",q2,"Esta modificaci\xf3n est\xe1 restringida por Ridely."],w7,w7),"fr",A.a7(["cancel_reasons","Motifs d annulation","cancel_reason","Motif d annulation","user_app","App Utilisateur","sr_no","N\xb0 de s\xe9rie","active","Actif","delete","Supprimer","sure_delete","\xcates-vous s\xfbr de vouloir supprimer ?","add_new_reason","Ajouter un nouveau motif",s,"Veuillez d abord ajouter un motif d annulation","sure_add","\xcates-vous s\xfbr de vouloir ajouter ?","add","Ajouter","driver_app","App Chauffeur","select_language",r2,"apply","Appliquer","documents_list","Liste des documents",r,"Ces documents sont requis pour la cr\xe9ation de compte par les chauffeurs","document_name","Nom du document",q,"Ajouter un nouveau document",p,"Veuillez d abord ajouter un nom de document","driver_details","D\xe9tails du chauffeur","driver_name","Nom du chauffeur","phone_number","Num\xe9ro de t\xe9l\xe9phone","address","Adresse","email","E-mail","vehicle_type","Type de v\xe9hicule","vehicle_model","Mod\xe8le du v\xe9hicule","vehicle_color","Couleur du v\xe9hicule",o,"Num\xe9ro d immatriculation","status","Statut","documents","Documents",n,"(Cliquez pour voir les documents)","all_rides","Tous les trajets","user_name","Nom de l utilisateur","amount","Montant","date_and_time","Date et heure","action","Action","view","Voir","no_rides_found","Aucun trajet trouv\xe9","sure_approve","\xcates-vous s\xfbr de vouloir approuver ?","approve","Approuver","or","Ou",m,"Veuillez ajouter un motif de rejet","sure_reject","\xcates-vous s\xfbr de vouloir rejeter ?","reject","Rejeter",l,"Ajouter un motif de rejet",k,"\xcates-vous s\xfbr de vouloir annuler la suspension ?","undo_suspend","Annuler la suspension","sure_suspend","\xcates-vous s\xfbr de vouloir suspendre ?",j,"Impossible de suspendre pour le moment. La candidature de ce chauffeur est d\xe9j\xe0 rejet\xe9e.",i,"Impossible de suspendre pour le moment. Ce chauffeur est peut-\xeatre en cours de trajet.","suspend","Suspendre","admin","Admin",h,"G\xe9rez plus de trajets avec moins d effort","revenue","Revenus","this_months","(Ce mois-ci)","total_users","Total Utilisateurs","total_drivers","Total Chauffeurs","pending_drivers","Chauffeurs en attente",g,"Demandes de retrait","recent_rides","Trajets r\xe9cents","good_morning","Bonjour","good_afternoon","Bon apr\xe8s-midi","good_evening","Bonsoir","welcome_back","Bon retour !","welcome","Bienvenue !",f,"Veuillez vous connecter pour continuer",e,"Veuillez vous inscrire pour continuer",d,"Entrez l adresse e-mail","password","Mot de passe","enter_password","Entrez le mot de passe",c,"Confirmez le mot de passe",b,"Entrez la confirmation du mot de passe",a,"Veuillez entrer votre adresse e-mail",a0,"Veuillez entrer une adresse e-mail valide",a1,"Veuillez entrer votre mot de passe",a2,"Veuillez confirmer votre mot de passe",a3,"Le mot de passe et la confirmation ne correspondent pas","login","Connexion","sign_up","Inscription","choose_language",r2,a4,"Param\xe8tres de paiement",a5,"Passerelle de paiement Stripe",a6,"Inscrivez-vous sur Stripe pour obtenir votre Cl\xe9 Publique et votre Cl\xe9 Secr\xe8te",a7,"Cl\xe9 Publique Stripe",a9,"Cl\xe9 Secr\xe8te Stripe",b1,"Passerelle de paiement PayPal",b2,"Inscrivez-vous sur PayPal pour obtenir votre ID Client et votre Cl\xe9 Secr\xe8te",b3,"ID Client PayPal",b5,"Cl\xe9 Secr\xe8te PayPal",b7,"Passerelle de paiement PayStack",b8,"Inscrivez-vous sur PayStack pour obtenir votre Cl\xe9 Publique et votre Cl\xe9 Secr\xe8te",b9,"Cl\xe9 Publique PayStack",c1,"Cl\xe9 Secr\xe8te PayStack",c3,"Passerelle de paiement Razorpay",c4,"Inscrivez-vous sur Razorpay pour obtenir votre ID de cl\xe9 et votre Cl\xe9 Secr\xe8te","razorpay_key_id","ID de cl\xe9 Razorpay",c5,"Cl\xe9 Secr\xe8te Razorpay",c7,"Veuillez entrer la Cl\xe9 Publique Stripe",c8,"Veuillez entrer la Cl\xe9 Secr\xe8te Stripe",c9,"Veuillez entrer l ID Client PayPal",d0,"Veuillez entrer la Cl\xe9 Secr\xe8te PayPal",d1,"Veuillez entrer la Cl\xe9 Publique PayStack",d2,"Veuillez entrer la Cl\xe9 Secr\xe8te PayStack",d3,"Veuillez entrer l ID de cl\xe9 Razorpay",d4,"Veuillez entrer la Cl\xe9 Secr\xe8te Razorpay","save","Enregistrer",d5,"Approuvez les demandes d inscription des chauffeurs ou rejetez-les avec des commentaires clairs pour les aider \xe0 corriger et \xe0 postuler de nouveau","phone","T\xe9l\xe9phone",d6,"Aucun chauffeur trouv\xe9","admin_revenue","Revenus Admin","revenue_trend","Tendance des revenus","rides_trend","Tendance des trajets","rides","Trajets","avg_per_ride","Moyenne / Trajet","ride_details","D\xe9tails du trajet",d7,"Informations de r\xe9servation","date","Date","payment_mode","Mode de paiement",d8,"Lieu de prise en charge et de d\xe9pose","fare_details","D\xe9tails du tarif","base_fare","Tarif de base","distance_fare","Tarif \xe0 la distance","time_fare","Tarif au temps","waiting_charge","Frais d attente","total","Total","drivers_earning","Gains du chauffeur",d9,"Commission Admin","user_details","D\xe9tails de l utilisateur","name","Nom","from_date","Date de d\xe9but","to_date","Date de fin","search","Rechercher","clear_filter","Effacer le filtre","settings","Param\xe8tres","twilio_number","Num\xe9ro Twilio",e0,"Twilio sert de passerelle SMS. Vous pouvez l utiliser pour envoyer des codes de v\xe9rification (OTP) par SMS pour v\xe9rifier les num\xe9ros de t\xe9l\xe9phone lors de la cr\xe9ation de compte. Cr\xe9ez un compte Twilio pour obtenir votre num\xe9ro d\xe9di\xe9.",e1,"Entrez le num\xe9ro Twilio","account_sid","Account SID",e2,"Twilio sert de passerelle SMS. Vous pouvez l utiliser pour envoyer des SMS OTP. Cr\xe9ez un compte Twilio pour obtenir votre Account SID d\xe9di\xe9.",e3,"Entrez l Account SID","auth_token","Auth Token",e4,"Twilio sert de passerelle SMS. Cr\xe9ez un compte Twilio pour obtenir votre Auth Token d\xe9di\xe9.",e5,"Entrez l Auth Token","twilio_sms","SMS Twilio",e6,"R\xe9digez le message SMS Twilio. Le code de v\xe9rification est ajout\xe9 automatiquement au d\xe9but. Exemple: \u201cest votre code de v\xe9rification pour Ridely. Merci d avoir choisi Ridely.\u201d",e7,"Entrez le SMS Twilio","currency","Devise",e8,"Sp\xe9cifiez le symbole de la devise (ex: $, \u20ac, \xa5)","enter_currency","Entrez la devise","geofencing_km","Kilom\xe8tres de G\xe9orep\xe9rage",e9,"Sp\xe9cifiez le rayon en kilom\xe8tres dans lequel les chauffeurs recevront les demandes. Exemple: '2' limitera l envoi aux chauffeurs situ\xe9s dans un rayon de 2 km.",f0,"Entrez les kilom\xe8tres de g\xe9orep\xe9rage","google_map_key","Cl\xe9 Google Maps","this_api_key_is","Cette cl\xe9 API est utilis\xe9e pour Google Places (recherche de lieu) et pour le calcul d itin\xe9raire dans l application.",f1,"Entrez la cl\xe9 Google Maps",f2,"Secondes pour accepter la demande",f3,"Le d\xe9lai limite en secondes pendant lequel un chauffeur doit accepter le trajet, sinon il sera r\xe9assign\xe9 au chauffeur disponible suivant.",f4,"Entrez les secondes d acceptation",f5,"Activer la v\xe9rification du passager ?",f6,"Le syst\xe8me doit-il exiger que le chauffeur v\xe9rifie le passager avec un code avant le trajet ? Le code est visible sur l app du passager et non envoy\xe9 par SMS.","yes","Oui","no","Non",f7,"Veuillez entrer le num\xe9ro Twilio",f8,"Veuillez entrer l Account SID",f9,"Veuillez entrer l Auth Token",g0,"Veuillez entrer le SMS Twilio","please_currency","Veuillez entrer la devise",g1,"Veuillez entrer le g\xe9orep\xe9rage en km",g2,"Veuillez entrer la cl\xe9 Google Maps",g3,"Veuillez entrer les secondes d acceptation","first_name","Pr\xe9nom","last_name","Nom de famille",g4,"Entrez le pr\xe9nom","enter_last_name","Entrez le nom",g5,"Entrez le t\xe9l\xe9phone (sans code pays)",g6,"Veuillez entrer un mot-cl\xe9 pour la recherche","no_users_found","Aucun utilisateur trouv\xe9","registered_on","Inscrit le","gender","Genre","rating","Note","vehicle_details","D\xe9tails du v\xe9hicule","vehicle_image","Image du v\xe9hicule",g7,"L ic\xf4ne doit \xeatre carr\xe9e, avec une taille de fichier maximale de 150 Ko",g8,"Ic\xf4ne du v\xe9hicule sur Google Maps",g9,"Veuillez vous assurer que les ic\xf4nes ont un fond transparent et ne d\xe9passent pas 150 Ko","vehicle_name","Nom du v\xe9hicule",h0,"Le nom sera visible par les passagers lors de la r\xe9servation (ex: 'Eco', 'Berline', 'Premium').",h1,"Entrez le nom du v\xe9hicule",h2,"Capacit\xe9 de places",h3,"La capacit\xe9 de places du v\xe9hicule hors chauffeur",h4,"Entrez la capacit\xe9 de places",h5,"Pourcentage de commission",h6,"Pourcentage de commission de l administrateur",h7,"Entrez le pourcentage de commission",h8,"C est le tarif de base qui sera factur\xe9","enter_base_fare","Entrez le tarif de base","per_km_fare","Tarif par km","per_km_fare_eg","Ex: si la distance est de 10 km et le tarif par km est 8, alors 80 seront ajout\xe9s au tarif de base.",h9,"Entrez le tarif par km","per_minute_fare","Tarif par minute",i0,"Ex: si le trajet dure 30 min et le tarif par minute est 2, alors 60 seront ajout\xe9s au tarif de base.",i1,"Entrez le tarif par minute",i2,"Frais d attente par minute",i3,"Ex: si le chauffeur attend 5 min et le frais est 2, alors 10 seront ajout\xe9s \xe0 la facture.",i4,"Entrez les frais d attente par minute",i5,"L attente commence apr\xe8s (minutes)",i6,"D\xe9finissez la dur\xe9e apr\xe8s laquelle les frais d attente seront factur\xe9s automatiquement.",i7,"Frais d attente maximum",i8,"Ex: si l attente dure 30 min, le frais est de 2/min mais le max est de 50, alors 50 seront ajout\xe9s.",i9,"Entrez le maximum des frais d attente",j0,r3,j2,r4,j4,r5,j6,r6,j8,r7,k0,r8,k2,r9,k4,s0,k6,s1,"sure_update","\xcates-vous s\xfbr de vouloir mettre \xe0 jour ?","update","Mettre \xe0 jour",k8,"Veuillez ajouter l image du v\xe9hicule",k9,"Veuillez ajouter l ic\xf4ne du v\xe9hicule",l0,r3,l1,r4,l2,r5,l3,r6,l4,r7,l5,r8,l6,r9,l7,s0,l8,s1,"vehicle_types","Types de v\xe9hicules",l9,"G\xe9rer les types de v\xe9hicules (ex: \xc9conomique, Premium). Image carr\xe9e de 150-200 Ko recommand\xe9e.","image","Image","edit","Modifier","add_new","Ajouter",m0,"Marqu\xe9 comme pay\xe9 avec succ\xe8s",m1,"\xc9chec du marquage comme pay\xe9",m2,"Voici les demandes de retrait des chauffeurs. Veuillez effectuer les virements puis les marquer comme pay\xe9s.","requested_on","Demand\xe9 le","bank_name","Nom de la banque","branch_name","Nom de l agence","ifsc_code","Code IFSC / SWIFT",m3,"Nom du titulaire du compte","account_number","Num\xe9ro de compte",m4,"Voir d\xe9tails du chauffeur",m5,"Avez-vous d\xe9j\xe0 pay\xe9 le montant total au chauffeur ? Voulez-vous marquer cette demande comme pay\xe9e ?","mark_as_paid","Marquer comme pay\xe9",m6,"Aucune demande de retrait trouv\xe9e","alert","Alerte","home","Accueil",m7,"Identifiants invalides",m8,"\xc9chec de la r\xe9cup\xe9ration des param\xe8tres",m9,"Param\xe8tres mis \xe0 jour avec succ\xe8s",n0,"\xc9chec de la mise \xe0 jour des param\xe8tres",n1,"\xc9chec de la r\xe9cup\xe9ration des documents d inscription",n2,"\xc9chec de la mise \xe0 jour du document d inscription",n3,"\xc9chec de la suppression du document d inscription",n4,"\xc9chec de l ajout du document d inscription",n5,"\xc9chec de la r\xe9cup\xe9ration des motifs d annulation",n6,"\xc9chec de la mise \xe0 jour du motif d annulation",n7,"\xc9chec de la suppression du motif d annulation",n8,"\xc9chec de l ajout du motif d annulation",n9,"\xc9chec de la r\xe9cup\xe9ration des types de v\xe9hicules",o0,"\xc9chec de la mise \xe0 jour du type de v\xe9hicule",o1,"Ce nom de v\xe9hicule existe d\xe9j\xe0",o2,"V\xe9hicule ajout\xe9 avec succ\xe8s",o3,"V\xe9hicule mis \xe0 jour avec succ\xe8s",o4,"Le chauffeur a \xe9t\xe9 approuv\xe9",o5,"\xc9chec de l approbation du chauffeur",o6,"Le chauffeur a \xe9t\xe9 rejet\xe9",o7,"\xc9chec du rejet du chauffeur",o8,"Le chauffeur a \xe9t\xe9 suspendu",o9,"\xc9chec de la suspension du chauffeur",p0,"Suspension annul\xe9e avec succ\xe8s",p1,"\xc9chec de l annulation de la suspension",p2,"\xc9chec de la r\xe9cup\xe9ration des d\xe9tails du chauffeur",p3,"\xc9chec de la r\xe9cup\xe9ration des trajets r\xe9cents",p4,"\xc9chec de la r\xe9cup\xe9ration des d\xe9tails du trajet",p5,"\xc9chec de la r\xe9cup\xe9ration des d\xe9tails de l utilisateur",p6,"Veuillez s\xe9lectionner la date de d\xe9but",p7,"Veuillez s\xe9lectionner la date de fin",p8,"Motif d'annulation supprim\xe9 avec succ\xe8s",p9,"Motif d'annulation ajout\xe9 avec succ\xe8s",q0,"Document supprim\xe9 avec succ\xe8s",q1,"Document ajout\xe9 avec succ\xe8s",q2,"Cette modification est limit\xe9e par Ridely."],w7,w7),"de",A.a7(["cancel_reasons","Stornierungsgr\xfcnde","cancel_reason","Stornierungsgrund","user_app","Nutzer-App","sr_no","Nr.","active","Aktiv","delete","L\xf6schen","sure_delete","Sind Sie sicher, dass Sie l\xf6schen m\xf6chten?","add_new_reason","Neuen Grund hinzuf\xfcgen",s,"Bitte f\xfcgen Sie zuerst einen Stornierungsgrund hinzu","sure_add","Sind Sie sicher, dass Sie hinzuf\xfcgen m\xf6chten?","add","Hinzuf\xfcgen","driver_app","Fahrer-App","select_language","Sprache ausw\xe4hlen","apply","Anwenden","documents_list","Dokumentenliste",r,"Diese Dokumente sind f\xfcr die Kontoerstellung durch Fahrer erforderlich","document_name","Dokumentenname",q,"Neues Dokument hinzuf\xfcgen",p,"Bitte f\xfcgen Sie zuerst einen Dokumentennamen hinzu","driver_details","Fahrerdetails","driver_name","Fahrername","phone_number","Telefonnummer","address","Adresse","email","E-Mail","vehicle_type","Fahrzeugtyp","vehicle_model","Fahrzeugmodell","vehicle_color","Fahrzeugfarbe",o,"Kennzeichen","status","Status","documents","Dokumente",n,"(Klicken, um Dokumente anzuzeigen)","all_rides","Alle Fahrten","user_name","Benutzername","amount","Betrag","date_and_time","Datum und Uhrzeit","action","Aktion","view","Ansehen","no_rides_found","Keine Fahrten gefunden","sure_approve","Sind Sie sicher, dass Sie genehmigen m\xf6chten?","approve","Genehmigen","or","Oder",m,"Bitte geben Sie einen Grund f\xfcr die Ablehnung an","sure_reject","Sind Sie sicher, dass Sie ablehnen m\xf6chten?","reject","Ablehnen",l,"Grund f\xfcr Ablehnung hinzuf\xfcgen",k,"Sind Sie sicher, dass Sie die Sperrung aufheben m\xf6chten?","undo_suspend","Sperrung aufheben","sure_suspend","Sind Sie sicher, dass Sie sperren m\xf6chten?",j,"Sperrung derzeit nicht m\xf6glich. Die Bewerbung dieses Fahrers wurde bereits abgelehnt.",i,"Sperrung derzeit nicht m\xf6glich. Dieser Fahrer befindet sich m\xf6glicherweise gerade in einer aktiven Fahrt.","suspend","Sperren","admin","Admin",h,"Mehr Fahrten mit weniger Aufwand verwalten","revenue","Umsatz","this_months","(Diesen Monat)","total_users","Gesamtbenutzer","total_drivers","Gesamtfahrer","pending_drivers","Ausstehende Fahrer",g,"Auszahlungsanfragen","recent_rides","Aktuelle Fahrten","good_morning","Guten Morgen","good_afternoon","Guten Tag","good_evening","Guten Abend","welcome_back","Willkommen zur\xfcck!","welcome","Willkommen!",f,"Bitte anmelden, um fortzufahren",e,"Bitte registrieren, um fortzufahren",d,"E-Mail-Adresse eingeben","password","Passwort","enter_password","Passwort eingeben",c,"Passwort best\xe4tigen",b,"Passwortbest\xe4tigung eingeben",a,"Bitte geben Sie Ihre E-Mail-Adresse ein",a0,"Bitte geben Sie eine g\xfcltige E-Mail-Adresse ein",a1,"Bitte geben Sie Ihr Passwort ein",a2,"Bitte best\xe4tigen Sie Ihr Passwort",a3,"Passwort und Best\xe4tigung stimmen nicht \xfcberein","login","Login","sign_up","Registrieren","choose_language","Sprache w\xe4hlen",a4,"Zahlungseinstellungen",a5,"Stripe Zahlungsgateway",a6,'Registrieren Sie sich bei Stripe, um Ihren "Publishable Key" und "Secret Key" zu erhalten',a7,a8,a9,b0,b1,"PayPal Zahlungsgateway",b2,"Registrieren Sie sich bei PayPal, um Ihre Client-ID und Ihren Secret Key zu erhalten",b3,"Paypal Client-ID",b5,b6,b7,"PayStack Zahlungsgateway",b8,'Registrieren Sie sich bei PayStack, um Ihren "Public Key" und "Secret Key" zu erhalten',b9,c0,c1,c2,c3,"Razorpay Zahlungsgateway",c4,"Registrieren Sie sich bei Razorpay, um Ihre Key-ID und Ihren Key Secret zu erhalten","razorpay_key_id","Razorpay Key-ID",c5,c6,c7,"Bitte geben Sie den Stripe Publishable Key ein",c8,"Bitte geben Sie den Stripe Secret Key ein",c9,"Bitte geben Sie die PayPal Client-ID ein",d0,"Bitte geben Sie den PayPal Secret Key ein",d1,"Bitte geben Sie den PayStack Public Key ein",d2,"Bitte geben Sie den PayStack Secret Key ein",d3,"Bitte geben Sie die Razorpay Key-ID ein",d4,"Bitte geben Sie den Razorpay Key Secret ein","save","Speichern",d5,"Fahrer-Onboarding-Anfragen genehmigen oder mit klarem Feedback ablehnen, um Fahrern bei der Korrektur und Neubewerbung zu helfen","phone","Telefon",d6,"Keine Fahrer gefunden","admin_revenue","Admin-Umsatz","revenue_trend","Umsatztrend","rides_trend","Fahrtentrend","rides","Fahrten","avg_per_ride","Durchschnitt / Fahrt","ride_details","Fahrtdetails",d7,"Buchungsinformationen","date","Datum","payment_mode","Zahlungsart",d8,"Abhol- & Zielort","fare_details","Tarifdetails","base_fare","Grundgeb\xfchr","distance_fare","Entfernungsgeb\xfchr","time_fare","Zeitgeb\xfchr","waiting_charge","Wartegeb\xfchr","total","Gesamt","drivers_earning","Verdienst des Fahrers",d9,"Admin-Provision","user_details","Benutzerdetails","name","Name","from_date","Von Datum","to_date","Bis Datum","search","Suchen","clear_filter","Filter l\xf6schen","settings","Einstellungen","twilio_number","Twilio-Nummer",e0,"Twilio dient als SMS-Gateway. Sie k\xf6nnen es verwenden, um OTP-SMS-Nachrichten zur Verifizierung von Telefonnummern zu senden. Erstellen Sie ein Konto bei Twilio, um Ihre dedizierte Twilio-Nummer zu erhalten.",e1,"Twilio-Nummer eingeben","account_sid","Account SID",e2,"Twilio dient als SMS-Gateway. Erstellen Sie ein Konto bei Twilio, um Ihre dedizierte Account SID zu erhalten.",e3,"Account SID eingeben","auth_token","Auth Token",e4,"Twilio dient als SMS-Gateway. Erstellen Sie ein Konto bei Twilio, um Ihren dedizierten Auth Token zu erhalten.",e5,"Auth Token eingeben","twilio_sms","Twilio SMS",e6,"Schreiben Sie die Twilio SMS-Nachricht. Der Verifizierungscode wird automatisch am Anfang der Nachricht hinzugef\xfcgt. Beispiel: \u201cist Ihr Verifizierungscode f\xfcr den Login bei Ridely. Vielen Dank, dass Sie sich f\xfcr Ridely entschieden haben.\u201d",e7,"Twilio SMS eingeben","currency","W\xe4hrung",e8,"Geben Sie das W\xe4hrungssymbol f\xfcr die App an (z. B. $, \u20ac, \xa5)","enter_currency","W\xe4hrung eingeben","geofencing_km","Geofencing-Kilometer",e9,"Geben Sie in Kilometern den Radius an, in dem Fahrer Fahrtanfragen erhalten. Beispiel: Eine '2' stellt sicher, dass Anfragen nur an Fahrer im Umkreis von zwei Kilometern gesendet werden.",f0,"Geofencing-Kilometer eingeben","google_map_key","Google Map Key","this_api_key_is","Dieser API-Key wird sowohl f\xfcr die Google Places API als auch f\xfcr die Routenf\xfchrung innerhalb der App verwendet.",f1,"Google Map Key eingeben",f2,"Sekunden zur Annahme der Anfrage",f3,"Das Zeitlimit in Sekunden, in dem ein Fahrer die Anfrage annehmen muss, bevor sie automatisch dem n\xe4chsten verf\xfcgbaren Fahrer zugewiesen wird.",f4,"Sekunden zur Annahme eingeben",f5,"Fahrgast-Verifizierung aktivieren?",f6,"Soll das System vom Fahrer verlangen, den Fahrgast mit einem Code vor der Fahrt zu verifizieren? Der Code ist in der Fahrgast-App sichtbar und wird nicht per SMS gesendet.","yes","Ja","no","Nein",f7,"Bitte Twilio-Nummer eingeben",f8,"Bitte Account SID eingeben",f9,"Bitte Auth Token eingeben",g0,"Bitte Twilio SMS eingeben","please_currency","Bitte W\xe4hrung eingeben",g1,"Bitte Geofencing-Kilometer eingeben",g2,"Bitte Google Map Key eingeben",g3,"Bitte Sekunden zur Annahme eingeben","first_name","Vorname","last_name","Nachname",g4,"Vorname eingeben","enter_last_name","Nachname eingeben",g5,"Telefonnummer eingeben (ohne L\xe4ndervorwahl)",g6,"Bitte Suchbegriff eingeben","no_users_found","Keine Benutzer gefunden","registered_on","Registriert am","gender","Geschlecht","rating","Bewertung","vehicle_details","Fahrzeugdetails","vehicle_image","Fahrzeugbild",g7,"Das Icon sollte quadratisch sein, maximale Dateigr\xf6\xdfe 150 KB",g8,"Fahrzeug-Icon auf Google Maps",g9,"Bitte stellen Sie sicher, dass Icons einen transparenten Hintergrund haben und 150 KB nicht \xfcberschreiten","vehicle_name","Fahrzeugname",h0,"Der Name wird Fahrg\xe4sten bei der Buchung angezeigt, z. B. 'Economy', 'Premium' usw.",h1,"Fahrzeugname eingeben",h2,"Sitzplatzkapazit\xe4t",h3,"Die Anzahl der Sitzpl\xe4tze ohne Fahrer",h4,"Sitzplatzkapazit\xe4t eingeben",h5,"Provisionssatz",h6,"Prozentsatz der Admin-Provision",h7,"Provisionssatz eingeben",h8,"Dies ist die Grundgeb\xfchr, die berechnet wird","enter_base_fare","Grundgeb\xfchr eingeben","per_km_fare","Preis pro Kilometer","per_km_fare_eg","Preis pro Kilometer. Beispiel: Bei 10 km Fahrt und einem Preis von 8 pro km werden 80 zur Grundgeb\xfchr addiert.",h9,"Preis pro Kilometer eingeben","per_minute_fare","Preis pro Minute",i0,"Preis pro Minute. Beispiel: Bei 30 Minuten Fahrtzeit und einem Preis von 2 pro Minute werden 60 zur Grundgeb\xfchr addiert.",i1,"Preis pro Minute eingeben",i2,"Wartegeb\xfchr pro Minute",i3,"Wartegeb\xfchr pro Minute. Beispiel: Wenn der Fahrer 5 Minuten gewartet hat und der Preis 2 betr\xe4gt, werden 10 berechnet.",i4,"Wartegeb\xfchr pro Minute eingeben",i5,"Wartezeit beginnt nach (Minuten)",i6,"Legen Sie die Dauer in Minuten fest, nach der Wartegeb\xfchren automatisch berechnet werden.",i7,"Maximale Wartegeb\xfchr",i8,"Maximale Wartegeb\xfchr. Beispiel: Bei 30 Min. Wartezeit (2 pro Min.) und einem Max-Wert von 50 werden nur 50 addiert.",i9,"Maximale Wartegeb\xfchr eingeben",j0,s2,j2,s3,j4,s4,j6,s5,j8,s6,k0,s7,k2,s8,k4,s9,k6,t0,"sure_update","Sind Sie sicher, dass Sie aktualisieren m\xf6chten?","update","Aktualisieren",k8,"Bitte Fahrzeugbild hinzuf\xfcgen",k9,"Bitte Fahrzeug-Icon hinzuf\xfcgen",l0,s2,l1,s3,l2,s4,l3,s5,l4,s6,l5,s7,l6,s8,l7,s9,l8,t0,"vehicle_types","Fahrzeugtypen",l9,"Fahrzeugtypen verwalten (z. B. Economy, Premium). Empfohlen: quadratisches Bild 150-200 KB.","image","Bild","edit","Bearbeiten","add_new","Neu hinzuf\xfcgen",m0,"Erfolgreich als bezahlt markiert",m1,"Fehler beim Markieren als bezahlt",m2,"Dies sind die Auszahlungsanfragen der Fahrer. Bitte f\xfchren Sie die Zahlungen aus und markieren Sie diese als bezahlt.","requested_on","Angefordert am","bank_name","Bankname","branch_name","Zweigstellenname","ifsc_code","IFSC-Code",m3,"Kontoinhaber","account_number","Kontonummer",m4,"Fahrerdetails ansehen",m5,"Haben Sie den vollen Betrag bereits an den Fahrer gezahlt? Sicher als bezahlt markieren?","mark_as_paid","Als bezahlt markieren",m6,"Keine Auszahlungsanfragen gefunden","alert","Warnung","home","Home",m7,"Ung\xfcltige Zugangsdaten",m8,"Einstellungen konnten nicht geladen werden",m9,"Einstellungen erfolgreich aktualisiert",n0,"Fehler beim Aktualisieren der Einstellungen",n1,"Registrierungsunterlagen konnten nicht geladen werden",n2,"Dokument konnte nicht aktualisiert werden",n3,"Dokument konnte nicht gel\xf6scht werden",n4,"Dokument konnte nicht hinzugef\xfcgt werden",n5,"Stornierungsgr\xfcnde konnten nicht geladen werden",n6,"Stornierungsgrund konnte nicht aktualisiert werden",n7,"Stornierungsgrund konnte nicht gel\xf6scht werden",n8,"Stornierungsgrund konnte nicht hinzugef\xfcgt werden",n9,"Fahrzeugtypen konnten nicht geladen werden",o0,"Fahrzeugtyp konnte nicht aktualisiert werden",o1,"Fahrzeugname existiert bereits",o2,"Fahrzeug erfolgreich hinzugef\xfcgt",o3,"Fahrzeug erfolgreich aktualisiert",o4,"Fahrer wurde genehmigt",o5,"Genehmigung des Fahrers fehlgeschlagen",o6,"Fahrer wurde abgelehnt",o7,"Ablehnung des Fahrers fehlgeschlagen",o8,"Fahrer wurde gesperrt",o9,"Sperrung des Fahrers fehlgeschlagen",p0,"Sperrung erfolgreich aufgehoben",p1,"Aufhebung der Sperrung fehlgeschlagen",p2,"Fahrerdetails konnten nicht geladen werden",p3,"Aktuelle Fahrten konnten nicht geladen werden",p4,"Fahrtdetails konnten nicht geladen werden",p5,"Benutzerdetails konnten nicht geladen werden",p6,"Bitte w\xe4hlen Sie das Startdatum aus",p7,"Bitte w\xe4hlen Sie das Enddatum aus",p8,"Stornierungsgrund erfolgreich gel\xf6scht",p9,"Stornierungsgrund erfolgreich hinzugef\xfcgt",q0,"Dokument erfolgreich gel\xf6scht",q1,"Dokument erfolgreich hinzugef\xfcgt",q2,"Diese \xc4nderung ist durch Ridely eingeschr\xe4nkt."],w7,w7),"pt",A.a7(["cancel_reasons","Motivos de Cancelamento","cancel_reason","Motivo de Cancelamento","user_app","App do Usu\xe1rio","sr_no","N\xba de s\xe9rie","active","Ativo","delete","Excluir","sure_delete","Tem certeza de que deseja excluir?","add_new_reason","Adicionar novo motivo",s,"Por favor, adicione um motivo de cancelamento primeiro","sure_add","Tem certeza de que deseja adicionar?","add","Adicionar","driver_app","App do Motorista","select_language","Selecionar Idioma","apply","Aplicar","documents_list","Lista de Documentos",r,"Estes documentos s\xe3o necess\xe1rios para a cria\xe7\xe3o de conta pelos motoristas","document_name","Nome do Documento",q,"Adicionar novo documento",p,"Por favor, adicione o nome do documento primeiro","driver_details","Detalhes do Motorista","driver_name","Nome do Motorista","phone_number","N\xfamero de Telefone","address","Endere\xe7o","email","E-mail","vehicle_type","Tipo de Ve\xedculo","vehicle_model","Modelo do Ve\xedculo","vehicle_color","Cor do Ve\xedculo",o,"N\xfamero da Placa","status","Status","documents","Documentos",n,"(Clique para ver os documentos)","all_rides","Todas as Corridas","user_name","Nome do Usu\xe1rio","amount","Valor","date_and_time","Data e Hora","action","A\xe7\xe3o","view","Visualizar","no_rides_found","Nenhuma corrida encontrada","sure_approve","Tem certeza de que deseja aprovar?","approve","Aprovar","or","Ou",m,"Por favor, adicione um motivo para a rejei\xe7\xe3o","sure_reject","Tem certeza de que deseja rejeitar?","reject","Rejeitar",l,"Adicionar um motivo para a rejei\xe7\xe3o",k,"Tem certeza de que deseja desfazer a suspens\xe3o?","undo_suspend","Desfazer Suspens\xe3o","sure_suspend","Tem certeza de que deseja suspender?",j,"N\xe3o \xe9 poss\xedvel suspender neste momento. A solicita\xe7\xe3o deste motorista j\xe1 foi rejeitada",i,"N\xe3o \xe9 poss\xedvel suspender neste momento. Este motorista pode estar em uma corrida ativa agora.","suspend","Suspender","admin","Admin",h,"Gerencie mais corridas com menos esfor\xe7o","revenue","Receita","this_months","(Deste m\xeas)","total_users","Total de Usu\xe1rios","total_drivers","Total de Motoristas","pending_drivers","Motoristas Pendentes",g,"Solicita\xe7\xf5es de Saque","recent_rides","Corridas Recentes","good_morning","Bom dia","good_afternoon","Boa tarde","good_evening","Boa noite","welcome_back","Bem-vindo de volta!","welcome","Bem-vindo!",f,"Por favor, fa\xe7a login para continuar",e,"Por favor, cadastre-se para continuar",d,"Digite o endere\xe7o de e-mail","password","Senha","enter_password","Digite a senha",c,"Confirmar Senha",b,"Digite a confirma\xe7\xe3o da senha",a,"Por favor, digite seu endere\xe7o de e-mail",a0,"Por favor, digite um endere\xe7o de e-mail v\xe1lido",a1,"Por favor, digite sua senha",a2,"Por favor, digite a confirma\xe7\xe3o da sua senha",a3,"A senha e a confirma\xe7\xe3o da senha n\xe3o coincidem","login","Login","sign_up","Cadastrar","choose_language","Escolher Idioma",a4,"Configura\xe7\xf5es de Pagamento",a5,"Gateway de Pagamento Stripe",a6,"Cadastre-se no Stripe Payment Gateway para obter sua Chave Public\xe1vel e Chave Secreta",a7,"Chave Public\xe1vel Stripe",a9,"Chave Secreta Stripe",b1,"Gateway de Pagamento PayPal",b2,"Cadastre-se no PayPal Payment Gateway para obter seu Client Id e Chave Secreta",b3,"Client Id do Paypal",b5,"Chave Secreta do PayPal",b7,"Gateway de Pagamento PayStack",b8,"Cadastre-se no PayStack Payment Gateway para obter sua Chave P\xfablica e Chave Secreta",b9,"Chave P\xfablica do PayStack",c1,"Chave Secreta do PayStack",c3,"Gateway de Pagamento Razorpay",c4,"Cadastre-se no Razorpay Payment Gateway para obter sua Key Id e Key Secret","razorpay_key_id","Key Id do Razorpay",c5,"Key Secret do Razorpay",c7,"Por favor, digite a Chave Public\xe1vel do Stripe",c8,"Por favor, digite a Chave Secreta do Stripe",c9,"Por favor, digite o Client Id do PayPal",d0,"Por favor, digite a Chave Secreta do PayPal",d1,"Por favor, digite a Chave P\xfablica do PayStack",d2,"Por favor, digite a Chave Secreta do PayStack",d3,"Por favor, digite a Key Id do Razorpay",d4,"Por favor, digite a Key Secret do Razorpay","save","Salvar",d5,"Aprove solicita\xe7\xf5es de integra\xe7\xe3o de motoristas ou rejeite-as com feedback claro para ajudar os motoristas a corrigir e solicitar novamente","phone","Telefone",d6,"Nenhum motorista encontrado","admin_revenue","Receita do Admin","revenue_trend","Tend\xeancia de Receita","rides_trend","Tend\xeancia de Corridas","rides","Corridas","avg_per_ride","M\xe9dia / Corrida","ride_details","Detalhes da Corrida",d7,"Informa\xe7\xf5es de Reserva","date","Data","payment_mode","Modo de Pagamento",d8,"Local de Embarque e Desembarque","fare_details","Detalhes da Tarifa","base_fare","Tarifa Base","distance_fare","Tarifa por Dist\xe2ncia","time_fare","Tarifa por Tempo","waiting_charge","Taxa de Espera","total","Total","drivers_earning","Ganhos do Motorista",d9,"Comiss\xe3o do Admin","user_details","Detalhes do Usu\xe1rio","name","Nome","from_date","De Data","to_date","At\xe9 Data","search","Buscar","clear_filter","Limpar Filtro","settings","Configura\xe7\xf5es","twilio_number","N\xfamero Twilio",e0,"O Twilio serve como um gateway de SMS. Voc\xea pode us\xe1-lo para enviar mensagens SMS de senha \xfanica (OTP) para verificar n\xfameros de telefone quando passageiros ou motoristas criam suas contas. Para come\xe7ar a usar o servi\xe7o, basta criar uma conta no Twilio para obter seu n\xfamero Twilio dedicado",e1,"Digite o N\xfamero Twilio","account_sid","Account Sid",e2,"O Twilio serve como um gateway de SMS. Voc\xea pode us\xe1-lo para enviar mensagens SMS de senha \xfanica (OTP) para verificar n\xfameros de telefone quando passageiros ou motoristas criam suas contas. Para come\xe7ar a usar o servi\xe7o, basta criar uma conta no Twilio para obter seu Account Sid dedicado.",e3,"Digite o Account Sid","auth_token","Auth Token",e4,"O Twilio serve como um gateway de SMS. Voc\xea pode us\xe1-lo para enviar mensagens SMS de senha \xfanica (OTP) para verificar n\xfameros de telefone quando passageiros ou motoristas criam suas contas. Para come\xe7ar a usar o servi\xe7o, basta criar uma conta no Twilio para obter seu Auth Token dedicado",e5,"Digite o Auth Token","twilio_sms","SMS do Twilio",e6,"Escreva a mensagem SMS do Twilio. O c\xf3digo de verifica\xe7\xe3o \xe9 adicionado automaticamente no in\xedcio da mensagem, ent\xe3o voc\xea pode continuar o texto assim:\n\u201c\xe9 o seu c\xf3digo de verifica\xe7\xe3o para fazer login no Ridely. Obrigado por escolher o Ridely.\u201d",e7,"Digite o SMS do Twilio","currency","Moeda",e8,"Especifique o s\xedmbolo da moeda pretendido para uso no aplicativo (ex: $, \u20ac, \xa5)","enter_currency","Digite a Moeda","geofencing_km","Quilometragem de Geofencing",e9,"Especifique, em quil\xf4metros, o raio geogr\xe1fico dentro do qual os motoristas receber\xe3o solicita\xe7\xf5es de corrida. Por exemplo, inserir '2' garantir\xe1 que as solicita\xe7\xf5es sejam enviadas apenas para motoristas localizados em um raio de dois quil\xf4metros",f0,"Digite a Quilometragem de Geofencing","google_map_key","Chave do Google Maps","this_api_key_is","Esta chave de API \xe9 utilizada tanto para a API do Google Places, que permite que os passageiros pesquisem sua localiza\xe7\xe3o, quanto para a funcionalidade da API de dire\xe7\xe3o de rota dentro do aplicativo.",f1,"Digite a Chave do Google Maps",f2,"Segundos para Aceitar Solicita\xe7\xe3o",f3,"O limite de tempo especificado, medido em segundos, representa a janela durante a qual um motorista deve aceitar a solicita\xe7\xe3o de corrida; a falha em faz\xea-lo reatribuir\xe1 automaticamente a solicita\xe7\xe3o ao pr\xf3ximo motorista dispon\xedvel",f4,"Digite os Segundos para Aceitar Solicita\xe7\xe3o",f5,"Ativar Verifica\xe7\xe3o do Passageiro?",f6,"O sistema deve exigir que o motorista verifique o passageiro usando um c\xf3digo de verifica\xe7\xe3o pr\xe9-corrida? O c\xf3digo est\xe1 acess\xedvel na interface do aplicativo do passageiro e n\xe3o \xe9 entregue via SMS","yes","Sim","no","N\xe3o",f7,"Por favor, digite o N\xfamero Twilio",f8,"Por favor, digite o Account Sid",f9,"Por favor, digite o Auth Token",g0,"Por favor, digite o SMS do Twilio","please_currency","Por favor, digite a Moeda",g1,"Por favor, digite a Quilometragem de Geofencing",g2,"Por favor, digite a Chave do Google Maps",g3,"Por favor, digite os Segundos para Aceitar Solicita\xe7\xe3o","first_name","Primeiro Nome","last_name","Sobrenome",g4,"Digite o Primeiro Nome","enter_last_name","Digite o Sobrenome",g5,"Digite o Telefone (Sem c\xf3digo do pa\xeds)",g6,"Por favor, digite uma palavra-chave para pesquisar","no_users_found","Nenhum usu\xe1rio encontrado","registered_on","Registrado em","gender","G\xeanero","rating","Avalia\xe7\xe3o","vehicle_details","Detalhes do Ve\xedculo","vehicle_image","Imagem do Ve\xedculo",g7,"O \xedcone deve ser de formato quadrado, com um tamanho m\xe1ximo de arquivo de 150 KB",g8,"\xcdcone do Ve\xedculo no Google Maps",g9,"Certifique-se de que os \xedcones tenham um fundo transparente e um tamanho de arquivo otimizado n\xe3o superior a 150 KB","vehicle_name","Nome do Ve\xedculo",h0,"O nome ficar\xe1 vis\xedvel para os passageiros ao reservar uma corrida. Voc\xea pode defini-lo como 'Auto', 'Cab Economy', 'Cab Premium', etc",h1,"Digite o Nome do Ve\xedculo",h2,"Capacidade de Assentos",h3,"A capacidade de assentos de um ve\xedculo, excluindo o motorista",h4,"Digite a Capacidade de Assentos",h5,"Porcentagem de Comiss\xe3o",h6,"Porcentagem de comiss\xe3o de um administrador",h7,"Digite a Porcentagem de Comiss\xe3o",h8,"Esta \xe9 a tarifa b\xe1sica que ser\xe1 cobrada","enter_base_fare","Digite a Tarifa Base","per_km_fare","Tarifa por Quil\xf4metro","per_km_fare_eg","Tarifa por quil\xf4metro. Ex: se o total de quil\xf4metros percorridos for 10 e a tarifa por quil\xf4metro for 8, ent\xe3o 80 ser\xe3o adicionados \xe0 tarifa base",h9,"Digite a Tarifa por Quil\xf4metro","per_minute_fare","Tarifa por Minuto",i0,"Tarifa por minuto. Ex: se o tempo total percorrido for de 30 minutos e a tarifa por minuto for 2, ent\xe3o 60 ser\xe3o adicionados \xe0 tarifa base",i1,"Digite a Tarifa por Minuto",i2,"Taxa de Espera por Minuto",i3,"Taxa de espera por minuto. Ex: se o motorista esperou por 5 minutos e a taxa de espera por minuto for 2, ent\xe3o 10 ser\xe3o adicionados \xe0 conta",i4,"Digite a Taxa de Espera por Minuto",i5,"Espera Come\xe7a Ap\xf3s Minutos",i6,"Defina a dura\xe7\xe3o (em minutos) ap\xf3s a qual as taxas de espera ser\xe3o cobradas automaticamente",i7,"Taxa de Espera M\xe1xima",i8,"Taxa de espera m\xe1xima. Ex: se o motorista esperou por 30 minutos e a taxa de espera por minuto for 2 e a taxa de espera m\xe1xima for definida como 50, ent\xe3o 50 ser\xe3o adicionados \xe0 tarifa base",i9,"Digite a Taxa de Espera M\xe1xima",j0,t1,j2,t2,j4,t3,j6,t4,j8,t5,k0,t6,k2,t7,k4,t8,k6,t9,"sure_update","Tem certeza de que deseja atualizar?","update","Atualizar",k8,"Por favor, adicione a imagem do ve\xedculo",k9,"Por favor, adicione o \xedcone do ve\xedculo",l0,t1,l1,t2,l2,t3,l3,t4,l4,t5,l5,t6,l6,t7,l7,t8,l8,t9,"vehicle_types","Tipos de Ve\xedculo",l9,"Gerenciar tipos de ve\xedculos (ex: Econ\xf4mico, Premium). Recomenda-se imagem quadrada de no m\xe1ximo 150-200 KB","image","Imagem","edit","Editar","add_new","Adicionar Novo",m0,"Marcado como pago com sucesso",m1,"Falha ao marcar como pago",m2,"Abaixo est\xe3o as solicita\xe7\xf5es de saque dos motoristas. Processe os pagamentos para suas respectivas contas banc\xe1rias e marque-os como pagos","requested_on","Solicitado em","bank_name","Nome do Banco","branch_name","Nome da Ag\xeancia","ifsc_code","C\xf3digo IFSC",m3,"Nome do Titular da Conta","account_number","N\xfamero da Conta",m4,"Ver Detalhes do Motorista",m5,"Voc\xea j\xe1 pagou o valor total ao motorista? Tem certeza de que deseja marcar esta solicita\xe7\xe3o como paga?","mark_as_paid","Marcar como Pago",m6,"Nenhuma solicita\xe7\xe3o de saque encontrada","alert","Alerta","home","In\xedcio",m7,"Credenciais inv\xe1lidas",m8,"Falha ao obter configura\xe7\xf5es",m9,"Configura\xe7\xf5es atualizadas com sucesso",n0,"Falha ao atualizar configura\xe7\xf5es",n1,"Falha ao obter documentos de registro",n2,"Falha ao atualizar documento de registro",n3,"Falha ao excluir documento de registro",n4,"Falha ao adicionar documento de registro",n5,"Falha ao obter motivos de cancelamento",n6,"Falha ao atualizar motivo de cancelamento",n7,"Falha ao excluir motivo de cancelamento",n8,"Falha ao adicionar motivo de cancelamento",n9,"Falha ao obter tipos de ve\xedculo",o0,"Falha ao atualizar tipo de ve\xedculo",o1,"O nome do ve\xedculo j\xe1 existe",o2,"Ve\xedculo adicionado com sucesso",o3,"Ve\xedculo atualizado com sucesso",o4,"O motorista foi aprovado",o5,"Falha ao aprovar motorista",o6,"O motorista foi rejeitado",o7,"Falha ao rejeitar motorista",o8,"O motorista foi suspenso",o9,"Falha ao suspender motorista",p0,"Suspens\xe3o desfeita com sucesso",p1,"Falha ao desfazer suspens\xe3o do motorista",p2,"Falha ao obter detalhes do motorista",p3,"Falha ao buscar corridas recentes",p4,"Falha ao obter detalhes da corrida",p5,"Falha ao obter detalhes do usu\xe1rio",p6,"Por favor, selecione a data de in\xedcio",p7,"Por favor, selecione a data de t\xe9rmino",p8,"Motivo de cancelamento exclu\xeddo com sucesso",p9,"Motivo de cancelamento adicionado com sucesso",q0,"Documento exclu\xeddo com sucesso",q1,"Documento adicionado com sucesso",q2,"Esta modifica\xe7\xe3o \xe9 restrita por Ridely."],w7,w7),"hi",A.a7(["cancel_reasons","\u0930\u0926\u094d\u0926 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0915\u093e\u0930\u0923","cancel_reason","\u0930\u0926\u094d\u0926 \u0915\u0930\u0928\u0947 \u0915\u093e \u0915\u093e\u0930\u0923","user_app","\u092f\u0942\u091c\u093c\u0930 \u0910\u092a","sr_no","\u0915\u094d\u0930. \u0938\u0902.","active","\u0938\u0915\u094d\u0930\u093f\u092f","delete","\u0939\u091f\u093e\u090f\u0902","sure_delete","\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u093e\u0915\u0908 \u0939\u091f\u093e\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?","add_new_reason","\u0928\u092f\u093e \u0915\u093e\u0930\u0923 \u091c\u094b\u0921\u093c\u0947\u0902",s,"\u0915\u0943\u092a\u092f\u093e \u092a\u0939\u0932\u0947 \u0930\u0926\u094d\u0926 \u0915\u0930\u0928\u0947 \u0915\u093e \u0915\u093e\u0930\u0923 \u091c\u094b\u0921\u093c\u0947\u0902","sure_add","\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u093e\u0915\u0908 \u091c\u094b\u0921\u093c\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?","add","\u091c\u094b\u0921\u093c\u0947\u0902","driver_app","\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0910\u092a","select_language","\u092d\u093e\u0937\u093e \u091a\u0941\u0928\u0947\u0902","apply","\u0932\u093e\u0917\u0942 \u0915\u0930\u0947\u0902","documents_list","\u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u0938\u0942\u091a\u0940",r,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930\u094b\u0902 \u0926\u094d\u0935\u093e\u0930\u093e \u0916\u093e\u0924\u093e \u092c\u0928\u093e\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092f\u0947 \u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u0906\u0935\u0936\u094d\u092f\u0915 \u0939\u0948\u0902","document_name","\u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u0915\u093e \u0928\u093e\u092e",q,"\u0928\u092f\u093e \u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u091c\u094b\u0921\u093c\u0947\u0902",p,"\u0915\u0943\u092a\u092f\u093e \u092a\u0939\u0932\u0947 \u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u0915\u093e \u0928\u093e\u092e \u091c\u094b\u0921\u093c\u0947\u0902","driver_details","\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0935\u093f\u0935\u0930\u0923","driver_name","\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u093e \u0928\u093e\u092e","phone_number","\u092b\u093c\u094b\u0928 \u0928\u0902\u092c\u0930","address","\u092a\u0924\u093e","email","\u0908\u092e\u0947\u0932","vehicle_type","\u0935\u093e\u0939\u0928 \u0915\u093e \u092a\u094d\u0930\u0915\u093e\u0930","vehicle_model","\u0935\u093e\u0939\u0928 \u0915\u093e \u092e\u0949\u0921\u0932","vehicle_color","\u0935\u093e\u0939\u0928 \u0915\u093e \u0930\u0902\u0917",o,"\u0935\u093e\u0939\u0928 \u092a\u094d\u0932\u0947\u091f \u0928\u0902\u092c\u0930","status","\u0938\u094d\u0925\u093f\u0924\u093f","documents","\u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c",n,"(\u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u0926\u0947\u0916\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0915\u094d\u0932\u093f\u0915 \u0915\u0930\u0947\u0902)","all_rides","\u0938\u092d\u0940 \u0938\u0935\u093e\u0930\u0940","user_name","\u092f\u0942\u091c\u093c\u0930 \u0915\u093e \u0928\u093e\u092e","amount","\u0930\u093e\u0936\u093f","date_and_time","\u0926\u093f\u0928\u093e\u0902\u0915 \u0914\u0930 \u0938\u092e\u092f","action","\u0915\u093e\u0930\u094d\u0930\u0935\u093e\u0908","view","\u0926\u0947\u0916\u0947\u0902","no_rides_found","\u0915\u094b\u0908 \u0938\u0935\u093e\u0930\u0940 \u0928\u0939\u0940\u0902 \u092e\u093f\u0932\u0940","sure_approve","\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u093e\u0915\u0908 \u092e\u0902\u091c\u093c\u0942\u0930 \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?","approve","\u092e\u0902\u091c\u093c\u0942\u0930 \u0915\u0930\u0947\u0902","or","\u092f\u093e",m,"\u0915\u0943\u092a\u092f\u093e \u0905\u0938\u094d\u0935\u0940\u0915\u0943\u0924\u093f \u0915\u093e \u0915\u093e\u0930\u0923 \u091c\u094b\u0921\u093c\u0947\u0902","sure_reject","\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u093e\u0915\u0908 \u0905\u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?","reject","\u0905\u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0947\u0902",l,"\u0905\u0938\u094d\u0935\u0940\u0915\u0943\u0924\u093f \u0915\u093e \u090f\u0915 \u0915\u093e\u0930\u0923 \u091c\u094b\u0921\u093c\u0947\u0902",k,"\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u093e\u0915\u0908 \u0928\u093f\u0932\u0902\u092c\u0928 \u0935\u093e\u092a\u0938 \u0932\u0947\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?","undo_suspend","\u0928\u093f\u0932\u0902\u092c\u0928 \u0935\u093e\u092a\u0938 \u0932\u0947\u0902","sure_suspend","\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u093e\u0915\u0908 \u0928\u093f\u0932\u0902\u092c\u093f\u0924 \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?",j,"\u0907\u0938 \u0938\u092e\u092f \u0928\u093f\u0932\u0902\u092c\u093f\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0905\u0938\u092e\u0930\u094d\u0925\u0964 \u0907\u0938 \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u093e \u0906\u0935\u0947\u0926\u0928 \u092a\u0939\u0932\u0947 \u0939\u0940 \u0905\u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930 \u0926\u093f\u092f\u093e \u0917\u092f\u093e \u0939\u0948",i,"\u0907\u0938 \u0938\u092e\u092f \u0928\u093f\u0932\u0902\u092c\u093f\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0905\u0938\u092e\u0930\u094d\u0925\u0964 \u092f\u0939 \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0905\u092d\u0940 \u0915\u093f\u0938\u0940 \u0938\u0915\u094d\u0930\u093f\u092f \u0938\u0935\u093e\u0930\u0940 \u092a\u0930 \u0939\u094b \u0938\u0915\u0924\u093e \u0939\u0948\u0964","suspend","\u0928\u093f\u0932\u0902\u092c\u093f\u0924 \u0915\u0930\u0947\u0902","admin","\u090f\u0921\u092e\u093f\u0928",h,"\u0915\u092e \u092a\u094d\u0930\u092f\u093e\u0938 \u0915\u0947 \u0938\u093e\u0925 \u0905\u0927\u093f\u0915 \u0938\u0935\u093e\u0930\u0940 \u092a\u094d\u0930\u092c\u0902\u0927\u093f\u0924 \u0915\u0930\u0947\u0902","revenue","\u0930\u093e\u091c\u0938\u094d\u0935","this_months","(\u0907\u0938 \u092e\u0939\u0940\u0928\u0947 \u0915\u093e)","total_users","\u0915\u0941\u0932 \u092f\u0942\u091c\u093c\u0930","total_drivers","\u0915\u0941\u0932 \u0921\u094d\u0930\u093e\u0907\u0935\u0930","pending_drivers","\u0932\u0902\u092c\u093f\u0924 \u0921\u094d\u0930\u093e\u0907\u0935\u0930",g,"\u0928\u093f\u0915\u093e\u0938\u0940 \u0905\u0928\u0941\u0930\u094b\u0927","recent_rides","\u0939\u093e\u0932 \u0915\u0940 \u0938\u0935\u093e\u0930\u0940","good_morning","\u0936\u0941\u092d \u092a\u094d\u0930\u092d\u093e\u0924","good_afternoon","\u0928\u092e\u0938\u094d\u0915\u093e\u0930 (\u0926\u094b\u092a\u0939\u0930)","good_evening","\u0936\u0941\u092d \u0938\u0902\u0927\u094d\u092f\u093e","welcome_back","\u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948!","welcome","\u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948!",f,"\u091c\u093e\u0930\u0940 \u0930\u0916\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0915\u0943\u092a\u092f\u093e \u0938\u093e\u0907\u0928 \u0907\u0928 \u0915\u0930\u0947\u0902",e,"\u091c\u093e\u0930\u0940 \u0930\u0916\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0915\u0943\u092a\u092f\u093e \u0938\u093e\u0907\u0928 \u0905\u092a \u0915\u0930\u0947\u0902",d,"\u0908\u092e\u0947\u0932 \u092a\u0924\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","password","\u092a\u093e\u0938\u0935\u0930\u094d\u0921","enter_password","\u092a\u093e\u0938\u0935\u0930\u094d\u0921 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",c,"\u092a\u093e\u0938\u0935\u0930\u094d\u0921 \u0915\u0940 \u092a\u0941\u0937\u094d\u091f\u093f \u0915\u0930\u0947\u0902",b,"\u092a\u0941\u0937\u094d\u091f\u093f \u092a\u093e\u0938\u0935\u0930\u094d\u0921 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",a,"\u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u0908\u092e\u0947\u0932 \u092a\u0924\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",a0,"\u0915\u0943\u092a\u092f\u093e \u090f\u0915 \u0935\u0948\u0927 \u0908\u092e\u0947\u0932 \u092a\u0924\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",a1,"\u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u092a\u093e\u0938\u0935\u0930\u094d\u0921 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",a2,"\u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u092a\u0941\u0937\u094d\u091f\u093f \u092a\u093e\u0938\u0935\u0930\u094d\u0921 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",a3,"\u092a\u093e\u0938\u0935\u0930\u094d\u0921 \u0914\u0930 \u092a\u0941\u0937\u094d\u091f\u093f \u092a\u093e\u0938\u0935\u0930\u094d\u0921 \u092e\u0947\u0932 \u0928\u0939\u0940\u0902 \u0916\u093e\u0924\u0947","login","\u0932\u0949\u0917\u093f\u0928","sign_up","\u0938\u093e\u0907\u0928 \u0905\u092a","choose_language","\u092d\u093e\u0937\u093e \u091a\u0941\u0928\u0947\u0902",a4,"\u092d\u0941\u0917\u0924\u093e\u0928 \u0938\u0947\u091f\u093f\u0902\u0917\u094d\u0938",a5,"Stripe \u092a\u0947\u092e\u0947\u0902\u091f \u0917\u0947\u091f\u0935\u0947",a6,"\u0905\u092a\u0928\u0940 Publishable Key \u0914\u0930 Secret Key \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f Stripe \u092a\u0947\u092e\u0947\u0902\u091f \u0917\u0947\u091f\u0935\u0947 \u092e\u0947\u0902 \u0938\u093e\u0907\u0928\u0905\u092a \u0915\u0930\u0947\u0902",a7,a8,a9,b0,b1,"PayPal \u092a\u0947\u092e\u0947\u0902\u091f \u0917\u0947\u091f\u0935\u0947",b2,"\u0905\u092a\u0928\u0940 Client Id \u0914\u0930 Secret Key \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f PayPal \u092a\u0947\u092e\u0947\u0902\u091f \u0917\u0947\u091f\u0935\u0947 \u092e\u0947\u0902 \u0938\u093e\u0907\u0928\u0905\u092a \u0915\u0930\u0947\u0902",b3,b4,b5,b6,b7,"PayStack \u092a\u0947\u092e\u0947\u0902\u091f \u0917\u0947\u091f\u0935\u0947",b8,"\u0905\u092a\u0928\u0940 Public Key \u0914\u0930 Secret Key \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f PayStack \u092a\u0947\u092e\u0947\u0902\u091f \u0917\u0947\u091f\u0935\u0947 \u092e\u0947\u0902 \u0938\u093e\u0907\u0928\u0905\u092a \u0915\u0930\u0947\u0902",b9,c0,c1,c2,c3,"Razorpay \u092a\u0947\u092e\u0947\u0902\u091f \u0917\u0947\u091f\u0935\u0947",c4,"\u0905\u092a\u0928\u0940 Key Id \u0914\u0930 Key Secret \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f Razorpay \u092a\u0947\u092e\u0947\u0902\u091f \u0917\u0947\u091f\u0935\u0947 \u092e\u0947\u0902 \u0938\u093e\u0907\u0928\u0905\u092a \u0915\u0930\u0947\u0902","razorpay_key_id","Razorpay Key Id",c5,c6,c7,"\u0915\u0943\u092a\u092f\u093e Stripe Publishable Key \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",c8,"\u0915\u0943\u092a\u092f\u093e Stripe Secret Key \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",c9,"\u0915\u0943\u092a\u092f\u093e PayPal Client Id \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",d0,"\u0915\u0943\u092a\u092f\u093e PayPal Secret Key \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",d1,"\u0915\u0943\u092a\u092f\u093e PayStack Public Key \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",d2,"\u0915\u0943\u092a\u092f\u093e PayStack Secret Key \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",d3,"\u0915\u0943\u092a\u092f\u093e Razorpay Key Id \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",d4,"\u0915\u0943\u092a\u092f\u093e Razorpay Key Secret \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","save","\u0938\u0939\u0947\u091c\u0947\u0902",d5,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0911\u0928\u092c\u094b\u0930\u094d\u0921\u093f\u0902\u0917 \u0905\u0928\u0941\u0930\u094b\u0927\u094b\u0902 \u0915\u094b \u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0947\u0902 \u092f\u093e \u0921\u094d\u0930\u093e\u0907\u0935\u0930\u094b\u0902 \u0915\u094b \u0938\u0941\u0927\u093e\u0930 \u0915\u0930\u0928\u0947 \u0914\u0930 \u092a\u0941\u0928: \u0906\u0935\u0947\u0926\u0928 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u092e\u0926\u0926 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0938\u094d\u092a\u0937\u094d\u091f \u092a\u094d\u0930\u0924\u093f\u0915\u094d\u0930\u093f\u092f\u093e \u0915\u0947 \u0938\u093e\u0925 \u0909\u0928\u094d\u0939\u0947\u0902 \u0905\u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0947\u0902","phone","\u092b\u093c\u094b\u0928",d6,"\u0915\u094b\u0908 \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0928\u0939\u0940\u0902 \u092e\u093f\u0932\u093e","admin_revenue","\u090f\u0921\u092e\u093f\u0928 \u0930\u093e\u091c\u0938\u094d\u0935","revenue_trend","\u0930\u093e\u091c\u0938\u094d\u0935 \u0930\u0941\u091d\u093e\u0928","rides_trend","\u0938\u0935\u093e\u0930\u0940 \u0930\u0941\u091d\u093e\u0928","rides","\u0938\u0935\u093e\u0930\u0940","avg_per_ride","\u0914\u0938\u0924 / \u0938\u0935\u093e\u0930\u0940","ride_details","\u0938\u0935\u093e\u0930\u0940 \u0935\u093f\u0935\u0930\u0923",d7,"\u092c\u0941\u0915\u093f\u0902\u0917 \u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940","date","\u0926\u093f\u0928\u093e\u0902\u0915","payment_mode","\u092d\u0941\u0917\u0924\u093e\u0928 \u0915\u093e \u092a\u094d\u0930\u0915\u093e\u0930",d8,"\u092a\u093f\u0915 \u0914\u0930 \u0921\u094d\u0930\u0949\u092a \u0932\u094b\u0915\u0947\u0936\u0928","fare_details","\u0915\u093f\u0930\u093e\u092f\u093e \u0935\u093f\u0935\u0930\u0923","base_fare","\u0906\u0927\u093e\u0930 \u0915\u093f\u0930\u093e\u092f\u093e","distance_fare","\u0926\u0942\u0930\u0940 \u0915\u093f\u0930\u093e\u092f\u093e","time_fare","\u0938\u092e\u092f \u0915\u093f\u0930\u093e\u092f\u093e","waiting_charge","\u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915","total","\u0915\u0941\u0932","drivers_earning","\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u0940 \u0915\u092e\u093e\u0908",d9,"\u090f\u0921\u092e\u093f\u0928 \u0915\u092e\u0940\u0936\u0928","user_details","\u092f\u0942\u091c\u093c\u0930 \u0935\u093f\u0935\u0930\u0923","name","\u0928\u093e\u092e","from_date","\u092a\u094d\u0930\u093e\u0930\u0902\u092d \u0924\u093f\u0925\u093f","to_date","\u0905\u0902\u0924\u093f\u092e \u0924\u093f\u0925\u093f","search","\u0916\u094b\u091c\u0947\u0902","clear_filter","\u092b\u093c\u093f\u0932\u094d\u091f\u0930 \u0938\u093e\u092b\u093c \u0915\u0930\u0947\u0902","settings","\u0938\u0947\u091f\u093f\u0902\u0917\u094d\u0938","twilio_number","Twilio \u0928\u0902\u092c\u0930",e0,"Twilio \u090f\u0915 SMS \u0917\u0947\u091f\u0935\u0947 \u0915\u0947 \u0930\u0942\u092a \u092e\u0947\u0902 \u0915\u093e\u0930\u094d\u092f \u0915\u0930\u0924\u093e \u0939\u0948\u0964 \u091c\u092c \u0930\u093e\u0907\u0921\u0930 \u092f\u093e \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0905\u092a\u0928\u093e \u0916\u093e\u0924\u093e \u092c\u0928\u093e\u0924\u0947 \u0939\u0948\u0902 \u0924\u094b \u0906\u092a \u0907\u0938\u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u092b\u093c\u094b\u0928 \u0928\u0902\u092c\u0930 \u0938\u0924\u094d\u092f\u093e\u092a\u093f\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0935\u0928-\u091f\u093e\u0907\u092e \u092a\u093e\u0938\u0935\u0930\u094d\u0921 (OTP) SMS \u0938\u0902\u0926\u0947\u0936 \u092d\u0947\u091c\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u0938\u0947\u0935\u093e \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0936\u0941\u0930\u0942 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f, \u0905\u092a\u0928\u093e \u0938\u092e\u0930\u094d\u092a\u093f\u0924 Twilio \u0928\u0902\u092c\u0930 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u0939\u0947\u0924\u0941 \u092c\u0938 Twilio \u092a\u0930 \u090f\u0915 \u0916\u093e\u0924\u093e \u092c\u0928\u093e\u090f\u0902\u0964",e1,"Twilio \u0928\u0902\u092c\u0930 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","account_sid","Account Sid",e2,"Twilio \u090f\u0915 SMS \u0917\u0947\u091f\u0935\u0947 \u0915\u0947 \u0930\u0942\u092a \u092e\u0947\u0902 \u0915\u093e\u0930\u094d\u092f \u0915\u0930\u0924\u093e \u0939\u0948\u0964 \u0938\u0947\u0935\u093e \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0936\u0941\u0930\u0942 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f, \u0905\u092a\u0928\u093e \u0938\u092e\u0930\u094d\u092a\u093f\u0924 Account Sid \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u0939\u0947\u0924\u0941 \u092c\u0938 Twilio \u092a\u0930 \u090f\u0915 \u0916\u093e\u0924\u093e \u092c\u0928\u093e\u090f\u0902\u0964",e3,"Account Sid \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","auth_token","Auth Token",e4,"Twilio \u090f\u0915 SMS \u0917\u0947\u091f\u0935\u0947 \u0915\u0947 \u0930\u0942\u092a \u092e\u0947\u0902 \u0915\u093e\u0930\u094d\u092f \u0915\u0930\u0924\u093e \u0939\u0948\u0964 \u0938\u0947\u0935\u093e \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0936\u0941\u0930\u0942 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f, \u0905\u092a\u0928\u093e \u0938\u092e\u0930\u094d\u092a\u093f\u0924 Auth Token \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u0939\u0947\u0924\u0941 \u092c\u0938 Twilio \u092a\u0930 \u090f\u0915 \u0916\u093e\u0924\u093e \u092c\u0928\u093e\u090f\u0902\u0964",e5,"Auth Token \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","twilio_sms","Twilio SMS",e6,"Twilio SMS \u0938\u0902\u0926\u0947\u0936 \u0932\u093f\u0916\u0947\u0902\u0964 \u0938\u0924\u094d\u092f\u093e\u092a\u0928 \u0915\u094b\u0921 \u0938\u0902\u0926\u0947\u0936 \u0915\u0940 \u0936\u0941\u0930\u0941\u0906\u0924 \u092e\u0947\u0902 \u0938\u094d\u0935\u091a\u093e\u0932\u093f\u0924 \u0930\u0942\u092a \u0938\u0947 \u091c\u094b\u0921\u093c\u093e \u091c\u093e\u0924\u093e \u0939\u0948, \u0907\u0938\u0932\u093f\u090f \u0906\u092a \u091f\u0947\u0915\u094d\u0938\u094d\u091f \u0915\u094b \u0907\u0938 \u0924\u0930\u0939 \u091c\u093e\u0930\u0940 \u0930\u0916 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902:\n\u201cRidely \u092e\u0947\u0902 \u0932\u0949\u0917\u093f\u0928 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u093e \u0938\u0924\u094d\u092f\u093e\u092a\u0928 \u0915\u094b\u0921 \u0939\u0948\u0964 Ridely \u091a\u0941\u0928\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0927\u0928\u094d\u092f\u0935\u093e\u0926\u0964\u201d",e7,"Twilio SMS \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","currency","\u092e\u0941\u0926\u094d\u0930\u093e",e8,"\u090f\u092a\u094d\u0932\u093f\u0915\u0947\u0936\u0928 \u0915\u0947 \u092d\u0940\u0924\u0930 \u0909\u092a\u092f\u094b\u0917 \u0915\u0947 \u0932\u093f\u090f \u092e\u0941\u0926\u094d\u0930\u093e \u092a\u094d\u0930\u0924\u0940\u0915 \u0928\u093f\u0930\u094d\u0926\u093f\u0937\u094d\u091f \u0915\u0930\u0947\u0902 (\u091c\u0948\u0938\u0947, $, \u20ac, \xa5)","enter_currency","\u092e\u0941\u0926\u094d\u0930\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","geofencing_km","\u091c\u093f\u092f\u094b\u092b\u0947\u0902\u0938\u093f\u0902\u0917 \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930",e9,"\u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u092e\u0947\u0902 \u0935\u0939 \u092d\u094c\u0917\u094b\u0932\u093f\u0915 \u0926\u093e\u092f\u0930\u093e \u0928\u093f\u0930\u094d\u0926\u093f\u0937\u094d\u091f \u0915\u0930\u0947\u0902 \u091c\u093f\u0938\u0915\u0947 \u092d\u0940\u0924\u0930 \u0921\u094d\u0930\u093e\u0907\u0935\u0930\u094b\u0902 \u0915\u094b \u0938\u0935\u093e\u0930\u0940 \u0915\u0947 \u0905\u0928\u0941\u0930\u094b\u0927 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0939\u094b\u0902\u0917\u0947\u0964 \u0909\u0926\u093e\u0939\u0930\u0923 \u0915\u0947 \u0932\u093f\u090f, '2' \u0926\u0930\u094d\u091c \u0915\u0930\u0928\u0947 \u0938\u0947 \u092f\u0939 \u0938\u0941\u0928\u093f\u0936\u094d\u091a\u093f\u0924 \u0939\u094b\u0917\u093e \u0915\u093f \u0905\u0928\u0941\u0930\u094b\u0927 \u0915\u0947\u0935\u0932 \u0926\u094b \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u0915\u0947 \u0926\u093e\u092f\u0930\u0947 \u092e\u0947\u0902 \u0938\u094d\u0925\u093f\u0924 \u0921\u094d\u0930\u093e\u0907\u0935\u0930\u094b\u0902 \u0915\u094b \u0939\u0940 \u092d\u0947\u091c\u0947 \u091c\u093e\u090f\u0902\u0964",f0,"\u091c\u093f\u092f\u094b\u092b\u0947\u0902\u0938\u093f\u0902\u0917 \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","google_map_key","Google Map Key","this_api_key_is","\u092f\u0939 API \u0915\u0940 (Key) Google Places API \u0914\u0930 \u090f\u092a\u094d\u0932\u093f\u0915\u0947\u0936\u0928 \u0915\u0947 \u092d\u0940\u0924\u0930 \u0930\u0942\u091f \u0926\u093f\u0936\u093e API \u0915\u093e\u0930\u094d\u092f\u0915\u094d\u0937\u092e\u0924\u093e \u0926\u094b\u0928\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f \u0909\u092a\u092f\u094b\u0917 \u0915\u0940 \u091c\u093e\u0924\u0940 \u0939\u0948\u0964",f1,"Google Map Key \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",f2,"\u0905\u0928\u0941\u0930\u094b\u0927 \u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0928\u0947 \u0915\u093e \u0938\u092e\u092f (\u0938\u0947\u0915\u0902\u0921)",f3,"\u0938\u0947\u0915\u0902\u0921 \u092e\u0947\u0902 \u0928\u093f\u0930\u094d\u0927\u093e\u0930\u093f\u0924 \u0938\u092e\u092f \u0938\u0940\u092e\u093e \u0909\u0938 \u0905\u0935\u0927\u093f \u0915\u094b \u0926\u0930\u094d\u0936\u093e\u0924\u0940 \u0939\u0948 \u091c\u093f\u0938\u0915\u0947 \u0926\u094c\u0930\u093e\u0928 \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u0938\u0935\u093e\u0930\u0940 \u0915\u0947 \u0905\u0928\u0941\u0930\u094b\u0927 \u0915\u094b \u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0928\u093e \u0939\u094b\u0917\u093e; \u0910\u0938\u093e \u0928 \u0915\u0930\u0928\u0947 \u092a\u0930 \u0905\u0928\u0941\u0930\u094b\u0927 \u0938\u094d\u0935\u0924\u0903 \u0939\u0940 \u0905\u0917\u0932\u0947 \u0909\u092a\u0932\u092c\u094d\u0927 \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u092d\u0947\u091c \u0926\u093f\u092f\u093e \u091c\u093e\u090f\u0917\u093e\u0964",f4,"\u0905\u0928\u0941\u0930\u094b\u0927 \u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0928\u0947 \u0915\u093e \u0938\u092e\u092f \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",f5,"\u0930\u093e\u0907\u0921\u0930 \u0938\u0924\u094d\u092f\u093e\u092a\u0928 \u0938\u0915\u094d\u0937\u092e \u0915\u0930\u0947\u0902?",f6,"\u0915\u094d\u092f\u093e \u0938\u093f\u0938\u094d\u091f\u092e \u0915\u0947 \u0932\u093f\u090f \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u0938\u0935\u093e\u0930\u0940 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0938\u0924\u094d\u092f\u093e\u092a\u0928 \u0915\u094b\u0921 \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0915\u0930\u0915\u0947 \u0930\u093e\u0907\u0921\u0930 \u0915\u094b \u0938\u0924\u094d\u092f\u093e\u092a\u093f\u0924 \u0915\u0930\u0928\u093e \u0906\u0935\u0936\u094d\u092f\u0915 \u0939\u094b\u0928\u093e \u091a\u093e\u0939\u093f\u090f? \u0915\u094b\u0921 \u0930\u093e\u0907\u0921\u0930 \u090f\u092a\u094d\u0932\u093f\u0915\u0947\u0936\u0928 \u0907\u0902\u091f\u0930\u092b\u093c\u0947\u0938 \u0915\u0947 \u092d\u0940\u0924\u0930 \u0938\u0941\u0932\u092d \u0939\u0948 \u0914\u0930 SMS \u0915\u0947 \u092e\u093e\u0927\u094d\u092f\u092e \u0938\u0947 \u0928\u0939\u0940\u0902 \u092d\u0947\u091c\u093e \u091c\u093e\u0924\u093e \u0939\u0948\u0964","yes","\u0939\u093e\u0901","no","\u0928\u0939\u0940\u0902",f7,"\u0915\u0943\u092a\u092f\u093e Twilio \u0928\u0902\u092c\u0930 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",f8,"\u0915\u0943\u092a\u092f\u093e Account Sid \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",f9,"\u0915\u0943\u092a\u092f\u093e Auth Token \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",g0,"\u0915\u0943\u092a\u092f\u093e Twilio SMS \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","please_currency","\u0915\u0943\u092a\u092f\u093e \u092e\u0941\u0926\u094d\u0930\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",g1,"\u0915\u0943\u092a\u092f\u093e \u091c\u093f\u092f\u094b\u092b\u0947\u0902\u0938\u093f\u0902\u0917 \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",g2,"\u0915\u0943\u092a\u092f\u093e Google Map Key \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",g3,"\u0915\u0943\u092a\u092f\u093e \u0905\u0928\u0941\u0930\u094b\u0927 \u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0928\u0947 \u0915\u093e \u0938\u092e\u092f \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","first_name","\u092a\u094d\u0930\u0925\u092e \u0928\u093e\u092e","last_name","\u0905\u0902\u0924\u093f\u092e \u0928\u093e\u092e",g4,"\u092a\u094d\u0930\u0925\u092e \u0928\u093e\u092e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","enter_last_name","\u0905\u0902\u0924\u093f\u092e \u0928\u093e\u092e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",g5,"\u092b\u093c\u094b\u0928 \u0928\u0902\u092c\u0930 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902 (\u0926\u0947\u0936 \u0915\u094b\u0921 \u0915\u0947 \u092c\u093f\u0928\u093e)",g6,"\u0915\u0943\u092a\u092f\u093e \u0916\u094b\u091c\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0936\u092c\u094d\u0926 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","no_users_found","\u0915\u094b\u0908 \u092f\u0942\u091c\u093c\u0930 \u0928\u0939\u0940\u0902 \u092e\u093f\u0932\u093e","registered_on","\u092a\u0902\u091c\u0940\u0915\u0930\u0923 \u0924\u093f\u0925\u093f","gender","\u0932\u093f\u0902\u0917","rating","\u0930\u0947\u091f\u093f\u0902\u0917","vehicle_details","\u0935\u093e\u0939\u0928 \u0935\u093f\u0935\u0930\u0923","vehicle_image","\u0935\u093e\u0939\u0928 \u0915\u0940 \u091b\u0935\u093f",g7,"\u0906\u0907\u0915\u0928 \u0935\u0930\u094d\u0917\u093e\u0915\u093e\u0930 \u0939\u094b\u0928\u093e \u091a\u093e\u0939\u093f\u090f, \u091c\u093f\u0938\u0915\u093e \u0905\u0927\u093f\u0915\u0924\u092e \u092b\u093c\u093e\u0907\u0932 \u0906\u0915\u093e\u0930 150 KB \u0939\u094b",g8,"Google Map \u092a\u0930 \u0935\u093e\u0939\u0928 \u0906\u0907\u0915\u0928",g9,"\u0915\u0943\u092a\u092f\u093e \u0938\u0941\u0928\u093f\u0936\u094d\u091a\u093f\u0924 \u0915\u0930\u0947\u0902 \u0915\u093f \u0906\u0907\u0915\u0928 \u0915\u093e \u092c\u0948\u0915\u0917\u094d\u0930\u093e\u0909\u0902\u0921 \u092a\u093e\u0930\u0926\u0930\u094d\u0936\u0940 \u0939\u094b \u0914\u0930 \u092b\u093c\u093e\u0907\u0932 \u0915\u093e \u0906\u0915\u093e\u0930 150 KB \u0938\u0947 \u0905\u0927\u093f\u0915 \u0928 \u0939\u094b","vehicle_name","\u0935\u093e\u0939\u0928 \u0915\u093e \u0928\u093e\u092e",h0,"\u0938\u0935\u093e\u0930\u0940 \u092c\u0941\u0915 \u0915\u0930\u0924\u0947 \u0938\u092e\u092f \u0930\u093e\u0907\u0921\u0930\u094d\u0938 \u0915\u094b \u092f\u0939 \u0928\u093e\u092e \u0926\u093f\u0916\u093e\u0908 \u0926\u0947\u0917\u093e\u0964 \u0906\u092a \u0907\u0938\u0947 'Auto', 'Cab Economy', 'Cab Premium' \u0906\u0926\u093f \u0915\u0940 \u0924\u0930\u0939 \u0938\u0947\u091f \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902",h1,"\u0935\u093e\u0939\u0928 \u0915\u093e \u0928\u093e\u092e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",h2,"\u092c\u0948\u0920\u0928\u0947 \u0915\u0940 \u0915\u094d\u0937\u092e\u0924\u093e",h3,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u091b\u094b\u0921\u093c\u0915\u0930 \u0935\u093e\u0939\u0928 \u092e\u0947\u0902 \u092c\u0948\u0920\u0928\u0947 \u0915\u0940 \u0915\u094d\u0937\u092e\u0924\u093e",h4,"\u092c\u0948\u0920\u0928\u0947 \u0915\u0940 \u0915\u094d\u0937\u092e\u0924\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",h5,"\u0915\u092e\u0940\u0936\u0928 \u092a\u094d\u0930\u0924\u093f\u0936\u0924",h6,"\u090f\u0921\u092e\u093f\u0928 \u0915\u093e \u0915\u092e\u0940\u0936\u0928 \u092a\u094d\u0930\u0924\u093f\u0936\u0924",h7,"\u0915\u092e\u0940\u0936\u0928 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",h8,"\u092f\u0939 \u092e\u0942\u0932 \u0915\u093f\u0930\u093e\u092f\u093e \u0939\u0948 \u091c\u094b \u0932\u093f\u092f\u093e \u091c\u093e\u090f\u0917\u093e","enter_base_fare","\u0906\u0927\u093e\u0930 \u0915\u093f\u0930\u093e\u092f\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","per_km_fare","\u092a\u094d\u0930\u0924\u093f \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u0915\u093f\u0930\u093e\u092f\u093e","per_km_fare_eg","\u092a\u094d\u0930\u0924\u093f \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u0915\u093f\u0930\u093e\u092f\u093e\u0964 \u0909\u0926\u093e\u0939\u0930\u0923 \u0915\u0947 \u0932\u093f\u090f \u092f\u0926\u093f \u0915\u0941\u0932 10 \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u0915\u0940 \u092f\u093e\u0924\u094d\u0930\u093e \u0915\u0940 \u0917\u0908 \u0939\u0948 \u0914\u0930 \u092a\u094d\u0930\u0924\u093f \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u0915\u093f\u0930\u093e\u092f\u093e 8 \u0939\u0948 \u0924\u094b \u0906\u0927\u093e\u0930 \u0915\u093f\u0930\u093e\u090f \u092e\u0947\u0902 80 \u091c\u094b\u0921\u093c\u0947 \u091c\u093e\u090f\u0902\u0917\u0947\u0964",h9,"\u092a\u094d\u0930\u0924\u093f \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u0915\u093f\u0930\u093e\u092f\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902","per_minute_fare","\u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u0915\u093f\u0930\u093e\u092f\u093e",i0,"\u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u0915\u093f\u0930\u093e\u092f\u093e\u0964 \u0909\u0926\u093e\u0939\u0930\u0923 \u0915\u0947 \u0932\u093f\u090f \u092f\u0926\u093f \u0915\u0941\u0932 \u092f\u093e\u0924\u094d\u0930\u093e \u0915\u093e \u0938\u092e\u092f 30 \u092e\u093f\u0928\u091f \u0939\u0948 \u0914\u0930 \u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u0915\u093f\u0930\u093e\u092f\u093e 2 \u0939\u0948 \u0924\u094b \u0906\u0927\u093e\u0930 \u0915\u093f\u0930\u093e\u090f \u092e\u0947\u0902 60 \u091c\u094b\u0921\u093c\u0947 \u091c\u093e\u090f\u0902\u0917\u0947\u0964",i1,"\u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u0915\u093f\u0930\u093e\u092f\u093e \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",i2,"\u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915",i3,"\u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915\u0964 \u0909\u0926\u093e\u0939\u0930\u0923 \u0915\u0947 \u0932\u093f\u090f \u092f\u0926\u093f \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0928\u0947 5 \u092e\u093f\u0928\u091f \u0924\u0915 \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0915\u0940 \u0914\u0930 \u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915 2 \u0939\u0948 \u0924\u094b \u092c\u093f\u0932 \u092e\u0947\u0902 10 \u091c\u094b\u0921\u093c\u0947 \u091c\u093e\u090f\u0902\u0917\u0947\u0964",i4,"\u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",i5,"\u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0930\u0942 \u0939\u094b\u0928\u0947 \u0915\u093e \u0938\u092e\u092f (\u092e\u093f\u0928\u091f \u0915\u0947 \u092c\u093e\u0926)",i6,"\u0935\u0939 \u0905\u0935\u0927\u093f (\u092e\u093f\u0928\u091f\u094b\u0902 \u092e\u0947\u0902) \u0938\u0947\u091f \u0915\u0930\u0947\u0902 \u091c\u093f\u0938\u0915\u0947 \u092c\u093e\u0926 \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915 \u0938\u094d\u0935\u0924\u0903 \u0939\u0940 \u092c\u093f\u0932 \u092e\u0947\u0902 \u091c\u0941\u0921\u093c \u091c\u093e\u090f\u0917\u093e",i7,"\u0905\u0927\u093f\u0915\u0924\u092e \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915",i8,"\u0905\u0927\u093f\u0915\u0924\u092e \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915\u0964 \u0909\u0926\u093e\u0939\u0930\u0923 \u0915\u0947 \u0932\u093f\u090f \u092f\u0926\u093f \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0928\u0947 30 \u092e\u093f\u0928\u091f \u0924\u0915 \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0915\u0940 \u0914\u0930 \u092a\u094d\u0930\u0924\u093f \u092e\u093f\u0928\u091f \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915 2 \u0939\u0948 \u0914\u0930 \u0905\u0927\u093f\u0915\u0924\u092e \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915 50 \u092a\u0930 \u0938\u0947\u091f \u0939\u0948 \u0924\u094b \u0906\u0927\u093e\u0930 \u0915\u093f\u0930\u093e\u090f \u092e\u0947\u0902 50 \u091c\u094b\u0921\u093c\u0947 \u091c\u093e\u090f\u0902\u0917\u0947\u0964",i9,"\u0905\u0927\u093f\u0915\u0924\u092e \u092a\u094d\u0930\u0924\u0940\u0915\u094d\u0937\u093e \u0936\u0941\u0932\u094d\u0915 \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902",j0,u0,j2,u1,j4,u2,j6,u3,j8,u4,k0,u5,k2,u6,k4,u7,k6,u8,"sure_update","\u0915\u094d\u092f\u093e \u0906\u092a \u0935\u093e\u0915\u0908 \u0905\u092a\u0921\u0947\u091f \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?","update","\u0905\u092a\u0921\u0947\u091f \u0915\u0930\u0947\u0902",k8,"\u0915\u0943\u092a\u092f\u093e \u0935\u093e\u0939\u0928 \u0915\u0940 \u091b\u0935\u093f \u091c\u094b\u0921\u093c\u0947\u0902",k9,"\u0915\u0943\u092a\u092f\u093e \u0935\u093e\u0939\u0928 \u0906\u0907\u0915\u0928 \u091c\u094b\u0921\u093c\u0947\u0902",l0,u0,l1,u1,l2,u2,l3,u3,l4,u4,l5,u5,l6,u6,l7,u7,l8,u8,"vehicle_types","\u0935\u093e\u0939\u0928 \u0915\u0947 \u092a\u094d\u0930\u0915\u093e\u0930",l9,"\u0935\u093e\u0939\u0928 \u0915\u0947 \u092a\u094d\u0930\u0915\u093e\u0930 \u092a\u094d\u0930\u092c\u0902\u0927\u093f\u0924 \u0915\u0930\u0947\u0902 (\u091c\u0948\u0938\u0947, Economy, Premium)\u0964 \u0905\u0927\u093f\u0915\u0924\u092e 150-200 KB \u0915\u0940 \u0935\u0930\u094d\u0917\u093e\u0915\u093e\u0930 \u091b\u0935\u093f \u0905\u0928\u0941\u0936\u0902\u0938\u093f\u0924 \u0939\u0948\u0964","image","\u091b\u0935\u093f","edit","\u0938\u0902\u092a\u093e\u0926\u0928","add_new","\u0928\u092f\u093e \u091c\u094b\u0921\u093c\u0947\u0902",m0,"\u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u092d\u0941\u0917\u0924\u093e\u0928 \u0915\u093f\u092f\u093e \u0917\u092f\u093e \u091a\u093f\u0939\u094d\u0928\u093f\u0924 \u0915\u093f\u092f\u093e \u0917\u092f\u093e",m1,"\u092d\u0941\u0917\u0924\u093e\u0928 \u091a\u093f\u0939\u094d\u0928\u093f\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",m2,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930\u094b\u0902 \u0915\u0940 \u0913\u0930 \u0938\u0947 \u0928\u093f\u0915\u093e\u0938\u0940 \u0905\u0928\u0941\u0930\u094b\u0927 \u0928\u093f\u092e\u094d\u0928\u0932\u093f\u0916\u093f\u0924 \u0939\u0948\u0902\u0964 \u0915\u0943\u092a\u092f\u093e \u0909\u0928\u0915\u0947 \u0938\u0902\u092c\u0902\u0927\u093f\u0924 \u092c\u0948\u0902\u0915 \u0916\u093e\u0924\u094b\u0902 \u092e\u0947\u0902 \u092d\u0941\u0917\u0924\u093e\u0928 \u0938\u0902\u0938\u093e\u0927\u093f\u0924 \u0915\u0930\u0947\u0902 \u0914\u0930 \u0909\u0928\u094d\u0939\u0947\u0902 \u092d\u0941\u0917\u0924\u093e\u0928 \u0915\u093f\u092f\u093e \u0917\u092f\u093e \u091a\u093f\u0939\u094d\u0928\u093f\u0924 \u0915\u0930\u0947\u0902\u0964","requested_on","\u0905\u0928\u0941\u0930\u094b\u0927 \u0915\u0940 \u0924\u093f\u0925\u093f","bank_name","\u092c\u0948\u0902\u0915 \u0915\u093e \u0928\u093e\u092e","branch_name","\u0936\u093e\u0916\u093e \u0915\u093e \u0928\u093e\u092e","ifsc_code","IFSC \u0915\u094b\u0921",m3,"\u0916\u093e\u0924\u093e\u0927\u093e\u0930\u0915 \u0915\u093e \u0928\u093e\u092e","account_number","\u0916\u093e\u0924\u093e \u0938\u0902\u0916\u094d\u092f\u093e",m4,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0935\u093f\u0935\u0930\u0923 \u0926\u0947\u0916\u0947\u0902",m5,"\u0915\u094d\u092f\u093e \u0906\u092a\u0928\u0947 \u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u092a\u0942\u0930\u0940 \u0930\u093e\u0936\u093f \u0915\u093e \u092d\u0941\u0917\u0924\u093e\u0928 \u092a\u0939\u0932\u0947 \u0939\u0940 \u0915\u0930 \u0926\u093f\u092f\u093e \u0939\u0948? \u0915\u094d\u092f\u093e \u0906\u092a \u0935\u093e\u0915\u0908 \u0907\u0938 \u0905\u0928\u0941\u0930\u094b\u0927 \u0915\u094b \u092d\u0941\u0917\u0924\u093e\u0928 \u0915\u093f\u092f\u093e \u0917\u092f\u093e \u091a\u093f\u0939\u094d\u0928\u093f\u0924 \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?","mark_as_paid","\u092d\u0941\u0917\u0924\u093e\u0928 \u0915\u093f\u092f\u093e \u0917\u092f\u093e \u091a\u093f\u0939\u094d\u0928\u093f\u0924 \u0915\u0930\u0947\u0902",m6,"\u0915\u094b\u0908 \u0928\u093f\u0915\u093e\u0938\u0940 \u0905\u0928\u0941\u0930\u094b\u0927 \u0928\u0939\u0940\u0902 \u092e\u093f\u0932\u093e","alert","\u091a\u0947\u0924\u093e\u0935\u0928\u0940","home","\u0939\u094b\u092e",m7,"\u0905\u092e\u093e\u0928\u094d\u092f \u0915\u094d\u0930\u0947\u0921\u0947\u0902\u0936\u093f\u092f\u0932",m8,"\u0938\u0947\u091f\u093f\u0902\u0917\u094d\u0938 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",m9,"\u0938\u0947\u091f\u093f\u0902\u0917\u094d\u0938 \u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u0905\u092a\u0921\u0947\u091f \u0915\u0940 \u0917\u0908\u0902",n0,"\u0938\u0947\u091f\u093f\u0902\u0917\u094d\u0938 \u0905\u092a\u0921\u0947\u091f \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",n1,"\u092a\u0902\u091c\u0940\u0915\u0930\u0923 \u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",n2,"\u092a\u0902\u091c\u0940\u0915\u0930\u0923 \u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u0905\u092a\u0921\u0947\u091f \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",n3,"\u092a\u0902\u091c\u0940\u0915\u0930\u0923 \u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u0939\u091f\u093e\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",n4,"\u092a\u0902\u091c\u0940\u0915\u0930\u0923 \u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u091c\u094b\u0921\u093c\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",n5,"\u0930\u0926\u094d\u0926 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0915\u093e\u0930\u0923 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",n6,"\u0930\u0926\u094d\u0926 \u0915\u0930\u0928\u0947 \u0915\u093e \u0915\u093e\u0930\u0923 \u0905\u092a\u0921\u0947\u091f \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",n7,"\u0930\u0926\u094d\u0926 \u0915\u0930\u0928\u0947 \u0915\u093e \u0915\u093e\u0930\u0923 \u0939\u091f\u093e\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",n8,"\u0930\u0926\u094d\u0926 \u0915\u0930\u0928\u0947 \u0915\u093e \u0915\u093e\u0930\u0923 \u091c\u094b\u0921\u093c\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",n9,"\u0935\u093e\u0939\u0928 \u0915\u0947 \u092a\u094d\u0930\u0915\u093e\u0930 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",o0,"\u0935\u093e\u0939\u0928 \u0915\u093e \u092a\u094d\u0930\u0915\u093e\u0930 \u0905\u092a\u0921\u0947\u091f \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",o1,"\u0935\u093e\u0939\u0928 \u0915\u093e \u0928\u093e\u092e \u092a\u0939\u0932\u0947 \u0938\u0947 \u092e\u094c\u091c\u0942\u0926 \u0939\u0948",o2,"\u0935\u093e\u0939\u0928 \u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u091c\u094b\u0921\u093c\u093e \u0917\u092f\u093e",o3,"\u0935\u093e\u0939\u0928 \u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u0905\u092a\u0921\u0947\u091f \u0915\u093f\u092f\u093e \u0917\u092f\u093e",o4,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u092e\u0902\u091c\u093c\u0942\u0930\u0940 \u0926\u0947 \u0926\u0940 \u0917\u0908 \u0939\u0948",o5,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u092e\u0902\u091c\u093c\u0942\u0930 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",o6,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u0905\u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930 \u0926\u093f\u092f\u093e \u0917\u092f\u093e \u0939\u0948",o7,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u0905\u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",o8,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u0928\u093f\u0932\u0902\u092c\u093f\u0924 \u0915\u0930 \u0926\u093f\u092f\u093e \u0917\u092f\u093e \u0939\u0948",o9,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u094b \u0928\u093f\u0932\u0902\u092c\u093f\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",p0,"\u0928\u093f\u0932\u0902\u092c\u0928 \u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u0935\u093e\u092a\u0938 \u0932\u093f\u092f\u093e \u0917\u092f\u093e",p1,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0915\u093e \u0928\u093f\u0932\u0902\u092c\u0928 \u0935\u093e\u092a\u0938 \u0932\u0947\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",p2,"\u0921\u094d\u0930\u093e\u0907\u0935\u0930 \u0935\u093f\u0935\u0930\u0923 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",p3,"\u0939\u093e\u0932 \u0915\u0940 \u0938\u0935\u093e\u0930\u0940 \u0932\u093e\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",p4,"\u0938\u0935\u093e\u0930\u0940 \u0935\u093f\u0935\u0930\u0923 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",p5,"\u092f\u0942\u091c\u093c\u0930 \u0935\u093f\u0935\u0930\u0923 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932",p6,"\u0915\u0943\u092a\u092f\u093e \u092a\u094d\u0930\u093e\u0930\u0902\u092d \u0924\u093f\u0925\u093f \u091a\u0941\u0928\u0947\u0902",p7,"\u0915\u0943\u092a\u092f\u093e \u0938\u092e\u093e\u092a\u094d\u0924\u093f \u0924\u093f\u0925\u093f \u091a\u0941\u0928\u0947\u0902",p8,"\u0930\u0926\u094d\u0926\u0940\u0915\u0930\u0923 \u0915\u093e \u0915\u093e\u0930\u0923 \u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u0939\u091f\u093e \u0926\u093f\u092f\u093e \u0917\u092f\u093e",p9,"\u0930\u0926\u094d\u0926\u0940\u0915\u0930\u0923 \u0915\u093e \u0915\u093e\u0930\u0923 \u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u091c\u094b\u0921\u093c \u0926\u093f\u092f\u093e \u0917\u092f\u093e",q0,"\u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u0939\u091f\u093e \u0926\u093f\u092f\u093e \u0917\u092f\u093e",q1,"\u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c \u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u091c\u094b\u0921\u093c \u0926\u093f\u092f\u093e \u0917\u092f\u093e",q2,"\u092f\u0939 \u0938\u0902\u0936\u094b\u0927\u0928 Ridely \u0926\u094d\u0935\u093e\u0930\u093e \u092a\u094d\u0930\u0924\u093f\u092c\u0902\u0927\u093f\u0924 \u0939\u0948\u0964"],w7,w7),"ar",A.a7(["cancel_reasons","\u0623\u0633\u0628\u0627\u0628 \u0627\u0644\u0625\u0644\u063a\u0627\u0621","cancel_reason","\u0633\u0628\u0628 \u0627\u0644\u0625\u0644\u063a\u0627\u0621","user_app","\u062a\u0637\u0628\u064a\u0642 \u0627\u0644\u0645\u0633\u062a\u062e\u062f\u0645","sr_no","\u0627\u0644\u0631\u0642\u0645 \u0627\u0644\u062a\u0633\u0644\u0633\u0644\u064a","active","\u0646\u0634\u0637","delete","\u062d\u0630\u0641","sure_delete","\u0647\u0644 \u0623\u0646\u062a \u0645\u062a\u0623\u0643\u062f \u0623\u0646\u0643 \u062a\u0631\u064a\u062f \u0627\u0644\u062d\u0630\u0641\u061f","add_new_reason","\u0625\u0636\u0627\u0641\u0629 \u0633\u0628\u0628 \u062c\u062f\u064a\u062f",s,"\u064a\u0631\u062c\u0649 \u0625\u0636\u0627\u0641\u0629 \u0633\u0628\u0628 \u0627\u0644\u0625\u0644\u063a\u0627\u0621 \u0623\u0648\u0644\u0627\u064b","sure_add","\u0647\u0644 \u0623\u0646\u062a \u0645\u062a\u0623\u0643\u062f \u0623\u0646\u0643 \u062a\u0631\u064a\u062f \u0627\u0644\u0625\u0636\u0627\u0641\u0629\u061f","add","\u0625\u0636\u0627\u0641\u0629","driver_app","\u062a\u0637\u0628\u064a\u0642 \u0627\u0644\u0633\u0627\u0626\u0642","select_language","\u0627\u062e\u062a\u0631 \u0627\u0644\u0644\u063a\u0629","apply","\u062a\u0637\u0628\u064a\u0642","documents_list","\u0642\u0627\u0626\u0645\u0629 \u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a",r,"\u0647\u0630\u0647 \u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0645\u0637\u0644\u0648\u0628\u0629 \u0644\u0625\u0646\u0634\u0627\u0621 \u062d\u0633\u0627\u0628 \u0645\u0646 \u0642\u0628\u0644 \u0627\u0644\u0633\u0627\u0626\u0642\u064a\u0646","document_name","\u0627\u0633\u0645 \u0627\u0644\u0645\u0633\u062a\u0646\u062f",q,"\u0625\u0636\u0627\u0641\u0629 \u0645\u0633\u062a\u0646\u062f \u062c\u062f\u064a\u062f",p,"\u064a\u0631\u062c\u0649 \u0625\u0636\u0627\u0641\u0629 \u0627\u0633\u0645 \u0627\u0644\u0645\u0633\u062a\u0646\u062f \u0623\u0648\u0644\u0627\u064b","driver_details","\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0633\u0627\u0626\u0642","driver_name","\u0627\u0633\u0645 \u0627\u0644\u0633\u0627\u0626\u0642","phone_number","\u0631\u0642\u0645 \u0627\u0644\u0647\u0627\u062a\u0641","address","\u0627\u0644\u0639\u0646\u0648\u0627\u0646","email","\u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a","vehicle_type","\u0646\u0648\u0639 \u0627\u0644\u0645\u0631\u0643\u0628\u0629","vehicle_model","\u0645\u0648\u062f\u064a\u0644 \u0627\u0644\u0645\u0631\u0643\u0628\u0629","vehicle_color","\u0644\u0648\u0646 \u0627\u0644\u0645\u0631\u0643\u0628\u0629",o,"\u0631\u0642\u0645 \u0644\u0648\u062d\u0629 \u0627\u0644\u0645\u0631\u0643\u0628\u0629","status","\u0627\u0644\u062d\u0627\u0644\u0629","documents","\u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a",n,"(\u0627\u0646\u0642\u0631 \u0644\u0639\u0631\u0636 \u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a)","all_rides","\u0643\u0644 \u0627\u0644\u0631\u062d\u0644\u0627\u062a","user_name","\u0627\u0633\u0645 \u0627\u0644\u0645\u0633\u062a\u062e\u062f\u0645","amount","\u0627\u0644\u0645\u0628\u0644\u063a","date_and_time","\u0627\u0644\u062a\u0627\u0631\u064a\u062e \u0648\u0627\u0644\u0648\u0642\u062a","action","\u0627\u0644\u0625\u062c\u0631\u0627\u0621","view","\u0639\u0631\u0636","no_rides_found","\u0644\u0645 \u064a\u062a\u0645 \u0627\u0644\u0639\u062b\u0648\u0631 \u0639\u0644\u0649 \u0631\u062d\u0644\u0627\u062a","sure_approve","\u0647\u0644 \u0623\u0646\u062a \u0645\u062a\u0623\u0643\u062f \u0623\u0646\u0643 \u062a\u0631\u064a\u062f \u0627\u0644\u0645\u0648\u0627\u0641\u0642\u0629\u061f","approve","\u0645\u0648\u0627\u0641\u0642\u0629","or","\u0623\u0648",m,"\u064a\u0631\u062c\u0649 \u0625\u0636\u0627\u0641\u0629 \u0633\u0628\u0628 \u0644\u0644\u0631\u0641\u0636","sure_reject","\u0647\u0644 \u0623\u0646\u062a \u0645\u062a\u0623\u0643\u062f \u0623\u0646\u0643 \u062a\u0631\u064a\u062f \u0627\u0644\u0631\u0641\u0636\u061f","reject","\u0631\u0641\u0636",l,"\u0625\u0636\u0627\u0641\u0629 \u0633\u0628\u0628 \u0644\u0644\u0631\u0641\u0636",k,"\u0647\u0644 \u0623\u0646\u062a \u0645\u062a\u0623\u0643\u062f \u0623\u0646\u0643 \u062a\u0631\u064a\u062f \u0625\u0644\u063a\u0627\u0621 \u0627\u0644\u062a\u0639\u0644\u064a\u0642\u061f","undo_suspend","\u0625\u0644\u063a\u0627\u0621 \u0627\u0644\u062a\u0639\u0644\u064a\u0642","sure_suspend","\u0647\u0644 \u0623\u0646\u062a \u0645\u062a\u0623\u0643\u062f \u0623\u0646\u0643 \u062a\u0631\u064a\u062f \u0627\u0644\u062a\u0639\u0644\u064a\u0642\u061f",j,"\u0644\u0627 \u064a\u0645\u0643\u0646 \u0627\u0644\u062a\u0639\u0644\u064a\u0642 \u0641\u064a \u0627\u0644\u0648\u0642\u062a \u0627\u0644\u062d\u0627\u0644\u064a. \u0637\u0644\u0628 \u0647\u0630\u0627 \u0627\u0644\u0633\u0627\u0626\u0642 \u0645\u0631\u0641\u0648\u0636 \u0628\u0627\u0644\u0641\u0639\u0644",i,"\u0644\u0627 \u064a\u0645\u0643\u0646 \u0627\u0644\u062a\u0639\u0644\u064a\u0642 \u0641\u064a \u0627\u0644\u0648\u0642\u062a \u0627\u0644\u062d\u0627\u0644\u064a. \u0642\u062f \u064a\u0643\u0648\u0646 \u0647\u0630\u0627 \u0627\u0644\u0633\u0627\u0626\u0642 \u0641\u064a \u0631\u062d\u0644\u0629 \u0646\u0634\u0637\u0629 \u0627\u0644\u0622\u0646.","suspend","\u062a\u0639\u0644\u064a\u0642","admin","\u0627\u0644\u0645\u0633\u0624\u0648\u0644",h,"\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0645\u0632\u064a\u062f \u0645\u0646 \u0627\u0644\u0631\u062d\u0644\u0627\u062a \u0628\u062c\u0647\u062f \u0623\u0642\u0644","revenue","\u0627\u0644\u0625\u064a\u0631\u0627\u062f\u0627\u062a","this_months","(\u0647\u0630\u0627 \u0627\u0644\u0634\u0647\u0631)","total_users","\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0645\u0633\u062a\u062e\u062f\u0645\u064a\u0646","total_drivers","\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0633\u0627\u0626\u0642\u064a\u0646","pending_drivers","\u0627\u0644\u0633\u0627\u0626\u0642\u064a\u0646 \u0627\u0644\u0645\u0639\u0644\u0642\u064a\u0646",g,"\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0633\u062d\u0628","recent_rides","\u0627\u0644\u0631\u062d\u0644\u0627\u062a \u0627\u0644\u0623\u062e\u064a\u0631\u0629","good_morning","\u0635\u0628\u0627\u062d \u0627\u0644\u062e\u064a\u0631","good_afternoon","\u0645\u0633\u0627\u0621 \u0627\u0644\u062e\u064a\u0631","good_evening","\u0645\u0633\u0627\u0621 \u0627\u0644\u062e\u064a\u0631","welcome_back","\u0645\u0631\u062d\u0628\u0627\u064b \u0628\u0639\u0648\u062f\u062a\u0643!","welcome","\u0645\u0631\u062d\u0628\u0627\u064b!",f,"\u064a\u0631\u062c\u0649 \u062a\u0633\u062c\u064a\u0644 \u0627\u0644\u062f\u062e\u0648\u0644 \u0644\u0644\u0645\u062a\u0627\u0628\u0639\u0629",e,"\u064a\u0631\u062c\u0649 \u0627\u0644\u062a\u0633\u062c\u064a\u0644 \u0644\u0644\u0645\u062a\u0627\u0628\u0639\u0629",d,"\u0623\u062f\u062e\u0644 \u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a","password","\u0643\u0644\u0645\u0629 \u0627\u0644\u0645\u0631\u0648\u0631","enter_password","\u0623\u062f\u062e\u0644 \u0643\u0644\u0645\u0629 \u0627\u0644\u0645\u0631\u0648\u0631",c,"\u062a\u0623\u0643\u064a\u062f \u0643\u0644\u0645\u0629 \u0627\u0644\u0645\u0631\u0648\u0631",b,"\u0623\u062f\u062e\u0644 \u062a\u0623\u0643\u064a\u062f \u0643\u0644\u0645\u0629 \u0627\u0644\u0645\u0631\u0648\u0631",a,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0628\u0631\u064a\u062f\u0643 \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a",a0,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0628\u0631\u064a\u062f \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a \u0635\u062d\u064a\u062d",a1,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0643\u0644\u0645\u0629 \u0627\u0644\u0645\u0631\u0648\u0631",a2,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u062a\u0623\u0643\u064a\u062f \u0643\u0644\u0645\u0629 \u0627\u0644\u0645\u0631\u0648\u0631",a3,"\u0643\u0644\u0645\u0629 \u0627\u0644\u0645\u0631\u0648\u0631 \u0648\u062a\u0623\u0643\u064a\u062f\u0647\u0627 \u063a\u064a\u0631 \u0645\u062a\u0637\u0627\u0628\u0642\u064a\u0646","login","\u062a\u0633\u062c\u064a\u0644 \u0627\u0644\u062f\u062e\u0648\u0644","sign_up","\u062a\u0633\u062c\u064a\u0644","choose_language","\u0627\u062e\u062a\u0631 \u0627\u0644\u0644\u063a\u0629",a4,"\u0625\u0639\u062f\u0627\u062f\u0627\u062a \u0627\u0644\u062f\u0641\u0639",a5,"\u0628\u0648\u0627\u0628\u0629 \u062f\u0641\u0639 Stripe",a6,"\u0633\u062c\u0644 \u0641\u064a Stripe \u0644\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0627\u0644\u0645\u0641\u062a\u0627\u062d \u0627\u0644\u0642\u0627\u0628\u0644 \u0644\u0644\u0646\u0634\u0631 \u0648\u0627\u0644\u0645\u0641\u062a\u0627\u062d \u0627\u0644\u0633\u0631\u064a",a7,"\u0645\u0641\u062a\u0627\u062d Stripe \u0627\u0644\u0642\u0627\u0628\u0644 \u0644\u0644\u0646\u0634\u0631",a9,"\u0645\u0641\u062a\u0627\u062d Stripe \u0627\u0644\u0633\u0631\u064a",b1,"\u0628\u0648\u0627\u0628\u0629 \u062f\u0641\u0639 PayPal",b2,"\u0633\u062c\u0644 \u0641\u064a PayPal \u0644\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0645\u0639\u0631\u0641 \u0627\u0644\u0639\u0645\u064a\u0644 \u0648\u0627\u0644\u0645\u0641\u062a\u0627\u062d \u0627\u0644\u0633\u0631\u064a",b3,"\u0645\u0639\u0631\u0641 \u0639\u0645\u064a\u0644 Paypal",b5,"\u0645\u0641\u062a\u0627\u062d PayPal \u0627\u0644\u0633\u0631\u064a",b7,"\u0628\u0648\u0627\u0628\u0629 \u062f\u0641\u0639 PayStack",b8,"\u0633\u062c\u0644 \u0641\u064a PayStack \u0644\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0627\u0644\u0645\u0641\u062a\u0627\u062d \u0627\u0644\u0639\u0627\u0645 \u0648\u0627\u0644\u0645\u0641\u062a\u0627\u062d \u0627\u0644\u0633\u0631\u064a",b9,"\u0645\u0641\u062a\u0627\u062d PayStack \u0627\u0644\u0639\u0627\u0645",c1,"\u0645\u0641\u062a\u0627\u062d PayStack \u0627\u0644\u0633\u0631\u064a",c3,"\u0628\u0648\u0627\u0628\u0629 \u062f\u0641\u0639 Razorpay",c4,"\u0633\u062c\u0644 \u0641\u064a Razorpay \u0644\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0645\u0639\u0631\u0641 \u0627\u0644\u0645\u0641\u062a\u0627\u062d \u0648\u0633\u0631 \u0627\u0644\u0645\u0641\u062a\u0627\u062d","razorpay_key_id","\u0645\u0639\u0631\u0641 \u0645\u0641\u062a\u0627\u062d Razorpay",c5,"\u0633\u0631 \u0645\u0641\u062a\u0627\u062d Razorpay",c7,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0645\u0641\u062a\u0627\u062d Stripe \u0627\u0644\u0642\u0627\u0628\u0644 \u0644\u0644\u0646\u0634\u0631",c8,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0645\u0641\u062a\u0627\u062d Stripe \u0627\u0644\u0633\u0631\u064a",c9,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0645\u0639\u0631\u0641 \u0639\u0645\u064a\u0644 PayPal",d0,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0645\u0641\u062a\u0627\u062d PayPal \u0627\u0644\u0633\u0631\u064a",d1,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0645\u0641\u062a\u0627\u062d PayStack \u0627\u0644\u0639\u0627\u0645",d2,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0645\u0641\u062a\u0627\u062d PayStack \u0627\u0644\u0633\u0631\u064a",d3,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0645\u0639\u0631\u0641 \u0645\u0641\u062a\u0627\u062d Razorpay",d4,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0633\u0631 \u0645\u0641\u062a\u0627\u062d Razorpay","save","\u062d\u0641\u0638",d5,"\u0627\u0644\u0645\u0648\u0627\u0641\u0642\u0629 \u0639\u0644\u0649 \u0637\u0644\u0628\u0627\u062a \u0627\u0646\u0636\u0645\u0627\u0645 \u0627\u0644\u0633\u0627\u0626\u0642\u064a\u0646 \u0623\u0648 \u0631\u0641\u0636\u0647\u0627 \u0645\u0639 \u062a\u0642\u062f\u064a\u0645 \u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0648\u0627\u0636\u062d\u0629 \u0644\u0645\u0633\u0627\u0639\u062f\u062a\u0647\u0645 \u0639\u0644\u0649 \u0627\u0644\u062a\u0635\u062d\u064a\u062d \u0648\u0625\u0639\u0627\u062f\u0629 \u0627\u0644\u062a\u0642\u062f\u064a\u0645","phone","\u0627\u0644\u0647\u0627\u062a\u0641",d6,"\u0644\u0645 \u064a\u062a\u0645 \u0627\u0644\u0639\u062b\u0648\u0631 \u0639\u0644\u0649 \u0633\u0627\u0626\u0642\u064a\u0646","admin_revenue","\u0625\u064a\u0631\u0627\u062f\u0627\u062a \u0627\u0644\u0645\u0633\u0624\u0648\u0644","revenue_trend","\u0627\u062a\u062c\u0627\u0647 \u0627\u0644\u0625\u064a\u0631\u0627\u062f\u0627\u062a","rides_trend","\u0627\u062a\u062c\u0627\u0647 \u0627\u0644\u0631\u062d\u0644\u0627\u062a","rides","\u0627\u0644\u0631\u062d\u0644\u0627\u062a","avg_per_ride","\u0627\u0644\u0645\u062a\u0648\u0633\u0637 / \u0627\u0644\u0631\u062d\u0644\u0629","ride_details","\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0631\u062d\u0644\u0629",d7,"\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0644\u062d\u062c\u0632","date","\u0627\u0644\u062a\u0627\u0631\u064a\u062e","payment_mode","\u0637\u0631\u064a\u0642\u0629 \u0627\u0644\u062f\u0641\u0639",d8,"\u0645\u0648\u0642\u0639 \u0627\u0644\u0627\u0633\u062a\u0644\u0627\u0645 \u0648\u0627\u0644\u062a\u0648\u0635\u064a\u0644","fare_details","\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0623\u062c\u0631\u0629","base_fare","\u0627\u0644\u0623\u062c\u0631\u0629 \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629","distance_fare","\u0623\u062c\u0631\u0629 \u0627\u0644\u0645\u0633\u0627\u0641\u0629","time_fare","\u0623\u062c\u0631\u0629 \u0627\u0644\u0648\u0642\u062a","waiting_charge","\u0631\u0633\u0648\u0645 \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631","total","\u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a","drivers_earning","\u0623\u0631\u0628\u0627\u062d \u0627\u0644\u0633\u0627\u0626\u0642",d9,"\u0639\u0645\u0648\u0644\u0629 \u0627\u0644\u0645\u0633\u0624\u0648\u0644","user_details","\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0645\u0633\u062a\u062e\u062f\u0645","name","\u0627\u0644\u0627\u0633\u0645","from_date","\u0645\u0646 \u062a\u0627\u0631\u064a\u062e","to_date","\u0625\u0644\u0649 \u062a\u0627\u0631\u064a\u062e","search","\u0628\u062d\u062b","clear_filter","\u0645\u0633\u062d \u0627\u0644\u062a\u0635\u0641\u064a\u0629","settings","\u0627\u0644\u0625\u0639\u062f\u0627\u062f\u0627\u062a","twilio_number","\u0631\u0642\u0645 Twilio",e0,"\u064a\u0639\u0645\u0644 Twilio \u0643\u0628\u0648\u0627\u0628\u0629 \u0631\u0633\u0627\u0626\u0644 \u0642\u0635\u064a\u0631\u0629. \u064a\u0645\u0643\u0646\u0643 \u0627\u0633\u062a\u062e\u062f\u0627\u0645\u0647 \u0644\u0625\u0631\u0633\u0627\u0644 \u0631\u0645\u0632 \u0627\u0644\u062a\u062d\u0642\u0642 (OTP) \u0644\u0644\u062a\u062d\u0642\u0642 \u0645\u0646 \u0623\u0631\u0642\u0627\u0645 \u0627\u0644\u0647\u0648\u0627\u062a\u0641. \u0644\u0644\u0628\u062f\u0621\u060c \u0623\u0646\u0634\u0626 \u062d\u0633\u0627\u0628\u0627\u064b \u0639\u0644\u0649 Twilio \u0644\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0631\u0642\u0645\u0643 \u0627\u0644\u062e\u0627\u0635.",e1,"\u0623\u062f\u062e\u0644 \u0631\u0642\u0645 Twilio","account_sid","\u0645\u0639\u0631\u0641 \u0627\u0644\u062d\u0633\u0627\u0628 (Account Sid)",e2,"\u064a\u0639\u0645\u0644 Twilio \u0643\u0628\u0648\u0627\u0628\u0629 \u0631\u0633\u0627\u0626\u0644 \u0642\u0635\u064a\u0631\u0629. \u064a\u0645\u0643\u0646\u0643 \u0627\u0633\u062a\u062e\u062f\u0627\u0645\u0647 \u0644\u0625\u0631\u0633\u0627\u0644 \u0631\u0645\u0632 \u0627\u0644\u062a\u062d\u0642\u0642 (OTP). \u0644\u0644\u0628\u062f\u0621\u060c \u0623\u0646\u0634\u0626 \u062d\u0633\u0627\u0628\u0627\u064b \u0639\u0644\u0649 Twilio \u0644\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0645\u0639\u0631\u0641 \u0627\u0644\u062d\u0633\u0627\u0628 \u0627\u0644\u062e\u0627\u0635 \u0628\u0643.",e3,"\u0623\u062f\u062e\u0644 \u0645\u0639\u0631\u0641 \u0627\u0644\u062d\u0633\u0627\u0628 (Account Sid)","auth_token","\u0631\u0645\u0632 \u0627\u0644\u0645\u0635\u0627\u062f\u0642\u0629 (Auth Token)",e4,"\u064a\u0639\u0645\u0644 Twilio \u0643\u0628\u0648\u0627\u0628\u0629 \u0631\u0633\u0627\u0626\u0644 \u0642\u0635\u064a\u0631\u0629. \u064a\u0645\u0643\u0646\u0643 \u0627\u0633\u062a\u062e\u062f\u0627\u0645\u0647 \u0644\u0625\u0631\u0633\u0627\u0644 \u0631\u0645\u0632 \u0627\u0644\u062a\u062d\u0642\u0642 (OTP). \u0644\u0644\u0628\u062f\u0621\u060c \u0623\u0646\u0634\u0626 \u062d\u0633\u0627\u0628\u0627\u064b \u0639\u0644\u0649 Twilio \u0644\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0631\u0645\u0632 \u0627\u0644\u0645\u0635\u0627\u062f\u0642\u0629 \u0627\u0644\u062e\u0627\u0635 \u0628\u0643.",e5,"\u0623\u062f\u062e\u0644 \u0631\u0645\u0632 \u0627\u0644\u0645\u0635\u0627\u062f\u0642\u0629 (Auth Token)","twilio_sms","\u0631\u0633\u0627\u0644\u0629 Twilio \u0627\u0644\u0642\u0635\u064a\u0631\u0629",e6,"\u0627\u0643\u062a\u0628 \u0631\u0633\u0627\u0644\u0629 Twilio. \u0633\u064a\u062a\u0645 \u0625\u0636\u0627\u0641\u0629 \u0631\u0645\u0632 \u0627\u0644\u062a\u062d\u0642\u0642 \u062a\u0644\u0642\u0627\u0626\u064a\u0627\u064b \u0641\u064a \u0628\u062f\u0627\u064a\u0629 \u0627\u0644\u0631\u0633\u0627\u0644\u0629\u060c \u0644\u0630\u0627 \u064a\u0645\u0643\u0646\u0643 \u0625\u0643\u0645\u0627\u0644 \u0627\u0644\u0646\u0635 \u0643\u0645\u0627 \u064a\u0644\u064a: '\u0647\u0648 \u0631\u0645\u0632 \u0627\u0644\u062a\u062d\u0642\u0642 \u0627\u0644\u062e\u0627\u0635 \u0628\u0643 \u0644\u062a\u0633\u062c\u064a\u0644 \u0627\u0644\u062f\u062e\u0648\u0644 \u0641\u064a Ridely. \u0634\u0643\u0631\u0627\u064b \u0644\u0627\u062e\u062a\u064a\u0627\u0631\u0643 Ridely.'",e7,"\u0623\u062f\u062e\u0644 \u0646\u0635 \u0631\u0633\u0627\u0644\u0629 Twilio","currency","\u0627\u0644\u0639\u0645\u0644\u0629",e8,"\u062d\u062f\u062f \u0631\u0645\u0632 \u0627\u0644\u0639\u0645\u0644\u0629 \u0627\u0644\u0645\u0631\u0627\u062f \u0627\u0633\u062a\u062e\u062f\u0627\u0645\u0647 \u062f\u0627\u062e\u0644 \u0627\u0644\u062a\u0637\u0628\u064a\u0642 (\u0645\u062b\u0644\u0627\u064b: $, \u20ac, \xa5)","enter_currency","\u0623\u062f\u062e\u0644 \u0627\u0644\u0639\u0645\u0644\u0629","geofencing_km","\u0646\u0637\u0627\u0642 \u0627\u0644\u062c\u063a\u0631\u0627\u0641\u064a\u0627 (\u0643\u0645)",e9,"\u062d\u062f\u062f \u0628\u0627\u0644\u0643\u064a\u0644\u0648\u0645\u062a\u0631\u0627\u062a \u0627\u0644\u0646\u0635\u0641 \u0642\u0637\u0631 \u0627\u0644\u062c\u063a\u0631\u0627\u0641\u064a \u0627\u0644\u0630\u064a \u0633\u064a\u062a\u0644\u0642\u0649 \u0641\u064a\u0647 \u0627\u0644\u0633\u0627\u0626\u0642\u0648\u0646 \u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0631\u062d\u0644\u0627\u062a. \u0645\u062b\u0644\u0627\u064b: '2' \u062a\u0639\u0646\u064a \u0625\u0631\u0633\u0627\u0644 \u0627\u0644\u0637\u0644\u0628\u0627\u062a \u0644\u0644\u0633\u0627\u0626\u0642\u064a\u0646 \u0636\u0645\u0646 \u0646\u0637\u0627\u0642 2 \u0643\u0645 \u0641\u0642\u0637.",f0,"\u0623\u062f\u062e\u0644 \u0646\u0637\u0627\u0642 \u0627\u0644\u062c\u063a\u0631\u0627\u0641\u064a\u0627 \u0628\u0627\u0644\u0643\u064a\u0644\u0648\u0645\u062a\u0631","google_map_key","\u0645\u0641\u062a\u0627\u062d \u062e\u0631\u0627\u0626\u0637 \u062c\u0648\u062c\u0644","this_api_key_is","\u064a\u0633\u062a\u062e\u062f\u0645 \u0647\u0630\u0627 \u0627\u0644\u0645\u0641\u062a\u0627\u062d \u0644\u0643\u0644 \u0645\u0646 Google Places API \u0644\u0644\u0628\u062d\u062b \u0639\u0646 \u0627\u0644\u0645\u0648\u0627\u0642\u0639\u060c \u0648\u0648\u0627\u062c\u0647\u0629 \u0628\u0631\u0645\u062c\u0629 \u062a\u0637\u0628\u064a\u0642\u0627\u062a \u0627\u0644\u0627\u062a\u062c\u0627\u0647\u0627\u062a \u0648\u0627\u0644\u0645\u0633\u0627\u0631\u0627\u062a.",f1,"\u0623\u062f\u062e\u0644 \u0645\u0641\u062a\u0627\u062d \u062e\u0631\u0627\u0626\u0637 \u062c\u0648\u062c\u0644",f2,"\u062b\u0648\u0627\u0646\u064a \u0642\u0628\u0648\u0644 \u0627\u0644\u0637\u0644\u0628",f3,"\u0627\u0644\u0648\u0642\u062a \u0627\u0644\u0645\u062d\u062f\u062f \u0628\u0627\u0644\u062b\u0648\u0627\u0646\u064a \u0627\u0644\u0630\u064a \u064a\u062c\u0628 \u0639\u0644\u0649 \u0627\u0644\u0633\u0627\u0626\u0642 \u062e\u0644\u0627\u0644\u0647 \u0642\u0628\u0648\u0644 \u0627\u0644\u0637\u0644\u0628\u061b \u0648\u0625\u0644\u0627 \u0633\u064a\u062a\u0645 \u0625\u0639\u0627\u062f\u0629 \u062a\u0639\u064a\u064a\u0646 \u0627\u0644\u0637\u0644\u0628 \u0644\u0644\u0633\u0627\u0626\u0642 \u0627\u0644\u0645\u062a\u0627\u062d \u0627\u0644\u062a\u0627\u0644\u064a.",f4,"\u0623\u062f\u062e\u0644 \u062b\u0648\u0627\u0646\u064a \u0642\u0628\u0648\u0644 \u0627\u0644\u0637\u0644\u0628",f5,"\u062a\u0641\u0639\u064a\u0644 \u0627\u0644\u062a\u062d\u0642\u0642 \u0645\u0646 \u0627\u0644\u0631\u0627\u0643\u0628\u061f",f6,"\u0647\u0644 \u064a\u062c\u0628 \u0639\u0644\u0649 \u0627\u0644\u0646\u0638\u0627\u0645 \u0645\u0637\u0627\u0644\u0628\u0629 \u0627\u0644\u0633\u0627\u0626\u0642 \u0628\u0627\u0644\u062a\u062d\u0642\u0642 \u0645\u0646 \u0627\u0644\u0631\u0627\u0643\u0628 \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0631\u0645\u0632 \u0642\u0628\u0644 \u0627\u0644\u0631\u062d\u0644\u0629\u061f \u0627\u0644\u0631\u0645\u0632 \u0645\u062a\u0627\u062d \u0641\u064a \u062a\u0637\u0628\u064a\u0642 \u0627\u0644\u0631\u0627\u0643\u0628 \u0648\u0644\u0627 \u064a\u062a\u0645 \u0625\u0631\u0633\u0627\u0644\u0647 \u0639\u0628\u0631 \u0627\u0644\u0631\u0633\u0627\u0626\u0644 \u0627\u0644\u0642\u0635\u064a\u0631\u0629.","yes","\u0646\u0639\u0645","no","\u0644\u0627",f7,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0631\u0642\u0645 Twilio",f8,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0645\u0639\u0631\u0641 \u0627\u0644\u062d\u0633\u0627\u0628 (Account Sid)",f9,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0631\u0645\u0632 \u0627\u0644\u0645\u0635\u0627\u062f\u0642\u0629 (Auth Token)",g0,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0646\u0635 \u0631\u0633\u0627\u0644\u0629 Twilio","please_currency","\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0627\u0644\u0639\u0645\u0644\u0629",g1,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0646\u0637\u0627\u0642 \u0627\u0644\u062c\u063a\u0631\u0627\u0641\u064a\u0627",g2,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0645\u0641\u062a\u0627\u062d \u062e\u0631\u0627\u0626\u0637 \u062c\u0648\u062c\u0644",g3,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u062b\u0648\u0627\u0646\u064a \u0642\u0628\u0648\u0644 \u0627\u0644\u0637\u0644\u0628","first_name","\u0627\u0644\u0627\u0633\u0645 \u0627\u0644\u0623\u0648\u0644","last_name","\u0627\u0633\u0645 \u0627\u0644\u0639\u0627\u0626\u0644\u0629",g4,"\u0623\u062f\u062e\u0644 \u0627\u0644\u0627\u0633\u0645 \u0627\u0644\u0623\u0648\u0644","enter_last_name","\u0623\u062f\u062e\u0644 \u0627\u0633\u0645 \u0627\u0644\u0639\u0627\u0626\u0644\u0629",g5,"\u0623\u062f\u062e\u0644 \u0627\u0644\u0647\u0627\u062a\u0641 (\u0628\u062f\u0648\u0646 \u0631\u0645\u0632 \u0627\u0644\u062f\u0648\u0644\u0629)",g6,"\u064a\u0631\u062c\u0649 \u0625\u062f\u062e\u0627\u0644 \u0643\u0644\u0645\u0629 \u0644\u0644\u0628\u062d\u062b","no_users_found","\u0644\u0645 \u064a\u062a\u0645 \u0627\u0644\u0639\u062b\u0648\u0631 \u0639\u0644\u0649 \u0645\u0633\u062a\u062e\u062f\u0645\u064a\u0646","registered_on","\u0645\u0633\u062c\u0644 \u0641\u064a","gender","\u0627\u0644\u062c\u0646\u0633","rating","\u0627\u0644\u062a\u0642\u064a\u064a\u0645","vehicle_details","\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0645\u0631\u0643\u0628\u0629","vehicle_image","\u0635\u0648\u0631\u0629 \u0627\u0644\u0645\u0631\u0643\u0628\u0629",g7,"\u064a\u062c\u0628 \u0623\u0646 \u062a\u0643\u0648\u0646 \u0627\u0644\u0623\u064a\u0642\u0648\u0646\u0629 \u0645\u0631\u0628\u0639\u0629 \u0627\u0644\u0634\u0643\u0644\u060c \u0648\u0628\u062d\u062c\u0645 \u0623\u0642\u0635\u0649 150 \u0643\u064a\u0644\u0648\u0628\u0627\u064a\u062a",g8,"\u0623\u064a\u0642\u0648\u0646\u0629 \u0627\u0644\u0645\u0631\u0643\u0628\u0629 \u0639\u0644\u0649 \u0627\u0644\u062e\u0631\u064a\u0637\u0629",g9,"\u064a\u0631\u062c\u0649 \u0627\u0644\u062a\u0623\u0643\u062f \u0645\u0646 \u0623\u0646 \u0627\u0644\u0623\u064a\u0642\u0648\u0646\u0627\u062a \u0630\u0627\u062a \u062e\u0644\u0641\u064a\u0629 \u0634\u0641\u0627\u0641\u0629 \u0648\u062d\u062c\u0645 \u0644\u0627 \u064a\u062a\u062c\u0627\u0648\u0632 150 \u0643\u064a\u0644\u0648\u0628\u0627\u064a\u062a","vehicle_name","\u0627\u0633\u0645 \u0627\u0644\u0645\u0631\u0643\u0628\u0629",h0,"\u0633\u064a\u0643\u0648\u0646 \u0627\u0644\u0627\u0633\u0645 \u0645\u0631\u0626\u064a\u0627\u064b \u0644\u0644\u0631\u0643\u0627\u0628 \u0623\u062b\u0646\u0627\u0621 \u0627\u0644\u062d\u062c\u0632. \u064a\u0645\u0643\u0646\u0643 \u062a\u0633\u0645\u064a\u062a\u0647\u0627 '\u0627\u0642\u062a\u0635\u0627\u062f\u064a\u0629'\u060c '\u0641\u0627\u062e\u0631\u0629'\u060c \u0625\u0644\u062e.",h1,"\u0623\u062f\u062e\u0644 \u0627\u0633\u0645 \u0627\u0644\u0645\u0631\u0643\u0628\u0629",h2,"\u0627\u0644\u0633\u0639\u0629 \u0627\u0644\u0645\u0642\u0639\u062f\u064a\u0629",h3,"\u0633\u0639\u0629 \u0627\u0644\u0645\u0642\u0627\u0639\u062f \u0641\u064a \u0627\u0644\u0645\u0631\u0643\u0628\u0629 \u0628\u0627\u0633\u062a\u062b\u0646\u0627\u0621 \u0627\u0644\u0633\u0627\u0626\u0642",h4,"\u0623\u062f\u062e\u0644 \u0627\u0644\u0633\u0639\u0629 \u0627\u0644\u0645\u0642\u0639\u062f\u064a\u0629",h5,"\u0646\u0633\u0628\u0629 \u0627\u0644\u0639\u0645\u0648\u0644\u0629",h6,"\u0646\u0633\u0628\u0629 \u0639\u0645\u0648\u0644\u0629 \u0627\u0644\u0645\u0633\u0624\u0648\u0644",h7,"\u0623\u062f\u062e\u0644 \u0646\u0633\u0628\u0629 \u0627\u0644\u0639\u0645\u0648\u0644\u0629",h8,"\u0647\u0630\u0647 \u0647\u064a \u0627\u0644\u0623\u062c\u0631\u0629 \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629 \u0627\u0644\u062a\u064a \u0633\u064a\u062a\u0645 \u0627\u062d\u062a\u0633\u0627\u0628\u0647\u0627","enter_base_fare","\u0623\u062f\u062e\u0644 \u0627\u0644\u0623\u062c\u0631\u0629 \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629","per_km_fare","\u0623\u062c\u0631\u0629 \u0627\u0644\u0643\u064a\u0644\u0648\u0645\u062a\u0631 \u0627\u0644\u0648\u0627\u062d\u062f","per_km_fare_eg","\u0623\u062c\u0631\u0629 \u0627\u0644\u0643\u064a\u0644\u0648\u0645\u062a\u0631. \u0645\u062b\u0644\u0627\u064b \u0625\u0630\u0627 \u0643\u0627\u0646\u062a \u0627\u0644\u0645\u0633\u0627\u0641\u0629 10 \u0643\u0645 \u0648\u0633\u0639\u0631 \u0627\u0644\u0643\u064a\u0644\u0648\u0645\u062a\u0631 8\u060c \u0633\u064a\u062a\u0645 \u0625\u0636\u0627\u0641\u0629 80 \u0644\u0644\u0623\u062c\u0631\u0629 \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629.",h9,"\u0623\u062f\u062e\u0644 \u0623\u062c\u0631\u0629 \u0627\u0644\u0643\u064a\u0644\u0648\u0645\u062a\u0631","per_minute_fare","\u0623\u062c\u0631\u0629 \u0627\u0644\u062f\u0642\u064a\u0642\u0629 \u0627\u0644\u0648\u0627\u062d\u062f\u0629",i0,"\u0623\u062c\u0631\u0629 \u0627\u0644\u062f\u0642\u064a\u0642\u0629. \u0645\u062b\u0644\u0627\u064b \u0625\u0630\u0627 \u0627\u0633\u062a\u063a\u0631\u0642\u062a \u0627\u0644\u0631\u062d\u0644\u0629 30 \u062f\u0642\u064a\u0642\u0629 \u0648\u0633\u0639\u0631 \u0627\u0644\u062f\u0642\u064a\u0642\u0629 2\u060c \u0633\u064a\u062a\u0645 \u0625\u0636\u0627\u0641\u0629 60 \u0644\u0644\u0623\u062c\u0631\u0629 \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629.",i1,"\u0623\u062f\u062e\u0644 \u0623\u062c\u0631\u0629 \u0627\u0644\u062f\u0642\u064a\u0642\u0629",i2,"\u0631\u0633\u0648\u0645 \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631 \u0644\u0644\u062f\u0642\u064a\u0642\u0629",i3,"\u0631\u0633\u0648\u0645 \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631 \u0644\u0644\u062f\u0642\u064a\u0642\u0629. \u0645\u062b\u0644\u0627\u064b \u0625\u0630\u0627 \u0627\u0646\u062a\u0638\u0631 \u0627\u0644\u0633\u0627\u0626\u0642 5 \u062f\u0642\u0627\u0626\u0642 \u0648\u0627\u0644\u0631\u0633\u0648\u0645 2\u060c \u0633\u064a\u062a\u0645 \u0625\u0636\u0627\u0641\u0629 10 \u0644\u0644\u0641\u0627\u062a\u0648\u0631\u0629.",i4,"\u0623\u062f\u062e\u0644 \u0631\u0633\u0648\u0645 \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631 \u0644\u0644\u062f\u0642\u064a\u0642\u0629",i5,"\u0628\u062f\u0621 \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631 \u0628\u0639\u062f \u062f\u0642\u0627\u0626\u0642",i6,"\u062d\u062f\u062f \u0627\u0644\u0645\u062f\u0629 (\u0628\u0627\u0644\u062f\u0642\u0627\u0626\u0642) \u0627\u0644\u062a\u064a \u0633\u064a\u0628\u062f\u0623 \u0628\u0639\u062f\u0647\u0627 \u0627\u062d\u062a\u0633\u0627\u0628 \u0631\u0633\u0648\u0645 \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631 \u062a\u0644\u0642\u0627\u0626\u064a\u0627\u064b",i7,"\u0627\u0644\u062d\u062f \u0627\u0644\u0623\u0642\u0635\u0649 \u0644\u0631\u0633\u0648\u0645 \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631",i8,"\u0623\u0642\u0635\u0649 \u0645\u0628\u0644\u063a \u0644\u0631\u0633\u0648\u0645 \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631. \u0645\u062b\u0644\u0627\u064b \u0625\u0630\u0627 \u0627\u0646\u062a\u0638\u0631 \u0627\u0644\u0633\u0627\u0626\u0642 30 \u062f\u0642\u064a\u0642\u0629 \u0648\u0643\u0627\u0646 \u0627\u0644\u062d\u062f \u0627\u0644\u0623\u0642\u0635\u0649 50\u060c \u0641\u0633\u064a\u062a\u0645 \u0625\u0636\u0627\u0641\u0629 50 \u0641\u0642\u0637.",i9,"\u0623\u062f\u062e\u0644 \u0627\u0644\u062d\u062f \u0627\u0644\u0623\u0642\u0635\u0649 \u0644\u0631\u0633\u0648\u0645 \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631",j0,u9,j2,v0,j4,v1,j6,v2,j8,v3,k0,v4,k2,v5,k4,v6,k6,v7,"sure_update","\u0647\u0644 \u0623\u0646\u062a \u0645\u062a\u0623\u0643\u062f \u0623\u0646\u0643 \u062a\u0631\u064a\u062f \u0627\u0644\u062a\u062d\u062f\u064a\u062b\u061f","update","\u062a\u062d\u062f\u064a\u062b",k8,"\u064a\u0631\u062c\u0649 \u0625\u0636\u0627\u0641\u0629 \u0635\u0648\u0631\u0629 \u0627\u0644\u0645\u0631\u0643\u0628\u0629",k9,"\u064a\u0631\u062c\u0649 \u0625\u0636\u0627\u0641\u0629 \u0623\u064a\u0642\u0648\u0646\u0629 \u0627\u0644\u0645\u0631\u0643\u0628\u0629",l0,u9,l1,v0,l2,v1,l3,v2,l4,v3,l5,v4,l6,v5,l7,v6,l8,v7,"vehicle_types","\u0623\u0646\u0648\u0627\u0639 \u0627\u0644\u0645\u0631\u0643\u0628\u0627\u062a",l9,"\u0625\u062f\u0627\u0631\u0629 \u0623\u0646\u0648\u0627\u0639 \u0627\u0644\u0645\u0631\u0643\u0628\u0627\u062a. \u064a\u0648\u0635\u0649 \u0628\u0635\u0648\u0631\u0629 \u0645\u0631\u0628\u0639\u0629 \u0628\u062d\u062c\u0645 150-200 \u0643\u064a\u0644\u0648\u0628\u0627\u064a\u062a","image","\u0635\u0648\u0631\u0629","edit","\u062a\u0639\u062f\u064a\u0644","add_new","\u0625\u0636\u0627\u0641\u0629 \u062c\u062f\u064a\u062f",m0,"\u062a\u0645 \u0627\u0644\u062a\u062d\u062f\u064a\u062f \u0643\u0645\u062f\u0641\u0648\u0639 \u0628\u0646\u062c\u0627\u062d",m1,"\u0641\u0634\u0644 \u0627\u0644\u062a\u062d\u062f\u064a\u062f \u0643\u0645\u062f\u0641\u0648\u0639",m2,"\u0641\u064a\u0645\u0627 \u064a\u0644\u064a \u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0633\u062d\u0628 \u0645\u0646 \u0627\u0644\u0633\u0627\u0626\u0642\u064a\u0646. \u064a\u0631\u062c\u0649 \u0645\u0639\u0627\u0644\u062c\u0629 \u0627\u0644\u0645\u062f\u0641\u0648\u0639\u0627\u062a \u0648\u062a\u062d\u062f\u064a\u062f\u0647\u0627 \u0643\u0645\u062f\u0641\u0648\u0639\u0629","requested_on","\u062a\u0645 \u0627\u0644\u0637\u0644\u0628 \u0641\u064a","bank_name","\u0627\u0633\u0645 \u0627\u0644\u0628\u0646\u0643","branch_name","\u0627\u0633\u0645 \u0627\u0644\u0641\u0631\u0639","ifsc_code","\u0643\u0648\u062f IFSC",m3,"\u0627\u0633\u0645 \u0635\u0627\u062d\u0628 \u0627\u0644\u062d\u0633\u0627\u0628","account_number","\u0631\u0642\u0645 \u0627\u0644\u062d\u0633\u0627\u0628",m4,"\u0639\u0631\u0636 \u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0633\u0627\u0626\u0642",m5,"\u0647\u0644 \u0642\u0645\u062a \u0628\u0627\u0644\u0641\u0639\u0644 \u0628\u062f\u0641\u0639 \u0627\u0644\u0645\u0628\u0644\u063a \u0643\u0627\u0645\u0644\u0627\u064b \u0644\u0644\u0633\u0627\u0626\u0642\u061f \u0647\u0644 \u0623\u0646\u062a \u0645\u062a\u0623\u0643\u062f \u0623\u0646\u0643 \u062a\u0631\u064a\u062f \u062a\u062d\u062f\u064a\u062f \u0647\u0630\u0627 \u0627\u0644\u0637\u0644\u0628 \u0643\u0645\u062f\u0641\u0648\u0639\u061f","mark_as_paid","\u062a\u062d\u062f\u064a\u062f \u0643\u0645\u062f\u0641\u0648\u0639",m6,"\u0644\u0645 \u064a\u062a\u0645 \u0627\u0644\u0639\u062b\u0648\u0631 \u0639\u0644\u0649 \u0637\u0644\u0628\u0627\u062a \u0633\u062d\u0628","alert","\u062a\u0646\u0628\u064a\u0647","home","\u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629",m7,"\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0627\u0639\u062a\u0645\u0627\u062f \u063a\u064a\u0631 \u0635\u0627\u0644\u062d\u0629",m8,"\u0641\u0634\u0644 \u0627\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0627\u0644\u0625\u0639\u062f\u0627\u062f\u0627\u062a",m9,"\u062a\u0645 \u062a\u062d\u062f\u064a\u062b \u0627\u0644\u0625\u0639\u062f\u0627\u062f\u0627\u062a \u0628\u0646\u062c\u0627\u062d",n0,"\u0641\u0634\u0644 \u062a\u062d\u062f\u064a\u062b \u0627\u0644\u0625\u0639\u062f\u0627\u062f\u0627\u062a",n1,"\u0641\u0634\u0644 \u0627\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0627\u0644\u062a\u0633\u062c\u064a\u0644",n2,"\u0641\u0634\u0644 \u062a\u062d\u062f\u064a\u062b \u0645\u0633\u062a\u0646\u062f \u0627\u0644\u062a\u0633\u062c\u064a\u0644",n3,"\u0641\u0634\u0644 \u062d\u0630\u0641 \u0645\u0633\u062a\u0646\u062f \u0627\u0644\u062a\u0633\u062c\u064a\u0644",n4,"\u0641\u0634\u0644 \u0625\u0636\u0627\u0641\u0629 \u0645\u0633\u062a\u0646\u062f \u0627\u0644\u062a\u0633\u062c\u064a\u0644",n5,"\u0641\u0634\u0644 \u0627\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0623\u0633\u0628\u0627\u0628 \u0627\u0644\u0625\u0644\u063a\u0627\u0621",n6,"\u0641\u0634\u0644 \u062a\u062d\u062f\u064a\u062b \u0633\u0628\u0628 \u0627\u0644\u0625\u0644\u063a\u0627\u0621",n7,"\u0641\u0634\u0644 \u062d\u0630\u0641 \u0633\u0628\u0628 \u0627\u0644\u0625\u0644\u063a\u0627\u0621",n8,"\u0641\u0634\u0644 \u0625\u0636\u0627\u0641\u0629 \u0633\u0628\u0628 \u0627\u0644\u0625\u0644\u063a\u0627\u0621",n9,"\u0641\u0634\u0644 \u0627\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u0623\u0646\u0648\u0627\u0639 \u0627\u0644\u0645\u0631\u0643\u0628\u0627\u062a",o0,"\u0641\u0634\u0644 \u062a\u062d\u062f\u064a\u062b \u0646\u0648\u0639 \u0627\u0644\u0645\u0631\u0643\u0628\u0629",o1,"\u0627\u0633\u0645 \u0627\u0644\u0645\u0631\u0643\u0628\u0629 \u0645\u0648\u062c\u0648\u062f \u0628\u0627\u0644\u0641\u0639\u0644",o2,"\u062a\u0645 \u0625\u0636\u0627\u0641\u0629 \u0627\u0644\u0645\u0631\u0643\u0628\u0629 \u0628\u0646\u062c\u0627\u062d",o3,"\u062a\u0645 \u062a\u062d\u062f\u064a\u062b \u0627\u0644\u0645\u0631\u0643\u0628\u0629 \u0628\u0646\u062c\u0627\u062d",o4,"\u062a\u0645\u062a \u0627\u0644\u0645\u0648\u0627\u0641\u0642\u0629 \u0639\u0644\u0649 \u0627\u0644\u0633\u0627\u0626\u0642",o5,"\u0641\u0634\u0644 \u0627\u0644\u0645\u0648\u0627\u0641\u0642\u0629 \u0639\u0644\u0649 \u0627\u0644\u0633\u0627\u0626\u0642",o6,"\u062a\u0645 \u0631\u0641\u0636 \u0627\u0644\u0633\u0627\u0626\u0642",o7,"\u0641\u0634\u0644 \u0631\u0641\u0636 \u0627\u0644\u0633\u0627\u0626\u0642",o8,"\u062a\u0645 \u062a\u0639\u0644\u064a\u0642 \u0627\u0644\u0633\u0627\u0626\u0642",o9,"\u0641\u0634\u0644 \u062a\u0639\u0644\u064a\u0642 \u0627\u0644\u0633\u0627\u0626\u0642",p0,"\u062a\u0645 \u0625\u0644\u063a\u0627\u0621 \u0627\u0644\u062a\u0639\u0644\u064a\u0642 \u0628\u0646\u062c\u0627\u062d",p1,"\u0641\u0634\u0644 \u0625\u0644\u063a\u0627\u0621 \u062a\u0639\u0644\u064a\u0642 \u0627\u0644\u0633\u0627\u0626\u0642",p2,"\u0641\u0634\u0644 \u0627\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0633\u0627\u0626\u0642",p3,"\u0641\u0634\u0644 \u062c\u0644\u0628 \u0627\u0644\u0631\u062d\u0644\u0627\u062a \u0627\u0644\u0623\u062e\u064a\u0631\u0629",p4,"\u0641\u0634\u0644 \u0627\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0631\u062d\u0644\u0629",p5,"\u0641\u0634\u0644 \u0627\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0645\u0633\u062a\u062e\u062f\u0645",p6,"\u064a\u0631\u062c\u0649 \u0627\u062e\u062a\u064a\u0627\u0631 \u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0628\u062f\u0627\u064a\u0629",p7,"\u064a\u0631\u062c\u0649 \u0627\u062e\u062a\u064a\u0627\u0631 \u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0646\u0647\u0627\u064a\u0629",p8,"\u062a\u0645 \u062d\u0630\u0641 \u0633\u0628\u0628 \u0627\u0644\u0625\u0644\u063a\u0627\u0621 \u0628\u0646\u062c\u0627\u062d",p9,"\u062a\u0645 \u0625\u0636\u0627\u0641\u0629 \u0633\u0628\u0628 \u0627\u0644\u0625\u0644\u063a\u0627\u0621 \u0628\u0646\u062c\u0627\u062d",q0,"\u062a\u0645 \u062d\u0630\u0641 \u0627\u0644\u0645\u0633\u062a\u0646\u062f \u0628\u0646\u062c\u0627\u062d",q1,"\u062a\u0645 \u0625\u0636\u0627\u0641\u0629 \u0627\u0644\u0645\u0633\u062a\u0646\u062f \u0628\u0646\u062c\u0627\u062d",q2,"\u0647\u0630\u0627 \u0627\u0644\u062a\u0639\u062f\u064a\u0644 \u0645\u0642\u064a\u062f \u0628\u0648\u0627\u0633\u0637\u0629 Ridely."],w7,w7),"it",A.a7(["cancel_reasons","Motivi di cancellazione","cancel_reason","Motivo di cancellazione","user_app","App Utente","sr_no","N. Seriale","active","Attivo","delete","Elimina","sure_delete","Sei sicuro di voler eliminare?","add_new_reason","Aggiungi nuovo motivo",s,"Per favore, aggiungi prima un motivo di cancellazione","sure_add","Sei sicuro di voler aggiungere?","add","Aggiungi","driver_app","App Autista","select_language","Seleziona lingua","apply","Applica","documents_list","Elenco documenti",r,"Questi documenti sono richiesti agli autisti per la creazione dell'account","document_name","Nome documento",q,"Aggiungi nuovo documento",p,"Per favore, aggiungi prima il nome del documento","driver_details","Dettagli autista","driver_name","Nome autista","phone_number","Numero di telefono","address","Indirizzo","email","Email","vehicle_type","Tipo di veicolo","vehicle_model","Modello veicolo","vehicle_color","Colore veicolo",o,"Numero di targa","status","Stato","documents","Documenti",n,"(Clicca per visualizzare i documenti)","all_rides","Tutte le corse","user_name","Nome utente","amount","Importo","date_and_time","Data e ora","action","Azione","view","Visualizza","no_rides_found","Nessuna corsa trovata","sure_approve","Sei sicuro di voler approvare?","approve","Approva","or","O",m,"Per favore, aggiungi un motivo per il rifiuto","sure_reject","Sei sicuro di voler rifiutare?","reject","Rifiuta",l,"Aggiungi un motivo per il rifiuto",k,"Sei sicuro di voler annullare la sospensione?","undo_suspend","Annulla Sospensione","sure_suspend","Sei sicuro di voler sospendere?",j,"Impossibile sospendere al momento. La richiesta di questo autista \xe8 gi\xe0 stata rifiutata.",i,"Impossibile sospendere al momento. L'autista potrebbe essere impegnato in una corsa attiva.","suspend","Sospendi","admin","Admin",h,"Gestisci pi\xf9 corse con meno sforzo","revenue","Entrate","this_months","(Di questo mese)","total_users","Utenti totali","total_drivers","Autisti totali","pending_drivers","Autisti in attesa",g,"Richieste di prelievo","recent_rides","Corse recenti","good_morning","Buongiorno","good_afternoon","Buon pomeriggio","good_evening","Buonasera","welcome_back","Bentornato!","welcome","Benvenuto!",f,"Per favore, accedi per continuare",e,"Per favore, registrati per continuare",d,"Inserisci indirizzo email","password","Password","enter_password","Inserisci password",c,"Conferma password",b,"Inserisci conferma password",a,"Per favore, inserisci il tuo indirizzo email",a0,"Per favore, inserisci un indirizzo email valido",a1,"Per favore, inserisci la tua password",a2,"Per favore, conferma la tua password",a3,"La password e la conferma password non corrispondono","login","Accedi","sign_up","Registrati","choose_language","Scegli lingua",a4,"Impostazioni di pagamento",a5,"Gateway di pagamento Stripe",a6,"Registrati su Stripe per ottenere la tua Publishable Key e Secret Key",a7,a8,a9,b0,b1,"Gateway di pagamento PayPal",b2,"Registrati su PayPal per ottenere il tuo Client Id e Secret Key",b3,b4,b5,b6,b7,"Gateway di pagamento PayStack",b8,"Registrati su PayStack per ottenere la tua Public Key e Secret Key",b9,c0,c1,c2,c3,"Gateway di pagamento Razorpay",c4,"Registrati su Razorpay per ottenere il tuo Key Id e Key Secret","razorpay_key_id","Razorpay Key Id",c5,c6,c7,"Per favore, inserisci la Stripe Publishable Key",c8,"Per favore, inserisci la Stripe Secret Key",c9,"Per favore, inserisci il PayPal Client Id",d0,"Per favore, inserisci la PayPal Secret Key",d1,"Per favore, inserisci la PayStack Public Key",d2,"Per favore, inserisci la PayStack Secret Key",d3,"Per favore, inserisci il Razorpay Key Id",d4,"Per favore, inserisci il Razorpay Key Secret","save","Salva",d5,"Approva le richieste di onboarding degli autisti o rifiutale con feedback chiari per aiutarli a correggere e ripresentare la domanda","phone","Telefono",d6,"Nessun autista trovato","admin_revenue","Entrate Admin","revenue_trend","Andamento entrate","rides_trend","Andamento corse","rides","Corse","avg_per_ride","Media / Corsa","ride_details","Dettagli corsa",d7,"Informazioni di prenotazione","date","Data","payment_mode","Modalit\xe0 di pagamento",d8,"Luogo di ritiro e destinazione","fare_details","Dettagli tariffa","base_fare","Tariffa base","distance_fare","Tariffa distanza","time_fare","Tariffa tempo","waiting_charge","Costo di attesa","total","Totale","drivers_earning","Guadagno autista",d9,"Commissione Admin","user_details","Dettagli utente","name","Nome","from_date","Dalla data","to_date","Alla data","search","Cerca","clear_filter","Cancella filtri","settings","Impostazioni","twilio_number","Numero Twilio",e0,"Twilio funge da gateway SMS. Puoi usarlo per inviare codici di verifica (OTP) per verificare i numeri di telefono. Per iniziare, crea un account su Twilio per ottenere il tuo numero dedicato.",e1,"Inserisci numero Twilio","account_sid","Account Sid",e2,"Twilio funge da gateway SMS. Puoi usarlo per inviare codici di verifica (OTP). Per iniziare, crea un account su Twilio per ottenere il tuo Account Sid dedicato.",e3,"Inserisci Account Sid","auth_token","Auth Token",e4,"Twilio funge da gateway SMS. Puoi usarlo per inviare codici di verifica (OTP). Per iniziare, crea un account su Twilio per ottenere il tuo Auth Token dedicato.",e5,"Inserisci Auth Token","twilio_sms","SMS Twilio",e6,"Scrivi il messaggio SMS di Twilio. Il codice di verifica viene aggiunto automaticamente all'inizio, quindi puoi continuare il testo cos\xec: '\xe8 il tuo codice di verifica per accedere a Ridely. Grazie per aver scelto Ridely.'",e7,"Inserisci SMS Twilio","currency","Valuta",e8,"Specifica il simbolo della valuta da utilizzare nell'app (es. $, \u20ac, \xa5)","enter_currency","Inserisci valuta","geofencing_km","Kilometri Geofencing",e9,"Specifica, in chilometri, il raggio geografico entro il quale gli autisti riceveranno richieste. Ad esempio, inserendo '2' le richieste saranno inviate solo agli autisti entro 2 km.",f0,"Inserisci KM Geofencing","google_map_key","Chiave Google Maps","this_api_key_is","Questa chiave API viene utilizzata sia per Google Places API (ricerca posizioni) che per le funzionalit\xe0 della route direction API.",f1,"Inserisci chiave Google Maps",f2,"Secondi accettazione richiesta",f3,"Il limite di tempo specificato, in secondi, entro cui un autista deve accettare la corsa; in caso contrario, la richiesta verr\xe0 assegnata al prossimo autista disponibile.",f4,"Inserisci secondi accettazione",f5,"Abilitare verifica passeggero?",f6,"Il sistema deve richiedere all'autista di verificare il passeggero tramite un codice pre-corsa? Il codice \xe8 visibile nell'app del passeggero e non viene inviato via SMS.","yes","S\xec","no","No",f7,"Per favore, inserisci il numero Twilio",f8,"Per favore, inserisci l'Account Sid",f9,"Per favore, inserisci l'Auth Token",g0,"Per favore, inserisci l'SMS Twilio","please_currency","Per favore, inserisci la valuta",g1,"Per favore, inserisci i KM di geofencing",g2,"Per favore, inserisci la chiave Google Maps",g3,"Per favore, inserisci i secondi di accettazione","first_name","Nome","last_name","Cognome",g4,"Inserisci nome","enter_last_name","Inserisci cognome",g5,"Inserisci telefono (senza prefisso internazionale)",g6,"Per favore, inserisci una parola chiave da cercare","no_users_found","Nessun utente trovato","registered_on","Registrato il","gender","Genere","rating","Valutazione","vehicle_details","Dettagli veicolo","vehicle_image","Immagine veicolo",g7,"L'icona deve essere quadrata, con una dimensione massima di 150 KB",g8,"Icona veicolo su Google Maps",g9,"Assicurati che le icone abbiano uno sfondo trasparente e non superino i 150 KB","vehicle_name","Nome veicolo",h0,"Il nome sar\xe0 visibile ai passeggeri durante la prenotazione. Puoi impostarlo come 'Auto', 'Cab Economy', 'Cab Premium' ecc.",h1,"Inserisci nome veicolo",h2,"Capacit\xe0 posti",h3,"La capacit\xe0 di posti del veicolo escluso il conducente",h4,"Inserisci capacit\xe0 posti",h5,"Percentuale commissione",h6,"Percentuale di commissione per l'amministratore",h7,"Inserisci percentuale commissione",h8,"Questa \xe8 la tariffa base che verr\xe0 addebitata","enter_base_fare","Inserisci tariffa base","per_km_fare","Tariffa per KM","per_km_fare_eg","Tariffa al chilometro. Es: se la distanza \xe8 10 km e la tariffa \xe8 8, verranno aggiunti 80 alla tariffa base.",h9,"Inserisci tariffa per KM","per_minute_fare","Tariffa per minuto",i0,"Tariffa al minuto. Es: se il tempo di percorrenza \xe8 30 minuti e la tariffa \xe8 2, verranno aggiunti 60 alla tariffa base.",i1,"Inserisci tariffa al minuto",i2,"Costo attesa al minuto",i3,"Costo attesa al minuto. Es: se l'autista attende 5 minuti e il costo \xe8 2, verranno aggiunti 10 al conto.",i4,"Inserisci costo attesa al minuto",i5,"Inizio attesa dopo (minuti)",i6,"Imposta la durata (in minuti) dopo la quale i costi di attesa verranno addebitati automaticamente",i7,"Costo massimo attesa",i8,"Costo massimo di attesa. Es: se l'autista attende 30 minuti a 2/min ma il massimo \xe8 50, verranno aggiunti solo 50.",i9,"Inserisci costo massimo attesa",j0,v8,j2,v9,j4,w0,j6,w1,j8,w2,k0,w3,k2,w4,k4,w5,k6,w6,"sure_update","Sei sicuro di voler aggiornare?","update","Aggiorna",k8,"Per favore, aggiungi l'immagine del veicolo",k9,"Per favore, aggiungi l'icona del veicolo",l0,v8,l1,v9,l2,w0,l3,w1,l4,w2,l5,w3,l6,w4,l7,w5,l8,w6,"vehicle_types","Tipi di veicolo",l9,"Gestisci tipi di veicolo (es. Economy, Premium). Si consiglia un'immagine quadrata di 150-200 KB","image","Immagine","edit","Modifica","add_new","Aggiungi nuovo",m0,"Contrassegnato come pagato con successo",m1,"Impossibile contrassegnare come pagato",m2,"Di seguito sono riportate le richieste di prelievo degli autisti. Elabora i pagamenti e contrassegnali come pagati","requested_on","Richiesto il","bank_name","Nome banca","branch_name","Nome filiale","ifsc_code","Codice IFSC",m3,"Nome titolare conto","account_number","Numero di conto",m4,"Visualizza dettagli autista",m5,"Hai gi\xe0 pagato l'intero importo all'autista? Sei sicuro di voler contrassegnare questa richiesta come pagata?","mark_as_paid","Contrassegna come pagato",m6,"Nessuna richiesta di prelievo trovata","alert","Avviso","home","Home",m7,"Credenziali non valide",m8,"Impossibile ottenere le impostazioni",m9,"Impostazioni aggiornate con successo",n0,"Impossibile aggiornare le impostazioni",n1,"Impossibile ottenere i documenti di registrazione",n2,"Impossibile aggiornare il documento di registrazione",n3,"Impossibile eliminare il documento di registrazione",n4,"Impossibile aggiungere il documento di registrazione",n5,"Impossibile ottenere i motivi di cancellazione",n6,"Impossibile aggiornare il motivo di cancellazione",n7,"Impossibile eliminare il motivo di cancellazione",n8,"Impossibile aggiungere il motivo di cancellazione",n9,"Impossibile ottenere i tipi di veicolo",o0,"Impossibile aggiornare il tipo di veicolo",o1,"Il nome del veicolo esiste gi\xe0",o2,"Veicolo aggiunto con successo",o3,"Veicolo aggiornato con successo",o4,"L'autista \xe8 stato approvato",o5,"Impossibile approvare l'autista",o6,"L'autista \xe8 stato rifiutato",o7,"Impossibile rifiutare l'autista",o8,"L'autista \xe8 stato sospeso",o9,"Impossibile sospendere l'autista",p0,"Sospensione annullata con successo",p1,"Impossibile annullare la sospensione dell'autista",p2,"Impossibile ottenere i dettagli dell'autista",p3,"Impossibile recuperare le corse recenti",p4,"Impossibile ottenere i dettagli della corsa",p5,"Impossibile ottenere i dettagli dell'utente",p6,"Per favore, seleziona la data di inizio",p7,"Per favore, seleziona la data di fine",p8,"Motivo di cancellazione eliminato con successo",p9,"Motivo di cancellazione aggiunto con successo",q0,"Documento eliminato con successo",q1,"Documento aggiunto con successo",q2,"Questa modifica \xe8 limitata da Ridely."],w7,w7)],w7,t.GU)}}
 A.BB.prototype={
 Zx(a,b){var s=b.a
 if(s.length===0)return b
@@ -97872,7 +97872,7 @@ A.ava.prototype={
 $2(a,b){return A.r(null,15,null)},
 $S:25}
 A.av9.prototype={
-$2(a,b){var s=null,r=this.a,q=J.a7(r.d.dx.gl(0),b),p=this.b,o=J.di(q),n=p*0.045,m=t.p
+$2(a,b){var s=null,r=this.a,q=J.a8(r.d.dx.gl(0),b),p=this.b,o=J.di(q),n=p*0.045,m=t.p
 return A.aF(A.b([A.r(A.H(""+(b+1),s,s,s,A.R(s,s,s,s,s,s,s,s,s,s,s,14,s,s,B.m,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),s,p*0.03),A.r(A.H(J.fx(o.gbf(q)),s,s,s,A.R(s,s,s,s,s,s,s,s,s,s,s,14,s,s,B.m,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),s,p*0.15),A.r(A.aF(A.b([A.dD(!1,s,!0,A.ad2(A.aH(B.c.au(76.5),B.a8.D()>>>16&255,B.a8.D()>>>8&255,B.a8.D()&255),B.a8,30,!1,20,A.aH(102,B.l.D()>>>16&255,B.l.D()>>>8&255,B.l.D()&255),B.P,new A.av5(r,b),0,!1,20,J.fx(o.gep(q)),25,35),s,!0,s,s,s,s,s,s,s,s,s,s,new A.av6(),s,s,s,s)],m),B.p,B.n,B.k),s,n),A.r(A.aF(A.b([A.dD(!1,s,!0,A.x5("assets/images/delete_icon.png",s,20,s),s,!0,s,s,s,s,s,s,s,s,s,s,new A.av7(r,a,b),s,s,s,s)],m),B.p,B.bc,B.k),s,n)],m),B.z,B.T,B.k)},
 $S:78}
 A.av6.prototype={
@@ -97914,7 +97914,7 @@ A.av0.prototype={
 $2(a,b){return A.r(null,15,null)},
 $S:25}
 A.av_.prototype={
-$2(a,b){var s=null,r=this.a,q=J.a7(r.d.dy.gl(0),b),p=this.b,o=J.di(q),n=p*0.045,m=t.p
+$2(a,b){var s=null,r=this.a,q=J.a8(r.d.dy.gl(0),b),p=this.b,o=J.di(q),n=p*0.045,m=t.p
 return A.aF(A.b([A.r(A.H(""+(b+1),s,s,s,A.R(s,s,s,s,s,s,s,s,s,s,s,14,s,s,B.m,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),s,p*0.03),A.r(A.H(J.fx(o.gbf(q)),s,s,s,A.R(s,s,s,s,s,s,s,s,s,s,s,14,s,s,B.m,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),s,p*0.15),A.r(A.aF(A.b([A.dD(!1,s,!0,A.ad2(A.aH(B.c.au(76.5),B.a8.D()>>>16&255,B.a8.D()>>>8&255,B.a8.D()&255),B.a8,30,!1,20,A.aH(102,B.l.D()>>>16&255,B.l.D()>>>8&255,B.l.D()&255),B.P,new A.auW(r,b),0,!1,20,J.fx(o.gep(q)),25,35),s,!0,s,s,s,s,s,s,s,s,s,s,new A.auX(),s,s,s,s)],m),B.p,B.n,B.k),s,n),A.r(A.aF(A.b([A.dD(!1,s,!0,A.x5("assets/images/delete_icon.png",s,20,s),s,!0,s,s,s,s,s,s,s,s,s,s,new A.auY(r,a,b),s,s,s,s)],m),B.p,B.bc,B.k),s,n)],m),B.z,B.T,B.k)},
 $S:78}
 A.auX.prototype={
@@ -97968,7 +97968,7 @@ A.aIV.prototype={
 $0(){this.b.$1(new A.aIU(this.a,this.c))},
 $S:0}
 A.aIU.prototype={
-$0(){var s=J.a7(this.b,"code")
+$0(){var s=J.a8(this.b,"code")
 s.toString
 this.a.a=s},
 $S:0}
@@ -98014,7 +98014,7 @@ A.awT.prototype={
 $2(a,b){return A.r(null,15,null)},
 $S:25}
 A.awS.prototype={
-$2(a,b){var s=null,r=this.a,q=J.a7(r.d.db.gl(0),b),p=J.di(q),o=t.p
+$2(a,b){var s=null,r=this.a,q=J.a8(r.d.db.gl(0),b),p=J.di(q),o=t.p
 return A.aF(A.b([A.r(A.H(""+(b+1),s,s,s,A.R(s,s,s,s,s,s,s,s,s,s,s,14,s,s,B.m,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),s,80),A.b1(A.H(J.fx(p.gbf(q)),s,s,s,A.R(s,s,s,s,s,s,s,s,s,s,s,14,s,s,B.m,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),1),A.r(A.aF(A.b([A.dD(!1,s,!0,A.ad2(A.aH(B.c.au(76.5),B.a8.D()>>>16&255,B.a8.D()>>>8&255,B.a8.D()&255),B.a8,30,!1,20,A.aH(102,B.l.D()>>>16&255,B.l.D()>>>8&255,B.l.D()&255),B.P,new A.awO(r,b),0,!1,20,J.fx(p.gep(q)),25,35),s,!0,s,s,s,s,s,s,s,s,s,s,new A.awP(),s,s,s,s)],o),B.p,B.n,B.k),s,80),A.r(A.aF(A.b([A.dD(!1,s,!0,A.x5("assets/images/delete_icon.png",s,20,s),s,!0,s,s,s,s,s,s,s,s,s,s,new A.awQ(r,a,b),s,s,s,s)],o),B.p,B.bc,B.k),s,80)],o),B.z,B.T,B.k)},
 $S:78}
 A.awP.prototype={
@@ -98139,53 +98139,53 @@ A.ax9.prototype={
 $1(a){if(a!=null)this.a.f.sl(0,a)},
 $S:243}
 A.ax8.prototype={
-$0(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b=null,a="driver_name",a0=A.bK(15),a1=A.r(b,5,b),a2=this.a,a3=A.l(a),a4=a2.f,a5=a4.$ti.c,a6=J.a7(a4.gl(0),a5.a("firstName"))
+$0(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b=null,a="driver_name",a0=A.bK(15),a1=A.r(b,5,b),a2=this.a,a3=A.l(a),a4=a2.f,a5=a4.$ti.c,a6=J.a8(a4.gl(0),a5.a("firstName"))
 a6=A.n(a6)
-s=J.a7(a4.gl(0),a5.a("lastName"))
+s=J.a8(a4.gl(0),a5.a("lastName"))
 a3=a2.h2(a6+" "+A.n(s),a3)
 a6=A.r(b,5,b)
 s=A.l("phone_number")
-r=J.a7(a4.gl(0),a5.a("driver"))
+r=J.a8(a4.gl(0),a5.a("driver"))
 s=a2.h2(A.n(r),s)
 r=A.r(b,5,b)
 q=A.l("address")
-p=J.a7(a4.gl(0),a5.a("address"))
+p=J.a8(a4.gl(0),a5.a("address"))
 q=a2.h2(A.n(p),q)
 p=A.r(b,5,b)
 o=A.l("email")
-n=J.a7(a4.gl(0),a5.a("email"))
+n=J.a8(a4.gl(0),a5.a("email"))
 o=a2.h2(A.n(n),o)
 n=A.r(b,5,b)
 m=A.l("vehicle_type")
-l=J.a7(a4.gl(0),a5.a("serviceTypeId"))
-m=a2.h2(A.n(J.a7(a2.d.a2D(l),"name")),m)
+l=J.a8(a4.gl(0),a5.a("serviceTypeId"))
+m=a2.h2(A.n(J.a8(a2.d.a2D(l),"name")),m)
 l=A.r(b,5,b)
 k=A.l("vehicle_model")
-j=J.a7(a4.gl(0),a5.a("vehicleModel"))
+j=J.a8(a4.gl(0),a5.a("vehicleModel"))
 k=a2.h2(A.n(j),k)
 j=A.r(b,5,b)
 i=A.l("vehicle_color")
-h=J.a7(a4.gl(0),a5.a("vehicleColor"))
+h=J.a8(a4.gl(0),a5.a("vehicleColor"))
 i=a2.h2(A.n(h),i)
 h=A.r(b,5,b)
 g=A.l("vehicle_plate_number")
-f=J.a7(a4.gl(0),a5.a("vehiclePlateNumber"))
+f=J.a8(a4.gl(0),a5.a("vehiclePlateNumber"))
 g=a2.h2(A.n(f),g)
 f=A.r(b,5,b)
 e=A.l("status")
 d=a4.gl(0)
 a5.a("rideStatus")
-d=J.a7(d,"rideStatus")
+d=J.a8(d,"rideStatus")
 c=t.p
 e=A.b1(A.bs(A.b([a1,a3,a6,s,r,q,p,o,n,m,l,k,j,i,h,g,f,a2.h2(A.n(d),e)],c),B.z,B.n,B.k),1)
 d=A.bK(100)
-a1=J.a7(a4.gl(0),a5.a("profilePicture"))
+a1=J.a8(a4.gl(0),a5.a("profilePicture"))
 a1=A.aF(A.b([e,new A.aD(B.GQ,A.w7(d,A.MH(a1,150,150),B.b9),b)],c),B.z,B.n,B.k)
 a3=A.r(b,15,b)
 a6=A.aF(A.b([A.H(A.l("documents"),b,b,b,A.R(b,b,b,b,b,b,b,b,b,b,b,20,b,b,B.r,b,b,!0,b,b,b,b,b,b,b,b),b,b,b),A.r(b,b,5),A.H(A.l("click_to_view_docs"),b,b,b,A.R(b,b,b,b,b,b,b,b,b,b,b,14,b,b,B.m,b,b,!0,b,b,b,b,b,b,b,b),b,b,b)],c),B.p,B.n,B.k)
 s=A.fd(b,b)
 r=A.r(b,5,b)
-a5=J.a7(a4.gl(0),a5.a("documents"))
+a5=J.a8(a4.gl(0),a5.a("documents"))
 t.kc.a(a5)
 if(a5==null)a5=[]
 a5=J.fy(a5,new A.ax5(a2),t.l7)
@@ -98193,9 +98193,9 @@ a5=A.a3(a5,!0,a5.$ti.i("am.E"))
 q=A.aLF(a5,!0,!0,!0)
 a5=a5.length
 p=A.r(b,15,b)
-o=J.a7(a4.gl(0),"rideStatus")
+o=J.a8(a4.gl(0),"rideStatus")
 if(J.e(o,"approval"))a2=a2.apf()
-else{a4=J.a7(a4.gl(0),"rideStatus")
+else{a4=J.a8(a4.gl(0),"rideStatus")
 if(J.e(a4,"suspended"))a2=a2.ayS()
 else{a4=a2.a8l()
 o=A.r(b,15,b)
@@ -98224,7 +98224,7 @@ $2(a,b){return A.r(null,10,null)},
 $S:25}
 A.ax6.prototype={
 $2(a,b){var s,r,q,p,o,n,m,l,k,j,i=null,h="timeStamp",g=this.a.as
-if(b<J.bu(g.gl(0))){s=t.a.a(J.kc(J.a7(g.gl(0),b)))
+if(b<J.bu(g.gl(0))){s=t.a.a(J.kc(J.a8(g.gl(0),b)))
 r=A.oR(t.y4.a(s.h(0,h)).gmp())
 q=A.hp("hh:mm a").fj(r)
 p=A.hp("dd-MM-yyyy").fj(r)
@@ -98248,7 +98248,7 @@ A.kb(r,new A.ax_(s),A.l("sure_approve"))},
 $S:6}
 A.ax_.prototype={
 $0(){var s=this.a,r=s.f
-r=J.a7(r.gl(0),r.$ti.c.a("driver"))
+r=J.a8(r.gl(0),r.$ti.c.a("driver"))
 s.d.B1(r).aY(new A.awY(s),t.P)},
 $S:6}
 A.awY.prototype={
@@ -98268,7 +98268,7 @@ A.kb(s,new A.awZ(r),A.l("sure_reject"))}},
 $S:6}
 A.awZ.prototype={
 $0(){var s=this.a,r=s.f
-r=J.a7(r.gl(0),r.$ti.c.a("driver"))
+r=J.a8(r.gl(0),r.$ti.c.a("driver"))
 s.d.DJ(r,B.d.bY(s.e.a.a)).aY(new A.awX(s),t.P)},
 $S:6}
 A.awX.prototype={
@@ -98289,7 +98289,7 @@ $0(){var s=0,r=A.y(t.P),q=this,p,o
 var $async$$0=A.u(function(a,b){if(a===1)return A.v(b,r)
 while(true)switch(s){case 0:p=q.a
 o=p.f
-o=J.a7(o.gl(0),o.$ti.c.a("driver"))
+o=J.a8(o.gl(0),o.$ti.c.a("driver"))
 p.d.E3(o).aY(new A.axf(p),t.P)
 return A.w(null,r)}})
 return A.x($async$$0,r)},
@@ -98317,11 +98317,11 @@ case 2:p=m.f
 o=p.gl(0)
 n=p.$ti.c
 n.a("rideStatus")
-o=J.a7(o,"rideStatus")
-if(!J.e(o,"offDuty")){o=J.a7(p.gl(0),"rideStatus")
+o=J.a8(o,"rideStatus")
+if(!J.e(o,"offDuty")){o=J.a8(p.gl(0),"rideStatus")
 o=J.e(o,"onDuty")}else o=!0
-if(o){p=J.a7(p.gl(0),n.a("driver"))
-m.d.yO(p).aY(new A.axc(m),t.P)}else{p=J.a7(p.gl(0),"rideStatus")
+if(o){p=J.a8(p.gl(0),n.a("driver"))
+m.d.yO(p).aY(new A.axc(m),t.P)}else{p=J.a8(p.gl(0),"rideStatus")
 m=m.d
 if(J.e(p,"rejected"))m.aJ(A.l("unable_to_suspend_already_rejected"))
 else m.aJ(A.l("unable_to_suspend_active_ride"))}return A.w(null,r)}})
@@ -98733,7 +98733,7 @@ $2(a,b){return A.r(null,15,null)},
 $S:25}
 A.aBr.prototype={
 $2(a,b){var s,r=null,q=this.a.z
-if(b<J.bu(q.gl(0))){s=t.a.a(J.kc(J.a7(q.gl(0),b)))
+if(b<J.bu(q.gl(0))){s=t.a.a(J.kc(J.a8(q.gl(0),b)))
 return A.aF(A.b([A.r(A.H(""+(b+1),r,r,r,A.R(r,r,r,r,r,r,r,r,r,r,r,14,r,r,B.m,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),r,70),A.b1(A.H(A.n(s.h(0,"firstName"))+" "+A.n(s.h(0,"lastName")),r,r,r,A.R(r,r,r,r,r,r,r,r,r,r,r,14,r,r,B.m,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),1),A.r(A.H(A.n(s.h(0,"driver")),r,r,r,A.R(r,r,r,r,r,r,r,r,r,r,r,14,r,r,B.m,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),r,150),A.e4(B.ac,r,40,!1,new A.aBq(a,s),A.l("view"),70)],t.p),B.p,B.T,B.k)}else return B.dt},
 $S:59}
 A.aBq.prototype={
@@ -98865,27 +98865,27 @@ k=a3.$ti.c
 k.a("timeStamp")
 j=t.y4
 i=t.p
-j=A.aF(A.b([p,o,n,A.H(m.fj(A.oR(j.a(J.a7(l,"timeStamp")).gmp()))+" | "+A.hp("dd-MM-yyyy").fj(A.oR(j.a(J.a7(a3.gl(0),"timeStamp")).gmp())),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.n,B.k)
+j=A.aF(A.b([p,o,n,A.H(m.fj(A.oR(j.a(J.a8(l,"timeStamp")).gmp()))+" | "+A.hp("dd-MM-yyyy").fj(A.oR(j.a(J.a8(a3.gl(0),"timeStamp")).gmp())),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.n,B.k)
 l=A.r(a0,8,a0)
 m=A.H(A.l("status"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)
 n=A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)
 o=A.r(a0,a0,5)
 p=a3.gl(0)
 k.a("completion")
-p=J.a7(p,"completion")
-p=A.aF(A.b([m,n,o,A.H(p,a0,a0,a0,A.R(a0,a0,J.e(J.a7(a3.gl(0),"completion"),a2)?B.a8:B.c8,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.n,B.k)
+p=J.a8(p,"completion")
+p=A.aF(A.b([m,n,o,A.H(p,a0,a0,a0,A.R(a0,a0,J.e(J.a8(a3.gl(0),"completion"),a2)?B.a8:B.c8,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.n,B.k)
 o=A.r(a0,8,a0)
-n=J.e(J.a7(a3.gl(0),"completion"),"cancelled")?A.aF(A.b([A.H(A.l("cancel_reason"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(J.a7(a3.gl(0),k.a("cancelReason")),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.n,B.k):A.r(a0,a0,a0)
-m=J.e(J.a7(a3.gl(0),"completion"),a2)?A.aF(A.b([A.H(A.l("payment_mode"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(J.a7(a3.gl(0),k.a("paymentMode")),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.n,B.k):A.r(a0,a0,a0)
+n=J.e(J.a8(a3.gl(0),"completion"),"cancelled")?A.aF(A.b([A.H(A.l("cancel_reason"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(J.a8(a3.gl(0),k.a("cancelReason")),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.n,B.k):A.r(a0,a0,a0)
+m=J.e(J.a8(a3.gl(0),"completion"),a2)?A.aF(A.b([A.H(A.l("payment_mode"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(J.a8(a3.gl(0),k.a("paymentMode")),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.n,B.k):A.r(a0,a0,a0)
 h=A.r(a0,8,a0)
 g=A.H(A.l("pick_and_drop_location")+":",a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)
 f=A.r(a0,8,a0)
-e=A.aF(A.b([A.be(a0,a0,B.q,a0,a0,new A.bb(B.a8,a0,a0,a0,a0,a0,B.bY),a0,10,a0,a0,a0,a0,a0,10),A.r(a0,a0,5),A.b1(A.H(J.a7(a3.gl(0),k.a("pickupAddress")),a0,B.ai,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),1)],i),B.p,B.n,B.k)
+e=A.aF(A.b([A.be(a0,a0,B.q,a0,a0,new A.bb(B.a8,a0,a0,a0,a0,a0,B.bY),a0,10,a0,a0,a0,a0,a0,10),A.r(a0,a0,5),A.b1(A.H(J.a8(a3.gl(0),k.a("pickupAddress")),a0,B.ai,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),1)],i),B.p,B.n,B.k)
 d=A.be(a0,a0,B.q,B.l,a0,a0,a0,10,a0,a0,a0,a0,a0,1)
-c=A.aF(A.b([A.be(a0,a0,B.q,a0,a0,new A.bb(B.c8,a0,a0,a0,a0,a0,B.bY),a0,10,a0,a0,a0,a0,a0,10),A.r(a0,a0,5),A.b1(A.H(J.a7(a3.gl(0),k.a("dropAddress")),a0,B.ai,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),1)],i),B.p,B.n,B.k)
+c=A.aF(A.b([A.be(a0,a0,B.q,a0,a0,new A.bb(B.c8,a0,a0,a0,a0,a0,B.bY),a0,10,a0,a0,a0,a0,a0,10),A.r(a0,a0,5),A.b1(A.H(J.a8(a3.gl(0),k.a("dropAddress")),a0,B.ai,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),1)],i),B.p,B.n,B.k)
 b=A.r(a0,15,a0)
-a=J.e(J.a7(a3.gl(0),"completion"),a2)?A.bs(A.b([A.H(A.l("fare_details"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,17,a0,a0,B.r,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,8,a0),A.r(A.bs(A.b([A.aF(A.b([A.H(A.l("base_fare"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(A.n(J.a7(a3.gl(0),k.a("baseFare"))),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.T,B.k),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("distance_fare"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(A.n(J.a7(a3.gl(0),k.a("distanceFare"))),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.T,B.k),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("time_fare"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(A.n(J.a7(a3.gl(0),k.a("timeFare"))),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.T,B.k),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("waiting_charge"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(A.n(J.a7(a3.gl(0),k.a("waitingFare"))),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.T,B.k),A.r(a0,8,a0),A.be(a0,a0,B.q,B.c9,a0,a0,a0,0.5,a0,a0,a0,a0,a0,1/0),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("total"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(A.n(J.a7(a3.gl(0),k.a("totalFare"))),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.T,B.k),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("drivers_earning"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(A.n(J.a7(a3.gl(0),k.a("driverEarning"))),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.T,B.k),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("admin_commission"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(A.n(J.a7(a3.gl(0),k.a("adminCommission"))),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.T,B.k)],i),B.p,B.n,B.k),a0,200),A.r(a0,15,a0)],i),B.z,B.n,B.k):A.r(a0,a0,a0)
-s=A.be(a0,new A.aD(B.b1,A.bs(A.b([r,q,j,l,p,o,n,m,h,g,f,e,new A.aD(B.H0,d,a0),c,b,a,A.H(A.l("user_details"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,17,a0,a0,B.r,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("name"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(J.a7(a3.gl(0),k.a("userName")),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.n,B.k),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("phone"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(J.a7(a3.gl(0),k.a("user")),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.n,B.k),A.r(a0,15,a0),A.H(A.l("driver_details"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,17,a0,a0,B.r,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("name"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(J.a7(a3.gl(0),k.a("driverName")),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.n,B.k),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("phone"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(J.a7(a3.gl(0),k.a("driver")),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.n,B.k)],i),B.z,B.n,B.k),a0),B.q,a0,a0,new A.bb(B.aS,a0,a0,s,a0,a0,B.x),a0,a0,a0,a0,a0,a0,a0,this.b*0.6)
+a=J.e(J.a8(a3.gl(0),"completion"),a2)?A.bs(A.b([A.H(A.l("fare_details"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,17,a0,a0,B.r,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,8,a0),A.r(A.bs(A.b([A.aF(A.b([A.H(A.l("base_fare"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(A.n(J.a8(a3.gl(0),k.a("baseFare"))),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.T,B.k),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("distance_fare"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(A.n(J.a8(a3.gl(0),k.a("distanceFare"))),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.T,B.k),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("time_fare"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(A.n(J.a8(a3.gl(0),k.a("timeFare"))),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.T,B.k),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("waiting_charge"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(A.n(J.a8(a3.gl(0),k.a("waitingFare"))),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.T,B.k),A.r(a0,8,a0),A.be(a0,a0,B.q,B.c9,a0,a0,a0,0.5,a0,a0,a0,a0,a0,1/0),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("total"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(A.n(J.a8(a3.gl(0),k.a("totalFare"))),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.T,B.k),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("drivers_earning"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(A.n(J.a8(a3.gl(0),k.a("driverEarning"))),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.T,B.k),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("admin_commission"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(A.n(J.a8(a3.gl(0),k.a("adminCommission"))),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.T,B.k)],i),B.p,B.n,B.k),a0,200),A.r(a0,15,a0)],i),B.z,B.n,B.k):A.r(a0,a0,a0)
+s=A.be(a0,new A.aD(B.b1,A.bs(A.b([r,q,j,l,p,o,n,m,h,g,f,e,new A.aD(B.H0,d,a0),c,b,a,A.H(A.l("user_details"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,17,a0,a0,B.r,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("name"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(J.a8(a3.gl(0),k.a("userName")),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.n,B.k),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("phone"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(J.a8(a3.gl(0),k.a("user")),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.n,B.k),A.r(a0,15,a0),A.H(A.l("driver_details"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,17,a0,a0,B.r,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("name"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(J.a8(a3.gl(0),k.a("driverName")),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.n,B.k),A.r(a0,8,a0),A.aF(A.b([A.H(A.l("phone"),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.H(a1,a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.F,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),A.r(a0,a0,5),A.H(J.a8(a3.gl(0),k.a("driver")),a0,a0,a0,A.R(a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,14,a0,a0,B.m,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],i),B.p,B.n,B.k)],i),B.z,B.n,B.k),a0),B.q,a0,a0,new A.bb(B.aS,a0,a0,s,a0,a0,B.x),a0,a0,a0,a0,a0,a0,a0,this.b*0.6)
 a3=s}else a3=A.r(a0,a0,a0)
 a3=A.nP(new A.aD(B.bB,A.bs(A.b([a3],t.p),B.z,B.n,B.k),a0),a0,a0)}return a3},
 $S:29}
@@ -99047,7 +99047,7 @@ $2(a,b){return A.r(null,10,null)},
 $S:25}
 A.aCQ.prototype={
 $2(a,b){var s,r,q,p,o,n,m,l,k,j,i=null,h="timeStamp",g=this.a.Q
-if(b<J.bu(g.gl(0))){s=t.a.a(J.kc(J.a7(g.gl(0),b)))
+if(b<J.bu(g.gl(0))){s=t.a.a(J.kc(J.a8(g.gl(0),b)))
 r=A.oR(t.y4.a(s.h(0,h)).gmp())
 q=A.hp("hh:mm a").fj(r)
 p=A.hp("dd-MM-yyyy").fj(r)
@@ -99148,7 +99148,7 @@ else if(n.z.a.a.length===0)n.d.aJ(A.l("please_google_map_key"))
 else{p=n.Q
 o=n.d
 if(p.a.a.length===0)o.aJ(A.l("please_request_accept_seconds"))
-else o.yj(A.a8(["otpText",B.d.bY(s),"currency",B.d.bY(r),"geofencing",A.hO(B.d.bY(q)),"requestAcceptTimeSec",A.fw(B.d.bY(p.a.a),null),"isOtpInRide",n.as.gl(0)],t.N,t.z))}}}}},
+else o.yj(A.a7(["otpText",B.d.bY(s),"currency",B.d.bY(r),"geofencing",A.hO(B.d.bY(q)),"requestAcceptTimeSec",A.fw(B.d.bY(p.a.a),null),"isOtpInRide",n.as.gl(0)],t.N,t.z))}}}}},
 $S:6}
 A.uK.prototype={
 a2(){var s,r
@@ -99241,7 +99241,7 @@ $2(a,b){return A.r(null,15,null)},
 $S:25}
 A.aF7.prototype={
 $2(a,b){var s,r=null,q=this.a.as
-if(b<J.bu(q.gl(0))){s=t.a.a(J.kc(J.a7(q.gl(0),b)))
+if(b<J.bu(q.gl(0))){s=t.a.a(J.kc(J.a8(q.gl(0),b)))
 return A.aF(A.b([A.r(A.H(""+(b+1),r,r,r,A.R(r,r,r,r,r,r,r,r,r,r,r,14,r,r,B.m,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),r,70),A.b1(A.H(A.n(s.h(0,"firstName"))+" "+A.n(s.h(0,"lastName")),r,r,r,A.R(r,r,r,r,r,r,r,r,r,r,r,14,r,r,B.m,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),1),A.r(A.H(A.n(s.h(0,"driver")),r,r,r,A.R(r,r,r,r,r,r,r,r,r,r,r,14,r,r,B.m,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),r,150),A.e4(B.ac,r,40,!1,new A.aF6(a,s),A.l("view"),70)],t.p),B.p,B.T,B.k)}else return B.dt},
 $S:59}
 A.aF6.prototype={
@@ -99363,7 +99363,7 @@ $2(a,b){return A.r(null,15,null)},
 $S:25}
 A.aFi.prototype={
 $2(a,b){var s,r=null,q=this.a.as
-if(b<J.bu(q.gl(0))){s=t.a.a(J.kc(J.a7(q.gl(0),b)))
+if(b<J.bu(q.gl(0))){s=t.a.a(J.kc(J.a8(q.gl(0),b)))
 return A.aF(A.b([A.r(A.H(""+(b+1),r,r,r,A.R(r,r,r,r,r,r,r,r,r,r,r,14,r,r,B.m,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),r,70),A.b1(A.H(A.n(s.h(0,"firstName"))+" "+A.n(s.h(0,"lastName")),r,r,r,A.R(r,r,r,r,r,r,r,r,r,r,r,14,r,r,B.m,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),1),A.r(A.H(A.n(s.h(0,"user")),r,r,r,A.R(r,r,r,r,r,r,r,r,r,r,r,14,r,r,B.m,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),r,150),A.e4(B.ac,r,40,!1,new A.aFh(a,s),A.l("view"),70)],t.p),B.p,B.T,B.k)}else return B.dt},
 $S:59}
 A.aFh.prototype={
@@ -99451,7 +99451,7 @@ return A.E(q.d.yf(A.iD(p,0,p.length,B.S,!1)).aY(new A.aFG(q),t.P),$async$ye)
 case 4:case 3:return A.w(null,r)}})
 return A.x($async$ye,r)},
 iQ(a){var s,r=this.e
-r=J.a7(r.gl(0),r.$ti.c.a("createdAtTimeStamp"))
+r=J.a8(r.gl(0),r.$ti.c.a("createdAtTimeStamp"))
 s=A.oR(t.y4.a(r).gmp())
 return new A.cJ(new A.aFF(this,A.hp("hh:mm a").fj(s),A.hp("dd-MM-yyyy").fj(s)),null)},
 h2(a,b){var s=null
@@ -99484,34 +99484,34 @@ A.aFG.prototype={
 $1(a){if(a!=null)this.a.e.sl(0,a)},
 $S:243}
 A.aFF.prototype={
-$0(){var s,r,q,p,o,n,m,l,k,j,i,h,g=null,f="user_name",e=A.bK(15),d=A.H(A.l("user_details"),g,g,g,A.R(g,g,g,g,g,g,g,g,g,g,g,20,g,g,B.r,g,g,!0,g,g,g,g,g,g,g,g),g,g,g),c=A.fd(g,g),b=A.r(g,5,g),a=this.a,a0=A.l(f),a1=a.e,a2=a1.$ti.c,a3=J.a7(a1.gl(0),a2.a("firstName"))
+$0(){var s,r,q,p,o,n,m,l,k,j,i,h,g=null,f="user_name",e=A.bK(15),d=A.H(A.l("user_details"),g,g,g,A.R(g,g,g,g,g,g,g,g,g,g,g,20,g,g,B.r,g,g,!0,g,g,g,g,g,g,g,g),g,g,g),c=A.fd(g,g),b=A.r(g,5,g),a=this.a,a0=A.l(f),a1=a.e,a2=a1.$ti.c,a3=J.a8(a1.gl(0),a2.a("firstName"))
 a3=A.n(a3)
-s=J.a7(a1.gl(0),a2.a("lastName"))
+s=J.a8(a1.gl(0),a2.a("lastName"))
 a0=a.h2(a3+" "+A.n(s),a0)
 a3=A.r(g,5,g)
 s=A.l("phone_number")
-r=J.a7(a1.gl(0),a2.a("driver"))
+r=J.a8(a1.gl(0),a2.a("driver"))
 s=a.h2(A.n(r),s)
 r=A.r(g,5,g)
 q=A.l("email")
-p=J.a7(a1.gl(0),a2.a("email"))
+p=J.a8(a1.gl(0),a2.a("email"))
 q=a.h2(A.n(p),q)
 p=A.r(g,5,g)
 o=A.l("status")
-n=J.a7(a1.gl(0),a2.a("rideStatus"))
+n=J.a8(a1.gl(0),a2.a("rideStatus"))
 o=a.h2(A.n(n),o)
 n=A.r(g,5,g)
 m=A.l("registered_on")
-l=J.a7(a1.gl(0),a2.a("createdAtTimeStamp"))
+l=J.a8(a1.gl(0),a2.a("createdAtTimeStamp"))
 m=a.h2(l!=null?this.b+" | "+this.c:"",m)
 k=A.r(g,5,g)
 j=A.l("gender")
-l=J.a7(a1.gl(0),a2.a("gender"))
+l=J.a8(a1.gl(0),a2.a("gender"))
 l=a.h2(A.n(l),j)
 j=A.r(g,5,g)
 i=A.l("rating")
-h=J.a7(a1.gl(0),a2.a("rate"))
-a1=J.a7(a1.gl(0),a2.a("ratedByNumber"))
+h=J.a8(a1.gl(0),a2.a("rate"))
+a1=J.a8(a1.gl(0),a2.a("ratedByNumber"))
 a2=t.p
 i=A.aF(A.b([A.b1(A.bs(A.b([d,c,b,a0,a3,s,r,q,p,o,n,m,k,l,j,a.h2(J.aZz(J.aZa(h,a1),2)+" \u2605",i)],a2),B.z,B.n,B.k),1)],a2),B.z,B.n,B.k)
 a1=A.r(g,25,g)
@@ -99530,7 +99530,7 @@ $2(a,b){return A.r(null,10,null)},
 $S:25}
 A.aFD.prototype={
 $2(a,b){var s,r,q,p,o,n,m,l,k,j,i=null,h="timeStamp",g=this.a.Q
-if(b<J.bu(g.gl(0))){s=t.a.a(J.kc(J.a7(g.gl(0),b)))
+if(b<J.bu(g.gl(0))){s=t.a.a(J.kc(J.a8(g.gl(0),b)))
 r=A.oR(t.y4.a(s.h(0,h)).gmp())
 q=A.hp("hh:mm a").fj(r)
 p=A.hp("dd-MM-yyyy").fj(r)
@@ -99761,7 +99761,7 @@ A.aG7.prototype={
 $2(a,b){return A.r(null,15,null)},
 $S:25}
 A.aG6.prototype={
-$2(a,b){var s=null,r=this.a,q=J.a7(r.d.fr.gl(0),b),p=J.aa(q),o=t.p
+$2(a,b){var s=null,r=this.a,q=J.a8(r.d.fr.gl(0),b),p=J.aa(q),o=t.p
 return A.aF(A.b([A.r(A.H(""+(b+1),s,s,s,A.R(s,s,s,s,s,s,s,s,s,s,s,14,s,s,B.m,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),s,70),A.r(new A.ds(B.bh,s,s,A.MH(p.h(q,"image"),45,45),s),s,80),A.b1(A.H(p.h(q,"name"),s,s,s,A.R(s,s,s,s,s,s,s,s,s,s,s,14,s,s,B.m,s,s,!0,s,s,s,s,s,s,s,s),s,s,s),1),A.r(A.aF(A.b([A.dD(!1,s,!0,A.ad2(A.aH(B.c.au(76.5),B.a8.D()>>>16&255,B.a8.D()>>>8&255,B.a8.D()&255),B.a8,30,!1,20,A.aH(102,B.l.D()>>>16&255,B.l.D()>>>8&255,B.l.D()&255),B.P,new A.aG3(r,b),0,!1,20,p.h(q,"isEnabled"),25,35),s,!0,s,s,s,s,s,s,s,s,s,s,new A.aG4(),s,s,s,s)],o),B.p,B.n,B.k),s,90),A.e4(B.ac,s,40,!1,new A.aG5(a,q),A.l("edit"),70)],o),B.p,B.T,B.k)},
 $S:78}
 A.aG4.prototype={
@@ -99771,7 +99771,7 @@ A.aG3.prototype={
 $1(a){this.a.d.DZ(this.b,a)},
 $S:10}
 A.aG5.prototype={
-$0(){A.ht(this.a,"/vehicle-types/vehicle-details?vehicleId="+A.n(J.a7(this.b,"serviceTypeId")),t.X)},
+$0(){A.ht(this.a,"/vehicle-types/vehicle-details?vehicleId="+A.n(J.a8(this.b,"serviceTypeId")),t.X)},
 $S:6}
 A.aG9.prototype={
 $0(){var s=this.a.c
@@ -99822,7 +99822,7 @@ m=$.as
 l=(m==null?$.as=$.bJ():m).bl("[DEFAULT]")
 A.b7(l,$.bN(),!0)
 m=A.cd(new A.bt(l)).bB("withdrawOrAddWalletRequests").cf(b)
-k=A.k_(A.a8(["status","completed"],t.K,t.X))
+k=A.k_(A.a7(["status","completed"],t.K,t.X))
 k.toString
 s=6
 return A.E(m.a.bh(0,k),$async$CE)
@@ -99951,7 +99951,7 @@ s=A.b([],t.p)
 if(!p.d){r=p.a
 q=r.d
 s.push(new A.Gr(A.be(o,o,B.q,B.i,o,o,o,r.e,o,o,o,o,o,q),new A.lK(B.ch,B.ac,B.bw,A.b([B.da,B.da,B.np,B.da,B.da],t.t_),B.Kd,o),o))}r=t.z
-s.push(new A.QO("_default_document_create_element_visible",A.b7j(new A.aB1(p)),A.a8(["tagName","img"],r,r),B.yW,o))
+s.push(new A.QO("_default_document_create_element_visible",A.b7j(new A.aB1(p)),A.a7(["tagName","img"],r,r),B.yW,o))
 return A.r(A.j9(B.bx,s,B.G,B.bo,o),n,m)},
 abm(a){switch(a.a){case 2:return"cover"
 case 1:return"contain"
@@ -100059,7 +100059,7 @@ r=r.c.a
 q=$.fP
 if(q==null)q=$.fP=new A.l3()
 q.fZ(r.bg$)
-r=A.bd(J.a7(r.dg$,"lang"))
+r=A.bd(J.a8(r.dg$,"lang"))
 if(r==null)r="en"
 q=$.cg()
 q.b=o
@@ -107093,7 +107093,7 @@ $.aKt=A.B(t.N,A.a9("wO"))
 $.b2o=A.B(t.N,A.a9("Ek"))
 $.aR_=0
 $.aKs=null
-$.b7B=A.a8(["unauthorized","User is not authorized to perform the desired action.","object-not-found","No object exists at the desired reference.","invalid-argument",null,"canceled",null],t.N,t.B)
+$.b7B=A.a7(["unauthorized","User is not authorized to perform the desired action.","object-not-found","No object exists at the desired reference.","invalid-argument",null,"canceled",null],t.N,t.B)
 $.lz=A.b8Y()
 $.ad_=0
 $.b1f=A.b([],A.a9("F<beX>"))
@@ -107183,7 +107183,7 @@ return A.b([A.T(A.T(A.aE(),q),"Miter"),A.T(A.T(A.aE(),q),"Round"),A.T(A.T(A.aE()
 s($,"bhk","aYW",()=>{var q="TileMode"
 return A.b([A.T(A.T(A.aE(),q),"Clamp"),A.T(A.T(A.aE(),q),"Repeat"),A.T(A.T(A.aE(),q),"Mirror"),A.T(A.T(A.aE(),q),"Decal")],t.J)})
 s($,"bgp","aNC",()=>{var q="FilterMode",p="MipmapMode",o="Linear",n=t.e
-return A.a8([B.hE,n.a({filter:A.T(A.T(A.aE(),q),"Nearest"),mipmap:A.T(A.T(A.aE(),p),"None")}),B.ol,n.a({filter:A.T(A.T(A.aE(),q),o),mipmap:A.T(A.T(A.aE(),p),"None")}),B.f1,n.a({filter:A.T(A.T(A.aE(),q),o),mipmap:A.T(A.T(A.aE(),p),o)}),B.hF,n.a({B:0.3333333333333333,C:0.3333333333333333})],A.a9("rE"),n)})
+return A.a7([B.hE,n.a({filter:A.T(A.T(A.aE(),q),"Nearest"),mipmap:A.T(A.T(A.aE(),p),"None")}),B.ol,n.a({filter:A.T(A.T(A.aE(),q),o),mipmap:A.T(A.T(A.aE(),p),"None")}),B.f1,n.a({filter:A.T(A.T(A.aE(),q),o),mipmap:A.T(A.T(A.aE(),p),o)}),B.hF,n.a({B:0.3333333333333333,C:0.3333333333333333})],A.a9("rE"),n)})
 s($,"bgy","aYo",()=>{var q=A.aLa(2)
 q.$flags&2&&A.aG(q)
 q[0]=0
@@ -107205,7 +107205,7 @@ s($,"bgw","aJn",()=>A.ah3(A.b_i($.aYn())))
 s($,"bgi","aYi",()=>A.aSg(A.T(A.aE(),"ParagraphBuilder")))
 s($,"bhV","aZ8",()=>{var q=t.N,p=A.a9("+breaks,graphemes,words(z0,z0,z0)"),o=A.aL3(1e5,q,p),n=A.aL3(1e4,q,p)
 return new A.a1o(A.aL3(20,q,p),n,o)})
-s($,"bgv","aYm",()=>A.a8([B.oI,A.aVf("grapheme"),B.oJ,A.aVf("word")],A.a9("DH"),t.e))
+s($,"bgv","aYm",()=>A.a7([B.oI,A.aVf("grapheme"),B.oJ,A.aVf("word")],A.a9("DH"),t.e))
 s($,"bhq","aZ0",()=>A.baa())
 s($,"bd3","e0",()=>{var q,p=A.T(self.window,"screen")
 p=p==null?null:A.T(p,"width")
@@ -107213,13 +107213,13 @@ if(p==null)p=0
 q=A.T(self.window,"screen")
 q=q==null?null:A.T(q,"height")
 return new A.PR(A.b4n(p,q==null?0:q))})
-s($,"bd1","eB",()=>A.b2N(A.a8(["preventScroll",!0],t.N,t.y)))
+s($,"bd1","eB",()=>A.b2N(A.a7(["preventScroll",!0],t.N,t.y)))
 s($,"bhp","aZ_",()=>{var q=A.T(self.window,"trustedTypes")
 q.toString
 return A.b76(q,"createPolicy","flutter-engine",t.e.a({createScriptURL:A.bX(new A.aHF())}))})
 r($,"bhv","aNN",()=>self.window.FinalizationRegistry!=null)
 r($,"bhx","aJq",()=>self.window.OffscreenCanvas!=null)
-s($,"bgr","aYk",()=>B.ad.cE(A.a8(["type","fontsChange"],t.N,t.z)))
+s($,"bgr","aYk",()=>B.ad.cE(A.a7(["type","fontsChange"],t.N,t.z)))
 r($,"b1m","aWC",()=>A.wT())
 s($,"bhM","aZ5",()=>{var q=A.ba7()
 A.aP9(q,"width",0)
@@ -107243,7 +107243,7 @@ s($,"bgQ","aYB",()=>458977)
 s($,"bgR","aYC",()=>458981)
 s($,"bgO","aYz",()=>458979)
 s($,"bgP","aYA",()=>458983)
-s($,"bgD","aYr",()=>A.a8([$.aNE(),new A.aHi(),$.aYp(),new A.aHj(),$.aNF(),new A.aHk(),$.aYq(),new A.aHl(),$.aNH(),new A.aHm(),$.aYt(),new A.aHn(),$.aNG(),new A.aHo(),$.aYs(),new A.aHp()],t.S,A.a9("J(lA)")))
+s($,"bgD","aYr",()=>A.a7([$.aNE(),new A.aHi(),$.aYp(),new A.aHj(),$.aNF(),new A.aHk(),$.aYq(),new A.aHl(),$.aNH(),new A.aHm(),$.aYt(),new A.aHn(),$.aNG(),new A.aHo(),$.aYs(),new A.aHp()],t.S,A.a9("J(lA)")))
 s($,"bhS","aJt",()=>A.ba2(new A.aID()))
 r($,"bdm","aJd",()=>new A.QK(A.b([],A.a9("F<~(J)>")),A.aKi(self.window,"(forced-colors: active)")))
 s($,"bd4","b_",()=>A.b0R())
@@ -107262,7 +107262,7 @@ r($,"bhw","aZ2",()=>{var q=self.window.ImageDecoder
 q=(q==null?null:A.aQq(q))!=null&&$.bT().gev()===B.d5
 return q})
 s($,"bcm","aWh",()=>{var q=t.N
-return new A.a7Z(A.a8(["birthday","bday","birthdayDay","bday-day","birthdayMonth","bday-month","birthdayYear","bday-year","countryCode","country","countryName","country-name","creditCardExpirationDate","cc-exp","creditCardExpirationMonth","cc-exp-month","creditCardExpirationYear","cc-exp-year","creditCardFamilyName","cc-family-name","creditCardGivenName","cc-given-name","creditCardMiddleName","cc-additional-name","creditCardName","cc-name","creditCardNumber","cc-number","creditCardSecurityCode","cc-csc","creditCardType","cc-type","email","email","familyName","family-name","fullStreetAddress","street-address","gender","sex","givenName","given-name","impp","impp","jobTitle","organization-title","language","language","middleName","additional-name","name","name","namePrefix","honorific-prefix","nameSuffix","honorific-suffix","newPassword","new-password","nickname","nickname","oneTimeCode","one-time-code","organizationName","organization","password","current-password","photo","photo","postalCode","postal-code","streetAddressLevel1","address-level1","streetAddressLevel2","address-level2","streetAddressLevel3","address-level3","streetAddressLevel4","address-level4","streetAddressLine1","address-line1","streetAddressLine2","address-line2","streetAddressLine3","address-line3","telephoneNumber","tel","telephoneNumberAreaCode","tel-area-code","telephoneNumberCountryCode","tel-country-code","telephoneNumberExtension","tel-extension","telephoneNumberLocal","tel-local","telephoneNumberLocalPrefix","tel-local-prefix","telephoneNumberLocalSuffix","tel-local-suffix","telephoneNumberNational","tel-national","transactionAmount","transaction-amount","transactionCurrency","transaction-currency","url","url","username","username"],q,q))})
+return new A.a7Z(A.a7(["birthday","bday","birthdayDay","bday-day","birthdayMonth","bday-month","birthdayYear","bday-year","countryCode","country","countryName","country-name","creditCardExpirationDate","cc-exp","creditCardExpirationMonth","cc-exp-month","creditCardExpirationYear","cc-exp-year","creditCardFamilyName","cc-family-name","creditCardGivenName","cc-given-name","creditCardMiddleName","cc-additional-name","creditCardName","cc-name","creditCardNumber","cc-number","creditCardSecurityCode","cc-csc","creditCardType","cc-type","email","email","familyName","family-name","fullStreetAddress","street-address","gender","sex","givenName","given-name","impp","impp","jobTitle","organization-title","language","language","middleName","additional-name","name","name","namePrefix","honorific-prefix","nameSuffix","honorific-suffix","newPassword","new-password","nickname","nickname","oneTimeCode","one-time-code","organizationName","organization","password","current-password","photo","photo","postalCode","postal-code","streetAddressLevel1","address-level1","streetAddressLevel2","address-level2","streetAddressLevel3","address-level3","streetAddressLevel4","address-level4","streetAddressLine1","address-line1","streetAddressLine2","address-line2","streetAddressLine3","address-line3","telephoneNumber","tel","telephoneNumberAreaCode","tel-area-code","telephoneNumberCountryCode","tel-country-code","telephoneNumberExtension","tel-extension","telephoneNumberLocal","tel-local","telephoneNumberLocalPrefix","tel-local-prefix","telephoneNumberLocalSuffix","tel-local-suffix","telephoneNumberNational","tel-national","transactionAmount","transaction-amount","transactionCurrency","transaction-currency","url","url","username","username"],q,q))})
 s($,"bhW","Nf",()=>new A.afb())
 s($,"bho","aYZ",()=>A.aLa(4))
 s($,"bhm","aNM",()=>A.aLa(16))
@@ -107336,7 +107336,7 @@ s($,"bd_","aJa",()=>new A.p())
 s($,"bd6","aWz",()=>new A.p())
 s($,"bda","aJb",()=>new A.p())
 r($,"bgu","a6w",()=>{var q=t.j,p=t.z
-return A.BU(A.a8(["where",A.E3([],q),"orderBy",A.E3([],q),"startAt",null,"startAfter",null,"endAt",null,"endBefore",null,"limit",null,"limitToLast",null],p,p),t.N,p)})
+return A.BU(A.a7(["where",A.E3([],q),"orderBy",A.E3([],q),"startAt",null,"startAfter",null,"endAt",null,"endBefore",null,"limit",null,"limitToLast",null],p,p),t.N,p)})
 s($,"bez","AK",()=>new A.p())
 s($,"beA","aJg",()=>new A.p())
 s($,"bde","aWB",()=>A.iQ(A.a9("Q1")))
@@ -107353,7 +107353,7 @@ q.Pd($.aNl())
 return q})
 s($,"bd8","bN",()=>new A.p())
 s($,"bdc","aNm",()=>new A.p())
-r($,"bd9","a6n",()=>A.a8(["core",A.b12("app",null,"core")],t.N,A.a9("mY")))
+r($,"bd9","a6n",()=>A.a7(["core",A.b12("app",null,"core")],t.N,A.a9("mY")))
 s($,"bch","aWf",()=>A.iQ(t.Gu))
 s($,"ben","aNq",()=>new A.acF())
 s($,"bdd","a6o",()=>new A.p())
@@ -107365,11 +107365,11 @@ s($,"bf_","aXq",()=>A.iQ(A.a9("UU")))
 s($,"bfm","aXF",()=>A.iQ(A.a9("VI")))
 s($,"bfl","aXE",()=>A.iQ(t._J))
 s($,"bhl","aYX",()=>A.dn("^(?:gs|https?):\\//",!0,!1))
-r($,"bgo","aNB",()=>A.a8([B.Ap,B.iA,B.Aq,B.lz,B.An,B.ly,B.Am,B.iy,B.Ao,B.iz],A.a9("q8"),A.a9("nW")))
+r($,"bgo","aNB",()=>A.a7([B.Ap,B.iA,B.Aq,B.lz,B.An,B.ly,B.Am,B.iy,B.Ao,B.iz],A.a9("q8"),A.a9("nW")))
 s($,"bcl","aJ6",()=>new A.a7m())
 r($,"bfn","hQ",()=>new A.asL())
 r($,"bcg","aWe",()=>new A.Ny(B.y,B.y))
-s($,"bhH","aZ4",()=>A.a8([B.Fz,A.bK(40),B.FA,A.bK(40),B.nE,A.bK(12)],A.a9("wi"),t.m_))
+s($,"bhH","aZ4",()=>A.a7([B.Fz,A.bK(40),B.FA,A.bK(40),B.nE,A.bK(12)],A.a9("wi"),t.m_))
 s($,"bhA","aNO",()=>new A.XN())
 s($,"bgS","aYD",()=>A.ir(B.fk,B.f,t.o))
 s($,"bgL","aNI",()=>A.ir(B.f,B.O_,t.o))
@@ -107432,14 +107432,14 @@ s($,"beU","aXo",()=>A.b2j().a)
 s($,"bhU","a6A",()=>{var q=t.N,p=t.L0
 return new A.alp(A.B(q,t.IE),A.B(q,p),A.B(q,p))})
 s($,"bcn","a6l",()=>new A.a8_())
-s($,"bds","aWH",()=>A.a8([4294967562,B.ki,4294967564,B.IA,4294967556,B.IB],t.S,t.SQ))
+s($,"bds","aWH",()=>A.a7([4294967562,B.ki,4294967564,B.IA,4294967556,B.IB],t.S,t.SQ))
 s($,"bdw","aWI",()=>{var q=t.bd
-return A.a8([B.ky,A.cQ([B.cQ,B.dl],q),B.kA,A.cQ([B.fe,B.i0],q),B.kz,A.cQ([B.fd,B.i_],q),B.kx,A.cQ([B.fc,B.hZ],q)],q,A.a9("bP<j>"))})
+return A.a7([B.ky,A.cQ([B.cQ,B.dl],q),B.kA,A.cQ([B.fe,B.i0],q),B.kz,A.cQ([B.fd,B.i_],q),B.kx,A.cQ([B.fc,B.hZ],q)],q,A.a9("bP<j>"))})
 s($,"bhR","aZ7",()=>new A.aly())
 s($,"beF","aNu",()=>new A.ama(A.b([],A.a9("F<~(nF)>")),A.B(t.v3,t.bd)))
 s($,"beE","aXg",()=>{var q=t.v3
-return A.a8([B.YT,A.cQ([B.eg],q),B.YU,A.cQ([B.ei],q),B.YV,A.cQ([B.eg,B.ei],q),B.YS,A.cQ([B.eg],q),B.YP,A.cQ([B.ef],q),B.YQ,A.cQ([B.fo],q),B.YR,A.cQ([B.ef,B.fo],q),B.YO,A.cQ([B.ef],q),B.YL,A.cQ([B.ee],q),B.YM,A.cQ([B.fn],q),B.YN,A.cQ([B.ee,B.fn],q),B.YK,A.cQ([B.ee],q),B.YX,A.cQ([B.eh],q),B.YY,A.cQ([B.fp],q),B.YZ,A.cQ([B.eh,B.fp],q),B.YW,A.cQ([B.eh],q),B.Z_,A.cQ([B.du],q),B.Z0,A.cQ([B.i9],q),B.Z1,A.cQ([B.i8],q),B.Z2,A.cQ([B.fm],q)],A.a9("dW"),A.a9("bP<z>"))})
-s($,"beD","aNt",()=>A.a8([B.eg,B.fd,B.ei,B.i_,B.ef,B.cQ,B.fo,B.dl,B.ee,B.fc,B.fn,B.hZ,B.eh,B.fe,B.fp,B.i0,B.du,B.f9,B.i9,B.hX,B.i8,B.hY],t.v3,t.bd))
+return A.a7([B.YT,A.cQ([B.eg],q),B.YU,A.cQ([B.ei],q),B.YV,A.cQ([B.eg,B.ei],q),B.YS,A.cQ([B.eg],q),B.YP,A.cQ([B.ef],q),B.YQ,A.cQ([B.fo],q),B.YR,A.cQ([B.ef,B.fo],q),B.YO,A.cQ([B.ef],q),B.YL,A.cQ([B.ee],q),B.YM,A.cQ([B.fn],q),B.YN,A.cQ([B.ee,B.fn],q),B.YK,A.cQ([B.ee],q),B.YX,A.cQ([B.eh],q),B.YY,A.cQ([B.fp],q),B.YZ,A.cQ([B.eh,B.fp],q),B.YW,A.cQ([B.eh],q),B.Z_,A.cQ([B.du],q),B.Z0,A.cQ([B.i9],q),B.Z1,A.cQ([B.i8],q),B.Z2,A.cQ([B.fm],q)],A.a9("dW"),A.a9("bP<z>"))})
+s($,"beD","aNt",()=>A.a7([B.eg,B.fd,B.ei,B.i_,B.ef,B.cQ,B.fo,B.dl,B.ee,B.fc,B.fn,B.hZ,B.eh,B.fe,B.fp,B.i0,B.du,B.f9,B.i9,B.hX,B.i8,B.hY],t.v3,t.bd))
 s($,"beC","aXf",()=>{var q=A.B(t.v3,t.bd)
 q.n(0,B.fm,B.ku)
 q.T(0,$.aNt())
@@ -107456,10 +107456,10 @@ q.a=B.Oi
 q.ganG().mO(q.gaht())
 return q})
 r($,"bfr","aXH",()=>{var q=A.a9("~(bz<bg>)")
-return A.a8([B.WX,A.aP7(!0),B.WN,A.aP7(!1),B.Xo,new A.Tu(A.EH(q)),B.AQ,new A.S0(A.EH(q)),B.AR,new A.SJ(A.EH(q)),B.lK,new A.Ch(!1,A.EH(q)),B.lP,A.b40(),B.Xh,new A.SL(A.EH(q)),B.XG,new A.VW(A.EH(q))],t.u,t.od)})
+return A.a7([B.WX,A.aP7(!0),B.WN,A.aP7(!1),B.Xo,new A.Tu(A.EH(q)),B.AQ,new A.S0(A.EH(q)),B.AR,new A.SJ(A.EH(q)),B.lK,new A.Ch(!1,A.EH(q)),B.lP,A.b40(),B.Xh,new A.SL(A.EH(q)),B.XG,new A.VW(A.EH(q))],t.u,t.od)})
 s($,"bcE","aJ8",()=>{var q,p,o,n=t.vz,m=A.B(t.Vz,n)
 for(q=A.a9("au"),p=0;p<2;++p){o=B.kr[p]
-m.T(0,A.a8([A.f1(B.b3,!1,!1,!1,o),B.jQ,A.f1(B.b3,!1,!0,!1,o),B.jT,A.f1(B.b3,!0,!1,!1,o),B.jR,A.f1(B.aW,!1,!1,!1,o),B.eV,A.f1(B.aW,!1,!0,!1,o),B.eW,A.f1(B.aW,!0,!1,!1,o),B.jS],q,n))}m.n(0,B.fF,B.dZ)
+m.T(0,A.a7([A.f1(B.b3,!1,!1,!1,o),B.jQ,A.f1(B.b3,!1,!0,!1,o),B.jT,A.f1(B.b3,!0,!1,!1,o),B.jR,A.f1(B.aW,!1,!1,!1,o),B.eV,A.f1(B.aW,!1,!0,!1,o),B.eW,A.f1(B.aW,!0,!1,!1,o),B.jS],q,n))}m.n(0,B.fF,B.dZ)
 m.n(0,B.fG,B.e_)
 m.n(0,B.em,B.e0)
 m.n(0,B.en,B.e1)
@@ -107496,7 +107496,7 @@ m.n(0,B.fD,B.w)
 return m})
 s($,"bcD","aNf",()=>$.aJ8())
 s($,"bcF","aWm",()=>$.aNf())
-s($,"bcH","aNg",()=>A.a8([B.R0,B.hx,B.R1,B.hw,B.QP,B.f_,B.R2,B.f0,B.Rw,B.oh,B.Rx,B.og,B.RA,B.oc,B.Ry,B.od,B.QQ,B.hC,B.R3,B.hD,B.R4,B.f_,B.R5,B.f0,B.Ro,B.eV,B.QS,B.eW,B.QT,B.e_,B.QU,B.dZ,B.Rk,B.e0,B.QV,B.e1,B.R7,B.hB,B.R8,B.hA,B.Ri,B.Ha,B.R9,B.Hb,B.Rl,B.kb,B.QW,B.kc,B.QX,B.e0,B.QY,B.e1,B.R6,B.eV,B.RC,B.eW],t.Vz,t.vz))
+s($,"bcH","aNg",()=>A.a7([B.R0,B.hx,B.R1,B.hw,B.QP,B.f_,B.R2,B.f0,B.Rw,B.oh,B.Rx,B.og,B.RA,B.oc,B.Ry,B.od,B.QQ,B.hC,B.R3,B.hD,B.R4,B.f_,B.R5,B.f0,B.Ro,B.eV,B.QS,B.eW,B.QT,B.e_,B.QU,B.dZ,B.Rk,B.e0,B.QV,B.e1,B.R7,B.hB,B.R8,B.hA,B.Ri,B.Ha,B.R9,B.Hb,B.Rl,B.kb,B.QW,B.kc,B.QX,B.e0,B.QY,B.e1,B.R6,B.eV,B.RC,B.eW],t.Vz,t.vz))
 s($,"bcI","aWo",()=>{var q=A.ni($.aJ8(),t.Vz,t.vz)
 q.T(0,$.aNg())
 q.n(0,B.iu,B.dg)
@@ -107506,7 +107506,7 @@ q.n(0,B.it,B.ob)
 return q})
 s($,"bcK","aNh",()=>{var q,p,o,n=t.vz,m=A.B(t.Vz,n)
 for(q=A.a9("au"),p=0;p<2;++p){o=B.kr[p]
-m.T(0,A.a8([A.f1(B.b3,!1,!1,!1,o),B.jQ,A.f1(B.b3,!0,!1,!1,o),B.jT,A.f1(B.b3,!1,!1,!0,o),B.jR,A.f1(B.aW,!1,!1,!1,o),B.eV,A.f1(B.aW,!0,!1,!1,o),B.eW,A.f1(B.aW,!1,!1,!0,o),B.jS],q,n))}m.n(0,B.fF,B.dZ)
+m.T(0,A.a7([A.f1(B.b3,!1,!1,!1,o),B.jQ,A.f1(B.b3,!0,!1,!1,o),B.jT,A.f1(B.b3,!1,!1,!0,o),B.jR,A.f1(B.aW,!1,!1,!1,o),B.eV,A.f1(B.aW,!0,!1,!1,o),B.eW,A.f1(B.aW,!1,!1,!0,o),B.jS],q,n))}m.n(0,B.fF,B.dZ)
 m.n(0,B.fG,B.e_)
 m.n(0,B.em,B.e0)
 m.n(0,B.en,B.e1)
@@ -107569,7 +107569,7 @@ q.n(0,B.Rr,B.o9)
 return q})
 s($,"bcL","aNi",()=>{var q,p,o,n=t.vz,m=A.B(t.Vz,n)
 for(q=A.a9("au"),p=0;p<2;++p){o=B.kr[p]
-m.T(0,A.a8([A.f1(B.b3,!1,!1,!1,o),B.w,A.f1(B.aW,!1,!1,!1,o),B.w,A.f1(B.b3,!0,!1,!1,o),B.w,A.f1(B.aW,!0,!1,!1,o),B.w,A.f1(B.b3,!1,!0,!1,o),B.w,A.f1(B.aW,!1,!0,!1,o),B.w,A.f1(B.b3,!1,!1,!0,o),B.w,A.f1(B.aW,!1,!1,!0,o),B.w],q,n))}m.T(0,B.v_)
+m.T(0,A.a7([A.f1(B.b3,!1,!1,!1,o),B.w,A.f1(B.aW,!1,!1,!1,o),B.w,A.f1(B.b3,!0,!1,!1,o),B.w,A.f1(B.aW,!0,!1,!1,o),B.w,A.f1(B.b3,!1,!0,!1,o),B.w,A.f1(B.aW,!1,!0,!1,o),B.w,A.f1(B.b3,!1,!1,!0,o),B.w,A.f1(B.aW,!1,!1,!0,o),B.w],q,n))}m.T(0,B.v_)
 m.n(0,B.zL,B.w)
 m.n(0,B.zI,B.w)
 m.n(0,B.zK,B.w)
